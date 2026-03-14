@@ -184,12 +184,18 @@ img {
 
 .c-icon-mail {
   display: inline-block;
-  width: 22px;
+  width: 26px;
+}
+.c-icon-mail img {
+  display: block;
 }
 
 .c-icon-tel {
   display: inline-block;
   width: 22px;
+}
+.c-icon-tel img {
+  display: block;
 }
 
 .p-header.is-bg {
@@ -260,12 +266,19 @@ img {
   font-size: 12px;
 }
 .p-header .p-header__btn-contact {
-  font-size: 18px;
+  font-size: 21px;
   padding: 16px 32px;
   display: flex;
   align-items: center;
-  gap: 24px;
-  line-height: 1.8;
+  gap: 16px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 1px 0 rgb(115, 89, 31), -1px 0 rgb(115, 89, 31), 0 1px rgb(115, 89, 31), 0 -1px rgb(115, 89, 31);
+}
+.p-header .p-header__btn-contact .c-icon-mail {
+  display: inline-block;
+  width: 26px;
+}
+.p-header .p-header__btn-contact .c-icon-mail img {
+  display: block;
 }
 
 .p-global-nav__list {
@@ -404,6 +417,9 @@ img {
   flex-direction: column;
   padding: 16px 0px;
 }
+.p-drawer .p-drawer__sp-btns .c-btn:nth-child(2) {
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 1px 0 rgb(115, 89, 31), -1px 0 rgb(115, 89, 31), 0 1px rgb(115, 89, 31), 0 -1px rgb(115, 89, 31);
+}
 .p-drawer .p-drawer__sp-bottom-btn {
   padding: 0 20px 40px;
 }
@@ -426,6 +442,9 @@ img {
   flex-direction: column;
   padding: 16px 0px;
   width: 159px;
+}
+.p-drawer .p-drawer__pc-btns-row .c-btn:nth-child(2) {
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 1px 0 rgb(115, 89, 31), -1px 0 rgb(115, 89, 31), 0 1px rgb(115, 89, 31), 0 -1px rgb(115, 89, 31);
 }
 .p-drawer .p-drawer__btn-doc {
   width: 100%;
@@ -717,7 +736,7 @@ img {
   display: inline-block;
   border-bottom: 1px solid #fff;
   padding-bottom: 6px;
-  text-shadow: 2px 2px 2.8px rgba(3, 66, 131, 0.21);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
 }
 @media screen and (max-width: 768px) {
   .top .top-fv .top-fv__main-copy-line {
@@ -846,10 +865,14 @@ img {
 .top .p-top-features .p-top-features__inner {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 @media screen and (max-width: 1080px) {
   .top .p-top-features .p-top-features__inner {
     padding: 0 20px;
+    gap: 24px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1308,7 +1331,7 @@ img {
     top: unset;
     left: unset;
     transform: unset;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .top .p-top-concept .p-top-concept__content {
@@ -1750,6 +1773,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .top .p-top-strength .p-top-strength__title {
+    font-size: 18px;
+  }
+}
 .top .p-top-strength .p-top-strength__number {
   position: absolute;
   top: 50%;
@@ -2089,6 +2117,11 @@ img {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 480px) {
+  .top .p-top-service .p-top-service__lead {
+    font-size: 16px;
+  }
+}
 .top .p-top-service .p-top-service__desc {
   font-size: 16px;
   line-height: 1.62;
@@ -2418,6 +2451,11 @@ img {
     gap: 24px;
   }
 }
+@media screen and (max-width: 480px) {
+  .top .p-top-case .p-top-case__slide-inner {
+    gap: 0px;
+  }
+}
 .top .p-top-case .p-top-case__left {
   position: relative;
   width: 47%;
@@ -2433,6 +2471,11 @@ img {
 @media screen and (max-width: 768px) {
   .top .p-top-case .p-top-case__left {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top .p-top-case .p-top-case__left {
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2490,6 +2533,11 @@ img {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .top .p-top-case .p-top-case__content {
+    padding-top: 0;
+  }
+}
 .top .p-top-case .p-top-case__cat {
   display: inline-block;
   background-color: #004e87;
@@ -2531,6 +2579,11 @@ img {
     margin: 0 0 16px;
   }
 }
+@media screen and (max-width: 480px) {
+  .top .p-top-case .p-top-case__slide-title {
+    font-size: 16px;
+  }
+}
 .top .p-top-case .p-top-case__slide-text {
   font-size: 16px;
   line-height: 1.62;
@@ -2547,14 +2600,13 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 43px;
+  height: 43px;
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 50%;
   border-color: #ccc;
   cursor: pointer;
-  z-index: 10;
   font-size: 0;
   color: transparent;
   transition: background-color 0.3s, border-color 0.3s;
@@ -3971,8 +4023,9 @@ img {
 @media screen and (max-width: 480px) {
   .p-contact .p-contact__box {
     padding: 30px 12px;
-    max-width: 253px;
+    max-width: 320px;
     margin: 0 auto;
+    width: 100%;
   }
 }
 .p-contact .p-contact__icon {

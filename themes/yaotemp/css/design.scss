@@ -239,12 +239,18 @@ img {
 }
 .c-icon-mail {
   display: inline-block;
-  width: 22px;
+  width: 26px;
+  img {
+    display: block;
+  }
 }
 
 .c-icon-tel {
   display: inline-block;
   width: 22px;
+  img {
+    display: block;
+  }
 }
 
 // ==========================================================================
@@ -319,12 +325,24 @@ img {
   }
 
   .p-header__btn-contact {
-    font-size: 18px;
+    font-size: 21px;
     padding: 16px 32px;
     display: flex;
     align-items: center;
-    gap: 24px;
-    line-height: 1.8;
+    gap: 16px;
+    text-shadow:
+      0px 0px 3px rgba(0, 0, 0, 0.4),
+      1px 0 rgba(115, 89, 31, 1),
+      -1px 0 rgba(115, 89, 31, 1),
+      0 1px rgba(115, 89, 31, 1),
+      0 -1px rgba(115, 89, 31, 1);
+    .c-icon-mail {
+      display: inline-block;
+      width: 26px;
+      img {
+        display: block;
+      }
+    }
   }
 }
 // ==========================================================================
@@ -471,7 +489,14 @@ img {
     flex-direction: column;
     padding: 16px 0px;
   }
-
+  .p-drawer__sp-btns .c-btn:nth-child(2) {
+    text-shadow:
+      0px 0px 3px rgba(0, 0, 0, 0.4),
+      1px 0 rgba(115, 89, 31, 1),
+      -1px 0 rgba(115, 89, 31, 1),
+      0 1px rgba(115, 89, 31, 1),
+      0 -1px rgba(115, 89, 31, 1);
+  }
   .p-drawer__sp-bottom-btn {
     padding: 0 20px 40px;
   }
@@ -496,6 +521,14 @@ img {
     flex-direction: column;
     padding: 16px 0px;
     width: 159px;
+  }
+  .p-drawer__pc-btns-row .c-btn:nth-child(2) {
+    text-shadow:
+      0px 0px 3px rgba(0, 0, 0, 0.4),
+      1px 0 rgba(115, 89, 31, 1),
+      -1px 0 rgba(115, 89, 31, 1),
+      0 1px rgba(115, 89, 31, 1),
+      0 -1px rgba(115, 89, 31, 1);
   }
 
   .p-drawer__btn-doc {
@@ -802,7 +835,7 @@ img {
       display: inline-block;
       border-bottom: 1px solid #fff;
       padding-bottom: 6px;
-      text-shadow: 2px 2px 2.8px rgba(3, 66, 131, 0.21);
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
       @include max-screen($breakpoint-sm) {
         border-bottom-width: 1px;
         padding-bottom: 4px;
@@ -937,8 +970,12 @@ img {
     .p-top-features__inner {
       max-width: 1000px; // コンテンツ幅（適宜調整）
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
       @include max-screen($breakpoint-md) {
         padding: 0 20px;
+        gap: 24px;
       }
     }
 
@@ -1422,7 +1459,7 @@ img {
         top: unset;
         left: unset;
         transform: unset;
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 
@@ -1889,6 +1926,9 @@ img {
           display: none;
         } // SPでは改行解除
       }
+      @include max-screen($breakpoint-xs) {
+        font-size: 18px;
+      }
     }
 
     // 巨大数字の背景装飾（SVG画像）
@@ -2249,6 +2289,10 @@ img {
 
       @include max-screen($breakpoint-sm) {
         font-size: 18px;
+      }
+
+      @include max-screen($breakpoint-xs) {
+        font-size: 16px;
       }
     }
 
@@ -2611,6 +2655,9 @@ img {
         align-items: flex-start;
         gap: 24px;
       }
+      @include max-screen($breakpoint-xs) {
+        gap: 0px;
+      }
     }
 
     // --- 左側：画像 ---
@@ -2625,6 +2672,9 @@ img {
       }
       @include max-screen($breakpoint-sm) {
         width: 100%;
+      }
+      @include max-screen($breakpoint-xs) {
+        margin-bottom: 25px;
       }
     }
 
@@ -2679,6 +2729,9 @@ img {
         padding-top: 40px;
         padding-left: 0;
       }
+      @include max-screen($breakpoint-xs) {
+        padding-top: 0;
+      }
     }
 
     .p-top-case__cat {
@@ -2716,6 +2769,9 @@ img {
         font-size: 20px;
         margin: 0 0 16px;
       }
+      @include max-screen($breakpoint-xs) {
+        font-size: 16px;
+      }
     }
 
     .p-top-case__slide-text {
@@ -2730,20 +2786,18 @@ img {
     }
 
     // ==================== Slick 矢印のカスタマイズ ====================
-    // JS側で生成されるボタンにスタイルを当てる
     .slick-arrow {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 48px;
-      height: 48px;
+      width: 43px;
+      height: 43px;
       background-color: #fff;
-      border: 1px solid #e0e0e0; // うすいグレーの枠線
+      border: 1px solid #e0e0e0;
       border-radius: 50%;
       border-color: #ccc;
       cursor: pointer;
-      z-index: 10;
-      font-size: 0; // デフォルトの文字を隠す
+      font-size: 0;
       color: transparent;
       transition:
         background-color 0.3s,
@@ -4259,8 +4313,9 @@ img {
     }
     @include max-screen($breakpoint-xs) {
       padding: 30px 12px;
-      max-width: 253px;
+      max-width: 320px;
       margin: 0 auto;
+      width: 100%;
     }
   }
 

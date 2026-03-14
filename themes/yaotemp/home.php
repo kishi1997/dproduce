@@ -436,7 +436,12 @@
                 </button>
                 <div class="p-top-strength__accordion-content">
                     <div class="p-top-strength__accordion-inner">
-                        <p class="p-top-strength__accordion-text">（※テキストが入ります）</p>
+                        <p class="p-top-strength__accordion-text">
+                            通常、労働保険料の額が一定（40万円以上など）を超えない限り分割納付は認められませんが、事務組合に委託すれば、金額に関わらず3回に分けて納付できます。
+                        </p>
+                        <ul class="p-top-strength__accordion-sublist">
+                            <li>キャッシュフローの安定化に寄与します。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -452,7 +457,15 @@
                 </button>
                 <div class="p-top-strength__accordion-content">
                     <div class="p-top-strength__accordion-inner">
-                        <p class="p-top-strength__accordion-text">（※テキストが入ります）</p>
+                        <p class="p-top-strength__accordion-text">
+                            事務組合には「労災給付の請求（事故が起きた時の手続き）」ができないという法律上の制限がありますが、運営が社労士事務所であれば、その制限を補完できます。
+                        </p>
+                        <ul class="p-top-strength__accordion-sublist">
+                            <li><strong>事務組合の利点:</strong> 特別加入や分割納付などの「制度上のメリット」を利用。</li>
+                            <li><strong>社労士の利点:</strong>
+                                事務組合では扱えない「社会保険（健保・厚年）の手続き」や「助成金の申請」「就業規則の作成」といった高度なコンサルティングを直接依頼。</li>
+                            <li>窓口が一つになるため、情報の二重伝達が不要になり、管理コストを大幅に削減できます。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -468,7 +481,12 @@
                 </button>
                 <div class="p-top-strength__accordion-content">
                     <div class="p-top-strength__accordion-inner">
-                        <p class="p-top-strength__accordion-text">（※テキストが入ります）</p>
+                        <p class="p-top-strength__accordion-text">
+                            社労士系の事務組合は、労働法の専門家が実務を統括しているため、一般的な商工会等の事務組合と比較して実務上の判断がより的確である場合が多いです。
+                        </p>
+                        <ul class="p-top-strength__accordion-sublist">
+                            <li>法改正への迅速な対応や、雇用保険のトラブル防止など、経営リスクの軽減に直結します。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -586,16 +604,97 @@
 
                 <div class="p-top-service__panel" id="tab-consulting">
                     <div class="p-top-service__card-list">
-                        <p style="padding: 40px;">組織改善・コンサルティングのメニューがここに入ります。</p>
+
+                        <!-- カード1：就業規則サポート -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">就業規則サポート</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                「守り」から「攻め」のルールへ。最新の法改正対応はもちろん、貴社の企業文化を反映し、従業員が安心して力を発揮できる「組織の憲法」を構築します。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
+                        <!-- カード2：人事評価制度構築 -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">人事評価制度構築</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                「形だけ」で終わらせない制度設計。貴社のビジョンに連動した評価基準を策定し、社員のモチベーション向上と次世代リーダーの育成を強力に後押しします。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
+                        <!-- カード3：労務トラブル相談 -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">労務トラブル相談</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                未然に防ぐ、起きたら迅速に解決する。解雇、ハラスメント、未払い残業代など、複雑な労務問題に対して、豊富な実務経験に基づき法的・実務的な最適解を提示します。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
+                        <!-- カード4：SRS診断（職場環境診断） -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">SRS診断（職場環境診断）</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                組織の「健康状態」を可視化。独自の診断ツールを用いて職場の強みと課題を分析し、離職防止や生産性向上に向けた具体的な改善アクションを導き出します。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
                     </div>
                 </div>
 
                 <div class="p-top-service__panel" id="tab-education">
                     <div class="p-top-service__card-list">
-                        <p style="padding: 40px;">戦略・教育のメニューがここに入ります。</p>
+                        <!-- カード5：労務監査・労務DD -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">労務監査<br>労務DD(デューデリジェンス)</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                IPO準備やM&A、取引先選定の信頼の証に。潜在的な労務リスクをプロの視点で徹底調査し、改善提案を行うことで、企業の社会的信用と価値を高めます。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
+                        <!-- カード6：社員研修 -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">社員研修</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                知識を「行動」に変える。ハラスメント防止、管理職教育、インシビリティ研修など、組織の課題に合わせた実践的なカリキュラムで、自走できる組織文化を醸成します。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
+
+                        <!-- カード7：企業拠出年金 -->
+                        <a href="<?php bloginfo('url'); ?>/works/" class="p-top-service__card">
+                            <div class="p-top-service__card-head">
+                                <span class="p-top-service__card-dot"></span>
+                                <h3 class="p-top-service__card-title">企業拠出年金</h3>
+                            </div>
+                            <p class="p-top-service__card-text">
+                                福利厚生の充実と節税の両立。中小企業でも導入可能な確定拠出年金の設計から導入後の継続教育までサポートし、従業員の資産形成と採用力の強化を支援します。
+                            </p>
+                            <span class="p-top-service__card-arrow"></span>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
 

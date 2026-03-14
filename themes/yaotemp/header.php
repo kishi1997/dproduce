@@ -46,10 +46,10 @@
                             <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
                                 class="c-btn c-btn--orange p-header__btn-contact">
                                 <span class="c-icon-mail">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail.svg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
                                         alt="メールアイコン">
                                 </span>
-                                お問い合わせ
+                                <span>お問い合わせ</span>
                             </a>
                         </div>
                         <!-- ハンバーガーボタン (SP時表示) -->
@@ -107,7 +107,8 @@
                     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
                         class="c-btn c-btn--orange p-drawer__btn">
                         <span class="c-icon-mail">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail.svg" alt="メールアイコン">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
+                                alt="メールアイコン">
                         </span>
                         お問い合わせ
                     </a>
@@ -217,7 +218,7 @@
                                 <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
                                     class="c-btn c-btn--orange p-drawer__btn">
                                     <span class="c-icon-mail"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/img/ico-mail.svg"
+                                            src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
                                             alt="メールアイコン"></span>お問い合わせ
                                 </a>
                             </div>

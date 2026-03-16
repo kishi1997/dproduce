@@ -3721,7 +3721,7 @@ img {
         font-size: 24px;
       }
       @include max-screen($breakpoint-xs) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -4786,7 +4786,7 @@ img {
 /*--------------------------------------
   Reason Section (2カラムレイアウト)
 --------------------------------------*/
-.p-reason {
+.p-about-reason {
   position: relative;
   margin-top: 120px;
   overflow-x: clip;
@@ -4795,7 +4795,7 @@ img {
     margin-top: 80px;
   }
 
-  .p-reason__header {
+  .p-about-reason__header {
     margin-bottom: 60px;
     margin-inline: auto;
     text-align: center;
@@ -4805,7 +4805,7 @@ img {
     }
   }
 
-  .p-reason__title {
+  .p-about-reason__title {
     font-size: 3rem;
     font-weight: 600;
     color: $color-sub;
@@ -4820,12 +4820,12 @@ img {
     }
   }
 
-  .p-reason__title-line {
+  .p-about-reason__title-line {
     position: relative;
     display: block;
   }
 
-  .p-reason__title-line--deco {
+  .p-about-reason__title-line--deco {
     display: inline-block;
     margin-bottom: 6px;
     padding-left: 20px;
@@ -4853,7 +4853,7 @@ img {
     }
   }
 
-  .p-reason__list {
+  .p-about-reason__list {
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -4863,7 +4863,7 @@ img {
     }
   }
 
-  .p-reason__item {
+  .p-about-reason__item {
     position: relative;
     display: flex;
     gap: 70px;
@@ -4887,7 +4887,7 @@ img {
     }
   }
 
-  .p-reason__img {
+  .p-about-reason__img {
     position: relative;
     flex: 0 0 50%;
 
@@ -4898,13 +4898,13 @@ img {
     }
   }
 
-  .p-reason__body {
+  .p-about-reason__body {
     position: relative;
     font-weight: 500;
     flex: 1;
   }
 
-  .p-reason__label {
+  .p-about-reason__label {
     display: block;
     margin-bottom: 32px;
     font-size: 5.6rem;
@@ -4918,7 +4918,7 @@ img {
     }
   }
 
-  .p-reason__label-num {
+  .p-about-reason__label-num {
     margin-left: 20px;
     font-size: 3rem;
     font-weight: 500;
@@ -4928,7 +4928,7 @@ img {
     }
   }
 
-  .p-reason__item-title {
+  .p-about-reason__item-title {
     margin-bottom: 16px;
     font-size: 2.6rem;
     font-weight: 600;
@@ -4939,7 +4939,7 @@ img {
     }
   }
 
-  .p-reason__text {
+  .p-about-reason__text {
     line-height: 2.14;
   }
 }

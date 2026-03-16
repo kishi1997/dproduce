@@ -3485,7 +3485,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .top .p-top-document .p-top-document__title-hl {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .top .p-top-document .p-top-document__text {
@@ -4471,27 +4471,27 @@ img {
 /*--------------------------------------
   Reason Section (2カラムレイアウト)
 --------------------------------------*/
-.p-reason {
+.p-about-reason {
   position: relative;
   margin-top: 120px;
   overflow-x: clip;
 }
 @media screen and (max-width: 768px) {
-  .p-reason {
+  .p-about-reason {
     margin-top: 80px;
   }
 }
-.p-reason .p-reason__header {
+.p-about-reason .p-about-reason__header {
   margin-bottom: 60px;
   margin-inline: auto;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__header {
+  .p-about-reason .p-about-reason__header {
     margin-bottom: 30px;
   }
 }
-.p-reason .p-reason__title {
+.p-about-reason .p-about-reason__title {
   font-size: 3rem;
   font-weight: 600;
   color: #004e87;
@@ -4499,30 +4499,30 @@ img {
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__title {
+  .p-about-reason .p-about-reason__title {
     font-size: 2.4rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .p-reason .p-reason__title {
+  .p-about-reason .p-about-reason__title {
     font-size: 2rem;
   }
 }
-.p-reason .p-reason__title-line {
+.p-about-reason .p-about-reason__title-line {
   position: relative;
   display: block;
 }
-.p-reason .p-reason__title-line--deco {
+.p-about-reason .p-about-reason__title-line--deco {
   display: inline-block;
   margin-bottom: 6px;
   padding-left: 20px;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__title-line--deco {
+  .p-about-reason .p-about-reason__title-line--deco {
     padding-left: 14px;
   }
 }
-.p-reason .p-reason__title-line--deco::before {
+.p-about-reason .p-about-reason__title-line--deco::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4535,63 +4535,63 @@ img {
   z-index: -1;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__title-line--deco::before {
+  .p-about-reason .p-about-reason__title-line--deco::before {
     width: 27px;
     top: 6px;
   }
 }
-.p-reason .p-reason__list {
+.p-about-reason .p-about-reason__list {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__list {
+  .p-about-reason .p-about-reason__list {
     gap: 40px;
   }
 }
-.p-reason .p-reason__item {
+.p-about-reason .p-about-reason__item {
   position: relative;
   display: flex;
   gap: 70px;
   align-items: center;
 }
 @media screen and (max-width: 1080px) {
-  .p-reason .p-reason__item {
+  .p-about-reason .p-about-reason__item {
     gap: 40px;
   }
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__item {
+  .p-about-reason .p-about-reason__item {
     flex-direction: column;
     width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
   }
 }
-.p-reason .p-reason__item:nth-child(even) {
+.p-about-reason .p-about-reason__item:nth-child(even) {
   flex-direction: row-reverse;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__item:nth-child(even) {
+  .p-about-reason .p-about-reason__item:nth-child(even) {
     flex-direction: column;
   }
 }
-.p-reason .p-reason__img {
+.p-about-reason .p-about-reason__img {
   position: relative;
   flex: 0 0 50%;
 }
-.p-reason .p-reason__img img {
+.p-about-reason .p-about-reason__img img {
   display: block;
   width: 100%;
   height: auto;
 }
-.p-reason .p-reason__body {
+.p-about-reason .p-about-reason__body {
   position: relative;
   font-weight: 500;
   flex: 1;
 }
-.p-reason .p-reason__label {
+.p-about-reason .p-about-reason__label {
   display: block;
   margin-bottom: 32px;
   font-size: 5.6rem;
@@ -4601,32 +4601,32 @@ img {
   font-family: "Open Sans", sans-serif;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__label {
+  .p-about-reason .p-about-reason__label {
     font-size: 3.6rem;
   }
 }
-.p-reason .p-reason__label-num {
+.p-about-reason .p-about-reason__label-num {
   margin-left: 20px;
   font-size: 3rem;
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__label-num {
+  .p-about-reason .p-about-reason__label-num {
     font-size: 2rem;
   }
 }
-.p-reason .p-reason__item-title {
+.p-about-reason .p-about-reason__item-title {
   margin-bottom: 16px;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 768px) {
-  .p-reason .p-reason__item-title {
+  .p-about-reason .p-about-reason__item-title {
     font-size: 1.8rem;
   }
 }
-.p-reason .p-reason__text {
+.p-about-reason .p-about-reason__text {
   line-height: 2.14;
 }
 

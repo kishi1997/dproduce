@@ -65,69 +65,69 @@
     </section>
 
     <!-- 理由（2カラムレイアウト） -->
-    <section class="p-reason">
+    <section class="p-about-reason">
         <div class="l-container">
-            <div class="p-reason__header">
-                <h2 class="p-reason__title">
-                    <span class="p-reason__title-line p-reason__title-line--deco">
+            <div class="p-about-reason__header">
+                <h2 class="p-about-reason__title">
+                    <span class="p-about-reason__title-line p-about-reason__title-line--deco">
                         なぜ、D・プロデュースが
                     </span>
-                    <span class="p-reason__title-line">
+                    <span class="p-about-reason__title-line">
                         「次」のパートナーにふさわしいのか
                     </span>
                 </h2>
             </div>
 
-            <div class="p-reason__list">
-                <div class="p-reason__item">
-                    <div class="p-reason__img">
+            <div class="p-about-reason__list">
+                <div class="p-about-reason__item">
+                    <div class="p-about-reason__img">
                         <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img1.jpg"
                             alt="白い外壁が特徴のシンプルモダンな2階建て住宅の外観">
                     </div>
-                    <div class="p-reason__body">
-                        <span class="p-reason__label">
-                            Point<span class="p-reason__label-num">/ 01</span>
+                    <div class="p-about-reason__body">
+                        <span class="p-about-reason__label">
+                            Point<span class="p-about-reason__label-num">/ 01</span>
                         </span>
-                        <h3 class="p-reason__item-title">
+                        <h3 class="p-about-reason__item-title">
                             1社5名のチーム担当制
                         </h3>
-                        <p class="p-reason__text">
+                        <p class="p-about-reason__text">
                             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </p>
                     </div>
                 </div>
 
-                <div class="p-reason__item">
-                    <div class="p-reason__img">
+                <div class="p-about-reason__item">
+                    <div class="p-about-reason__img">
                         <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img2.jpg"
                             alt="ヘリンボーン調の木壁とアイアン照明を取り入れた開放的なLDK空間">
                     </div>
-                    <div class="p-reason__body">
-                        <span class="p-reason__label">
-                            Point<span class="p-reason__label-num">/ 02</span>
+                    <div class="p-about-reason__body">
+                        <span class="p-about-reason__label">
+                            Point<span class="p-about-reason__label-num">/ 02</span>
                         </span>
-                        <h3 class="p-reason__item-title">
+                        <h3 class="p-about-reason__item-title">
                             100名〜数千名規模企業サポートの実績
                         </h3>
-                        <p class="p-reason__text">
+                        <p class="p-about-reason__text">
                             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </p>
                     </div>
                 </div>
 
-                <div class="p-reason__item">
-                    <div class="p-reason__img">
+                <div class="p-about-reason__item">
+                    <div class="p-about-reason__img">
                         <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img3.jpg"
                             alt="アイランドキッチンを中心にしたナチュラルモダンなダイニングキッチン">
                     </div>
-                    <div class="p-reason__body">
-                        <span class="p-reason__label">
-                            Point<span class="p-reason__label-num">/ 03</span>
+                    <div class="p-about-reason__body">
+                        <span class="p-about-reason__label">
+                            Point<span class="p-about-reason__label-num">/ 03</span>
                         </span>
-                        <h3 class="p-reason__item-title">
+                        <h3 class="p-aboutreason__item-title">
                             法改正を「リスク」ではなく「機会」に
                         </h3>
-                        <p class="p-reason__text">
+                        <p class="p-about-reason__text">
                             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </p>
                     </div>

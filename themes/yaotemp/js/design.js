@@ -303,3 +303,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabBtns = document.querySelectorAll('.js-tab-button');
+  const tabContents = document.querySelectorAll('.js-tab-content');
+  tabBtns.forEach((tabBtn, btnIndex) => {
+    tabBtn.addEventListener('click', (e) => {
+      tabBtns.forEach(btn => {
+        btn.classList.remove('is-active');
+      });
+      tabBtn.classList.add('is-active');
+      tabContents.forEach((content, contentIndex) => {
+        content.classList.remove('is-active');
+        if(btnIndex === contentIndex) {
+          content.classList.add('is-active');
+        };
+      });
+    });
+  });
+});

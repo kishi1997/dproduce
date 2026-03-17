@@ -34,120 +34,122 @@
         <div class="l-container">
             <h2 class="p-reason-feature__title">選ばれる理由</h2>
             <div class="p-reason-feature__list">
-                <div class="p-reason-feature__list-header">
-                    <span class="p-reason-feature__list-number">01</span>
-                    <h2 class="p-reason-feature__list-title">属人化を排除し、継続性を担保する<br />「5名体制のチームサポート」</h2>
+                <div class="p-reason-feature__item">
+                    <div class="p-reason-feature__list-header">
+                        <span class="p-reason-feature__list-number">01</span>
+                        <h2 class="p-reason-feature__list-title">属人化を排除し、継続性を担保する<br />「5名体制のチームサポート」</h2>
+                    </div>
+                    <div class="p-reason-feature__sub-list">
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img1.jpg" alt="会議するチームメンバーたち"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">担当者不在を解消するチーム制</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img2.jpg" alt="並んでいるチームメンバー"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">チーム制でも一貫性のある対応</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img3.jpg" alt="担当者の引継ぎ"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">担当者交代でもスムーズな引き継ぎ</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-reason-feature__sub-list">
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">担当者不在を解消するチーム制</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">チーム制でも一貫性のある対応</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">担当者交代でもスムーズな引き継ぎ</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="p-reason-feature__list">
-                <div class="p-reason-feature__list-header">
-                    <span class="p-reason-feature__list-number">02</span>
-                    <h2 class="p-reason-feature__list-title">意思決定を妨げない、圧倒的な「クイックレスポンス」</h2>
+                <div class="p-reason-feature__item">
+                    <div class="p-reason-feature__list-header">
+                        <span class="p-reason-feature__list-number">02</span>
+                        <h2 class="p-reason-feature__list-title">意思決定を妨げない、圧倒的な<br class="u-visible-sm"/>「クイックレスポンス」</h2>
+                    </div>
+                    <div class="p-reason-feature__sub-list">
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img4.jpg" alt="パソコンに向かうビジネスパーソン"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">貴社が使い慣れたツールでコミュニケーション</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img5.jpg" alt="並んで立つチームメンバーたち"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">チーム制だからこそ、誰かが即座に対応</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img6.jpg" alt="パソコンに向かいながら会議するメンバー"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">複雑な案件は即座にZoom等で解決</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-reason-feature__sub-list">
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">貴社が使い慣れたツールでコミュニケーション</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">チーム制だからこそ、誰かが即座に対応</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">複雑な案件は即座にZoom等で解決</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="p-reason-feature__list">
-                <div class="p-reason-feature__list-header">
-                    <span class="p-reason-feature__list-number">03</span>
-                    <h2 class="p-reason-feature__list-title">100名〜数千名規模を支える「DX×専門知」</h2>
+                <div class="p-reason-feature__item">
+                    <div class="p-reason-feature__list-header">
+                        <span class="p-reason-feature__list-number">03</span>
+                        <h2 class="p-reason-feature__list-title">100名〜数千名規模を支える「DX×専門知」</h2>
+                    </div>
+                    <div class="p-reason-feature__sub-list">
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img7.jpg" alt="資料を精査するビジネスパーソン"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">大規模企業の複雑な労務に対応</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img8.jpg" alt="タブレット端末を手に説明を行うビジネスパーソン"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">最新DXツールの導入支援</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img9.jpg" alt="チェックリストを確認するビジネスパーソン"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">システム×プロの目で「ミスゼロ」への挑戦</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-reason-feature__sub-list">
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">大規模企業の複雑な労務に対応</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">最新DXツールの導入支援</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">システム×プロの目で「ミスゼロ」への挑戦</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="p-reason-feature__list">
-                <div class="p-reason-feature__list-header">
-                    <span class="p-reason-feature__list-number">04</span>
-                    <h2 class="p-reason-feature__list-title">「知っている」を「使える」に変える実践支援</h2>
-                </div>
-                <div class="p-reason-feature__sub-list">
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">定期勉強会の開催</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
+                <div class="p-reason-feature__item">
+                    <div class="p-reason-feature__list-header">
+                        <span class="p-reason-feature__list-number">04</span>
+                        <h2 class="p-reason-feature__list-title">「知っている」を「使える」に<br class="u-visible-sm"/>変える実践支援</h2>
                     </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">自走する組織づくり</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div class="p-reason-feature__sub-list">
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img10.jpg" alt="ホワイトボードを使用したプレゼンの様子"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">定期勉強会の開催</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-reason-feature__sub-item">
-                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
-                        <div class="p-reason-feature__sub-body">
-                            <h3 class="p-reason-feature__item-title">多角的な経営支援</h3>
-                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img11.jpg" alt="歩くビジネスパーソンたちの後ろ姿"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">自走する組織づくり</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="p-reason-feature__sub-item">
+                            <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img12.jpg" alt="資料が並べられたデスクの上で握手を交わしている様子"></figure>
+                            <div class="p-reason-feature__sub-body">
+                                <h3 class="p-reason-feature__sub-title">多角的な経営支援</h3>
+                                <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,14 +160,14 @@
     <!-- サービス一覧 -->
     <section class="p-service">
         <div class="l-container">
-            <h2 class="">サービス一覧</h2>
+            <h2 class="p-service__title">サービス一覧</h2>
             <div class="p-service-tab c-tab">
                 <div class="c-tab__buttons">
-                    <button class="c-tab__button">基幹・アウトソーシング</button>
-                    <button class="c-tab__button">組織改善・コンサルティング</button>
-                    <button class="c-tab__button">戦略・教育</button>
+                    <button class="c-tab__button js-tab-button is-active">基幹・アウトソーシング</button>
+                    <button class="c-tab__button js-tab-button">組織改善・コンサルティング</button>
+                    <button class="c-tab__button js-tab-button">戦略・教育</button>
                 </div>
-                <div class="c-tab__content">
+                <div class="c-tab__content js-tab-content is-active">
                     <ul class="c-tab__content-list">
                         <li class="c-tab__content-item">
                             <h3 class="c-tab__content-item-title">創業支援パック</h3>
@@ -182,6 +184,46 @@
                         <li class="c-tab__content-item">
                             <h3 class="c-tab__content-item-title">労働・社会保険事務代行</h3>
                             <p class="c-tab__content-item-text">煩雑な手続きをプロに一任。入退社時の手続きから年度更新、算定基礎届まで、正確かつスピーディーに処理し、行政対応の負担とリスクを最小限に抑えます。</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-tab__content js-tab-content">
+                    <ul class="c-tab__content-list">
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-tab__content js-tab-content">
+                    <ul class="c-tab__content-list">
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">タイトルタイトルタイトルタイトル</h3>
+                            <p class="c-tab__content-item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                         </li>
                     </ul>
                 </div>

@@ -16,7 +16,7 @@
 // ==========================================================================
 $font-base: "Noto Sans JP", sans-serif;
 $font-en: "Open Sans", sans-serif;
-$color-main: #1d88f3;
+$color-main: #016EDC;
 $color-main2: #0e6ed0;
 $color-sub: #004e87;
 $color-base: #ebf0f8;
@@ -95,8 +95,9 @@ img {
   }
 }
 .u-visible-sm {
+  display: block;
   @include min-screen($breakpoint-sm) {
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -252,6 +253,83 @@ img {
     display: block;
   }
 }
+
+.c-tab {
+  border: 2px solid $color-border;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+.c-tab__buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ebf0f8;
+}
+.c-tab__button {
+  padding: 16px;
+  font-size: 1.875rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-right: 2px solid $color-border;
+  border-bottom: 2px solid $color-border;
+  overflow: hidden;
+  cursor: pointer;
+  @include max-screen($breakpoint-sm) {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
+  &.is-active {
+    background-color: #fff;
+    border-top: 4px solid $color-sub;
+    border-bottom: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+.c-tab__content {
+  padding: 32px 24px 40px;
+  display: none;
+  @include max-screen($breakpoint-xs) {
+    padding: 24px 16px 30px;
+  }
+  &.is-active {
+    display: block;
+  }
+}
+.c-tab__content-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(32px / 1100px * 100%);
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: auto;
+    gap: 36px;
+  }
+  @include max-screen($breakpoint-xs) {
+    gap: 24px;
+  }
+}
+.c-tab__content-item {
+  padding: 60px 36px;
+  border: 2px solid $color-border;
+  border-radius: 8px;
+  @include max-screen($breakpoint-sm) {
+    padding: 32px 16px;
+  }
+  @include max-screen($breakpoint-xs) {
+    padding: 24px 16px;
+  }
+}
+.c-tab__content-item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-main2;
+}
+.c-tab__content-item-text {
+  margin-top: 16px;
+}
+
 
 // ==========================================================================
 // Object - Project (Header)
@@ -5534,4 +5612,155 @@ img {
       color: $color-sub; // 濃い青で強調
     }
   }
+}
+/*--------------------------------------
+  Reason Page
+--------------------------------------*/
+.p-reason {
+  .p-page-header {
+    background-image: url("../img/reason-mv-bg.jpg");
+  }
+  .p-reason-feature {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .p-reason-feature__title {
+    margin-bottom: 72px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-sub;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 2.4rem;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 2rem;
+    }
+  }
+  .p-reason-feature__list {
+    display: grid;
+    gap: 140px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .p-reason-feature__item {
+    display: grid;
+    gap: 100px;
+    @include max-screen($breakpoint-xs) {
+      gap: 60px;
+    }
+  }
+  .p-reason-feature__item:nth-child(2n) {
+    .p-reason-feature__list-number {
+      right: 0;
+      left: auto;
+      transform: translate(0, -55%);
+      @include max-screen($breakpoint-sm) {
+        transform: translate(-20%, -55%);
+      }
+    }
+  }
+  .p-reason-feature__list-header {
+    position: relative;
+  }
+  .p-reason-feature__list-number {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -55%);
+    font-size: min(16vw, 18rem);
+    font-weight: bold;
+    line-height: 1;
+    color: rgba($color-main, 0.4);
+    @include max-screen($breakpoint-sm) {
+      transform: translate(-2vw, -55%);
+      font-size: max(12rem, 20vw);
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 10rem;
+    }
+  }
+  .p-reason-feature__list-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 1.875rem;
+    }
+  }
+  .p-reason-feature__sub-list {
+    display: grid;
+    gap: 40px;
+    @include max-screen($breakpoint-xs) {
+      gap: 60px;
+    }
+  }
+  .p-reason-feature__sub-item {
+    display: grid;
+    grid-template-columns: 188px 1fr;
+    align-items: center;
+    gap: calc(55px / 1000px * 100%);
+    @include max-screen($breakpoint-sm) {
+      grid-template-columns: 120px 1fr;
+    }
+    @include max-screen($breakpoint-xs) {
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 36px;
+    }
+  }
+  .p-reason-feature__sub-img {
+    aspect-ratio: 1;
+    background-color: #cccccc;
+    border-radius: 50%;
+    overflow: hidden;
+    @include max-screen($breakpoint-xs) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .p-reason-feature__sub-body {
+
+  }
+  .p-reason-feature__sub-title {
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    @include max-screen($breakpoint-xs) {
+      text-align: center;
+    }
+  }
+  .p-reason-feature__sub-text {
+
+  }
+
+}
+.p-service {
+  padding: 60px 0;
+  .p-service__title {
+    margin-bottom: 36px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-sub;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 2.4rem;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 2rem;
+    }
+  }
+}
+.p-service-tab {
+
 }

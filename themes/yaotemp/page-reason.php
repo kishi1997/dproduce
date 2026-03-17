@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="p-about">
+<div class="p-reason">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">About</span>
+            <span class="p-page-header__subtitle">Reason</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -20,8 +20,7 @@
         <div class="l-container">
             <div class="p-intro__inner">
                 <h2 class="p-intro__title">
-                    <span>その人事労務、次のフェーズへ。<br />
-                        組織の成長にブレーキをかけない体制を。</span>
+                    <span>組織を支えるのは、属人化しない『組織力』。<br />私たちが選ばれる4つの根拠</span>
                 </h2>
                 <p class="p-intro__lead">
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -30,265 +29,169 @@
         </div>
     </section>
 
-    <!-- こんなお悩み -->
-    <section class="p-trouble">
+    <!-- 選ばれる理由（reasonページ専用） -->
+    <section class="p-reason-feature">
         <div class="l-container">
-            <div class="p-trouble__inner">
-                <div class="p-trouble__header">
-                    <div class="p-trouble__title">こんな「組織の壁」に</div>
-                    <div class="p-trouble__subtitle">直面していませんか？</div>
+            <h2 class="p-reason-feature__title">選ばれる理由</h2>
+            <div class="p-reason-feature__list">
+                <div class="p-reason-feature__list-header">
+                    <span class="p-reason-feature__list-number">01</span>
+                    <h2 class="p-reason-feature__list-title">属人化を排除し、継続性を担保する<br />「5名体制のチームサポート」</h2>
                 </div>
-                <ul class="p-trouble__list">
-                    <li class="p-trouble__item">
-                        <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">顧問社労士が1名で、連絡がつきにくく回答に時間がかかる</p>
-                    </li>
-                    <li class="p-trouble__item">
-                        <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">従業員数が増え、給与計算や手続きのミスが目立ってきた</p>
-                    </li>
-                    <li class="p-trouble__item">
-                        <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">担当者の退職や不在で、業務がブラックボックス化している</p>
-                    </li>
-                    <li class="p-trouble__item">
-                        <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">法改正のたびに「自社はどうすべきか」という具体的な提案がほしい</p>
-                    </li>
-                    <li class="p-trouble__item">
-                        <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">IPOやM&Aを見据え、労務リスクをゼロにしたい</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- 理由（2カラムレイアウト） -->
-    <section class="p-about-reason">
-        <div class="l-container">
-            <div class="p-about-reason__header">
-                <h2 class="p-about-reason__title">
-                    <span class="p-about-reason__title-line p-about-reason__title-line--deco">
-                        なぜ、D・プロデュースが
-                    </span>
-                    <span class="p-about-reason__title-line">
-                        「次」のパートナーにふさわしいのか
-                    </span>
-                </h2>
-            </div>
-
-            <div class="p-about-reason__list">
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img1.jpg"
-                            alt="白い外壁が特徴のシンプルモダンな2階建て住宅の外観">
+                <div class="p-reason-feature__sub-list">
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">担当者不在を解消するチーム制</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 01</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            1社5名のチーム担当制
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">チーム制でも一貫性のある対応</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img2.jpg"
-                            alt="ヘリンボーン調の木壁とアイアン照明を取り入れた開放的なLDK空間">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 02</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            100名〜数千名規模企業サポートの実績
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
-                    </div>
-                </div>
-
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img3.jpg"
-                            alt="アイランドキッチンを中心にしたナチュラルモダンなダイニングキッチン">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 03</span>
-                        </span>
-                        <h3 class="p-aboutreason__item-title">
-                            法改正を「リスク」ではなく「機会」に
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">担当者交代でもスムーズな引き継ぎ</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 比較表セクション (Aboutページ専用) -->
-    <section class="p-about-compare">
-        <div class="l-container">
-            <h2 class="p-about-compare__title">
-                従来型社労士 <span class="p-about-compare__vs">vs</span> D・プロデュース
-            </h2>
-
-            <div class="p-about-compare__table">
-                <!-- ヘッダー行 (PC版のみ表示) -->
-                <div class="p-about-compare__row p-about-compare__row--header">
-                    <div class="p-about-compare__col p-about-compare__col--label">比較項目</div>
-                    <div class="p-about-compare__col p-about-compare__col--old">従来型の個人事務所</div>
-                    <div class="p-about-compare__col p-about-compare__col--new">D・プロデュース</div>
+            <div class="p-reason-feature__list">
+                <div class="p-reason-feature__list-header">
+                    <span class="p-reason-feature__list-number">02</span>
+                    <h2 class="p-reason-feature__list-title">意思決定を妨げない、圧倒的な「クイックレスポンス」</h2>
                 </div>
-
-                <!-- データ行 1：対応体制 -->
-                <div class="p-about-compare__row">
-                    <div class="p-about-compare__col p-about-compare__col--label">対応体制</div>
-                    <div class="p-about-compare__col p-about-compare__col--old">
-                        <span class="p-about-compare__sp-head">従来型の個人事務所</span>
-                        <p class="p-about-compare__text">社労士1名（属人化のリスク）</p>
+                <div class="p-reason-feature__sub-list">
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">貴社が使い慣れたツールでコミュニケーション</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                    <div class="p-about-compare__col p-about-compare__col--new">
-                        <span class="p-about-compare__sp-head">D・プロデュース</span>
-                        <p class="p-about-compare__text p-about-compare__text--bold">5名1組のチーム制（安定性）</p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">チーム制だからこそ、誰かが即座に対応</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                </div>
-
-                <!-- データ行 2：レスポンス -->
-                <div class="p-about-compare__row">
-                    <div class="p-about-compare__col p-about-compare__col--label">レスポンス</div>
-                    <div class="p-about-compare__col p-about-compare__col--old">
-                        <span class="p-about-compare__sp-head">従来型の個人事務所</span>
-                        <p class="p-about-compare__text">連絡待ちが発生しやすい</p>
-                    </div>
-                    <div class="p-about-compare__col p-about-compare__col--new">
-                        <span class="p-about-compare__sp-head">D・プロデュース</span>
-                        <p class="p-about-compare__text p-about-compare__text--bold">チャット・Zoomで即時対応</p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">複雑な案件は即座にZoom等で解決</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- データ行 3：大規模対応 -->
-                <div class="p-about-compare__row">
-                    <div class="p-about-compare__col p-about-compare__col--label">大規模対応</div>
-                    <div class="p-about-compare__col p-about-compare__col--old">
-                        <span class="p-about-compare__sp-head">従来型の個人事務所</span>
-                        <p class="p-about-compare__text">限界があり、ミスが増える傾向</p>
+            <div class="p-reason-feature__list">
+                <div class="p-reason-feature__list-header">
+                    <span class="p-reason-feature__list-number">03</span>
+                    <h2 class="p-reason-feature__list-title">100名〜数千名規模を支える「DX×専門知」</h2>
+                </div>
+                <div class="p-reason-feature__sub-list">
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">大規模企業の複雑な労務に対応</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                    <div class="p-about-compare__col p-about-compare__col--new">
-                        <span class="p-about-compare__sp-head">D・プロデュース</span>
-                        <p class="p-about-compare__text p-about-compare__text--bold">DX活用で数千名まで正確に処理</p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">最新DXツールの導入支援</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">システム×プロの目で「ミスゼロ」への挑戦</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- データ行 4：提案内容 -->
-                <div class="p-about-compare__row">
-                    <div class="p-about-compare__col p-about-compare__col--label">提案内容</div>
-                    <div class="p-about-compare__col p-about-compare__col--old">
-                        <span class="p-about-compare__sp-head">従来型の個人事務所</span>
-                        <p class="p-about-compare__text">法改正の通達のみ</p>
+            <div class="p-reason-feature__list">
+                <div class="p-reason-feature__list-header">
+                    <span class="p-reason-feature__list-number">04</span>
+                    <h2 class="p-reason-feature__list-title">「知っている」を「使える」に変える実践支援</h2>
+                </div>
+                <div class="p-reason-feature__sub-list">
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">定期勉強会の開催</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                    <div class="p-about-compare__col p-about-compare__col--new">
-                        <span class="p-about-compare__sp-head">D・プロデュース</span>
-                        <p class="p-about-compare__text p-about-compare__text--bold">実務への落とし込みと勉強会</p>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">自走する組織づくり</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <div class="p-reason-feature__sub-item">
+                        <figure class="p-reason-feature__sub-img"><img src="<?php bloginfo('template_url');?>/img/" alt=""></figure>
+                        <div class="p-reason-feature__sub-body">
+                            <h3 class="p-reason-feature__item-title">多角的な経営支援</h3>
+                            <p class="p-reason-feature__sub-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- イントロダクション 2 -->
-    <section class="p-intro p-intro__bggray">
+
+    <!-- サービス一覧 -->
+    <section class="p-service">
         <div class="l-container">
-            <div class="p-intro__inner">
-                <h2 class="p-intro__title">
-                    D・プロデュースの強みを支える「4つの理由」
-                </h2>
-                <p class="p-intro__lead">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-                <h3 class="p-intro__sub-lead">私たちのこだわりは、4つの理由に集約されています。</h3>
-                <div class="p-intro__btn-wrapper">
-                    <div class="c-btn c-btn--outline">
-                        <a href="">選ばれる理由はこちら</a>
-                    </div>
+            <h2 class="">サービス一覧</h2>
+            <div class="p-service-tab c-tab">
+                <div class="c-tab__buttons">
+                    <button class="c-tab__button">基幹・アウトソーシング</button>
+                    <button class="c-tab__button">組織改善・コンサルティング</button>
+                    <button class="c-tab__button">戦略・教育</button>
+                </div>
+                <div class="c-tab__content">
+                    <ul class="c-tab__content-list">
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">創業支援パック</h3>
+                            <p class="c-tab__content-item-text">スタートアップの足場を固める。法人設立時に必要な社会保険手続きから、助成金の活用提案、労働環境の整備まで、事業立ち上げ期に必要な労務をワンストップで支援します。</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">障害年金サポート</h3>
+                            <p class="c-tab__content-item-text">働く人の「もしも」を支える。病気やケガで就労が困難になった際、専門的な知識と経験を持つ社労士が、申請から受給まで複雑な手続きを親身にサポートします。</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">給与計算代行</h3>
+                            <p class="c-tab__content-item-text">1名から数千名規模まで対応。ミスが許されない給与計算を、最新のDXツールと二重三重のチェック体制で正確かつ迅速に遂行し、貴社をルーチンワークから解放します。</p>
+                        </li>
+                        <li class="c-tab__content-item">
+                            <h3 class="c-tab__content-item-title">労働・社会保険事務代行</h3>
+                            <p class="c-tab__content-item-text">煩雑な手続きをプロに一任。入退社時の手続きから年度更新、算定基礎届まで、正確かつスピーディーに処理し、行政対応の負担とリスクを最小限に抑えます。</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- FAQ -->
-    <section class="p-faq">
-        <div class="l-container">
-            <!-- ヘッダーエリア -->
-            <div class="p-faq__header">
-                <h2 class="p-faq__title">
-                    お問い合わせの前に<br>
-                    よくある「切り替え」の不安にお答えします
-                </h2>
-            </div>
 
-            <!-- FAQリストエリア -->
-            <div class="p-faq__inner">
-                <dl class="p-faq__list">
-                    <!-- FAQアイテム 1 -->
-                    <div class="p-faq__item">
-                        <dt class="p-faq__question">
-                            <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">今の社労士から変更したいのですが、トラブルになりませんか？</p>
-                        </dt>
-                        <dd class="p-faq__answer">
-                            <span class="p-faq__icon p-faq__icon--a">A</span>
-                            <p class="p-faq__text">
-                                社労士の変更は珍しいことではなく、適切な手順を踏めば問題なく切り替え可能です。<br>
-                                契約内容の確認や引き継ぎも当事務所がサポートしますので、安心してご相談ください。
-                            </p>
-                        </dd>
-                    </div>
-
-                    <!-- FAQアイテム 2 -->
-                    <div class="p-faq__item">
-                        <dt class="p-faq__question">
-                            <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">社労士を切り替えるベストなタイミングはいつですか？</p>
-                        </dt>
-                        <dd class="p-faq__answer">
-                            <span class="p-faq__icon p-faq__icon--a">A</span>
-                            <p class="p-faq__text">
-                                年度替わりや給与計算の区切りがスムーズですが、状況に応じて柔軟に対応できます。<br>
-                                貴社の業務に支障が出ないタイミングをご提案いたします。
-                            </p>
-                        </dd>
-                    </div>
-
-                    <!-- FAQアイテム 3 -->
-                    <div class="p-faq__item">
-                        <dt class="p-faq__question">
-                            <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">社労士を変更すると業務に支障は出ませんか？</p>
-                        </dt>
-                        <dd class="p-faq__answer">
-                            <span class="p-faq__icon p-faq__icon--a">A</span>
-                            <p class="p-faq__text">
-                                事前に段取りを整えれば、業務が止まることはほとんどありません。<br>
-                                必要資料の引き継ぎや未処理手続きの確認までしっかり対応いたします。
-                            </p>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
-        </div>
-    </section>
-    <!-- 施工事例 / 実績 -->
+    <!-- モデルケース -->
     <section class="p-works">
-        <h3>以下はサンプルセクションです</h3>
+        <h3 class="p-works__title">モデルケース</h3>
         <div class="l-container">
             <div class="p-works__list">
                 <a href="" class="p-works__item">
@@ -341,61 +244,62 @@
             </div>
         </div>
     </section>
-    <!-- ポイント（左右互い違いのレイアウト） -->
-    <section class="p-point">
+
+    <!-- お客様の声 -->
+    <section class="p-works">
+        <h3 class="p-works__title">お客様の声</h3>
         <div class="l-container">
-            <div class="p-point__item">
-                <div class="p-point__inner">
-                    <div class="p-point__img">
-                        <img alt="「完全オーダーメイドで理想の暮らしを実現」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img1.jpg" />
+            <div class="p-works__list">
+                <a href="" class="p-works__item">
+                    <div class="p-works__img">
+                        <img src="<?php bloginfo('template_url');?>/img/top-work-img1.jpg" alt="サムネイル画像">
                     </div>
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="01" src="<?php bloginfo('template_url');?>/img/sample/bg-number-01.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">ご家族のライフスタイルに合わせた、個々の動き・活動・空間にフィットする住まいを提案します。</p>
-                        <p class="p-point__text">決まった形はありません。お客様の想いを大切にし、素敵な住まいを実現するお手伝いをします。</p>
+                    <div class="p-works__body">
+                        <div class="p-works__meta">
+                            <span class="p-works__category">カテゴリ名</span>
+                            <span class="p-works__client">〇〇市A様</span>
+                        </div>
+                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
+                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
                     </div>
-                </div>
+                </a>
+
+                <a href="" class="p-works__item">
+                    <div class="p-works__img">
+                        <img src="<?php bloginfo('template_url');?>/img/top-work-img2.jpg" alt="サムネイル画像">
+                    </div>
+                    <div class="p-works__body">
+                        <div class="p-works__meta">
+                            <span class="p-works__category">カテゴリ名</span>
+                            <span class="p-works__client">〇〇市A様</span>
+                        </div>
+                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
+                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                    </div>
+                </a>
+
+                <a href="" class="p-works__item">
+                    <div class="p-works__img">
+                        <img src="<?php bloginfo('template_url');?>/img/top-work-img3.jpg" alt="サムネイル画像">
+                    </div>
+                    <div class="p-works__body">
+                        <div class="p-works__meta">
+                            <span class="p-works__category">カテゴリ名</span>
+                            <span class="p-works__client">〇〇市A様</span>
+                        </div>
+                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
+                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="p-point__item">
-                <!-- 反転レイアウト用のモディファイアクラス（--reverse）を付与 -->
-                <div class="p-point__inner p-point__inner--reverse">
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="02" src="<?php bloginfo('template_url');?>/img/sample/bg-number-02.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">理想の家を実現するためには、敷地の特性を活かすことが重要です。お客様のライフスタイルに合わせた最適なプランをご提案します。</p>
-                        <p class="p-point__text">また、周辺環境や将来的な変化にも配慮したプランニングを行い、安心して住める家づくりをサポートします。</p>
-                    </div>
-                    <div class="p-point__img">
-                        <img alt="「敷地条件を活かした柔軟なプランニング」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img2.jpg" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-point__item">
-                <div class="p-point__inner">
-                    <div class="p-point__img">
-                        <img alt="「自然素材と最新技術の融合」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img3.jpg" />
-                    </div>
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="03" src="<?php bloginfo('template_url');?>/img/sample/bg-number-03.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">無垢材や漆喰といった自然素材の魅力を活かしながら、断熱性能・耐震構造・省エネ設計など、現代の住宅に必要な性能も確保。</p>
-                        <p class="p-point__text">見た目の美しさと暮らしの快適性、どちらも兼ね備えたバランスの良い住まいを実現します。安心して長く住めることを大切にしています。</p>
-                    </div>
+            <div class="p-works__btn-wrapper">
+                <div class="c-btn c-btn--outline">
+                    <a href="">もっと見る</a>
                 </div>
             </div>
         </div>
     </section>
+
 </div>
 <?php get_footer(); ?>

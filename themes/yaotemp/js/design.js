@@ -305,20 +305,34 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const tabBtns = document.querySelectorAll('.js-tab-button');
-  const tabContents = document.querySelectorAll('.js-tab-content');
-  tabBtns.forEach((tabBtn, btnIndex) => {
-    tabBtn.addEventListener('click', (e) => {
-      tabBtns.forEach(btn => {
-        btn.classList.remove('is-active');
-      });
-      tabBtn.classList.add('is-active');
-      tabContents.forEach((content, contentIndex) => {
-        content.classList.remove('is-active');
-        if(btnIndex === contentIndex) {
-          content.classList.add('is-active');
-        };
+  // ==========================================
+  // REASONページ SERVICEセクション タブ切り替え
+  // ==========================================
+  const tabItems = document.querySelectorAll(".p-service__tab-item");
+  const tabPanels = document.querySelectorAll(".p-service__panel");
+
+  if (tabItems.length > 0 && tabPanels.length > 0) {
+    tabItems.forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        // ボタン自体のデフォルト動作を防ぐ
+        e.preventDefault();
+
+        // クリックされたタブが持つターゲットIDを取得（例: "tab-outsourcing"）
+        const targetId = tab.getAttribute("data-tab");
+
+        // 1. すべてのタブから is-active を外す
+        tabItems.forEach((t) => t.classList.remove("is-active"));
+        // 2. クリックされたタブに is-active を付ける
+        tab.classList.add("is-active");
+
+        // 3. すべてのパネルから is-active を外す
+        tabPanels.forEach((p) => p.classList.remove("is-active"));
+        // 4. 対応するIDのパネルに is-active を付ける
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add("is-active");
+        }
       });
     });
-  });
+  }
 });

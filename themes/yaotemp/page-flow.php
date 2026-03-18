@@ -129,6 +129,135 @@
         </div>
     </section>
 
+    <!-- 契約後のサポート体制 -->
+    <section class="p-strength">
+        <div class="l-container">
+            <h2 class="p-strength__title">契約後のサポート体制</h2>
+            <div class="p-strength__list">
+
+                <!-- 01 -->
+                <div class="p-strength__item">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-img1.jpg" alt="チーム制サポート">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <h3 class="p-strength__item-title">コミュニケーション面での連携</h3>
+                        </div>
+                        <p class="p-strength__desc">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 02 (リバース配置) -->
+                <div class="p-strength__item p-strength__item--reverse">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-img2.jpg" alt="圧倒的なレスポンス">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <h3 class="p-strength__item-title">定期面談・勉強会の実施</h3>
+                        </div>
+                        <p class="p-strength__desc">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="p-seminar">
+        <div class="p-seminar__inner">
+
+            <!-- ===== 左カラム：ヘッダー・テキストエリア ===== -->
+            <div class="p-seminar__text-area">
+                <h2 class="p-seminar__title-en">SEMINAR</h2>
+                <span class="p-seminar__title-ja">/ セミナー情報</span>
+                <p class="p-seminar__desc">
+                    最新の知見を、組織の「自走する力」に変える。<br>
+                    法改正への対応から、明日から使えるマネジメントのコツまで。<br>
+                    Ｄ・プロデュースでは、最新の労務トレンドを実務に落とし込むための勉強会やセミナーを随時開催しています。
+                </p>
+
+                <!-- もっと見るボタン -->
+                <div class="p-seminar__btn-wrap">
+                    <a href="" class="c-btn c-btn--outline c-btn--outline-white">
+                        もっと見る
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===== 右カラム：スライダーエリア ===== -->
+            <div class="p-seminar__slider-area">
+
+                <!-- スライダー本体 -->
+                <div class="p-seminar__slider js-seminar-slider">
+
+                    <!-- スライド 1 -->
+                    <div class="p-seminar__slide">
+                        <a href="" class="p-seminar__card">
+                            <!-- カード左側（画像） -->
+                            <figure class="p-seminar__card-img">
+                                <span class="p-seminar__card-label">募集中</span>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-seminar.jpg" alt="">
+                            </figure>
+
+                            <!-- カード右側（テキスト・情報） -->
+                            <div class="p-seminar__card-body">
+                                <span class="p-seminar__card-cat">カテゴリ名</span>
+                                <h3 class="p-seminar__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+
+                                <div class="p-seminar__card-line"></div>
+
+                                <dl class="p-seminar__card-info">
+                                    <div class="p-seminar__card-info-row">
+                                        <dt class="p-seminar__card-dt">開催日時</dt>
+                                        <dd class="p-seminar__card-dd">2026.01.01-2026.01.01</dd>
+                                    </div>
+                                    <div class="p-seminar__card-info-row">
+                                        <dt class="p-seminar__card-dt">開催場所</dt>
+                                        <dd class="p-seminar__card-dd">
+                                            住所テキスト住所テキスト住所テキスト住所テキスト住所テキスト住所テキスト住所テキスト住所テキスト住所テキスト</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- スライド 2 (ループ動作用ダミー) -->
+                    <div class="p-seminar__slide">
+                        <a href="" class="p-seminar__card">
+                            <figure class="p-seminar__card-img">
+                                <span class="p-seminar__card-label" style="background-color: #999;">受付終了</span>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-seminar.jpg" alt="">
+                            </figure>
+                            <div class="p-seminar__card-body">
+                                <span class="p-seminar__card-cat">カテゴリ名</span>
+                                <h3 class="p-seminar__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイト</h3>
+                                <div class="p-seminar__card-line"></div>
+                                <dl class="p-seminar__card-info">
+                                    <div class="p-seminar__card-info-row">
+                                        <dt class="p-seminar__card-dt">開催日時</dt>
+                                        <dd class="p-seminar__card-dd">2026.02.01-2026.02.01</dd>
+                                    </div>
+                                    <div class="p-seminar__card-info-row">
+                                        <dt class="p-seminar__card-dt">開催場所</dt>
+                                        <dd class="p-seminar__card-dd">オンライン（Zoom配信）</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- モデルケース -->
     <section class="p-case">
         <div class="p-case__inner">

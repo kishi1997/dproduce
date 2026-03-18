@@ -6618,7 +6618,7 @@ img {
     background-color: #f5f5f5;
   }
   .p-flow-step__title {
-      margin-bottom: 64px;
+    margin-bottom: 64px;
     font-size: 3rem;
     font-weight: 600;
     color: $color-sub;
@@ -6882,5 +6882,579 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/*-----------------------
+p-strength（下層ページ共通）
+-----------------------*/
+.p-strength {
+  padding: 100px 0;
+  @include max-screen($breakpoint-sm) {
+    overflow: 60px 0;
+  }
+}
+.p-strength__title {
+  margin-bottom: 64px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-sub;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 2.4rem;
+  }
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+}
+.p-strength__list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px; // アイテム間の余白
+  margin-bottom: 60px;
+
+  @include max-screen($breakpoint-sm) {
+    margin-bottom: 40px;
+  }
+}
+
+// --- 各アイテムのレイアウト ---
+.p-strength__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  @include max-screen($breakpoint-md) {
+    gap: 30px;
+  }
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column !important; // SPは全て縦積み
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+// PC: リバース配置（偶数番目用）
+.p-strength__item--reverse {
+  flex-direction: row-reverse;
+}
+
+// 画像エリア
+.p-strength__img {
+  width: 48%; // 画像とテキストをほぼ半々に
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// テキスト・コンテンツエリア
+.p-strength__content {
+  width: 50%; // Figma: 514px相当
+  display: flex;
+  flex-direction: column;
+  gap: 32px; // Figma指定
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+    gap: 24px;
+  }
+}
+
+// --- 見出しエリア（ラベル・タイトル・巨大数字） ---
+.p-strength__head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.p-strength__label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.p-strength__label {
+  font-family: $font-en;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  color: $color-main; // #016EDC
+  text-transform: uppercase;
+}
+
+.p-strength__line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: $color-main;
+}
+
+.p-strength__item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #000;
+  margin: 0;
+  @include max-screen($breakpoint-md) {
+    font-size: 26px;
+  }
+  @include max-screen($breakpoint-sm) {
+    font-size: 22px;
+    br {
+      display: none;
+    } // SPでは改行解除
+  }
+  @include max-screen($breakpoint-xs) {
+    font-size: 18px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 20rem;
+    height: 3px;
+    background-color: $color-main2;
+    @include max-screen($breakpoint-sm) {
+      width: 10rem;
+    }
+  }
+}
+
+// 巨大数字の背景装飾（SVG画像）
+.p-strength__number {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 173px;
+  margin: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  @include max-screen($breakpoint-md) {
+    width: 140px;
+  }
+  @include max-screen($breakpoint-sm) {
+    width: 180px;
+    top: -30px;
+    right: -10px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.p-strength__number--small {
+  width: 146px;
+  @include max-screen($breakpoint-md) {
+    width: 120px;
+  }
+}
+// 本文テキスト
+.p-strength__desc {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.125em; // Figma: 2px相当
+  color: #000;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+}
+
+/*--------------------------------------
+  セミナー情報
+--------------------------------------*/
+.p-seminar {
+  // 背景画像の設定（ビルの画像）
+  background-image: url("../img/top-seminar-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+
+  @include max-screen($breakpoint-sm) {
+    padding: 80px 0 100px;
+    margin-top: 80px;
+    background-image: url("../img/top-seminar-bg-sp.jpg");
+  }
+  @include max-screen($breakpoint-xs) {
+    padding: 96px 0 178px;
+  }
+
+  // --- インナー設定（2カラム） ---
+  .p-seminar__inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    width: 100%;
+    padding: 0 20px;
+    @include max-screen($breakpoint-lg) {
+      padding: 0 40px;
+      gap: 40px;
+    }
+    @include max-screen($breakpoint-md) {
+      padding: 0 80px;
+      flex-direction: column;
+      gap: 40px;
+    }
+    @include max-screen($breakpoint-sm) {
+      align-items: flex-start;
+      gap: 50px;
+      padding: 0 20px;
+    }
+  }
+
+  // ==================== 左側：テキストエリア ====================
+  .p-seminar__text-area {
+    width: 27%;
+    flex-shrink: 0;
+    @include max-screen($breakpoint-lg) {
+      width: 32%;
+    }
+    @include max-screen($breakpoint-md) {
+      width: 100%;
+    }
+  }
+
+  .p-seminar__title-en {
+    font-family: $font-en;
+    font-weight: 600;
+    font-size: clamp(40px, 4vw, 64px);
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin: 0;
+
+    @include max-screen($breakpoint-md) {
+      font-size: 52px;
+    }
+    @include max-screen($breakpoint-sm) {
+      font-size: 48px;
+    }
+  }
+
+  .p-seminar__title-ja {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    color: #fff;
+    margin-top: 10px;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 15px;
+    }
+  }
+
+  .p-seminar__desc {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin: 30px 0 40px;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 14px;
+      margin: 20px 0 30px;
+    }
+  }
+
+  // 「もっと見る」ボタン（白枠・背景透過）
+  .p-seminar__btn-wrap {
+    margin: 0;
+    @include max-screen($breakpoint-xs) {
+      text-align: center;
+      .c-btn--outline {
+        min-width: 282px;
+      }
+    }
+  }
+
+  .p-seminar__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    max-width: 100%;
+    height: 58px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+
+    &:hover {
+      background-color: #fff;
+      color: $color-main;
+      &::before {
+        border-color: $color-main transparent transparent transparent;
+      }
+    }
+
+    // 左上の切り欠き（今回は白）
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 0 0;
+      border-color: #fff transparent transparent transparent;
+      transition: border-color 0.3s;
+    }
+  }
+
+  // ==================== 右側：スライダーエリア ====================
+  .p-seminar__slider-area {
+    flex: 1;
+    width: 67%;
+    position: relative;
+    padding: 70px 50px;
+    background: linear-gradient(to right, #0275b4 80px, white 80px);
+    @include max-screen($breakpoint-lg) {
+      width: 60%;
+    }
+    @include max-screen($breakpoint-md) {
+      width: 100%;
+      padding: 40px 30px;
+    }
+    @include max-screen($breakpoint-xs) {
+      padding: 0 0 0 20px;
+      background: linear-gradient(to right, #0275b4 20px, white 20px);
+    }
+  }
+
+  // スライダー本体
+  .p-seminar__slider {
+    position: relative;
+    @include max-screen($breakpoint-xs) {
+      padding: 30px 30px 30px 20px;
+    }
+  }
+
+  .p-seminar__slide {
+    outline: none;
+  }
+
+  // ==================== カード内部デザイン ====================
+  .p-seminar__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    @include max-screen($breakpoint-xs) {
+      flex-direction: column;
+    }
+  }
+
+  // 画像エリア
+  .p-seminar__card-img {
+    position: relative;
+    width: 40%;
+    margin: 0;
+
+    @include max-screen($breakpoint-md) {
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  // 募集中ラベル
+  .p-seminar__card-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    letter-spacing: 0.1em;
+  }
+
+  // テキストエリア
+  .p-seminar__card-body {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include max-screen($breakpoint-md) {
+      width: 100%;
+    }
+  }
+
+  .p-seminar__card-cat {
+    background-color: $color-sub; // 濃い青
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+  }
+
+  .p-seminar__card-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: #000;
+    margin: 0 0 20px;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 18px;
+      margin: 0 0 16px;
+    }
+  }
+
+  .p-seminar__card-line {
+    width: 100%;
+    height: 1px;
+    background-color: $color-main;
+    margin-bottom: 20px;
+  }
+
+  // 開催日時・場所の情報リスト (dl > div > dt/dd)
+  .p-seminar__card-info {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .p-seminar__card-info-row {
+    background-color: #f5f5f5; // 薄いグレー背景
+    padding: 12px 16px;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 10px 12px;
+    }
+  }
+
+  .p-seminar__card-dt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0056ad;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 14px;
+
+    // 青い下向き三角
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 6px 0 6px;
+      border-color: #0056ad transparent transparent transparent;
+    }
+  }
+
+  .p-seminar__card-dd {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+  }
+
+  // ==================== Slick 矢印 (SP時のみ表示) ====================
+  // PCはスライド1枚を魅せるため非表示。SPは下部に丸い矢印を配置
+  .p-seminar__slider-area .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 0;
+    color: transparent;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    // 白いくの字アイコン
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
+  }
+
+  // 中央に2つ並べるための位置調整
+  .p-seminar__slider-area .slick-prev {
+    right: 56px;
+    transform: translate(-100%, 100%);
+    bottom: -48px;
+    top: unset;
+    left: unset;
+    &::before {
+      transform: translate(-30%, -50%) rotate(-135deg);
+    }
+  }
+
+  .p-seminar__slider-area .slick-next {
+    right: 0px;
+    transform: translate(0%, 100%);
+    bottom: -48px;
+    top: unset;
+    left: unset;
+    &::before {
+      transform: translate(-70%, -50%) rotate(45deg);
+    }
   }
 }

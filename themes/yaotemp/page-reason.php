@@ -332,7 +332,14 @@
     <section class="p-case">
         <div class="p-case__inner">
 
-            <h2 class="p-case__title">モデルケース</h2>
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <h2 class="c-section-heading__title-en">MODEL CASE</h2>
+                <span class="c-section-heading__title-ja">/ モデルケース</span>
+            </div>
 
             <!-- ===== スライダーエリア ===== -->
             <div class="p-case__slider-wrap">
@@ -420,7 +427,14 @@
     <!-- お客様の声 -->
     <section class="p-voices">
         <div class="p-voices__inner">
-            <h2 class="p-voices__title">お客様の声</h2>
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <h2 class="c-section-heading__title-en">VOICES</h2>
+                <span class="c-section-heading__title-ja">/ お客様の声</span>
+            </div>
 
             <!-- ===== スライダーエリア ===== -->
             <div class="p-voices__slider-wrap">

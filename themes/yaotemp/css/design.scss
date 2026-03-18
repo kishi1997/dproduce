@@ -16,7 +16,7 @@
 // ==========================================================================
 $font-base: "Noto Sans JP", sans-serif;
 $font-en: "Open Sans", sans-serif;
-$color-main: #1d88f3;
+$color-main: #016EDC;
 $color-main2: #0e6ed0;
 $color-sub: #004e87;
 $color-base: #ebf0f8;
@@ -97,6 +97,12 @@ img {
 .u-visible-sm {
   @include min-screen($breakpoint-sm) {
     display: none !important;
+  }
+}
+.u-block-sm {
+  display: none;
+  @include max-screen($breakpoint-sm) {
+    display: block;
   }
 }
 
@@ -5344,6 +5350,807 @@ img {
     }
   }
 }
+
+/*--------------------------------------
+  サービスタブ（下層ページ共通）
+--------------------------------------*/
+.p-service-tab {
+  width: 100%;
+  box-shadow: 2px 2px 3.9px rgba(48, 48, 48, 0.21);
+  border-radius: 0 0 3px 3px;
+  background-color: #ebf0f8;
+  display: flex;
+  flex-direction: column;
+}
+
+// タブメニュー
+.p-service-tab__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.p-service-tab__item {
+  flex: 1;
+  // 非アクティブ状態のベーススタイル
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+
+  @include min-screen($breakpoint-sm) {
+    &:not(:last-child) {
+      border-right: 1px solid #e0e0e0;
+    }
+  }
+
+  // アクティブ（選択中）のスタイル
+  &.is-active {
+    background-color: #ebf0f8;
+    border-bottom: none;
+
+    .p-service__tab-btn {
+      color: #0056ad; // アクティブ時の青文字
+    }
+  }
+}
+
+.p-service-tab__btn {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-family: $font-base;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  color: #737373; // 非アクティブ時のグレー
+  cursor: pointer;
+  padding: 0 10px;
+
+  @include max-screen($breakpoint-sm) {
+    height: 60px;
+    font-size: 12px;
+  }
+}
+
+// タブパネルのラッパー（薄い水色背景）
+.p-service-tab__panel-wrapper {
+  background-color: #ebf0f8;
+  padding: 60px 23px;
+
+  @include max-screen($breakpoint-sm) {
+    padding: 40px 20px;
+  }
+}
+
+.p-service-tab__panel {
+  display: none; // 初期状態は非表示
+  animation: fadeIn 0.4s ease; // フワッと切り替わるアニメーション
+
+  &.is-active {
+    display: block; // アクティブ時のみ表示
+  }
+}
+
+// サービスカードのリスト（2カラム）
+.p-service-tab__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+// 個別のカード
+.p-service-tab__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // PCは2カラム
+  width: calc(50% - 20px);
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  padding: 40px 36px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+    padding: 30px 20px;
+    gap: 16px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+.p-service-tab__card-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include max-screen($breakpoint-sm) {
+    gap: 10px;
+  }
+}
+
+// 見出し左の青丸
+.p-service-tab__card-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #004e87;
+  flex-shrink: 0;
+}
+
+.p-service-tab__card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.14em; // Figma 4px相当
+  color: #004e87;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 22px;
+  }
+}
+
+.p-service-tab__card-text {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.125em; // Figma 2px相当
+  color: #000;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+}
+
+// 右下の青い三角（Polygon）
+.p-service-tab__card-arrow {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  // CSSのグラデーションまたはborderで作る三角形
+  background: linear-gradient(135deg, transparent 50%, #1b82ec 50%);
+
+  @include max-screen($breakpoint-sm) {
+    width: 12px;
+    height: 12px;
+  }
+}
+// タブ切り替え時のアニメーション用
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*--------------------------------------
+  モデルケース（下層ページ共通）
+--------------------------------------*/
+.p-case {
+  padding: 100px 0;
+  font-family: $font-base;
+  overflow: hidden; // スライダーの矢印や背景図形のはみ出しを防止
+
+  @include max-screen($breakpoint-sm) {
+    padding: 80px 0;
+  }
+
+  // --- インナー幅設定 ---
+  // 矢印を外側に配置するため、コンテンツ幅は少し狭めに設定（1000px程度）
+  .p-case__inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  // タイトル
+  .p-case__title {
+    margin-bottom: 60px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-sub;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 2.4rem;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 2rem;
+    }
+  }
+
+  // ==================== スライダーエリア ====================
+  .p-case__slider-wrap {
+    max-width: 1000px;
+    margin-inline: auto;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0 40px;
+    @include min-screen($breakpoint-lg) {
+      padding: 0 80px;
+    }
+    @include max-screen($breakpoint-sm) {
+      padding: 0 20px 48px;
+      margin-bottom: 40px;
+    }
+    @include max-screen($breakpoint-xs) {
+      padding: 0 0px 48px;
+    }
+  }
+  .slick-list {
+    overflow: visible;
+  }
+
+  .p-case__slide {
+    // Slick側で outline が出ないようにする
+    outline: none;
+  }
+
+  // 1枚のスライドの中身のレイアウト
+  .p-case__slide-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    @include max-screen($breakpoint-sm) {
+      flex-direction: column; // SPは縦積み
+      align-items: flex-start;
+      gap: 24px;
+    }
+    @include max-screen($breakpoint-xs) {
+      gap: 0px;
+    }
+  }
+
+  // --- 左側：画像 ---
+  .p-case__left {
+    position: relative;
+    width: 47%;
+    margin: 0;
+    flex-shrink: 0;
+    margin-bottom: 60px;
+    @include max-screen($breakpoint-md) {
+      width: 40%;
+    }
+    @include max-screen($breakpoint-sm) {
+      width: 100%;
+    }
+    @include max-screen($breakpoint-xs) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .p-case__img {
+    @include max-screen($breakpoint-sm) {
+      width: 85%;
+    }
+  }
+  // --- 背景SVG図形 ---
+  .p-case__bg {
+    position: absolute;
+    bottom: -63px;
+    right: -100px;
+    width: 90%;
+    height: auto;
+    margin: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    @include max-screen($breakpoint-md) {
+      width: 85%;
+      right: -60px;
+      bottom: -45px;
+    }
+    @include max-screen($breakpoint-sm) {
+      bottom: -30px;
+      left: auto;
+      right: 0;
+      width: 55%;
+      transform: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // --- 右側：テキストコンテンツ ---
+  .p-case__content {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    padding-left: 120px;
+    @include max-screen($breakpoint-md) {
+      padding-left: 80px;
+      padding-top: 0;
+    }
+    @include max-screen($breakpoint-sm) {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 0;
+    }
+    @include max-screen($breakpoint-xs) {
+      padding-top: 0;
+    }
+  }
+
+  .p-case__cat {
+    display: inline-block;
+    background-color: #004e87;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 16px;
+    margin-bottom: 20px;
+
+    @include max-screen($breakpoint-md) {
+      margin-bottom: 12px;
+    }
+    @include max-screen($breakpoint-sm) {
+      font-size: 13px;
+      padding: 4px 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .p-case__slide-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+    color: #000;
+    margin: 0 0 24px;
+
+    @include max-screen($breakpoint-md) {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+    @include max-screen($breakpoint-sm) {
+      font-size: 20px;
+      margin: 0 0 16px;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 16px;
+    }
+  }
+
+  .p-case__slide-text {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.125em;
+    color: #000;
+    margin: 0;
+    @include max-screen($breakpoint-md) {
+      font-size: 14px;
+    }
+  }
+
+  // ==================== Slick 矢印のカスタマイズ ====================
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 43px;
+    height: 43px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    border-color: #ccc;
+    cursor: pointer;
+    font-size: 0;
+    color: transparent;
+    transition:
+      background-color 0.3s,
+      border-color 0.3s;
+    @include max-screen($breakpoint-sm) {
+      width: 32px;
+      height: 32px;
+    }
+    &:hover {
+      background-color: #f5f7f9;
+      border-color: #999;
+    }
+
+    // 矢印のアイコン（くの字）を疑似要素で作成
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #333;
+      border-right: 2px solid #333;
+    }
+  }
+
+  // 戻るボタン
+  .slick-prev {
+    left: -20px; // コンテンツの外側に配置
+    transform: translate(-100%, -50%);
+    @include min-screen($breakpoint-lg) {
+      left: -60px;
+    }
+    @include max-screen($breakpoint-md) {
+      left: 0px;
+      transform: translate(-50%, -50%);
+    }
+    @include max-screen($breakpoint-sm) {
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 64px; // Nextボタンの左隣
+      transform: translate(0, 100%);
+    }
+    @include max-screen($breakpoint-sm) {
+      bottom: -16px;
+    }
+    &::before {
+      transform: translate(-30%, -50%) rotate(-135deg); // 左向き
+    }
+  }
+
+  // 次へボタン
+  .slick-next {
+    right: -20px;
+    transform: translate(100%, -50%);
+    @include min-screen($breakpoint-lg) {
+      right: -60px;
+    }
+    @include max-screen($breakpoint-md) {
+      right: 0px;
+      transform: translate(50%, -50%);
+    }
+    @include max-screen($breakpoint-sm) {
+      // SP: 右下に配置
+      top: auto;
+      bottom: 0;
+      right: 0;
+      transform: translate(0, 100%);
+    }
+    @include max-screen($breakpoint-sm) {
+      bottom: -16px;
+    }
+
+    &::before {
+      transform: translate(-70%, -50%) rotate(45deg); // 右向き
+    }
+  }
+
+  // ==================== もっと見るボタン ====================
+  .p-case__btn-wrap {
+    text-align: center;
+  }
+
+  .p-case__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    height: 58px;
+    background-color: #fff;
+    border: 1px solid #1b82ec;
+    color: #0e6ed0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    // 左上の青い直角三角形
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      // 15.2px 相当の直角三角形を作成
+      border-width: 15px 15px 0 0;
+      border-color: #1b82ec transparent transparent transparent;
+    }
+  }
+}
+
+/*--------------------------------------
+  お客様の声（下層ページ共通）
+--------------------------------------*/
+.p-voices {
+  padding: 100px 0;
+  .p-voices__inner {
+    max-width: 1094px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  // VOICES 文字
+  .p-voices__title {
+    margin-bottom: 60px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-sub;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 2.4rem;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 2rem;
+    }
+  }
+
+  // ==================== スライダーエリア ====================
+  .p-voices__slider-wrap {
+    position: relative;
+    margin-bottom: 80px;
+
+    @include max-screen($breakpoint-lg) {
+      padding: 0 80px;
+    }
+    @include max-screen($breakpoint-sm) {
+      max-width: 560px;
+      padding: 0;
+      margin: 0 auto 60px;
+    }
+  }
+
+  .p-voices__slider {
+    margin: 0 -16px;
+
+    @include max-screen($breakpoint-md) {
+      margin: 0 -10px;
+    }
+  }
+
+  .p-voices__slide {
+    margin: 0 16px;
+    outline: none;
+
+    @include max-screen($breakpoint-md) {
+      margin: 0 10px;
+    }
+  }
+
+  // カードスタイル
+  .p-voices__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      gap: 16px;
+    }
+  }
+
+  .p-voices__card-img {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 330 / 240;
+    background-color: #e5e5e5;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .p-voices__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .p-voices__card-cat {
+    display: inline-block;
+    padding: 4px 32px;
+    border: 1px solid #0056ad;
+    color: #0056ad;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 12px;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 4px 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .p-voices__card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: 0.07em;
+    color: #000;
+    margin: 0 0 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 16px;
+      margin: 0 0 12px;
+    }
+  }
+
+  .p-voices__card-text {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.125em;
+    color: #000;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  // --- スライダー矢印 (PC/タブレットのみ) ---
+  .p-voices__slider-wrap .slick-arrow {
+    position: absolute;
+    top: 150px; // カード画像の中央付近を狙う
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 0;
+    color: transparent;
+    transition:
+      background-color 0.3s,
+      border-color 0.3s;
+
+    &:hover {
+      background-color: #f5f7f9;
+      border-color: #999;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #333;
+      border-right: 2px solid #333;
+    }
+  }
+
+  .p-voices__slider-wrap .slick-prev {
+    right: 41px;
+    left: unset;
+    transform: translate(0, -50%);
+    @include max-screen($breakpoint-md) {
+      left: -10px;
+    }
+    &::before {
+      transform: translate(-30%, -50%) rotate(-135deg);
+    }
+  }
+
+  .p-voices__slider-wrap .slick-next {
+    right: -34px;
+    left: unset;
+    transform: translate(100%, -50%);
+    @include max-screen($breakpoint-md) {
+      right: -10px;
+      transform: translate(0%, -50%);
+    }
+    &::before {
+      transform: translate(-70%, -50%) rotate(45deg);
+    }
+  }
+
+  // ==================== プログレスバー (SPのみ) ====================
+  .p-voices__progress-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 4px;
+    margin: 30px auto 0;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  // ベース（グレー枠）
+  .p-voices__progress-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    border-radius: 2px;
+  }
+
+  // スライド移動する青いライン
+  .p-voices__progress-line {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.333%; // 全体3枚想定のため、1/3の長さに固定
+    height: 100%;
+    background-color: $color-sub; // #004E87
+    border-radius: 2px;
+
+    // 初期位置（JSで translateX が上書きされます）
+    transform: translateX(0);
+
+    // 伸びるのではなく、横に滑らかに「移動」させるアニメーション
+    transition: transform 0.3s ease;
+  }
+
+  // ==================== もっと見るボタン ====================
+  .p-voices__btn-wrap {
+    text-align: center;
+  }
+}
+
 /*--------------------------------------
   About Page
 --------------------------------------*/
@@ -5534,4 +6341,181 @@ img {
       color: $color-sub; // 濃い青で強調
     }
   }
+}
+/*--------------------------------------
+  Reason Page
+--------------------------------------*/
+.p-reason {
+  .p-page-header {
+    background-image: url("../img/reason-mv-bg.jpg");
+  }
+  /*--------------------------------------
+  Reason Page - 選ばれる理由セクション
+--------------------------------------*/
+  .p-reason-feature {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  // セクション見出し
+  .p-reason-feature__title {
+    margin-bottom: 72px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-sub;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 2.4rem;
+    }
+    @include max-screen($breakpoint-xs) {
+      font-size: 2rem;
+    }
+  }
+  // リスト１
+  .p-reason-feature__list {
+    display: grid;
+    gap: 180px;
+    max-width: 1000px;
+    margin: 0 auto;
+    @include max-screen($breakpoint-sm) {
+      gap: 120px;
+    }
+  }
+  .p-reason-feature__item {
+    display: grid;
+    gap: 100px;
+    @include max-screen($breakpoint-xs) {
+      gap: 60px;
+    }
+  }
+  // 偶数個目のアイテムは数字の配置を反転する
+  .p-reason-feature__item:nth-child(2n) {
+    .p-reason-feature__list-number {
+      right: 0;
+      left: auto;
+      transform: translate(50%, -55%);
+      @include max-screen($breakpoint-xs) {
+        transform: translate(0, -55%);
+      }
+    }
+  }
+  // リストの数字とタイトル
+  .p-reason-feature__list-header {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    @include max-screen($breakpoint-xs) {
+      width: 100%;
+      display: block;
+    }
+  }
+  // リスト数字
+  .p-reason-feature__list-number {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -55%);
+    font-size: clamp(10rem, 2.941rem + 23.53vw, 18rem);
+    font-weight: bold;
+    line-height: 1;
+    color: rgba($color-main, 0.2);
+    @include max-screen($breakpoint-xs) {
+      transform: translate(0, -55%);
+    }
+  }
+  // リストタイトル
+  .p-reason-feature__list-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 1.875rem;
+    }
+  }
+  // サブリスト
+  .p-reason-feature__sub-list {
+    display: grid;
+    gap: 60px;
+    @include max-screen($breakpoint-xs) {
+      gap: 40px;
+    }
+  }
+  .p-reason-feature__sub-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: calc(55px / 1000px * 100%);
+    padding: 36px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    @include max-screen($breakpoint-sm) {
+      grid-template-columns: 144px 1fr;
+      padding: 36px 16px;
+    }
+    @include max-screen($breakpoint-xs) {
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 36px;
+    }
+  }
+  // 写真
+  .p-reason-feature__sub-img {
+    aspect-ratio: 1;
+    background-color: #cccccc;
+    border-radius: 50%;
+    overflow: hidden;
+    @include max-screen($breakpoint-xs) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // テキスト部分
+  .p-reason-feature__sub-body {
+
+  }
+  // タイトル
+  .p-reason-feature__sub-title {
+    margin-bottom: 1.6rem;
+    color: $color-main2;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    @include max-screen($breakpoint-xs) {
+      text-align: center;
+    }
+  }
+  // テキスト
+  .p-reason-feature__sub-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  /*--------------------------------------
+  Reason Page - 選ばれる理由セクション
+  --------------------------------------*/
+  .p-service {
+    padding: 60px 0;
+    .p-service__title {
+      margin-bottom: 36px;
+      font-size: 3rem;
+      font-weight: 600;
+      color: $color-sub;
+      letter-spacing: 0.1em;
+      text-align: center;
+
+      @include max-screen($breakpoint-sm) {
+        font-size: 2.4rem;
+      }
+      @include max-screen($breakpoint-xs) {
+        font-size: 2rem;
+      }
+    }
+  }
+
 }

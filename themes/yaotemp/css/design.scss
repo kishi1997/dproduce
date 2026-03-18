@@ -5350,6 +5350,210 @@ img {
     }
   }
 }
+
+/*--------------------------------------
+  サービスタブ（下層ページ共通）
+--------------------------------------*/
+.p-service-tab {
+  width: 100%;
+  box-shadow: 2px 2px 3.9px rgba(48, 48, 48, 0.21);
+  border-radius: 0 0 3px 3px;
+  background-color: #ebf0f8;
+  display: flex;
+  flex-direction: column;
+}
+
+// タブメニュー
+.p-service-tab__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.p-service-tab__item {
+  flex: 1;
+  // 非アクティブ状態のベーススタイル
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+
+  @include min-screen($breakpoint-sm) {
+    &:not(:last-child) {
+      border-right: 1px solid #e0e0e0;
+    }
+  }
+
+  // アクティブ（選択中）のスタイル
+  &.is-active {
+    background-color: #ebf0f8;
+    border-bottom: none;
+
+    .p-service__tab-btn {
+      color: #0056ad; // アクティブ時の青文字
+    }
+  }
+}
+
+.p-service-tab__btn {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-family: $font-base;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  color: #737373; // 非アクティブ時のグレー
+  cursor: pointer;
+  padding: 0 10px;
+
+  @include max-screen($breakpoint-sm) {
+    height: 60px;
+    font-size: 12px;
+  }
+}
+
+// タブパネルのラッパー（薄い水色背景）
+.p-service-tab__panel-wrapper {
+  background-color: #ebf0f8;
+  padding: 60px 23px;
+
+  @include max-screen($breakpoint-sm) {
+    padding: 40px 20px;
+  }
+}
+
+.p-service-tab__panel {
+  display: none; // 初期状態は非表示
+  animation: fadeIn 0.4s ease; // フワッと切り替わるアニメーション
+
+  &.is-active {
+    display: block; // アクティブ時のみ表示
+  }
+}
+
+// サービスカードのリスト（2カラム）
+.p-service-tab__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+// 個別のカード
+.p-service-tab__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // PCは2カラム
+  width: calc(50% - 20px);
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  padding: 40px 36px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+    padding: 30px 20px;
+    gap: 16px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+.p-service-tab__card-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include max-screen($breakpoint-sm) {
+    gap: 10px;
+  }
+}
+
+// 見出し左の青丸
+.p-service-tab__card-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #004e87;
+  flex-shrink: 0;
+}
+
+.p-service-tab__card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.14em; // Figma 4px相当
+  color: #004e87;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 22px;
+  }
+}
+
+.p-service-tab__card-text {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.125em; // Figma 2px相当
+  color: #000;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+}
+
+// 右下の青い三角（Polygon）
+.p-service-tab__card-arrow {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  // CSSのグラデーションまたはborderで作る三角形
+  background: linear-gradient(135deg, transparent 50%, #1b82ec 50%);
+
+  @include max-screen($breakpoint-sm) {
+    width: 12px;
+    height: 12px;
+  }
+}
+// タブ切り替え時のアニメーション用
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /*--------------------------------------
   About Page
 --------------------------------------*/
@@ -5716,203 +5920,5 @@ img {
       }
     }
   }
-  // ==================== タブエリア ====================
-  .p-service__tab-area {
-    width: 100%;
-    box-shadow: 2px 2px 3.9px rgba(48, 48, 48, 0.21);
-    border-radius: 0 0 3px 3px;
-    background-color: #ebf0f8;
-    display: flex;
-    flex-direction: column;
-  }
 
-  // タブメニュー
-  .p-service__tab-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .p-service__tab-item {
-    flex: 1;
-    // 非アクティブ状態のベーススタイル
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: relative;
-
-    @include min-screen($breakpoint-sm) {
-      &:not(:last-child) {
-        border-right: 1px solid #e0e0e0;
-      }
-    }
-
-    // アクティブ（選択中）のスタイル
-    &.is-active {
-      background-color: #ebf0f8;
-      border-bottom: none;
-
-      .p-service__tab-btn {
-        color: #0056ad; // アクティブ時の青文字
-      }
-    }
-  }
-
-  .p-service__tab-btn {
-    width: 100%;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    font-family: $font-base;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.15em;
-    color: #737373; // 非アクティブ時のグレー
-    cursor: pointer;
-    padding: 0 10px;
-
-    @include max-screen($breakpoint-sm) {
-      height: 60px;
-      font-size: 12px;
-    }
-  }
-
-  // タブパネルのラッパー（薄い水色背景）
-  .p-service__panel-wrapper {
-    background-color: #ebf0f8;
-    padding: 60px 23px;
-
-    @include max-screen($breakpoint-sm) {
-      padding: 40px 20px;
-    }
-  }
-
-  .p-service__panel {
-    display: none; // 初期状態は非表示
-    animation: fadeIn 0.4s ease; // フワッと切り替わるアニメーション
-
-    &.is-active {
-      display: block; // アクティブ時のみ表示
-    }
-  }
-
-  // サービスカードのリスト（2カラム）
-  .p-service__card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 26px;
-
-    @include max-screen($breakpoint-sm) {
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
-
-  // 個別のカード
-  .p-service__card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    // PCは2カラム
-    width: calc(50% - 20px);
-    background-color: #ffffff;
-    border: 1px solid #cbcbcb;
-    border-radius: 3px;
-    padding: 40px 36px;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    transition:
-      box-shadow 0.3s ease,
-      transform 0.3s ease;
-
-    @include max-screen($breakpoint-sm) {
-      width: 100%;
-      padding: 30px 20px;
-      gap: 16px;
-    }
-
-    &:hover {
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transform: translateY(-2px);
-    }
-  }
-
-  .p-service__card-head {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    @include max-screen($breakpoint-sm) {
-      gap: 10px;
-    }
-  }
-
-  // 見出し左の青丸
-  .p-service__card-dot {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #004e87;
-    flex-shrink: 0;
-  }
-
-  .p-service__card-title {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.45;
-    letter-spacing: 0.14em; // Figma 4px相当
-    color: #004e87;
-    margin: 0;
-
-    @include max-screen($breakpoint-sm) {
-      font-size: 22px;
-    }
-  }
-
-  .p-service__card-text {
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.125em; // Figma 2px相当
-    color: #000;
-    margin: 0;
-
-    @include max-screen($breakpoint-sm) {
-      font-size: 14px;
-      line-height: 1.7;
-      letter-spacing: 0.08em;
-    }
-  }
-
-  // 右下の青い三角（Polygon）
-  .p-service__card-arrow {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
-    // CSSのグラデーションまたはborderで作る三角形
-    background: linear-gradient(135deg, transparent 50%, #1b82ec 50%);
-
-    @include max-screen($breakpoint-sm) {
-      width: 12px;
-      height: 12px;
-    }
-  }
-  // タブ切り替え時のアニメーション用
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }

@@ -329,115 +329,215 @@
     </section>
 
     <!-- モデルケース -->
-    <section class="p-works">
-        <h3 class="p-works__title">モデルケース</h3>
-        <div class="l-container">
-            <div class="p-works__list">
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img1.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
+    <section class="p-case">
+        <div class="p-case__inner">
 
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img2.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
+            <h2 class="p-case__title">モデルケース</h2>
 
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img3.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
+            <!-- ===== スライダーエリア ===== -->
+            <div class="p-case__slider-wrap">
+                <div class="p-case__slider js-case-slider">
+
+                    <!-- スライド 1 -->
+                    <a href="" class="p-case__slide">
+                        <div class="p-case__slide-inner">
+                            <div class="p-case__left">
+                                <figure class="p-case__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-img1.jpg"
+                                        alt="モデルケースのイメージ画像">
+                                </figure>
+                                <figure class="p-case__bg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-bg.svg" alt=""
+                                        aria-hidden="true">
+                                </figure>
+                            </div>
+                            <!-- 右側：テキストコンテンツ -->
+                            <div class="p-case__content">
+                                <span class="p-case__cat">カテゴリ名</span>
+                                <h3 class="p-case__slide-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-case__slide-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+
                         </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
+                    </a>
+
+                    <!-- スライド 2 (デモ用に複製) -->
+                    <a href="" class="p-case__slide">
+                        <div class="p-case__slide-inner">
+                            <div class="p-case__left">
+                                <figure class="p-case__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-img1.jpg"
+                                        alt="モデルケースのイメージ画像">
+                                </figure>
+                                <figure class="p-case__bg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-bg.svg" alt=""
+                                        aria-hidden="true">
+                                </figure>
+                            </div>
+                            <div class="p-case__content">
+                                <span class="p-case__cat">別のカテゴリ</span>
+                                <h3 class="p-case__slide-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-case__slide-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="p-case__slide">
+                        <div class="p-case__slide-inner">
+                            <div class="p-case__left">
+                                <figure class="p-case__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-img1.jpg"
+                                        alt="モデルケースのイメージ画像">
+                                </figure>
+                                <figure class="p-case__bg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/top-case-bg.svg" alt=""
+                                        aria-hidden="true">
+                                </figure>
+                            </div>
+                            <div class="p-case__content">
+                                <span class="p-case__cat">カテゴリ名</span>
+                                <h3 class="p-case__slide-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-case__slide-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
             </div>
 
-            <div class="p-works__btn-wrapper">
-                <div class="c-btn c-btn--outline">
-                    <a href="">もっと見る</a>
-                </div>
+            <!-- ===== もっと見るボタン ===== -->
+            <div class="p-case__btn-wrap">
+                <a href="<?php echo esc_url( home_url( '/case/' ) ); ?>" class="c-btn c-btn--outline">
+                    もっと見る
+                </a>
             </div>
         </div>
     </section>
 
     <!-- お客様の声 -->
-    <section class="p-works">
-        <h3 class="p-works__title">お客様の声</h3>
-        <div class="l-container">
-            <div class="p-works__list">
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img1.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
+    <section class="p-voices">
+        <div class="p-voices__inner">
+            <h2 class="p-voices__title">お客様の声</h2>
 
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img2.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
+            <!-- ===== スライダーエリア ===== -->
+            <div class="p-voices__slider-wrap">
 
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img3.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
-            </div>
+                <!-- スライダー本体 -->
+                <div class="p-voices__slider js-voices-slider">
 
-            <div class="p-works__btn-wrapper">
-                <div class="c-btn c-btn--outline">
-                    <a href="">もっと見る</a>
+                    <!-- スライド 1 -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/1/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice1.jpg" alt="">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- スライド 2 -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/2/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice2.jpg"
+                                    alt="サムネイル画像">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- スライド 3 -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/3/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice3.jpg"
+                                    alt="サムネイル画像">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- スライド 4 (ループ確認用) -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/4/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice1.jpg"
+                                    alt="サムネイル画像">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- スライド 5 -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/2/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice2.jpg"
+                                    alt="サムネイル画像">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- スライド 6 -->
+                    <div class="p-voices__slide">
+                        <a href="<?php echo esc_url( home_url( '/voice/3/' ) ); ?>" class="p-voices__card">
+                            <figure class="p-voices__card-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice3.jpg"
+                                    alt="サムネイル画像">
+                            </figure>
+                            <div class="p-voices__card-body">
+                                <span class="p-voices__card-cat">カテゴリ名</span>
+                                <h3 class="p-voices__card-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                                <p class="p-voices__card-text">
+                                    本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- SP用 プログレスバー (FigmaのSVGデザインをCSSで再現) -->
+                <div class="p-voices__progress-wrap u-visible-sm" aria-hidden="true">
+                    <span class="p-voices__progress-bg"></span>
+                    <!-- ここのwidthがJSで変化して青いバーが伸びる -->
+                    <span class="p-voices__progress-line js-voices-progress"></span>
+                </div>
+
             </div>
-        </div>
+
+            <!-- ===== もっと見るボタン ===== -->
+            <div class="p-voices__btn-wrap">
+                <a href="<?php echo esc_url( home_url( '/voice/' ) ); ?>" class="c-btn c-btn--outline">
+                    もっと見る
+                </a>
+            </div>
     </section>
 
 </div>

@@ -38,8 +38,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">REASON</h2>
-                <span class="c-section-heading__title-ja">/ 選ばれる理由</span>
+                <span class="c-section-heading__title-en">REASON</span>
+                <h2 class="c-section-heading__title-ja">/ 選ばれる理由</h2>
             </div>
             <div class="p-reason-feature__list">
                 <div class="p-reason-feature__item">
@@ -174,8 +174,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">SERVICE</h2>
-                <span class="c-section-heading__title-ja">/ サービス一覧</span>
+                <span class="c-section-heading__title-en">SERVICE</span>
+                <h2 class="c-section-heading__title-ja">/ サービス一覧</h2>
             </div>
             <div class="p-tab">
 
@@ -354,8 +354,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">MODEL CASE</h2>
-                <span class="c-section-heading__title-ja">/ モデルケース</span>
+                <span class="c-section-heading__title-en">MODEL CASE</span>
+                <h2 class="c-section-heading__title-ja">/ モデルケース</h2>
             </div>
 
             <!-- ===== スライダーエリア ===== -->
@@ -450,8 +450,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">VOICES</h2>
-                <span class="c-section-heading__title-ja">/ お客様の声</span>
+                <span class="c-section-heading__title-en">VOICES</span>
+                <h2 class="c-section-heading__title-ja">/ お客様の声</h2>
             </div>
 
             <!-- ===== スライダーエリア ===== -->

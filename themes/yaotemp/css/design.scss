@@ -7403,6 +7403,9 @@ p-point（下層ページ共通）
 --------------------------------------*/
 .p-process {
   padding: 100px 0;
+  @include max-screen($breakpoint-xs) {
+    padding: 60px 0;
+  }
 }
 
 .p-process__list {
@@ -7505,4 +7508,74 @@ p-point（下層ページ共通）
 .p-process__item-text {
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+/*--------------------------------------
+  Work Rules Page （就業規則サポート）
+--------------------------------------*/
+.p-work-rules {
+  .p-page-header {
+    background-image: url("../img/reason-mv-bg.jpg");
+  }
+}
+
+/*--------------------------------------
+  Payroll Page（給与計算代行）
+--------------------------------------*/
+.p-payroll {
+
+}
+.p-payroll__service {
+  padding: 100px 0;
+  @include max-screen($breakpoint-xs) {
+    padding: 60px 0;
+  }
+}
+.p-payroll__service-items {
+  display: grid;
+  gap: 120px;
+}
+.p-payroll__service-item {
+
+}
+.p-payroll__service-title {
+  margin-bottom: 3.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: $color-main2;
+}
+.p-service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(100%, 240px));
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  @include max-screen($breakpoint-xs) {
+    grid-template-columns: auto;
+    row-gap: 60px;
+  }
+}
+.p-service-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.p-service-list__item-img {
+  width: 100%;
+  aspect-ratio: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.p-service-list__item-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.p-payroll__service-notice {
+  margin-top: 60px;
+  text-align: center;
 }

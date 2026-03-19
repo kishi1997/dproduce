@@ -38,8 +38,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">KNOW</h2>
-                <span class="c-section-heading__title-ja">/ まずは「知る」ことから</span>
+                <span class="c-section-heading__title-en">KNOW</span>
+                <h2 class="c-section-heading__title-ja">/ まずは「知る」ことから</h2>
             </div>
 
             <!-- タブ -->
@@ -93,8 +93,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">STEP</h2>
-                <span class="c-section-heading__title-ja">/ ご契約・導入までのステップ</span>
+                <span class="c-section-heading__title-en">STEP</span>
+                <h2 class="c-section-heading__title-ja">/ ご契約・導入までのステップ</h2>
             </div>
 
             <ol class="p-flow-step__list">
@@ -151,8 +151,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">SUPPORT</h2>
-                <span class="c-section-heading__title-ja">/ 契約後のサポート体制</span>
+                <span class="c-section-heading__title-en">SUPPORT</span>
+                <h2 class="c-section-heading__title-ja">/ 契約後のサポート体制</h2>
             </div>
 
             <div class="p-strength__list">
@@ -298,8 +298,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">MODEL CASE</h2>
-                <span class="c-section-heading__title-ja">/ モデルケース</span>
+                <span class="c-section-heading__title-en">MODEL CASE</span>
+                <h2 class="c-section-heading__title-ja">/ モデルケース</h2>
             </div>
 
             <!-- ===== スライダーエリア ===== -->
@@ -393,8 +393,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <h2 class="c-section-heading__title-en">VOICES</h2>
-                <span class="c-section-heading__title-ja">/ お客様の声</span>
+                <span class="c-section-heading__title-en">VOICES</span>
+                <h2 class="c-section-heading__title-ja">/ お客様の声</h2>
             </div>
 
             <!-- ===== スライダーエリア ===== -->

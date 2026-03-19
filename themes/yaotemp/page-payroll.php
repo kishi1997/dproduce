@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="p-work-rules">
+<div class="p-payroll">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">Work Rules</span>
+            <span class="p-page-header__subtitle">Payroll</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -20,7 +20,7 @@
         <div class="l-container">
             <div class="p-intro__inner">
                 <h2 class="p-intro__title">
-                    会社を守り、社員を活かす。<br />実務に強い就業規則サポート
+                    正確・安心・手間ゼロへ。プロに任せる給与計算。
                 </h2>
                 <p class="p-intro__lead">
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -40,25 +40,26 @@
                 <ul class="p-trouble__list">
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">就業規則を何年も見直していない</p>
+                        <p class="p-trouble__text">給与計算に毎月時間を取られている</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">ネットのひな形をそのまま使っていて不安</p>
+                        <p class="p-trouble__text">計算ミスや法改正対応が不安</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">問題社員への対応ルールが曖昧</p>
+                        <p class="p-trouble__text">担当者が退職すると回らなくなる</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">助成金に対応した規程になっていない</p>
+                        <p class="p-trouble__text">社会保険・労働保険との連動が複雑で困っている</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!-- D・プロデュースの給与計算代行 -->
     <section class="p-strength">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -67,8 +68,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">SUPPORT</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの就業規則サポート<br />３つの特長</h2>
+                <span class="c-section-heading__title-en">FEATURE</span>
+                <h2 class="c-section-heading__title-ja">/ D・プロデュースの給与計算代行<br />３つの特長</h2>
             </div>
 
             <div class="p-strength__list">
@@ -81,10 +82,10 @@
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.01</span>
+                                <span class="p-strength__label">FEATURE.01</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">複数人のプロによるリーガルチェック</h3>
+                            <h3 class="p-strength__item-title">「5名体制」によるトリプルチェック</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number1.svg" alt=""
@@ -107,10 +108,10 @@
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.02</span>
+                                <span class="p-strength__label">FEATURE.02</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">「作りっぱなし」にしない運用支援</h3>
+                            <h3 class="p-strength__item-title">クラウド・DX対応のフルサポート</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number2.svg" alt=""
@@ -133,10 +134,10 @@
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.03</span>
+                                <span class="p-strength__label">FEATURE.03</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">最新の法改正・トレンドを即時反映</h3>
+                            <h3 class="p-strength__item-title">社労士法人ならではのアドバイス</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number3.svg" alt=""
@@ -156,7 +157,7 @@
         </div>
     </section>
 
-    <!-- D・プロデュースの就業規則サポート３つの特長 -->
+    <!-- ご利用のメリット -->
     <section class="p-point">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -165,8 +166,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">FEATURE</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの就業規則の特徴</h2>
+                <span class="c-section-heading__title-en">MERIT</span>
+                <h2 class="c-section-heading__title-ja">/ ご利用のメリット</h2>
             </div>
 
             <div class="p-point__list">
@@ -179,10 +180,10 @@
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.01</span>
+                                <span class="p-point__label">MERIT.01</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">会社を守ることを第一に</h3>
+                            <h3 class="p-point__item-title">社員の負担軽減</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top-point-number1.svg" alt=""
@@ -203,13 +204,61 @@
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.02</span>
+                                <span class="p-point__label">MERIT.02</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">働きやすい職場環境へ</h3>
+                            <h3 class="p-point__item-title">人件費の削減</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top-point-number2.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-point__desc">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="p-point__item">
+                    <figure class="p-point__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img3.jpg" alt="会社第一">
+                    </figure>
+                    <div class="p-point__content">
+                        <div class="p-point__head">
+                            <div class="p-point__label-wrap">
+                                <span class="p-point__label">MERIT.03</span>
+                                <span class="p-point__line"></span>
+                            </div>
+                            <h3 class="p-point__item-title">安定した手続きの実現</h3>
+
+                            <figure class="p-point__number  p-top-point__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-point-number3.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-point__desc">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="p-point__item p-point__item--reverse">
+                    <figure class="p-point__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img4.jpg" alt="運用支援">
+                    </figure>
+                    <div class="p-point__content">
+                        <div class="p-point__head">
+                            <div class="p-point__label-wrap">
+                                <span class="p-point__label">MERIT.04</span>
+                                <span class="p-point__line"></span>
+                            </div>
+                            <h3 class="p-point__item-title">専門性のあるアドバイス</h3>
+
+                            <figure class="p-point__number  p-top-point__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-point-number4.svg" alt=""
                                     aria-hidden="true">
                             </figure>
                         </div>
@@ -223,6 +272,102 @@
         </div>
     </section>
 
+    <section class="p-payroll__service">
+        <div class="l-container">
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <span class="c-section-heading__title-en">SERVICE</span>
+                <h2 class="c-section-heading__title-ja">/ 主なサービス</h2>
+            </div>
+            <div class="p-payroll__service-items">
+                <div class="p-payroll__service-item">
+                    <h3 class="p-payroll__service-title">基本サービス</h3>
+                    <div class="p-service-list">
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img1.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">マスター情報の管理</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img2.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">毎月の給与計算サービス</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img3.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">賞与計算サービス<br />(年3回まで)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img4.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">給与支給控除一覧表の<br />作成・提出</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img5.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">合計支給控除一覧表の<br />作成・提出</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img6.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">銀行振込依頼書の<br />作成・提出</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img7.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">金種表の作成・提出、<br />給与明細書の作成・提出</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img8.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">退職者に係る給与源泉徴収票の作成・提出<br />※退職所得に係るものを除く</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-payroll__service-item">
+                    <h3 class="p-payroll__service-title">オプションサービス</h3>
+                    <div class="p-service-list">
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img9.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">WEB明細</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img10.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">労働時間集計サービス<br />(タイムカード等の集計サービス)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img11.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">有給管理サービス<br />(年3回まで)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img12.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">給与袋の提出及び<br />袋詰めサービス</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img13.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">住民税異動届の<br />作成サービス</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img14.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">社会保険算定基礎届(毎年1回)の提出代行サービス(※)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img15.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">労働保険年度更新(毎年1回)業務の書類作成・提出代行サービス(※)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img16.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">社会保険月額変更届(随時)の提出代行サービス(※)</p>
+                        </div>
+                        <div class="p-service-list__item">
+                            <div class="p-service-list__item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/payroll-service-img17.jpg" alt=""></div>
+                            <p class="p-service-list__item-title">社会保険賞与支払届の作成・提出代行サービス(※)</p>
+                        </div>
+                    </div>
+                    <p class="p-payroll__service-notice">※は当社顧問契約内容に含まれるサービスとなります</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 給与計算の流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -232,7 +377,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FLOW</span>
-                <h2 class="c-section-heading__title-ja">/ 就業規則作成の流れ</h2>
+                <h2 class="c-section-heading__title-ja">/ 給与計算の流れ</h2>
             </div>
 
             <ol class="p-process__list">
@@ -241,7 +386,7 @@
                         <span class="p-process__item-number">01</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">ヒアリング・現状調査</h3>
+                        <h3 class="p-process__item-title">ヒアリング</h3>
                         <p class="p-process__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </li>
@@ -250,7 +395,7 @@
                         <span class="p-process__item-number">02</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の診断</h3>
+                        <h3 class="p-process__item-title">タイムカードの提出</h3>
                         <p class="p-process__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </li>
@@ -259,7 +404,7 @@
                         <span class="p-process__item-number">03</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の整備</h3>
+                        <h3 class="p-process__item-title">給与計算の開始</h3>
                         <p class="p-process__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </li>
@@ -268,7 +413,7 @@
                         <span class="p-process__item-number">04</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の変更・決定</h3>
+                        <h3 class="p-process__item-title">お客様のチェック</h3>
                         <p class="p-process__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </li>
@@ -277,7 +422,7 @@
                         <span class="p-process__item-number">05</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">運用開始</h3>
+                        <h3 class="p-process__item-title">給与情報のご提供</h3>
                         <p class="p-process__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </li>
@@ -305,12 +450,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">就業規則は本当に必要ですか？</p>
+                            <p class="p-faq__text p-faq__text--bold">小規模な会社でも依頼できますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                常時10人以上の従業員がいる場合は作成・届出が義務です。<br />それ未満でも、トラブル防止や会社を守るために整備をおすすめしています。
+                                はい、従業員数に関わらず対応可能です。<br />数名規模の企業様からも多くご依頼いただいています。
                             </p>
                         </dd>
                     </div>
@@ -319,12 +464,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">今ある就業規則の見直しだけでも依頼できますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">今使っている勤怠システムはそのまま使えますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、可能です。<br />法改正対応やリスクチェックのみのご相談も承っています。
+                                多くの場合そのまま連携可能です。<br />状況に応じて最適な方法をご提案いたします。
                             </p>
                         </dd>
                     </div>
@@ -333,12 +478,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">作成にはどれくらい期間がかかりますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">情報管理は安全ですか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                通常は1～2ヶ月程度です。<br />ヒアリングを行い、貴社の実態に合わせて作成いたします。
+                                給与情報は厳重に管理しています。<br />守秘義務を徹底し、安全な体制で運用しています。
                             </p>
                         </dd>
                     </div>
@@ -347,18 +492,9 @@
         </div>
     </section>
 
-    <!-- サービス一覧 -->
+    <!-- サービスタブ -->
     <section class="p-service">
         <div class="l-container">
-            <!-- セクション見出し -->
-            <div class="c-section-heading">
-                <div class="c-section-heading__deco">
-                    <span class="c-section-heading__deco-light"></span>
-                    <span class="c-section-heading__deco-dark"></span>
-                </div>
-                <span class="c-section-heading__title-en">SERVICE</span>
-                <h2 class="c-section-heading__title-ja">/ サービス一覧</h2>
-            </div>
             <div class="p-tab">
 
                 <ul class="p-tab__list js-tab-list">

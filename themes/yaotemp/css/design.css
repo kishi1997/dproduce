@@ -4424,6 +4424,7 @@ img {
   }
 }
 .p-intro .p-intro__lead {
+  font-size: 1.6rem;
   line-height: 2.14;
 }
 @media screen and (max-width: 480px) {
@@ -5188,14 +5189,9 @@ img {
   モデルケース（下層ページ共通）
 --------------------------------------*/
 .p-case {
-  padding: 100px 0;
+  padding: 60px 0;
   font-family: "Noto Sans JP", sans-serif;
   overflow: hidden;
-}
-@media screen and (max-width: 768px) {
-  .p-case {
-    padding: 80px 0;
-  }
 }
 .p-case .p-case__inner {
   max-width: 1040px;
@@ -5546,7 +5542,7 @@ img {
   お客様の声（下層ページ共通）
 --------------------------------------*/
 .p-voices {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .p-voices .p-voices__inner {
   max-width: 1094px;
@@ -5784,7 +5780,7 @@ img {
   About Page
 --------------------------------------*/
 .p-about .p-page-header {
-  background-image: url("../img/reason-mv-bg.jpg");
+  background-image: url("../img/about-mv-bg.jpg");
 }
 .p-about {
   /*--------------------------------------
@@ -6154,12 +6150,7 @@ img {
   background-image: url("../img/flow-mv-bg.jpg");
 }
 .p-flow .p-flow-contact {
-  padding: 100px 0;
-}
-@media screen and (max-width: 768px) {
-  .p-flow .p-flow-contact {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 .p-flow .p-flow-contact__title {
   margin-bottom: 72px;
@@ -6292,7 +6283,7 @@ img {
 p-strength（下層ページ共通）
 -----------------------*/
 .p-strength {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 @media screen and (max-width: 768px) {
   .p-strength {
@@ -6498,12 +6489,7 @@ p-strength（下層ページ共通）
 p-point（下層ページ共通）
 -----------------------*/
 .p-point {
-  padding: 100px 0;
-}
-@media screen and (max-width: 768px) {
-  .p-point {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 .p-point__title {
@@ -7078,6 +7064,7 @@ p-point（下層ページ共通）
 --------------------------------------*/
 .p-process {
   padding: 100px 0;
+  background-color: #f5f7f9;
 }
 @media screen and (max-width: 480px) {
   .p-process {
@@ -7160,7 +7147,7 @@ p-point（下層ページ共通）
   position: relative;
   z-index: 2;
   padding: 48px 36px;
-  background-color: #f5f7f9;
+  background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -7193,7 +7180,7 @@ p-point（下層ページ共通）
   z-index: -1;
   width: calc(100% - 0.4rem);
   height: 100%;
-  background-color: #f5f7f9;
+  background-color: #fff;
   border-radius: 1rem;
 }
 
@@ -7209,35 +7196,30 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Work Rules Page （就業規則サポート）
+  Regulation Page （就業規則サポート）
 --------------------------------------*/
-.p-work-rules .p-page-header {
+.p-regulation .p-page-header {
   background-image: url("../img/reason-mv-bg.jpg");
 }
 
 /*--------------------------------------
   Payroll Page（給与計算代行）
 --------------------------------------*/
-.p-payroll .p-page-header {
-  background-image: url(../img/payroll-mv-bg.jpg);
+.p-calculation .p-page-header {
+  background-image: url(../img/calculation-mv-bg.jpg);
   background-position: center;
 }
 
-.p-payroll__service {
-  padding: 100px 0;
-}
-@media screen and (max-width: 480px) {
-  .p-payroll__service {
-    padding: 60px 0;
-  }
+.p-calculation__service {
+  padding: 60px 0;
 }
 
-.p-payroll__service-items {
+.p-calculation__service-items {
   display: grid;
   gap: 120px;
 }
 
-.p-payroll__service-title {
+.p-calculation__service-title {
   margin-bottom: 4.8rem;
   font-size: 2.4rem;
   font-weight: bold;
@@ -7281,7 +7263,7 @@ p-point（下層ページ共通）
   text-align: center;
 }
 
-.p-payroll__service-notice {
+.p-calculation__service-notice {
   margin-top: 60px;
   text-align: center;
 }
@@ -7289,32 +7271,27 @@ p-point（下層ページ共通）
 /*--------------------------------------
   Labor Trouble Page（労務トラブル相談）
 --------------------------------------*/
-.p-labor-trouble .p-page-header {
-  background-image: url(../img/labor-trouble-mv-bg.jpg);
+.p-labor .p-page-header {
+  background-image: url(../img/labor-mv-bg.jpg);
 }
 
 /*--------------------------------------
   Personal Evaluation Page（人事評価制度構築）
 --------------------------------------*/
-.p-personal-evaluation .p-page-header {
+.p-personnel-affairs .p-page-header {
   background-image: url(../img/personal-evaluation-mv-bg.jpg);
 }
 
-.p-personal-evaluation__step {
-  padding: 100px 0;
-}
-@media screen and (max-width: 480px) {
-  .p-personal-evaluation__step {
-    padding: 60px 0;
-  }
+.p-personnel-affairs__step {
+  padding: 80px 0;
 }
 
-.p-personal-evaluation__step-img {
+.p-personnel-affairs__step-img {
   height: 480px;
   margin-inline: calc(50% - 50vw);
   overflow: hidden;
 }
-.p-personal-evaluation__step-img img {
+.p-personnel-affairs__step-img img {
   height: 100%;
   object-fit: cover;
 }

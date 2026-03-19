@@ -4739,6 +4739,7 @@ img {
   }
 
   .p-intro__lead {
+    font-size: 1.6rem;
     line-height: 2.14;
 
     @include max-screen($breakpoint-xs) {
@@ -5527,13 +5528,9 @@ img {
   モデルケース（下層ページ共通）
 --------------------------------------*/
 .p-case {
-  padding: 100px 0;
+  padding: 60px 0;
   font-family: $font-base;
   overflow: hidden; // スライダーの矢印や背景図形のはみ出しを防止
-
-  @include max-screen($breakpoint-sm) {
-    padding: 80px 0;
-  }
 
   // --- インナー幅設定 ---
   // 矢印を外側に配置するため、コンテンツ幅は少し狭めに設定（1000px程度）
@@ -5868,7 +5865,7 @@ img {
   お客様の声（下層ページ共通）
 --------------------------------------*/
 .p-voices {
-  padding: 100px 0;
+  padding: 60px 0;
   .p-voices__inner {
     max-width: 1094px;
     margin: 0 auto;
@@ -6126,7 +6123,7 @@ img {
 --------------------------------------*/
 .p-about {
   .p-page-header {
-    background-image: url("../img/reason-mv-bg.jpg");
+    background-image: url("../img/about-mv-bg.jpg");
   }
   /*--------------------------------------
   About Page - Compare Section
@@ -6497,10 +6494,7 @@ img {
     background-image: url("../img/flow-mv-bg.jpg");
   }
   .p-flow-contact {
-    padding: 100px 0;
-    @include max-screen($breakpoint-sm) {
-      padding: 60px 0;
-    }
+    padding: 60px 0;
   }
   .p-flow-contact__title {
     margin-bottom: 72px;
@@ -6627,7 +6621,7 @@ img {
 p-strength（下層ページ共通）
 -----------------------*/
 .p-strength {
-  padding: 100px 0;
+  padding: 80px 0;
   @include max-screen($breakpoint-sm) {
     overflow: 60px 0;
   }
@@ -6827,10 +6821,7 @@ p-strength（下層ページ共通）
 p-point（下層ページ共通）
 -----------------------*/
 .p-point {
-  padding: 100px 0;
-  @include max-screen($breakpoint-sm) {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 .p-point__title {
   margin-bottom: 64px;
@@ -7403,6 +7394,7 @@ p-point（下層ページ共通）
 --------------------------------------*/
 .p-process {
   padding: 100px 0;
+  background-color: $color-bg-gray;
   @include max-screen($breakpoint-xs) {
     padding: 60px 0;
   }
@@ -7467,7 +7459,7 @@ p-point（下層ページ共通）
   position: relative;
   z-index: 2;
   padding: 48px 36px;
-  background-color: $color-bg-gray;
+  background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -7496,7 +7488,7 @@ p-point（下層ページ共通）
     z-index: -1;
     width: calc(100% - .4rem);
     height: 100%;
-    background-color: $color-bg-gray;
+    background-color: #fff;
     border-radius: 1rem;
   }
 }
@@ -7511,9 +7503,9 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Work Rules Page （就業規則サポート）
+  Regulation Page （就業規則サポート）
 --------------------------------------*/
-.p-work-rules {
+.p-regulation {
   .p-page-header {
     background-image: url("../img/reason-mv-bg.jpg");
   }
@@ -7522,26 +7514,23 @@ p-point（下層ページ共通）
 /*--------------------------------------
   Payroll Page（給与計算代行）
 --------------------------------------*/
-.p-payroll {
+.p-calculation {
   .p-page-header {
-    background-image: url(../img/payroll-mv-bg.jpg);
+    background-image: url(../img/calculation-mv-bg.jpg);
     background-position: center;
   }
 }
-.p-payroll__service {
-  padding: 100px 0;
-  @include max-screen($breakpoint-xs) {
-    padding: 60px 0;
-  }
+.p-calculation__service {
+  padding: 60px 0;
 }
-.p-payroll__service-items {
+.p-calculation__service-items {
   display: grid;
   gap: 120px;
 }
-.p-payroll__service-item {
+.p-calculation__service-item {
 
 }
-.p-payroll__service-title {
+.p-calculation__service-title {
   margin-bottom: 4.8rem;
   font-size: 2.4rem;
   font-weight: bold;
@@ -7578,7 +7567,7 @@ p-point（下層ページ共通）
   font-weight: bold;
   text-align: center;
 }
-.p-payroll__service-notice {
+.p-calculation__service-notice {
   margin-top: 60px;
   text-align: center;
 }
@@ -7586,30 +7575,27 @@ p-point（下層ページ共通）
 /*--------------------------------------
   Labor Trouble Page（労務トラブル相談）
 --------------------------------------*/
-.p-labor-trouble {
+.p-labor {
   .p-page-header {
-    background-image: url(../img/labor-trouble-mv-bg.jpg);
+    background-image: url(../img/labor-mv-bg.jpg);
   }
 }
 
 /*--------------------------------------
   Personal Evaluation Page（人事評価制度構築）
 --------------------------------------*/
-.p-personal-evaluation {
+.p-personnel-affairs {
   .p-page-header {
     background-image: url(../img/personal-evaluation-mv-bg.jpg);
   }
 }
-.p-personal-evaluation__step {
-  padding: 100px 0;
-  @include max-screen($breakpoint-xs) {
-    padding: 60px 0;
-  }
+.p-personnel-affairs__step {
+  padding: 80px 0;
 }
-.p-personal-evaluation__step-content {
+.p-personnel-affairs__step-content {
 
 }
-.p-personal-evaluation__step-img {
+.p-personnel-affairs__step-img {
   height: 480px;
   margin-inline: calc(50% - 50vw);
   overflow: hidden;

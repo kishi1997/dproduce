@@ -5165,7 +5165,7 @@ img {
   FAQ Section (About Page)
 --------------------------------------*/
 .p-faq {
-  padding: 40px 0;
+  padding: 60px 0;
 
   // ヘッダー周り
   .p-faq__header {
@@ -6494,7 +6494,7 @@ img {
 --------------------------------------*/
 .p-flow {
   .p-page-header {
-    background-image: url("../img/reason-mv-bg.jpg");
+    background-image: url("../img/flow-mv-bg.jpg");
   }
   .p-flow-contact {
     padding: 100px 0;
@@ -7523,7 +7523,10 @@ p-point（下層ページ共通）
   Payroll Page（給与計算代行）
 --------------------------------------*/
 .p-payroll {
-
+  .p-page-header {
+    background-image: url(../img/payroll-mv-bg.jpg);
+    background-position: center;
+  }
 }
 .p-payroll__service {
   padding: 100px 0;
@@ -7539,7 +7542,7 @@ p-point（下層ページ共通）
 
 }
 .p-payroll__service-title {
-  margin-bottom: 3.6rem;
+  margin-bottom: 4.8rem;
   font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
@@ -7550,7 +7553,7 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(auto-fit, min(100%, 240px));
   justify-content: center;
   row-gap: 40px;
-  column-gap: 40px;
+  column-gap: 24px;
   @include max-screen($breakpoint-xs) {
     grid-template-columns: auto;
     row-gap: 60px;
@@ -7578,4 +7581,40 @@ p-point（下層ページ共通）
 .p-payroll__service-notice {
   margin-top: 60px;
   text-align: center;
+}
+
+/*--------------------------------------
+  Labor Trouble Page（労務トラブル相談）
+--------------------------------------*/
+.p-labor-trouble {
+  .p-page-header {
+    background-image: url(../img/labor-trouble-mv-bg.jpg);
+  }
+}
+
+/*--------------------------------------
+  Personal Evaluation Page（人事評価制度構築）
+--------------------------------------*/
+.p-personal-evaluation {
+  .p-page-header {
+    background-image: url(../img/personal-evaluation-mv-bg.jpg);
+  }
+}
+.p-personal-evaluation__step {
+  padding: 100px 0;
+  @include max-screen($breakpoint-xs) {
+    padding: 60px 0;
+  }
+}
+.p-personal-evaluation__step-content {
+
+}
+.p-personal-evaluation__step-img {
+  height: 480px;
+  margin-inline: calc(50% - 50vw);
+  overflow: hidden;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

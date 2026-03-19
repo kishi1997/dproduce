@@ -175,7 +175,7 @@
                 <!-- 01 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img3.jpg" alt="会社第一">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/payroll-merit-img1.jpg" alt="喜ぶ社員の画像">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -199,7 +199,7 @@
                 <!-- 02 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img4.jpg" alt="運用支援">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/payroll-merit-img2.jpg" alt="経費削減">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -223,7 +223,7 @@
                 <!-- 03 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img3.jpg" alt="会社第一">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/payroll-merit-img3.jpg" alt="チェックリストを確認するビジネスパーソン">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -247,7 +247,7 @@
                 <!-- 04 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/work-rules-img4.jpg" alt="運用支援">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/payroll-merit-img4.jpg" alt="確かな知識と経験を持ったアドバイザー">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">

@@ -32,48 +32,52 @@
     <!-- まずは「知る」ことから -->
     <section class="p-flow-contact">
         <div class="l-container">
-            <h2 class="p-flow-contact__title">まずは「知る」ことから</h2>
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <h2 class="c-section-heading__title-en">KNOW</h2>
+                <span class="c-section-heading__title-ja">/ まずは「知る」ことから</span>
+            </div>
 
             <!-- タブ -->
-            <div class="p-contact-tab">
-                <ul class="p-contact-tab__list js-tab-list">
-                    <li class="p-contact-tab__item is-active" data-tab="tab-problem">
-                        <button class="p-contact-tab__btn">具体的なお悩みがある方へ</button>
+            <div class="p-tab">
+                <ul class="p-tab__list js-tab-list">
+                    <li class="p-tab__item is-active" data-tab="tab-problem">
+                        <button class="p-tab__btn">具体的なお悩みがある方へ</button>
                     </li>
-                    <li class="p-contact-tab__item" data-tab="tab-info">
-                        <button class="p-contact-tab__btn">まずは情報収集をしたい方へ</button>
+                    <li class="p-tab__item" data-tab="tab-info">
+                        <button class="p-tab__btn">まずは情報収集をしたい方へ</button>
                     </li>
                 </ul>
 
-                <div class="p-contact-tab__panel-wrapper">
+                <div class="p-tab__panel-wrapper">
 
                     <!-- パネル1 -->
-                    <div class="p-contact-tab__panel is-active" id="tab-problem">
-                        <div class="p-contact-tab__card-list">
-
-                            <!-- カード1 -->
-                            <div class="p-contact-tab__card">
-                                <p class="p-contact-tab__card-text">
-                                    現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。</p>
-                                <span class="p-contact-tab__card-arrow"></span>
-                                <a href="<?php echo esc_url( home_url( '/service/startup/' ) ); ?>" class="p-contact-tab__button">無料相談・お問い合わせ</a>
+                    <div class="p-tab__panel is-active" id="tab-problem">
+                            <!-- コンテンツ -->
+                            <div class="p-tab__content">
+                                <p class="p-tab__text p-tab__text--center">
+                                    現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。
+                                </p>
+                                <div class="p-tab__btn-wrap">
+                                    <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="c-btn c-btn--outline">無料相談・お問い合わせ</a>
+                                </div>
                             </div>
-
-                        </div>
                     </div>
 
                     <!-- パネル2 -->
-                    <div class="p-contact-tab__panel" id="tab-info">
-                        <div class="p-contact-tab__card-list">
-
-                            <!-- カード1 -->
-                            <div class="p-contact-tab__card">
-                                <p class="p-contact-tab__card-text">
-                                    現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。</p>
-                                <span class="p-contact-tab__card-arrow"></span>
-                                <a href="<?php echo esc_url( home_url( '/service/startup/' ) ); ?>" class="p-contact-tab__button">無料相談・お問い合わせ</a>
+                    <div class="p-tab__panel" id="tab-info">
+                        <!-- コンテンツ -->
+                        <div class="p-tab__content">
+                            <p class="p-tab__text p-tab__text--center">
+                                現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。
+                            </p>
+                            <div class="p-tab__btn-wrap">
+                                <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="c-btn c-btn--outline">無料相談・お問い合わせ</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -83,7 +87,16 @@
 
     <section class="p-flow-step">
         <div class="l-container">
-            <h2 class="p-flow-step__title">ご契約・導入までのステップ</h2>
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <h2 class="c-section-heading__title-en">STEP</h2>
+                <span class="c-section-heading__title-ja">/ ご契約・導入までのステップ</span>
+            </div>
+
             <ol class="p-flow-step__list">
                 <li class="p-flow-step__item">
                     <figure class="p-flow-step__item-img"><img src="<?php bloginfo('template_url');?>/img/reason-feature-img12.jpg" alt="商談で握手している画像"></figure>
@@ -132,7 +145,16 @@
     <!-- 契約後のサポート体制 -->
     <section class="p-strength">
         <div class="l-container">
-            <h2 class="p-strength__title">契約後のサポート体制</h2>
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <h2 class="c-section-heading__title-en">SUPPORT</h2>
+                <span class="c-section-heading__title-ja">/ 契約後のサポート体制</span>
+            </div>
+
             <div class="p-strength__list">
 
                 <!-- 01 -->
@@ -142,6 +164,10 @@
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">SUPPORT.01</span>
+                                <span class="p-strength__line"></span>
+                            </div>
                             <h3 class="p-strength__item-title">コミュニケーション面での連携</h3>
                         </div>
                         <p class="p-strength__desc">
@@ -157,6 +183,10 @@
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">SUPPORT.02</span>
+                                <span class="p-strength__line"></span>
+                            </div>
                             <h3 class="p-strength__item-title">定期面談・勉強会の実施</h3>
                         </div>
                         <p class="p-strength__desc">
@@ -262,6 +292,7 @@
     <section class="p-case">
         <div class="p-case__inner">
 
+            <!-- セクション見出し -->
             <div class="c-section-heading">
                 <div class="c-section-heading__deco">
                     <span class="c-section-heading__deco-light"></span>

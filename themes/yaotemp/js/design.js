@@ -306,43 +306,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
-  // SERVICEタブ タブ切り替え
+  // 下層ページタブ タブ切り替え
   // ==========================================
-  const tabItems = document.querySelectorAll(".p-service-tab__item");
-  const tabPanels = document.querySelectorAll(".p-service-tab__panel");
-
-  if (tabItems.length > 0 && tabPanels.length > 0) {
-    tabItems.forEach((tab) => {
-      tab.addEventListener("click", (e) => {
-        // ボタン自体のデフォルト動作を防ぐ
-        e.preventDefault();
-
-        // クリックされたタブが持つターゲットIDを取得（例: "tab-outsourcing"）
-        const targetId = tab.getAttribute("data-tab");
-
-        // 1. すべてのタブから is-active を外す
-        tabItems.forEach((t) => t.classList.remove("is-active"));
-        // 2. クリックされたタブに is-active を付ける
-        tab.classList.add("is-active");
-
-        // 3. すべてのパネルから is-active を外す
-        tabPanels.forEach((p) => p.classList.remove("is-active"));
-        // 4. 対応するIDのパネルに is-active を付ける
-        const targetPanel = document.getElementById(targetId);
-        if (targetPanel) {
-          targetPanel.classList.add("is-active");
-        }
-      });
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // ==========================================
-  // FLOWページ コンタクトタブ タブ切り替え
-  // ==========================================
-  const tabItems = document.querySelectorAll(".p-contact-tab__item");
-  const tabPanels = document.querySelectorAll(".p-contact-tab__panel");
+  const tabItems = document.querySelectorAll(".p-tab__item");
+  const tabPanels = document.querySelectorAll(".p-tab__panel");
 
   if (tabItems.length > 0 && tabPanels.length > 0) {
     tabItems.forEach((tab) => {

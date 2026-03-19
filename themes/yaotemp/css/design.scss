@@ -5132,126 +5132,6 @@ img {
 }
 
 /*--------------------------------------
-  Point Section (互い違いレイアウト)
---------------------------------------*/
-.p-point {
-  text-align: center;
-  padding: 40px 0;
-
-  .p-point__item {
-    margin-top: 6vw;
-
-    @include min-screen($breakpoint-lg) {
-      margin-top: 80px;
-    }
-
-    @include max-screen($breakpoint-sm) {
-      &:not(:first-child) {
-        margin-top: 60px;
-      }
-    }
-  }
-
-  .p-point__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    text-align: left;
-    margin-bottom: 80px;
-    position: relative;
-    z-index: 10;
-
-    @include max-screen($breakpoint-sm) {
-      flex-direction: column;
-      width: fit-content;
-      margin-inline: auto;
-      margin-bottom: 40px;
-      max-width: 480px;
-    }
-    @include max-screen($breakpoint-xs) {
-      gap: 24px;
-    }
-  }
-
-  .p-point__img {
-    width: 40%;
-
-    @include max-screen($breakpoint-sm) {
-      width: 100%;
-      order: 1;
-      transform: translateX(-4%);
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      vertical-align: bottom;
-    }
-  }
-
-  .p-point__body {
-    width: 60%;
-    position: relative;
-
-    @include max-screen($breakpoint-sm) {
-      width: 100%;
-      order: 2;
-    }
-  }
-
-  .p-point__number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 14vw;
-    max-width: 211px;
-    z-index: -1;
-    transform: translateY(-15%);
-
-    @include max-screen($breakpoint-sm) {
-      width: 169px;
-      left: unset;
-      bottom: 0;
-      transform: none;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  // 反転レイアウト時の装飾ナンバー位置
-  .p-point__inner--reverse .p-point__number {
-    right: unset;
-    left: 0;
-
-    @include max-screen($breakpoint-sm) {
-      right: 0;
-      left: unset;
-    }
-  }
-
-  .p-point__title {
-    font-size: clamp(2.8rem, 2.22vw, 3.2rem);
-    margin-bottom: 24px;
-    position: relative;
-    color: #000;
-    display: inline-block;
-    font-weight: 500;
-  }
-
-  .p-point__text {
-    line-height: 1.6;
-    margin-top: 12px;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-  }
-}
-/*--------------------------------------
   Section Header (共通見出し)
 --------------------------------------*/
 .c-section-header {
@@ -5418,9 +5298,9 @@ img {
 }
 
 /*--------------------------------------
-  サービスタブ（下層ページ共通）
+  タブ（下層ページ共通）
 --------------------------------------*/
-.p-service-tab {
+.p-tab {
   width: 100%;
   box-shadow: 2px 2px 3.9px rgba(48, 48, 48, 0.21);
   border-radius: 0 0 3px 3px;
@@ -5430,7 +5310,7 @@ img {
 }
 
 // タブメニュー
-.p-service-tab__list {
+.p-tab__list {
   display: flex;
   list-style: none;
   margin: 0;
@@ -5438,7 +5318,7 @@ img {
   width: 100%;
 }
 
-.p-service-tab__item {
+.p-tab__item {
   flex: 1;
   // 非アクティブ状態のベーススタイル
   background-color: #ffffff;
@@ -5462,7 +5342,7 @@ img {
   }
 }
 
-.p-service-tab__btn {
+.p-tab__btn {
   width: 100%;
   height: 72px;
   display: flex;
@@ -5485,7 +5365,7 @@ img {
 }
 
 // タブパネルのラッパー（薄い水色背景）
-.p-service-tab__panel-wrapper {
+.p-tab__panel-wrapper {
   background-color: #ebf0f8;
   padding: 60px 23px;
 
@@ -5494,7 +5374,7 @@ img {
   }
 }
 
-.p-service-tab__panel {
+.p-tab__panel {
   display: none; // 初期状態は非表示
   animation: fadeIn 0.4s ease; // フワッと切り替わるアニメーション
 
@@ -5503,8 +5383,8 @@ img {
   }
 }
 
-// サービスカードのリスト（2カラム）
-.p-service-tab__card-list {
+// サービスカードのリスト（2カラム）（サービスタブのみ）
+.p-tab__card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
@@ -5516,7 +5396,7 @@ img {
 }
 
 // 個別のカード
-.p-service-tab__card {
+.p-tab__card {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -5545,7 +5425,7 @@ img {
   }
 }
 
-.p-service-tab__card-head {
+.p-tab__card-head {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -5556,7 +5436,7 @@ img {
 }
 
 // 見出し左の青丸
-.p-service-tab__card-dot {
+.p-tab__card-dot {
   display: block;
   width: 10px;
   height: 10px;
@@ -5565,7 +5445,7 @@ img {
   flex-shrink: 0;
 }
 
-.p-service-tab__card-title {
+.p-tab__card-title {
   font-weight: 600;
   font-size: 28px;
   line-height: 1.45;
@@ -5578,7 +5458,7 @@ img {
   }
 }
 
-.p-service-tab__card-text {
+.p-tab__card-text {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.125em; // Figma 2px相当
@@ -5593,7 +5473,7 @@ img {
 }
 
 // 右下の青い三角（Polygon）
-.p-service-tab__card-arrow {
+.p-tab__card-arrow {
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -5607,6 +5487,30 @@ img {
     height: 12px;
   }
 }
+
+// サービスタブ以外の共通コンテンツ
+.p-tab__content {
+  padding: 40px 24px;
+  background-color: #fff;
+  @include max-screen($breakpoint-sm) {
+    padding: 36px 16px;
+  }
+}
+
+.p-tab__text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.p-tab__text--center {
+  text-align: center;
+}
+
+// ボタンラッパー
+.p-tab__btn-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
 // タブ切り替え時のアニメーション用
 @keyframes fadeIn {
   from {
@@ -6673,7 +6577,6 @@ img {
         background-color: $color-main2;
       }
     }
-    
   }
   .p-flow-step__item-img {
     aspect-ratio: 4 / 3;
@@ -6718,171 +6621,6 @@ img {
     line-height: 1.6;
   }
 
-}
-
-/*--------------------------------------
-  流れコンタクトタブ
---------------------------------------*/
-.p-contact-tab {
-  width: 100%;
-  box-shadow: 2px 2px 3.9px rgba(48, 48, 48, 0.21);
-  border-radius: 0 0 3px 3px;
-  background-color: #ebf0f8;
-  display: flex;
-  flex-direction: column;
-}
-
-// タブメニュー
-.p-contact-tab__list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.p-contact-tab__item {
-  flex: 1;
-  // 非アクティブ状態のベーススタイル
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  position: relative;
-
-  @include min-screen($breakpoint-sm) {
-    &:not(:last-child) {
-      border-right: 1px solid #e0e0e0;
-    }
-  }
-
-  // アクティブ（選択中）のスタイル
-  &.is-active {
-    background-color: #ebf0f8;
-    border-bottom: none;
-
-    .p-service__tab-btn {
-      color: #0056ad; // アクティブ時の青文字
-    }
-  }
-}
-
-.p-contact-tab__btn {
-  width: 100%;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  font-family: $font-base;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.15em;
-  color: #737373; // 非アクティブ時のグレー
-  cursor: pointer;
-  padding: 0 10px;
-
-  @include max-screen($breakpoint-sm) {
-    height: 60px;
-    font-size: 12px;
-  }
-}
-
-// タブパネルのラッパー（薄い水色背景）
-.p-contact-tab__panel-wrapper {
-  background-color: #ebf0f8;
-  padding: 30px 23px;
-
-  @include max-screen($breakpoint-sm) {
-    padding: 40px 20px;
-  }
-}
-
-.p-contact-tab__panel {
-  display: none; // 初期状態は非表示
-  animation: fadeIn 0.4s ease; // フワッと切り替わるアニメーション
-
-  &.is-active {
-    display: block; // アクティブ時のみ表示
-  }
-}
-
-// サービスカードのリスト（2カラム）
-.p-contact-tab__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px;
-
-  @include max-screen($breakpoint-sm) {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-// 個別のカード
-.p-contact-tab__card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  background-color: #ffffff;
-  border: 1px solid #cbcbcb;
-  border-radius: 3px;
-  padding: 40px 36px;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  transition:
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
-
-  @include max-screen($breakpoint-sm) {
-    width: 100%;
-    padding: 30px 20px;
-    gap: 16px;
-  }
-}
-
-.p-contact-tab__card-text {
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.125em; // Figma 2px相当
-  color: #000;
-  margin: 0;
-
-  @include max-screen($breakpoint-sm) {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.08em;
-  }
-}
-.p-contact-tab__button {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 16px 24px;
-  font-size: 2.4rem;
-  font-weight: bold;
-  background-color: $color-main2;
-  color: #fff;
-  border-radius: 8px;
-  @include max-screen($breakpoint-sm) {
-    font-size: 2rem;
-  }
-  @include max-screen($breakpoint-xs) {
-    font-size: 1.6rem;
-  }
-}
-
-// タブ切り替え時のアニメーション用
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /*-----------------------
@@ -6945,7 +6683,9 @@ p-strength（下層ページ共通）
 // 画像エリア
 .p-strength__img {
   width: 48%; // 画像とテキストをほぼ半々に
+  aspect-ratio: 459 / 268;
   margin: 0;
+  overflow: hidden;
 
   @include max-screen($breakpoint-sm) {
     width: 100%;
@@ -7022,18 +6762,18 @@ p-strength（下層ページ共通）
   @include max-screen($breakpoint-xs) {
     font-size: 18px;
   }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    width: 20rem;
-    height: 3px;
-    background-color: $color-main2;
-    @include max-screen($breakpoint-sm) {
-      width: 10rem;
-    }
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -1rem;
+  //   left: 0;
+  //   width: 20rem;
+  //   height: 3px;
+  //   background-color: $color-main2;
+  //   @include max-screen($breakpoint-sm) {
+  //     width: 10rem;
+  //   }
+  // }
 }
 
 // 巨大数字の背景装飾（SVG画像）
@@ -7083,8 +6823,207 @@ p-strength（下層ページ共通）
   }
 }
 
+/*-----------------------
+p-point（下層ページ共通）
+-----------------------*/
+.p-point {
+  padding: 100px 0;
+  @include max-screen($breakpoint-sm) {
+    padding: 60px 0;
+  }
+}
+.p-point__title {
+  margin-bottom: 64px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-sub;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 2.4rem;
+  }
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+}
+.p-point__list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; // アイテム間の余白
+  margin-bottom: 60px;
+
+  @include max-screen($breakpoint-sm) {
+    margin-bottom: 40px;
+  }
+}
+
+// --- 各アイテムのレイアウト ---
+.p-point__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  @include max-screen($breakpoint-md) {
+    gap: 30px;
+  }
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column !important; // SPは全て縦積み
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+// PC: リバース配置（偶数番目用）
+.p-point__item--reverse {
+  flex-direction: row-reverse;
+}
+
+// 画像エリア
+.p-point__img {
+  width: 48%; // 画像とテキストをほぼ半々に
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+// テキスト・コンテンツエリア
+.p-point__content {
+  width: 50%; // Figma: 514px相当
+  display: flex;
+  flex-direction: column;
+  gap: 32px; // Figma指定
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+    gap: 24px;
+  }
+}
+
+// --- 見出しエリア（ラベル・タイトル・巨大数字） ---
+.p-point__head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.p-point__label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.p-point__label {
+  font-family: $font-en;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  color: $color-main; // #016EDC
+  text-transform: uppercase;
+}
+
+.p-point__line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: $color-main;
+}
+
+.p-point__item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #000;
+  margin: 0;
+  @include max-screen($breakpoint-md) {
+    font-size: 26px;
+  }
+  @include max-screen($breakpoint-sm) {
+    font-size: 22px;
+    br {
+      display: none;
+    } // SPでは改行解除
+  }
+  @include max-screen($breakpoint-xs) {
+    font-size: 18px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 20rem;
+    height: 3px;
+    background-color: $color-main2;
+    @include max-screen($breakpoint-sm) {
+      width: 10rem;
+    }
+  }
+}
+
+// 巨大数字の背景装飾（SVG画像）
+.p-point__number {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 173px;
+  margin: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  @include max-screen($breakpoint-md) {
+    width: 140px;
+  }
+  @include max-screen($breakpoint-sm) {
+    width: 180px;
+    top: -30px;
+    right: -10px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.p-point__number--small {
+  width: 146px;
+  @include max-screen($breakpoint-md) {
+    width: 120px;
+  }
+}
+// 本文テキスト
+.p-point__desc {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.125em; // Figma: 2px相当
+  color: #000;
+  margin: 0;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+}
+
 /*--------------------------------------
-  セミナー情報
+  セミナー情報（下層ページ）
 --------------------------------------*/
 .p-seminar {
   // 背景画像の設定（ビルの画像）
@@ -7457,4 +7396,113 @@ p-strength（下層ページ共通）
       transform: translate(-70%, -50%) rotate(45deg);
     }
   }
+}
+
+/*--------------------------------------
+  流れリスト（下層ページ）
+--------------------------------------*/
+.p-process {
+  padding: 100px 0;
+}
+
+.p-process__list {
+  display: grid;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  @include max-screen($breakpoint-sm) {
+    gap: 40px;
+  }
+}
+.p-process__item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 40px;
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: 60px 1fr;
+    gap: 24px;
+  }
+  @include max-screen($breakpoint-xs) {
+    grid-template-columns: 40px 1fr;
+    gap: 12px;
+  }
+  &:nth-child(even) {
+    .p-process__item-header {
+      background-color: $color-sub;
+    }
+  }
+}
+.p-process__item-header {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: $color-main2;
+  border: 1rem solid #fff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  @include max-screen($breakpoint-sm) {
+    border-width: 4px;
+  }
+  @include max-screen($breakpoint-xs) {
+    border-width: 2px;
+  }
+}
+.p-process__item-number {
+  font-size: 3.6rem;
+  font-weight: bold;
+  @include max-screen($breakpoint-sm) {
+    font-size: 2.4rem;
+  }
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+}
+.p-process__item-body {
+  position: relative;
+  z-index: 2;
+  padding: 48px 36px;
+  background-color: $color-bg-gray;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  @include max-screen($breakpoint-sm) {
+    padding: 32px 24px;
+  }
+  @include max-screen($breakpoint-xs) {
+    padding: 24px 16px 24px 24px;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+  &::before {
+    z-index: -1;
+    top: 0;
+    left: -0.1rem;
+    width: 50%;
+    height: 100%;
+    background-color: $color-main2;
+  }
+  &::after {
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(100% - .4rem);
+    height: 100%;
+    background-color: $color-bg-gray;
+    border-radius: 1rem;
+  }
+}
+.p-process__item-title {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: .05em;
+}
+.p-process__item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }

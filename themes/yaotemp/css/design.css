@@ -103,7 +103,8 @@ img {
   border: 2px solid;
   position: relative;
   font-weight: bold;
-  border-image: linear-gradient(#1d88f3, #0059b4) 1;
+  -o-border-image: linear-gradient(#1d88f3, #0059b4) 1;
+     border-image: linear-gradient(#1d88f3, #0059b4) 1;
   min-width: 220px;
   font-size: 18px;
 }
@@ -122,7 +123,7 @@ img {
   height: 0;
   border-style: solid;
   border-width: 12px 12px 0 0;
-  border-color: #016EDC transparent transparent transparent;
+  border-color: #016edc transparent transparent transparent;
 }
 
 .c-btn--outline-white {
@@ -392,7 +393,7 @@ img {
 }
 
 .p-global-nav__item a:hover {
-  color: #016EDC;
+  color: #016edc;
 }
 
 .p-drawer {
@@ -602,7 +603,7 @@ img {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #016EDC;
+    background-color: #016edc;
   }
 }
 @media screen and (min-width: 768px) {
@@ -654,7 +655,7 @@ img {
     position: absolute;
     right: 20px;
     top: 50%;
-    background-color: #016EDC;
+    background-color: #016edc;
     transition: transform 0.3s;
   }
 }
@@ -1821,14 +1822,14 @@ img {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
-  color: #016EDC;
+  color: #016edc;
   text-transform: uppercase;
 }
 .top .p-top-strength .p-top-strength__line {
   display: block;
   width: 50px;
   height: 1px;
-  background-color: #016EDC;
+  background-color: #016edc;
 }
 .top .p-top-strength .p-top-strength__title {
   font-weight: 600;
@@ -2263,6 +2264,11 @@ img {
   cursor: pointer;
   padding: 0 10px;
 }
+@media screen and (max-width: 1080px) {
+  .top .p-top-service .p-top-service__tab-btn {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 768px) {
   .top .p-top-service .p-top-service__tab-btn {
     height: 60px;
@@ -2341,15 +2347,20 @@ img {
 }
 .top .p-top-service .p-top-service__card-title {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.45;
   letter-spacing: 0.14em;
   color: #004e87;
   margin: 0;
 }
+@media screen and (max-width: 1080px) {
+  .top .p-top-service .p-top-service__card-title {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .top .p-top-service .p-top-service__card-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .top .p-top-service .p-top-service__card-text {
@@ -2945,7 +2956,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top .p-top-voices .p-top-voices__card-body {
   display: flex;
@@ -3033,20 +3045,20 @@ img {
   border-right: 2px solid #333;
 }
 .top .p-top-voices .p-top-voices__slider-wrap .slick-prev {
-  right: 41px;
-  left: unset;
-  transform: translate(0, -50%);
+  left: 0;
+  transform: translate(-100%, -50%);
 }
 @media screen and (max-width: 1080px) {
   .top .p-top-voices .p-top-voices__slider-wrap .slick-prev {
     left: -10px;
+    transform: translate(0%, -50%);
   }
 }
 .top .p-top-voices .p-top-voices__slider-wrap .slick-prev::before {
   transform: translate(-30%, -50%) rotate(-135deg);
 }
 .top .p-top-voices .p-top-voices__slider-wrap .slick-next {
-  right: -34px;
+  right: 0;
   left: unset;
   transform: translate(100%, -50%);
 }
@@ -3234,10 +3246,10 @@ img {
 }
 .top .p-top-seminar .p-top-seminar__btn:hover {
   background-color: #fff;
-  color: #016EDC;
+  color: #016edc;
 }
 .top .p-top-seminar .p-top-seminar__btn:hover::before {
-  border-color: #016EDC transparent transparent transparent;
+  border-color: #016edc transparent transparent transparent;
 }
 .top .p-top-seminar .p-top-seminar__btn::before {
   content: "";
@@ -3359,7 +3371,7 @@ img {
 .top .p-top-seminar .p-top-seminar__card-line {
   width: 100%;
   height: 1px;
-  background-color: #016EDC;
+  background-color: #016edc;
   margin-bottom: 20px;
 }
 .top .p-top-seminar .p-top-seminar__card-info {
@@ -3599,6 +3611,7 @@ img {
   letter-spacing: 0.15em;
   text-decoration: none;
   transition: opacity 0.3s, transform 0.3s;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
 }
 .top .p-top-document .p-top-document__btn:hover {
   opacity: 0.85;
@@ -3758,7 +3771,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top .p-top-blogs .p-top-blogs__item-body {
   flex-grow: 1;
@@ -3953,8 +3967,8 @@ img {
   max-width: 320px;
   height: 60px;
   background-color: #fff;
-  border: 2px solid #016EDC;
-  color: #016EDC;
+  border: 2px solid #016edc;
+  color: #016edc;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -3971,7 +3985,7 @@ img {
   height: 0;
   border-style: solid;
   border-width: 16px 16px 0 0;
-  border-color: #016EDC transparent transparent transparent;
+  border-color: #016edc transparent transparent transparent;
 }
 .c-btn-more:hover {
   opacity: 0.7;
@@ -4263,7 +4277,7 @@ img {
   font-weight: bold;
 }
 .p-footer-info .p-footer-nav__item--top > a::before {
-  background-color: #016EDC;
+  background-color: #016edc;
 }
 .p-footer-info .p-footer-nav__sublist {
   padding-left: 18px;
@@ -4462,6 +4476,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
@@ -4477,8 +4492,9 @@ img {
   }
 }
 .p-trouble .p-trouble__header {
+  width: -moz-fit-content;
   width: fit-content;
-  color: #016EDC;
+  color: #016edc;
 }
 @media screen and (max-width: 1080px) {
   .p-trouble .p-trouble__header {
@@ -4639,6 +4655,7 @@ img {
 @media screen and (max-width: 768px) {
   .p-about-reason .p-about-reason__item {
     flex-direction: column;
+    width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
   }
@@ -4670,7 +4687,7 @@ img {
   margin-bottom: 32px;
   font-size: 5.6rem;
   font-weight: 600;
-  color: #016EDC;
+  color: #016edc;
   line-height: 1;
   font-family: "Open Sans", sans-serif;
 }
@@ -4827,7 +4844,7 @@ img {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #016EDC;
+  color: #016edc;
   letter-spacing: 0.1em;
   margin-bottom: 8px;
 }
@@ -4943,7 +4960,7 @@ img {
   }
 }
 .p-faq .p-faq__icon--q {
-  background-color: #016EDC;
+  background-color: #016edc;
 }
 .p-faq .p-faq__icon--a {
   background-color: #004e87;
@@ -5627,7 +5644,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-voices .p-voices__card-body {
   display: flex;
@@ -5811,7 +5829,7 @@ img {
 .p-about .p-about-compare .p-about-compare__vs {
   display: inline-block;
   margin: 0 16px;
-  color: #016EDC;
+  color: #016edc;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 4rem;
@@ -5920,7 +5938,7 @@ img {
 .p-about .p-about-compare .p-about-compare__row--header .p-about-compare__col--new {
   justify-content: center;
   align-items: center;
-  background-color: #016EDC;
+  background-color: #016edc;
   color: #fff;
   font-size: 1.8rem;
   letter-spacing: 0.05em;
@@ -5937,7 +5955,7 @@ img {
   }
 }
 .p-about .p-about-compare .p-about-compare__col--new .p-about-compare__sp-head {
-  color: #016EDC;
+  color: #016edc;
   font-weight: bold;
 }
 .p-about .p-about-compare .p-about-compare__text {
@@ -6099,7 +6117,8 @@ img {
 }
 .p-reason .p-reason-feature__sub-img img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-reason .p-reason-feature__sub-title {
   margin-bottom: 1.6rem;
@@ -6244,7 +6263,8 @@ img {
 }
 .p-flow .p-flow-step__item-img img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-flow .p-flow-step__item-number {
   position: relative;
@@ -6394,7 +6414,7 @@ p-strength（下層ページ共通）
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
-  color: #016EDC;
+  color: #016edc;
   text-transform: uppercase;
 }
 
@@ -6402,7 +6422,7 @@ p-strength（下層ページ共通）
   display: block;
   width: 50px;
   height: 1px;
-  background-color: #016EDC;
+  background-color: #016edc;
 }
 
 .p-strength__item-title {
@@ -6559,7 +6579,8 @@ p-point（下層ページ共通）
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-point__content {
@@ -6594,7 +6615,7 @@ p-point（下層ページ共通）
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
-  color: #016EDC;
+  color: #016edc;
   text-transform: uppercase;
 }
 
@@ -6602,7 +6623,7 @@ p-point（下層ページ共通）
   display: block;
   width: 50px;
   height: 1px;
-  background-color: #016EDC;
+  background-color: #016edc;
 }
 
 .p-point__item-title {
@@ -6842,10 +6863,10 @@ p-point（下層ページ共通）
 }
 .p-seminar .p-seminar__btn:hover {
   background-color: #fff;
-  color: #016EDC;
+  color: #016edc;
 }
 .p-seminar .p-seminar__btn:hover::before {
-  border-color: #016EDC transparent transparent transparent;
+  border-color: #016edc transparent transparent transparent;
 }
 .p-seminar .p-seminar__btn::before {
   content: "";
@@ -6967,7 +6988,7 @@ p-point（下層ページ共通）
 .p-seminar .p-seminar__card-line {
   width: 100%;
   height: 1px;
-  background-color: #016EDC;
+  background-color: #016edc;
   margin-bottom: 20px;
 }
 .p-seminar .p-seminar__card-info {
@@ -7232,7 +7253,8 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(auto-fit, min(100%, 240px));
   justify-content: center;
   row-gap: 40px;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 @media screen and (max-width: 480px) {
   .p-service-list {
@@ -7254,7 +7276,8 @@ p-point（下層ページ共通）
 .p-service-list__item-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-service-list__item-title {
@@ -7290,7 +7313,8 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  column-gap: 36px;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
 }
 @media screen and (max-width: 768px) {
   .p-personnel-affairs__step-list {
@@ -7429,7 +7453,8 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  column-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 @media screen and (max-width: 480px) {
   .p-establishment-support__service-list {
@@ -7469,6 +7494,7 @@ p-point（下層ページ共通）
 }
 
 .p-establishment-support__service-note {
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 32px;
   margin-right: 0;
@@ -7589,4 +7615,4 @@ p-point（下層ページ共通）
   .p-price-table__data-strong-text {
     font-size: 1.6rem;
   }
-}
+}/*# sourceMappingURL=design.css.map */

@@ -16,7 +16,7 @@
 // ==========================================================================
 $font-base: "Noto Sans JP", sans-serif;
 $font-en: "Open Sans", sans-serif;
-$color-main: #016EDC;
+$color-main: #016edc;
 $color-main2: #0e6ed0;
 $color-sub: #004e87;
 $color-base: #ebf0f8;
@@ -2441,6 +2441,9 @@ img {
       cursor: pointer;
       padding: 0 10px;
 
+      @include max-screen($breakpoint-md) {
+        font-size: 15px;
+      }
       @include max-screen($breakpoint-sm) {
         height: 60px;
         font-size: 12px;
@@ -2530,21 +2533,25 @@ img {
 
     .p-top-service__card-title {
       font-weight: 600;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.45;
-      letter-spacing: 0.14em; // Figma 4px相当
+      letter-spacing: 0.14em;
       color: #004e87;
       margin: 0;
 
+      @include max-screen($breakpoint-md) {
+        font-size: 20px;
+      }
+
       @include max-screen($breakpoint-sm) {
-        font-size: 22px;
+        font-size: 18px;
       }
     }
 
     .p-top-service__card-text {
       font-size: 16px;
       line-height: 1.62;
-      letter-spacing: 0.125em; // Figma 2px相当
+      letter-spacing: 0.125em;
       color: #000;
       margin: 0;
 
@@ -3237,11 +3244,11 @@ img {
     }
 
     .p-top-voices__slider-wrap .slick-prev {
-      right: 41px;
-      left: unset;
-      transform: translate(0, -50%);
+      left: 0;
+      transform: translate(-100%, -50%);
       @include max-screen($breakpoint-md) {
         left: -10px;
+        transform: translate(0%, -50%);
       }
       &::before {
         transform: translate(-30%, -50%) rotate(-135deg);
@@ -3249,7 +3256,7 @@ img {
     }
 
     .p-top-voices__slider-wrap .slick-next {
-      right: -34px;
+      right: 0;
       left: unset;
       transform: translate(100%, -50%);
       @include max-screen($breakpoint-md) {
@@ -3837,11 +3844,12 @@ img {
       color: #ffffff;
       font-size: 18px;
       font-weight: 600;
-      letter-spacing: 0.15em; // 3px相当
+      letter-spacing: 0.15em;
       text-decoration: none;
       transition:
         opacity 0.3s,
         transform 0.3s;
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
 
       &:hover {
         opacity: 0.85;
@@ -6445,7 +6453,6 @@ img {
   }
   // テキスト部分
   .p-reason-feature__sub-body {
-
   }
   // タイトル
   .p-reason-feature__sub-title {
@@ -6582,7 +6589,6 @@ img {
     }
   }
   .p-flow-step__item-body {
-
   }
   .p-flow-step__item-number {
     position: relative;
@@ -6614,7 +6620,6 @@ img {
     font-size: 1.6rem;
     line-height: 1.6;
   }
-
 }
 
 /*-----------------------
@@ -7486,7 +7491,7 @@ p-point（下層ページ共通）
     top: 0;
     right: 0;
     z-index: -1;
-    width: calc(100% - .4rem);
+    width: calc(100% - 0.4rem);
     height: 100%;
     background-color: #fff;
     border-radius: 1rem;
@@ -7495,7 +7500,7 @@ p-point（下層ページ共通）
 .p-process__item-title {
   font-size: 2rem;
   margin-bottom: 1.6rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 .p-process__item-text {
   font-size: 1.6rem;
@@ -7528,7 +7533,6 @@ p-point（下層ページ共通）
   gap: 120px;
 }
 .p-calculation__service-item {
-
 }
 .p-calculation__service-title {
   margin-bottom: 4.8rem;
@@ -7593,7 +7597,6 @@ p-point（下層ページ共通）
   padding: 80px 0;
 }
 .p-personnel-affairs__step-content {
-
 }
 .p-personnel-affairs__step-list {
   display: grid;
@@ -7678,7 +7681,6 @@ p-point（下層ページ共通）
   }
 }
 .p-establishment-support__about-body {
-
 }
 .p-establishment-support__about-title {
   margin-bottom: 1.2rem;
@@ -7763,7 +7765,6 @@ p-point（下層ページ共通）
   padding: 60px 0;
 }
 .p-establishment-support__business-content {
-
 }
 .p-establishment-support__business-img {
   max-width: 765px;
@@ -7786,13 +7787,11 @@ p-point（下層ページ共通）
   padding: 60px 0;
 }
 .p-establishment-support__price-content {
-
 }
 .p-establishment-support__price-table {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 /*--------------------------------------
   価格表（汎用パーツ）

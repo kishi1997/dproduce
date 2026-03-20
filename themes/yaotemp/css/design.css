@@ -7350,3 +7350,243 @@ p-point（下層ページ共通）
   font-size: 1.8rem;
   line-height: 1.6;
 }
+
+/*--------------------------------------
+  Establishment Support Page（創業支援パック）
+--------------------------------------*/
+.p-establishment-support .p-page-header {
+  background-image: url(../img/establishment-support-mv-bg.jpg);
+}
+
+.p-establishment-support__about {
+  padding: 80px 0;
+}
+
+.p-establishment-support__about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3.6363636364%;
+}
+@media screen and (max-width: 768px) {
+  .p-establishment-support__about-content {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-establishment-support__about-img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.p-establishment-support__about-title {
+  margin-bottom: 1.2rem;
+  font-size: 2.8rem;
+  color: #0e6ed0;
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__about-title {
+    font-size: 2rem;
+  }
+}
+
+.p-establishment-support__about-requirements {
+  position: relative;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__about-requirements {
+    font-size: 2rem;
+  }
+}
+.p-establishment-support__about-requirements::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-establishment-support__about-note {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-establishment-support__service {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-establishment-support__service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 36px;
+  column-gap: 32px;
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__service-list {
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
+}
+
+.p-establishment-support__service-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__service-item {
+    padding: 14px 14px;
+  }
+}
+
+.p-establishment-support__service-item-img {
+  aspect-ratio: 1;
+}
+
+.p-establishment-support__service-item-title {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__service-item-title {
+    font-size: 1.6rem;
+  }
+}
+
+.p-establishment-support__service-note {
+  width: fit-content;
+  margin-top: 32px;
+  margin-right: 0;
+  margin-left: auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-establishment-support__service-note {
+    font-size: 1.5rem;
+  }
+}
+
+.p-establishment-support__business {
+  padding: 60px 0;
+}
+
+.p-establishment-support__business-img {
+  max-width: 765px;
+  margin: 0 auto;
+}
+
+.p-establishment-support__business-price {
+  margin-top: 64px;
+}
+
+.p-establishment-support__business-price-note {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-establishment-support__business-table {
+  max-width: 1000px;
+  margin: 2.4rem auto 0;
+}
+
+.p-establishment-support__price {
+  padding: 60px 0;
+}
+
+.p-establishment-support__price-table {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------
+  価格表（汎用パーツ）
+--------------------------------------*/
+.p-price-table {
+  width: 100%;
+  font-size: 2rem;
+  border-top: 3px solid #004e87;
+}
+@media screen and (max-width: 480px) {
+  .p-price-table {
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .p-price-table__tbody {
+    display: grid;
+    gap: 24px;
+  }
+}
+
+.p-price-table__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+@media screen and (max-width: 480px) {
+  .p-price-table__row {
+    grid-template-columns: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-price-table__row:first-child {
+    border-top: 1px solid #eaeaea;
+  }
+}
+
+.p-price-table__row-title {
+  padding: 24px 20px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  background-color: #f5f7f9;
+}
+@media screen and (max-width: 480px) {
+  .p-price-table__row-title {
+    padding: 16px 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-price-table__data {
+  padding: 24px 20px;
+}
+@media screen and (max-width: 480px) {
+  .p-price-table__data {
+    padding: 16px 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-price-table__data-strong-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e6ed0;
+}
+@media screen and (max-width: 480px) {
+  .p-price-table__data-strong-text {
+    font-size: 1.6rem;
+  }
+}

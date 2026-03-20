@@ -7650,3 +7650,206 @@ p-point（下層ページ共通）
   line-height: 1.6;
 }
 
+/*--------------------------------------
+  Establishment Support Page（創業支援パック）
+--------------------------------------*/
+.p-establishment-support {
+  .p-page-header {
+    background-image: url(../img/establishment-support-mv-bg.jpg);
+  }
+}
+.p-establishment-support__about {
+  padding: 80px 0;
+}
+.p-establishment-support__about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: calc(40px / 1100px * 100%);
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+}
+.p-establishment-support__about-img {
+  @include max-screen($breakpoint-sm) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+.p-establishment-support__about-body {
+
+}
+.p-establishment-support__about-title {
+  margin-bottom: 1.2rem;
+  font-size: 2.8rem;
+  color: $color-main2;
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+}
+.p-establishment-support__about-requirements {
+  position: relative;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 3px;
+    background-color: $color-main2;
+  }
+}
+.p-establishment-support__about-note {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.p-establishment-support__service {
+  padding: 80px 0;
+  background-color: $color-bg-gray;
+}
+.p-establishment-support__service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 36px;
+  column-gap: 32px;
+  @include max-screen($breakpoint-xs) {
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
+}
+.p-establishment-support__service-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid $color-border;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.05);
+  @include max-screen($breakpoint-xs) {
+    padding: 14px 14px;
+  }
+}
+.p-establishment-support__service-item-img {
+  aspect-ratio: 1;
+}
+.p-establishment-support__service-item-title {
+  font-size: 1.8rem;
+  @include max-screen($breakpoint-xs) {
+    font-size: 1.6rem;
+  }
+}
+.p-establishment-support__service-note {
+  width: fit-content;
+  margin-top: 32px;
+  margin-right: 0;
+  margin-left: auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  @include max-screen($breakpoint-xs) {
+    font-size: 1.5rem;
+  }
+}
+.p-establishment-support__business {
+  padding: 60px 0;
+}
+.p-establishment-support__business-content {
+
+}
+.p-establishment-support__business-img {
+  max-width: 765px;
+  margin: 0 auto;
+}
+.p-establishment-support__business-price {
+  margin-top: 64px;
+}
+.p-establishment-support__business-price-note {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.p-establishment-support__business-table {
+  max-width: 1000px;
+  margin: 2.4rem auto 0;
+}
+.p-establishment-support__price {
+  padding: 60px 0;
+}
+.p-establishment-support__price-content {
+
+}
+.p-establishment-support__price-table {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*--------------------------------------
+  価格表（汎用パーツ）
+--------------------------------------*/
+.p-price-table {
+  width: 100%;
+  font-size: 2rem;
+  border-top: 3px solid $color-sub;
+  @include max-screen($breakpoint-xs) {
+    border-top: none;
+  }
+}
+.p-price-table__tbody {
+  @include max-screen($breakpoint-xs) {
+    display: grid;
+    gap: 24px;
+  }
+}
+.p-price-table__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  border-left: 1px solid $color-border;
+  @include max-screen($breakpoint-xs) {
+    grid-template-columns: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 0.05);
+  }
+  &:first-child {
+    @include max-screen($breakpoint-xs) {
+      border-top: 1px solid $color-border;
+    }
+  }
+}
+.p-price-table__row-title {
+  padding: 24px 20px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  background-color: $color-bg-gray;
+  @include max-screen($breakpoint-xs) {
+    padding: 16px 20px;
+    font-size: 1.6rem;
+  }
+}
+.p-price-table__data {
+  padding: 24px 20px;
+  @include max-screen($breakpoint-xs) {
+    padding: 16px 20px;
+    font-size: 1.6rem;
+  }
+}
+.p-price-table__data-strong-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-main2;
+  @include max-screen($breakpoint-xs) {
+    font-size: 1.6rem;
+  }
+}

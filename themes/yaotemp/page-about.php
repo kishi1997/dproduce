@@ -67,74 +67,94 @@
         </div>
     </section>
 
-    <!-- 理由（2カラムレイアウト） -->
-    <section class="p-about-reason">
+    <!-- なぜ、D・プロデュースが「次」のパートナーにふさわしいのか -->
+    <section class="p-strength">
         <div class="l-container">
-            <div class="p-about-reason__header">
-                <h2 class="p-about-reason__title">
-                    <span class="p-about-reason__title-line p-about-reason__title-line--deco">
-                        なぜ、D・プロデュースが
-                    </span>
-                    <span class="p-about-reason__title-line">
-                        「次」のパートナーにふさわしいのか
-                    </span>
-                </h2>
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <span class="c-section-heading__title-en">WHY</span>
+                <h2 class="c-section-heading__title-ja">/ なぜ、D・プロデュースが<br />「次」のパートナーにふさわしいのか</h2>
             </div>
 
-            <div class="p-about-reason__list">
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img1.jpg"
-                            alt="白い外壁が特徴のシンプルモダンな2階建て住宅の外観">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 01</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            【属人化の解消】<br />1社5名のチーム担当制
-                        </h3>
-                        <p class="p-about-reason__text">
+            <div class="p-strength__list">
+
+                <!-- 01 -->
+                <div class="p-strength__item">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img1.jpg" alt="チェック体制">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.01</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【属人化の解消】<br />1社5名のチーム担当制</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number1.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
                             社労士業界で一般的な「1社1担当制」は、担当者の不在や退職がそのまま貴社のリスクに直結します。 D・プロデュースでは、お客様1社に対して役割の異なる5名の専任チームを編成。チャットツールで情報をリアルタイムに共有し、常に「誰かが即座に答えられる」体制を構築しています。属人化を徹底して排除し、止まることのない安定したバックオフィス運用をお約束します。
                         </p>
                     </div>
                 </div>
 
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img2.jpg"
-                            alt="ヘリンボーン調の木壁とアイアン照明を取り入れた開放的なLDK空間">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 02</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            【大規模対応の知見】<br />100名〜数千名規模企業サポートのの実績
-                        </h3>
-                        <p class="p-about-reason__text">
+                <!-- 02 -->
+                <div class="p-strength__item p-strength__item--reverse">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img2.jpg" alt="サポート実績">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.02</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【大規模対応の知見】<br />100名〜数千名規模企業サポートの実績</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number2.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
                             私たちは、数名規模のスタートアップから、数千名規模の大企業まで、あらゆるフェーズの労務管理を経験してきました。 100名を超えると急増する入退社手続き、複雑な多拠点管理、そして膨大な給与計算。これらの課題を、最新のDXツールとこれまでの豊富な受託実績に裏打ちされたノウハウで、正確かつ効率的に処理します。貴社の規模がどれだけ拡大しても、柔軟に対応し続けるキャパシティがここにあります。
                         </p>
                     </div>
                 </div>
 
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img3.jpg"
-                            alt="アイランドキッチンを中心にしたナチュラルモダンなダイニングキッチン">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 03</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            【攻めの改善提案】<br />法改正を「リスク」ではなく「機会」に
-                        </h3>
-                        <p class="p-about-reason__text">
+                <!-- 03 -->
+                <div class="p-strength__item">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img3.jpg" alt="法改正への対応">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.03</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【攻めの改善提案】<br />法改正を「リスク」ではなく「機会」に</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number3.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
                             目まぐるしく変わる労働法制。それを単なる「守るべきルール」として捉えるか、「組織をより良くするチャンス」として捉えるかで、企業の未来は変わります。 私たちは、法改正の内容を伝えるだけでなく、それが「貴社の現場にどう影響し、どう活用すべきか」を具体的に提言。定期的な勉強会の開催や独自のSRS診断を通じ、トラブルを未然に防ぎ、社員が安心して自走できる「強い組織」へのアップデートを支援します。
                         </p>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>

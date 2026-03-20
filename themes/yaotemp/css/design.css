@@ -7276,7 +7276,7 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Personal Evaluation Page（人事評価制度構築）
+  Personal Affairs Page（人事評価制度構築）
 --------------------------------------*/
 .p-personnel-affairs .p-page-header {
   background-image: url(../img/personal-evaluation-mv-bg.jpg);
@@ -7286,12 +7286,67 @@ p-point（下層ページ共通）
   padding: 80px 0;
 }
 
-.p-personnel-affairs__step-img {
-  height: 480px;
-  margin-inline: calc(50% - 50vw);
+.p-personnel-affairs__step-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 36px;
+  column-gap: 36px;
+}
+@media screen and (max-width: 768px) {
+  .p-personnel-affairs__step-list {
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
+}
+
+.p-personnel-affairs__step-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
-.p-personnel-affairs__step-img img {
+@media screen and (max-width: 480px) {
+  .p-personnel-affairs__step-item {
+    grid-template-columns: 36px 1fr;
+    gap: 16px;
+    padding: 16px 16px;
+  }
+}
+.p-personnel-affairs__step-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
   height: 100%;
-  object-fit: cover;
+  background-color: #0e6ed0;
+}
+
+.p-personnel-affairs__step-item-head {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #0e6ed0;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.p-personnel-affairs__step-number {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .p-personnel-affairs__step-number {
+    font-size: 2rem;
+  }
+}
+
+.p-personnel-affairs__step-item-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }

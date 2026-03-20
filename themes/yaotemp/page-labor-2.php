@@ -77,7 +77,7 @@
                 <!-- 01 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/regulation-img1.jpg" alt="チェック体制">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img3.jpg" alt="的確なアドバイス">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -101,7 +101,7 @@
                 <!-- 02 -->
                 <div class="p-strength__item p-strength__item--reverse">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-img3.jpg" alt="運用支援">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-img1.jpg" alt="チームによる多角的検証">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -125,7 +125,7 @@
                 <!-- 03 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/regulation-img2.jpg" alt="法改正・トレンドの反映">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/planning-img.jpg" alt="予防策の提示">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">

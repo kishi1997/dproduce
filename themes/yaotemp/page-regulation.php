@@ -3,7 +3,7 @@
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">regulation</span>
+            <span class="p-page-header__subtitle">Regulation</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -59,6 +59,7 @@
         </div>
     </section>
 
+    <!-- D・プロデュースの就業規則サポート３つの特長 -->
     <section class="p-strength">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -150,7 +151,7 @@
         </div>
     </section>
 
-    <!-- D・プロデュースの就業規則サポート３つの特長 -->
+    <!-- D・プロデュースの就業規則サポートの特徴 -->
     <section class="p-point">
         <div class="l-container">
             <!-- セクション見出し -->

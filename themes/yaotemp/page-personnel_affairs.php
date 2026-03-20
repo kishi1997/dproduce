@@ -293,9 +293,76 @@
             </div>
 
             <div class="p-personnel-affairs__step-content">
-                <div class="p-personnel-affairs__step-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder-voice1.jpg" alt="人事評価制度策定のステップ">
-                </div>
+                <ol class="p-personnel-affairs__step-list">
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">1</span></div>
+                        <p class="p-personnel-affairs__step-item-text">経営理念</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">2</span></div>
+                        <p class="p-personnel-affairs__step-item-text">全社経営目標</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">3</span></div>
+                        <p class="p-personnel-affairs__step-item-text">経営目標達成に必要な組織（図）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">4</span></div>
+                        <p class="p-personnel-affairs__step-item-text">部門目標</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">5</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人材育成方針（全社共通の求人材像）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">6</span></div>
+                        <p class="p-personnel-affairs__step-item-text">等級基準（共通）考え方、心構え、業務のレベル・能力</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">7</span></div>
+                        <p class="p-personnel-affairs__step-item-text">等級基準（職種別：○○○○）or（部門別：○○○○）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">8</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人事評価作成記図（キャリアデザイン）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">9</span></div>
+                        <p class="p-personnel-affairs__step-item-text">社員等等級設定</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">10</span></div>
+                        <p class="p-personnel-affairs__step-item-text">教育訓練体系（職種別：○○○○）or（部門別：○○○○）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">11</span></div>
+                        <p class="p-personnel-affairs__step-item-text">教育訓練カリキュラム（全体、内容、目的）</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">12</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人事評価シートの策定</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">13</span></div>
+                        <p class="p-personnel-affairs__step-item-text">社内昇進の基準・設定</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">14</span></div>
+                        <p class="p-personnel-affairs__step-item-text">賃金制度の策定</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">15</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人事評価委員設置</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">16</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人事評価制度（仮）運用</p>
+                    </li>
+                    <li class="p-personnel-affairs__step-item">
+                        <div class="p-personnel-affairs__step-item-head"><span class="p-personnel-affairs__step-number">17</span></div>
+                        <p class="p-personnel-affairs__step-item-text">人事制度を運用（PDCAで改善を繰り返す）</p>
+                    </li>
+                </ol>
             </div>
         </div>
     </section>

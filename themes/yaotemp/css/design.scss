@@ -7582,7 +7582,7 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Personal Evaluation Page（人事評価制度構築）
+  Personal Affairs Page（人事評価制度構築）
 --------------------------------------*/
 .p-personnel-affairs {
   .p-page-header {
@@ -7595,12 +7595,58 @@ p-point（下層ページ共通）
 .p-personnel-affairs__step-content {
 
 }
-.p-personnel-affairs__step-img {
-  height: 480px;
-  margin-inline: calc(50% - 50vw);
-  overflow: hidden;
-  img {
-    height: 100%;
-    object-fit: cover;
+.p-personnel-affairs__step-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 36px;
+  column-gap: 36px;
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: auto;
+    row-gap: 24px;
   }
 }
+.p-personnel-affairs__step-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  @include max-screen($breakpoint-xs) {
+    grid-template-columns: 36px 1fr;
+    gap: 16px;
+    padding: 16px 16px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $color-main2;
+  }
+}
+.p-personnel-affairs__step-item-head {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: $color-main2;
+  color: #fff;
+  border-radius: 12px;
+}
+.p-personnel-affairs__step-number {
+  font-size: 2.4rem;
+  font-weight: bold;
+  @include max-screen($breakpoint-xs) {
+    font-size: 2rem;
+  }
+}
+.p-personnel-affairs__step-item-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+

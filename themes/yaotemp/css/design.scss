@@ -8099,3 +8099,166 @@ p-point（下層ページ共通）
   margin: 0;
 }
 
+
+/*--------------------------------------
+  Insurance Page
+--------------------------------------*/
+.p-insurance {
+  .p-page-header {
+    background-image: url(../img/labor-mv-bg.jpg);
+  }
+}
+.p-insurance__system {
+
+}
+.p-insurance__system-content {
+
+}
+.p-insurance__system-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 60px;
+  column-gap: 80px;
+  @include max-screen($breakpoint-sm) {
+    row-gap: 40px;
+  }
+}
+.p-insurance__system-card {
+  position: relative;
+  width: min(100%, 432px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+  border-radius: 0 0 16px 16px;
+  &::before,
+  &::after {
+    opacity: 0;
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 1rem;
+    height: 100px;
+    background-color: $color-bg-gray;
+    box-shadow: 0 4px 12px rgb(0 0 0 / .2);
+  }
+}
+.p-insurance__system-card--dproduce {
+  --theme-color: #0e6ed0;
+}
+.p-insurance__system-card--sr {
+  --theme-color: #50acc8;
+  &::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  &::before {
+    top: 0;
+    left: 60%;
+    transform: translate(0, -80%) rotate(25deg);
+    @include max-screen($breakpoint-sm) {
+      left: 50%;
+      transform: translate(-50%, -80%);
+    }
+  }
+}
+.p-insurance__system-card--consultant {
+  --theme-color: #45af65;
+  &::before,
+  &::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  &::before {
+    top: 0;
+    right: 60%;
+    transform: translate(0, -80%) rotate(-25deg);
+    @include max-screen($breakpoint-sm) {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -80%);
+    }
+  }
+  &::after {
+    top: 50%;
+    left: 0;
+    transform: translate(-150%, -50%) rotate(90deg);
+    @include max-screen($breakpoint-sm) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+.p-insurance__system-card-head {
+  padding: 16px;
+  background-color: var(--theme-color);
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+.p-insurance__system-card-logo {
+  max-width: 128px;
+  margin: 0 auto;
+}
+.p-insurance__system-card-body {
+  padding: 32px 24px;
+  background-color: #fff;
+  border-radius: 0 0 16px 16px;
+  @include max-screen($breakpoint-sm) {
+    padding: 24px 20px;
+  }
+  @include max-screen($breakpoint-xs) {
+    padding: 20px 16px;
+  }
+}
+.p-insurance__system-card-list {
+  display: grid;
+  gap: 12px;
+}
+.p-insurance__system-card-item {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  &::before {
+    content: "";
+    position: absolute;
+    top: .5lh;
+    left: .5em;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--theme-color);
+  }
+}
+.p-insurance__system-card-item-strong {
+  color: var(--theme-color);
+  font-weight: bold;
+}
+.p-insurance__system-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.p-insurance__system-card-title {
+
+}
+.p-insurance__system-card-item-small {
+  font-size: 0.9em;
+  vertical-align: top;
+}
+.p-insurance__system-text {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  @include max-screen($breakpoint-sm) {
+    margin-top: 40px;
+  }
+}

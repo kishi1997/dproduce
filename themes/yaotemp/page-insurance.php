@@ -151,6 +151,7 @@
         </div>
     </section>
 
+    <!-- D・プロデュースのバックアップ体制（独自セクション） -->
     <section class="p-insurance__system">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -163,8 +164,55 @@
                 <h2 class="c-section-heading__title-ja">/ D・プロデュースのバックアップ体制</h2>
             </div>
             <div class="p-insurance__system-content">
-                <div class="p-insurance__system-overview">
-
+                <div class="p-insurance__system-cards">
+                    <!-- 01 -->
+                    <div class="p-insurance__system-card p-insurance__system-card--dproduce">
+                        <div class="p-insurance__system-card-head">
+                            <h3 class="p-insurance__system-card-logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="社会保険労務士法人D・プロデュース"></h3>
+                        </div>
+                        <div class="p-insurance__system-card-body">
+                            <!-- リスト -->
+                            <ul class="p-insurance__system-card-list">
+                                <li class="p-insurance__system-card-item">社会保険、労働保険手続きを<span class="p-insurance__system-card-item-strong">迅速かつ正確</span>に対応</li>
+                                <li class="p-insurance__system-card-item">法改正等の頻繁かつタイムリーな各種情報提供</li>
+                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">問題箇所がはっきりわかる</span>官公庁の立ち入り検査対応</li>
+                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働紛争解決へのアドバイス及びあっせん代理</span></li>
+                                <li class="p-insurance__system-card-item">法人組織による、<span class="p-insurance__system-card-item-strong">安心・安全</span>なご契約</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-insurance__system-row">
+                        <!-- 02 -->
+                        <div class="p-insurance__system-card p-insurance__system-card--sr">
+                            <div class="p-insurance__system-card-head">
+                                <h3 class="p-insurance__system-card-title">神奈川県SR経営労務センター</h3>
+                            </div>
+                            <div class="p-insurance__system-card-body">
+                                <!-- リスト -->
+                                <ul class="p-insurance__system-card-list">
+                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">会社に事務負担の少ない</span>労働保険手続き</li>
+                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働保険楼の</span>確定申告<span class="p-insurance__system-card-item-small">(年度更新)</span></li>
+                                    <li class="p-insurance__system-card-item">事業主も労働加入できる安心の特別加入制度</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="p-insurance__system-card p-insurance__system-card--consultant">
+                            <div class="p-insurance__system-card-head">
+                                <h3 class="p-insurance__system-card-title">人事労務コンサルタント</h3>
+                            </div>
+                            <div class="p-insurance__system-card-body">
+                                <!-- リスト -->
+                                <ul class="p-insurance__system-card-list">
+                                    <li class="p-insurance__system-card-item">就業規則を<span class="p-insurance__system-card-item-strong">オーダーメイド作成</span></li>
+                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">判断に迷う</span>人づかいのアドバイス</li>
+                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">時代とニーズにマッチした</span>諸規定の準備</li>
+                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">経営労働監査による「人材」の効果的活用と成長発展の視点での経営分析評価</span></li>
+                                    <li class="p-insurance__system-card-item">IPO<span class="p-insurance__system-card-item-small">(株式公開)</span>へ向けた<span class="p-insurance__system-card-item-strong">内部統制支援<span class="p-insurance__system-card-item-small">(コンサルティング)</span></span>他</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p class="p-insurance__system-text">
                     当社の「労働・社会保険事務アウトソーシング」サービスでは、このような実務手続きの代行を適正に行い、事業継続する上で必要な知識・ノウハウをご提供しながら、しっかりと御社をサポートさせていただきます。<br />

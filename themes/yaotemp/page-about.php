@@ -24,7 +24,10 @@
                         組織の成長にブレーキをかけない体制を。</span>
                 </h2>
                 <p class="p-intro__lead">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    従業員数が100名を超えると、人事労務の役割は「単なる事務」から「経営を支えるインフラ」へと変わります。 しかし、多くの企業様が「1名体制の社労士事務所」や「属人化した内製チーム」による限界<br />
+                    レスポンスの遅れ、法改正への対応不足、そしてミスへの不安——に直面しているのが実情です。<br />
+                    <br>
+                    私たちD・プロデュースは、その「組織の壁」を突破するためのパートナーです。 一人の「先生」に頼るのではなく、プロフェッショナルな「組織」で貴社を支える。 創業期から拡大期、そして数千名規模の大企業までを支えてきた知見と、最新のデジタル技術を融合させ、貴社のさらなる成長を揺るぎないものにします。
                 </p>
             </div>
         </div>
@@ -64,74 +67,94 @@
         </div>
     </section>
 
-    <!-- 理由（2カラムレイアウト） -->
-    <section class="p-about-reason">
+    <!-- なぜ、D・プロデュースが「次」のパートナーにふさわしいのか -->
+    <section class="p-strength">
         <div class="l-container">
-            <div class="p-about-reason__header">
-                <h2 class="p-about-reason__title">
-                    <span class="p-about-reason__title-line p-about-reason__title-line--deco">
-                        なぜ、D・プロデュースが
-                    </span>
-                    <span class="p-about-reason__title-line">
-                        「次」のパートナーにふさわしいのか
-                    </span>
-                </h2>
+            <!-- セクション見出し -->
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <span class="c-section-heading__title-en">WHY</span>
+                <h2 class="c-section-heading__title-ja">/ なぜ、D・プロデュースが<br />「次」のパートナーにふさわしいのか</h2>
             </div>
 
-            <div class="p-about-reason__list">
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img1.jpg"
-                            alt="白い外壁が特徴のシンプルモダンな2階建て住宅の外観">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 01</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            1社5名のチーム担当制
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            <div class="p-strength__list">
+
+                <!-- 01 -->
+                <div class="p-strength__item">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img1.jpg" alt="チェック体制">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.01</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【属人化の解消】<br />1社5名のチーム担当制</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number1.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
+                            社労士業界で一般的な「1社1担当制」は、担当者の不在や退職がそのまま貴社のリスクに直結します。 D・プロデュースでは、お客様1社に対して役割の異なる5名の専任チームを編成。チャットツールで情報をリアルタイムに共有し、常に「誰かが即座に答えられる」体制を構築しています。属人化を徹底して排除し、止まることのない安定したバックオフィス運用をお約束します。
                         </p>
                     </div>
                 </div>
 
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img2.jpg"
-                            alt="ヘリンボーン調の木壁とアイアン照明を取り入れた開放的なLDK空間">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 02</span>
-                        </span>
-                        <h3 class="p-about-reason__item-title">
-                            100名〜数千名規模企業サポートの実績
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <!-- 02 -->
+                <div class="p-strength__item p-strength__item--reverse">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img2.jpg" alt="サポート実績">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.02</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【大規模対応の知見】<br />100名〜数千名規模企業サポートの実績</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number2.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
+                            私たちは、数名規模のスタートアップから、数千名規模の大企業まで、あらゆるフェーズの労務管理を経験してきました。 100名を超えると急増する入退社手続き、複雑な多拠点管理、そして膨大な給与計算。これらの課題を、最新のDXツールとこれまでの豊富な受託実績に裏打ちされたノウハウで、正確かつ効率的に処理します。貴社の規模がどれだけ拡大しても、柔軟に対応し続けるキャパシティがここにあります。
                         </p>
                     </div>
                 </div>
 
-                <div class="p-about-reason__item">
-                    <div class="p-about-reason__img">
-                        <img src="<?php bloginfo('template_url');?>/img/sample/reason-two-col-img3.jpg"
-                            alt="アイランドキッチンを中心にしたナチュラルモダンなダイニングキッチン">
-                    </div>
-                    <div class="p-about-reason__body">
-                        <span class="p-about-reason__label">
-                            Point<span class="p-about-reason__label-num">/ 03</span>
-                        </span>
-                        <h3 class="p-aboutreason__item-title">
-                            法改正を「リスク」ではなく「機会」に
-                        </h3>
-                        <p class="p-about-reason__text">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <!-- 03 -->
+                <div class="p-strength__item">
+                    <figure class="p-strength__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img3.jpg" alt="法改正への対応">
+                    </figure>
+                    <div class="p-strength__content">
+                        <div class="p-strength__head">
+                            <div class="p-strength__label-wrap">
+                                <span class="p-strength__label">WHY.03</span>
+                                <span class="p-strength__line"></span>
+                            </div>
+                            <h3 class="p-strength__item-title">【攻めの改善提案】<br />法改正を「リスク」ではなく「機会」に</h3>
+
+                            <figure class="p-strength__number  p-top-strength__number--small">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number3.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
+                        </div>
+                        <p class="p-strength__desc">
+                            目まぐるしく変わる労働法制。それを単なる「守るべきルール」として捉えるか、「組織をより良くするチャンス」として捉えるかで、企業の未来は変わります。 私たちは、法改正の内容を伝えるだけでなく、それが「貴社の現場にどう影響し、どう活用すべきか」を具体的に提言。定期的な勉強会の開催や独自のSRS診断を通じ、トラブルを未然に防ぎ、社員が安心して自走できる「強い組織」へのアップデートを支援します。
                         </p>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -213,7 +236,9 @@
                     D・プロデュースの強みを支える「4つの理由」
                 </h2>
                 <p class="p-intro__lead">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    D・プロデュースが、なぜ横浜の多くの中堅・成長企業から選ばれ続けているのか。<br />
+                    その根底には、徹底した「組織対応」「スピード」「テクノロジー活用」「実践的な提案」という、譲れない4つのこだわりがあります。<br />
+                    他事務所とは一線を画す、私たちの「プロフェッショナリズムの正体」をぜひご覧ください。
                 </p>
                 <h3 class="p-intro__sub-lead">私たちのこだわりは、4つの理由に集約されています。</h3>
                 <div class="p-intro__btn-wrapper">
@@ -286,116 +311,6 @@
             </div>
         </div>
     </section>
-    <!-- 施工事例 / 実績 -->
-    <section class="p-works">
-        <h3>以下はサンプルセクションです</h3>
-        <div class="l-container">
-            <div class="p-works__list">
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img1.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
 
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img2.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
-
-                <a href="" class="p-works__item">
-                    <div class="p-works__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-work-img3.jpg" alt="サムネイル画像">
-                    </div>
-                    <div class="p-works__body">
-                        <div class="p-works__meta">
-                            <span class="p-works__category">カテゴリ名</span>
-                            <span class="p-works__client">〇〇市A様</span>
-                        </div>
-                        <h4 class="p-works__title">タイトルタイトルタイトルタイトル</h4>
-                        <p class="p-works__text">本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用本文引用</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="p-works__btn-wrapper">
-                <div class="c-btn c-btn--outline">
-                    <a href="">もっと見る</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ポイント（左右互い違いのレイアウト） -->
-    <section class="p-point">
-        <div class="l-container">
-            <div class="p-point__item">
-                <div class="p-point__inner">
-                    <div class="p-point__img">
-                        <img alt="「完全オーダーメイドで理想の暮らしを実現」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img1.jpg" />
-                    </div>
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="01" src="<?php bloginfo('template_url');?>/img/sample/bg-number-01.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">ご家族のライフスタイルに合わせた、個々の動き・活動・空間にフィットする住まいを提案します。</p>
-                        <p class="p-point__text">決まった形はありません。お客様の想いを大切にし、素敵な住まいを実現するお手伝いをします。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-point__item">
-                <!-- 反転レイアウト用のモディファイアクラス（--reverse）を付与 -->
-                <div class="p-point__inner p-point__inner--reverse">
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="02" src="<?php bloginfo('template_url');?>/img/sample/bg-number-02.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">理想の家を実現するためには、敷地の特性を活かすことが重要です。お客様のライフスタイルに合わせた最適なプランをご提案します。</p>
-                        <p class="p-point__text">また、周辺環境や将来的な変化にも配慮したプランニングを行い、安心して住める家づくりをサポートします。</p>
-                    </div>
-                    <div class="p-point__img">
-                        <img alt="「敷地条件を活かした柔軟なプランニング」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img2.jpg" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-point__item">
-                <div class="p-point__inner">
-                    <div class="p-point__img">
-                        <img alt="「自然素材と最新技術の融合」イメージ画像"
-                            src="<?php bloginfo('template_url');?>/img/sample/sample-point-img3.jpg" />
-                    </div>
-                    <div class="p-point__body">
-                        <span class="p-point__number">
-                            <img alt="03" src="<?php bloginfo('template_url');?>/img/sample/bg-number-03.svg" />
-                        </span>
-                        <h3 class="p-point__title">サンプルタイトル</h3>
-                        <p class="p-point__text">無垢材や漆喰といった自然素材の魅力を活かしながら、断熱性能・耐震構造・省エネ設計など、現代の住宅に必要な性能も確保。</p>
-                        <p class="p-point__text">見た目の美しさと暮らしの快適性、どちらも兼ね備えたバランスの良い住まいを実現します。安心して長く住めることを大切にしています。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 <?php get_footer(); ?>

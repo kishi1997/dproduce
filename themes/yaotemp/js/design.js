@@ -306,10 +306,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
-  // SERVICEタブ タブ切り替え
+  // 下層ページタブ タブ切り替え
   // ==========================================
-  const tabItems = document.querySelectorAll(".p-service-tab__item");
-  const tabPanels = document.querySelectorAll(".p-service-tab__panel");
+  const tabItems = document.querySelectorAll(".p-tab__item");
+  const tabPanels = document.querySelectorAll(".p-tab__panel");
 
   if (tabItems.length > 0 && tabPanels.length > 0) {
     tabItems.forEach((tab) => {

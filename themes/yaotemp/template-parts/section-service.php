@@ -30,7 +30,7 @@
                         <div class="p-tab__card-list">
 
                             <!-- カード1 -->
-                            <a href="<?php bloginfo('url');?>/service/startup/" class="p-tab__card">
+                            <a href="<?php bloginfo('url');?>/service/establishment_support/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">創業支援パック</h3>
@@ -53,7 +53,7 @@
                             </a>
 
                             <!-- カード3 -->
-                            <a href="<?php bloginfo('url');?>/service/payroll/" class="p-tab__card">
+                            <a href="<?php bloginfo('url');?>/service/calculation/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">給与計算代行</h3>
@@ -64,7 +64,7 @@
                             </a>
 
                             <!-- カード4 -->
-                            <a href="<?php bloginfo('url');?>/service/social-insurance/"
+                            <a href="<?php bloginfo('url');?>/service/insurance/"
                                 class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
@@ -82,7 +82,7 @@
                         <div class="p-tab__card-list">
 
                             <!-- カード1：就業規則サポート -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/regulation/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">就業規則サポート</h3>
@@ -94,7 +94,7 @@
                             </a>
 
                             <!-- カード2：人事評価制度構築 -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/personal_affairs/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">人事評価制度構築</h3>
@@ -106,7 +106,7 @@
                             </a>
 
                             <!-- カード3：労務トラブル相談 -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/service/labor-2/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">労務トラブル相談</h3>
@@ -118,7 +118,7 @@
                             </a>
 
                             <!-- カード4：SRS診断（職場環境診断） -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/service/srs/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">SRS診断（職場環境診断）</h3>
@@ -135,7 +135,7 @@
                     <div class="p-tab__panel" id="tab-education">
                         <div class="p-tab__card-list">
                             <!-- カード5：労務監査・労務DD -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/service/laboraudit/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">労務監査<br>労務DD(デューデリジェンス)</h3>
@@ -147,7 +147,7 @@
                             </a>
 
                             <!-- カード6：社員研修 -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/service/employee-orientation/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">社員研修</h3>
@@ -159,7 +159,7 @@
                             </a>
 
                             <!-- カード7：企業拠出年金 -->
-                            <a href="<?php bloginfo('url'); ?>/works/" class="p-tab__card">
+                            <a href="<?php bloginfo('url'); ?>/service/pension-system/" class="p-tab__card">
                                 <div class="p-tab__card-head">
                                     <span class="p-tab__card-dot"></span>
                                     <h3 class="p-tab__card-title">企業拠出年金</h3>

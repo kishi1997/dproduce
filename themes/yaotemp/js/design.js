@@ -336,3 +336,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+    // FAQ アコーディオン
+    var faqTriggers = document.querySelectorAll('.js-faq-trigger');
+    faqTriggers.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var item = btn.closest('.p-price-faq__item');
+            var isOpen = item.classList.contains('is-open');
+            document.querySelectorAll('.p-price-faq__item.is-open').forEach(function(el) {
+                el.classList.remove('is-open');
+            });
+            if (!isOpen) {
+                item.classList.add('is-open');
+            }
+        });
+    });

@@ -16,7 +16,7 @@
 // ==========================================================================
 $font-base: "Noto Sans JP", sans-serif;
 $font-en: "Open Sans", sans-serif;
-$color-main: #016EDC;
+$color-main: #016edc;
 $color-main2: #0e6ed0;
 $color-sub: #004e87;
 $color-base: #ebf0f8;
@@ -63,7 +63,6 @@ $breakpoint-xs: 480px; //sp
     @content;
   }
 }
-
 // ==========================================================================
 // Base & Utility
 // ==========================================================================
@@ -6476,10 +6475,6 @@ img {
       object-fit: cover;
     }
   }
-  // テキスト部分
-  .p-reason-feature__sub-body {
-
-  }
   // タイトル
   .p-reason-feature__sub-title {
     margin-bottom: 1.6rem;
@@ -6517,5 +6512,1453 @@ img {
       }
     }
   }
+}
 
+/* ─── SECTION LABEL ─── */
+.c-section-label {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+
+  &__en {
+    font-family: $font-en;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    color: $color-main;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background: rgba($color-main, 0.3);
+    max-width: 60px;
+  }
+}
+/* ─── PAGE SECTION HEADER (下層ページ共通) ─── */
+.c-page-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 64px;
+
+  @include max-screen($breakpoint-sm) {
+    margin-bottom: 40px;
+    gap: 12px;
+  }
+
+  &__deco {
+    display: flex;
+    gap: 7px;
+    margin-bottom: -10px;
+    @include max-screen($breakpoint-sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__deco-light {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #80bfff;
+  }
+
+  &__deco-dark {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #03478a;
+  }
+
+  &__title-en {
+    display: block;
+    font-family: $font-en;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0;
+    background: linear-gradient(90deg, #016edc 0%, #034283 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 32px;
+    }
+  }
+
+  &__title-ja {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: #000;
+    margin: 0;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #333;
+    margin: 16px 0 0;
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 13px;
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+}
+
+/* ─── POINT LABEL (下層ページ共通) ─── */
+.c-point-label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+
+  .c-point-label {
+    font-family: $font-en;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.22em;
+    color: $color-main; // #016EDC
+    text-transform: uppercase;
+  }
+
+  .c-point-line {
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: $color-main;
+  }
+}
+/*--------------------------------------
+  Recruit Page
+--------------------------------------*/
+.p-recruit {
+  color: $color-text;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
+  /* ─── POINT SECTION HEADING ─── */
+  .p-section-heading {
+    text-align: center;
+    padding: 8rem 0 6rem;
+
+    &__jp {
+      font-family: $font-base;
+      font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: $color-text;
+    }
+
+    &__en {
+      display: block;
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      color: $color-main;
+      text-transform: uppercase;
+      margin-top: 1.2rem;
+    }
+  }
+  .p-recruit-point {
+    background-color: $color-base;
+    padding-bottom: 80px;
+  }
+
+  .p-point__item {
+    margin-bottom: 10rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .p-point__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: center;
+
+    &--reverse {
+      direction: rtl;
+      > * {
+        direction: ltr;
+      }
+    }
+
+    @include max-screen($breakpoint-sm) {
+      grid-template-columns: 1fr;
+      direction: ltr;
+      gap: 3.2rem;
+    }
+  }
+
+  .p-point__img {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -1.6rem -1.6rem 1.6rem 1.6rem;
+      border: 1px solid rgba($color-main, 0.25);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+  }
+  .p-point__item:hover .p-point__img img {
+    transform: scale(1.04);
+  }
+
+  .p-point__body {
+    padding: 2rem 0;
+  }
+
+  .p-point__num-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .p-point__num {
+    font-family: $font-en;
+    font-size: 7.2rem;
+    font-weight: bold;
+    line-height: 1;
+    color: $color-main;
+    // -webkit-text-stroke: 1px rgba($color-main, 0.5);
+  }
+
+  .p-point__en {
+    font-family: $font-en;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    color: $color-main;
+    text-transform: uppercase;
+  }
+
+  .p-point__title {
+    font-family: $font-base;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    color: $color-text;
+  }
+
+  .p-point__text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2;
+    color: $color-text;
+  }
+
+  /* ─── JOBS ─── */
+  .p-recruit-jobs {
+    background-color: $color-text;
+    padding: 12rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "RECRUIT";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font-en;
+      font-size: 20vw;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.015);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .p-jobs-header {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    &__en {
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      color: $color-main;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+
+    &__jp {
+      font-family: $font-base;
+      font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: #fff;
+    }
+  }
+
+  /* ─── JOBS ─── */
+  .p-recruit-jobs {
+    background-color: $color-text;
+    padding: 12rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "RECRUIT";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font-en;
+      font-size: 20vw;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.015);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .p-jobs-header {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    &__en {
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      color: #fff;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+
+    &__jp {
+      font-family: $font-base;
+      font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: #fff;
+    }
+  }
+
+  .p-recruit-job {
+    margin-bottom: 10rem;
+   &__title {
+      font-family: $font-base;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 4rem;
+      padding-bottom: 2.4rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 1px;
+        background: #fff;
+      }
+    }
+
+    &__layout {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 4rem;
+      align-items: stretch;
+
+      &--reverse {
+        grid-template-columns: 7fr 5fr;
+        @include min-screen($breakpoint-sm + 1px) {
+          .p-recruit-job__img {
+            order: 2;
+          }
+          .p-recruit-job__info {
+            order: 1;
+          }
+        }
+      }
+
+      @include max-screen($breakpoint-sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__img-wrapper {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+    }
+
+    &:hover &__img-wrapper img {
+      transform: scale(1.04);
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__box {
+      padding: 2.8rem 3.2rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.03);
+      flex: 1;
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: rgba(#fff, 0.3);
+      }
+    }
+
+    &__box-title {
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.4em;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background: #fff;
+      }
+    }
+
+    &__box-text {
+      font-size: 1.45rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__btn-wrap {
+      text-align: center;
+      margin-top: 4rem;
+    }
+  }
+
+  /* ─── BUTTON ─── */
+  .c-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.4rem 3.2rem;
+    font-family: $font-en;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    overflow: hidden;
+
+    &--blue {
+      background: $color-main;
+      color: #fff;
+      border: 1px solid rgba($color-main, 0.5);
+
+      &::after {
+        content: "→";
+        transition: transform 0.3s ease;
+      }
+      &:hover {
+        &::after {
+          transform: translateX(4px);
+        }
+      }
+    }
+
+    &--white {
+      background: transparent;
+      color: $color-text;
+      border: 1px solid rgba($color-text, 0.3);
+
+      &::after {
+        content: "→";
+        transition: transform 0.3s ease;
+      }
+      &:hover {
+        background: $color-main;
+        color: #fff;
+        &::after {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+
+  /* ─── DATA TABLE ─── */
+  .p-recruit-data {
+    background-color: $color-base;
+    padding: 12rem 0;
+
+    &__table-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    &__table {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr {
+        border-bottom: 1px solid rgba($color-main, 0.15);
+        transition: background 0.2s;
+
+        &:first-child {
+          border-top: 1px solid rgba($color-main, 0.15);
+        }
+        &:hover {
+          background: $color-bg-gray;
+        }
+      }
+
+      th,
+      td {
+        padding: 2.4rem 0;
+        font-size: 1.5rem;
+        vertical-align: middle;
+      }
+
+      th {
+        width: 40%;
+        font-family: $font-base;
+        font-weight: 300;
+        color: $color-text;
+        letter-spacing: 0.05em;
+        text-align: left;
+        padding-right: 2rem;
+      }
+
+      td {
+        font-family: $font-en;
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: $color-text;
+        letter-spacing: 0.05em;
+      }
+
+      @include max-screen($breakpoint-sm) {
+        tr {
+          display: block;
+          padding: 2rem 0;
+        }
+        th,
+        td {
+          display: block;
+          padding: 0.4rem 0;
+          width: 100%;
+        }
+        td {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .p-data-header {
+    text-align: center;
+    margin-bottom: 7rem;
+
+    &__en {
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      color: $color-main;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+
+    &__jp {
+      font-family: $font-base;
+      font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: $color-text;
+    }
+  }
+
+  /* ─── MORE ─── */
+  .p-recruit-more {
+    background-color: $color-bg-gray;
+    padding: 10rem 0 12rem;
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+
+      @include max-screen(600px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__item {
+      padding: 5.6rem 4rem;
+      border: 1px solid rgba($color-main, 0.2);
+      text-align: center;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $color-main;
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba($color-text, 0.08);
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    &__text {
+      font-family: $font-base;
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      line-height: 1.7;
+      color: $color-text;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .p-more-header {
+    text-align: center;
+    margin-bottom: 7rem;
+
+    &__en {
+      font-family: $font-en;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      color: $color-main;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+
+    &__jp {
+      font-family: $font-base;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: $color-text;
+    }
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollLine {
+    0% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    50% {
+      transform: scaleY(0.3);
+      transform-origin: bottom;
+      opacity: 0.3;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+  }
+
+  /* ─── DIVIDER ─── */
+  .c-ornament {
+    text-align: center;
+    color: $color-main;
+    font-size: 1.6rem;
+    letter-spacing: 1em;
+    opacity: 0.4;
+    padding: 2rem 0;
+  }
+}
+
+// ページヘッダーMV（共通クラスのため .p-recruit 外）
+.p-page-header {
+  background-image: url("../img/recruit-mv-bg.jpg");
+}
+// end .p-recruit
+
+// ==========================================================================
+// Price Page (.p-price)
+// ==========================================================================
+.p-price {
+  // ── PAGE HEADER（p-page-header--price は背景画像差し替え用） ─────────────
+  .p-page-header--price {
+    background-image: url("../img/price-mv-bg.jpg");
+  }
+
+  // ── サービス概要 セクション (.p-price-feature) ──────────────────────────
+  .p-price-feature {
+    padding: 100px 0;
+    background-color: $color-base;
+    position: relative;
+    overflow: hidden;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+  }
+
+  // セクション見出し
+  .p-price-feature__title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    color: $color-text;
+    letter-spacing: 0.1em;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: $color-main;
+      margin: 16px auto 0;
+      border-radius: 2px;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 24px;
+      margin-bottom: 56px;
+    }
+  }
+
+  // リスト外枠
+  .p-price-feature__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @include max-screen($breakpoint-xs) {
+      gap: 40px;
+    }
+  }
+
+  // 各カテゴリブロック
+  .p-price-feature__item {
+    display: grid;
+    gap: 0;
+
+    @include max-screen($breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // カテゴリ左カラム（ヘッダー）
+  .p-price-feature__list-header {
+    position: relative;
+    padding: 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid $color-border;
+    overflow: hidden;
+
+    @include max-screen($breakpoint-md) {
+      border-right: none;
+      border-bottom: 1px solid $color-border;
+      padding-bottom: 24px;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  // ゴースト番号
+  .p-price-feature__list-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-en;
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba($color-main, 0.07);
+    letter-spacing: -0.04em;
+    pointer-events: none;
+    user-select: none;
+
+    @include max-screen($breakpoint-md) {
+      position: static;
+      font-size: 64px;
+      color: rgba($color-main, 0.15);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      font-size: 52px;
+    }
+  }
+
+  // カテゴリタイトル
+  .p-price-feature__list-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-sub;
+    letter-spacing: 0.06em;
+    line-height: 1.55;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 3px;
+      background: $color-main;
+      border-radius: 2px;
+      margin-bottom: 12px;
+    }
+
+    @include max-screen($breakpoint-md) {
+      &::before {
+        display: none;
+      }
+    }
+    @include max-screen($breakpoint-sm) {
+      font-size: 20px;
+    }
+  }
+
+  // サービスカードグリッド
+  .p-price-feature__sub-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+
+    @include max-screen($breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+
+  // 各サービスカード
+  .p-price-feature__sub-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 28px;
+    background: #fff;
+    border-radius: 0;
+    border-left: 1px solid $color-border;
+    box-shadow: none;
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: $color-main;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+
+    &:hover {
+      background: #fff;
+      box-shadow: 0 8px 32px rgba($color-main, 0.12);
+      transform: translateY(-4px);
+      z-index: 1;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &:first-child {
+      border-left: none;
+
+      @include max-screen($breakpoint-sm) {
+        border-left: 1px solid $color-border;
+      }
+    }
+
+    @include max-screen($breakpoint-md) {
+      border-left: 1px solid $color-border;
+      border-radius: 10px;
+      border: 1px solid $color-border;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 20px;
+    }
+  }
+
+  // 写真（丸アイコン型）
+  .p-price-feature__sub-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    border: 3px solid $color-base;
+    box-shadow: 0 2px 12px rgba($color-main, 0.15);
+    background: #eee;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    @include max-screen($breakpoint-sm) {
+      margin-bottom: 0;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .p-price-feature__sub-item:hover .p-price-feature__sub-img img {
+    transform: scale(1.08);
+  }
+
+  // テキスト部分
+  .p-price-feature__sub-body {
+    flex: 1;
+  }
+
+  // サービスタイトル
+  .p-price-feature__sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-text;
+    margin: 0 0 10px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+  }
+
+  // サービステキスト
+  .p-price-feature__sub-text {
+    font-size: 13px;
+    line-height: 1.85;
+    color: #666;
+    margin: 0;
+  }
+
+  // ── POINT セクション ────────────────────────────────────────────────────
+  .p-price-point {
+    padding: 100px 0;
+    background-color: #fff;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 100px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &--reverse {
+        .p-price-point__img {
+          order: 2;
+        }
+        .p-price-point__body {
+          order: 1;
+        }
+      }
+
+      @include max-screen($breakpoint-md) {
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+        &--reverse .p-price-point__img,
+        &--reverse .p-price-point__body {
+          order: unset;
+        }
+      }
+
+      @include max-screen($breakpoint-sm) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__img {
+      overflow: hidden;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    &__body {
+      padding: 20px 0;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 700;
+      color: $color-text;
+      line-height: 1.55;
+      margin: 0 0 18px;
+      letter-spacing: 0.04em;
+
+      @include max-screen($breakpoint-sm) {
+        font-size: 18px;
+      }
+    }
+
+    &__text {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.9;
+      margin: 0;
+    }
+  }
+
+  // ── FLOW セクション ────────────────────────────────────────────────────
+  .p-price-flow {
+    padding: 100px 0;
+    background-color: $color-base;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    &__list {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    &__arrow {
+      text-align: center;
+      font-size: 24px;
+      color: $color-main;
+      line-height: 1;
+      padding: 8px 0;
+      opacity: 0.5;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 28px;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 36px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+
+      @include max-screen($breakpoint-sm) {
+        grid-template-columns: 80px 1fr;
+        gap: 18px;
+        padding: 24px 20px;
+      }
+    }
+
+    &__step {
+      text-align: center;
+      padding-top: 4px;
+    }
+
+    &__step-num {
+      display: block;
+      font-family: $font-en;
+      font-size: 36px;
+      font-weight: 700;
+      color: $color-main;
+      line-height: 1;
+      letter-spacing: -0.02em;
+
+      @include max-screen($breakpoint-sm) {
+        font-size: 28px;
+      }
+    }
+
+    &__step-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: $color-main;
+      letter-spacing: 0.1em;
+      margin-top: 6px;
+      border: 1px solid $color-main;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    &__content {
+      padding-top: 4px;
+    }
+
+    &__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: $color-text;
+      margin: 0 0 10px;
+      letter-spacing: 0.04em;
+    }
+
+    &__text {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.85;
+      margin: 0;
+    }
+  }
+
+  // ── FAQ セクション ─────────────────────────────────────────────────────
+  .p-price-faq {
+    padding: 100px 0;
+    background-color: #fff;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    &__list {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      border-bottom: 1px solid $color-border;
+
+      &:first-child {
+        border-top: 1px solid $color-border;
+      }
+
+      &.is-open .p-price-faq__answer {
+        max-height: 400px;
+        opacity: 1;
+      }
+
+      &.is-open .p-price-faq__toggle::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__question {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 24px 0;
+      text-align: left;
+      font-family: $font-base;
+
+      @include max-screen($breakpoint-sm) {
+        padding: 20px 0;
+        gap: 12px;
+      }
+    }
+
+    &__q-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: $color-main;
+      color: #fff;
+      font-family: $font-en;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__q-text {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 600;
+      color: $color-text;
+      line-height: 1.6;
+
+      @include max-screen($breakpoint-sm) {
+        font-size: 14px;
+      }
+    }
+
+    &__toggle {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border: 1px solid $color-border;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid $color-main;
+        border-bottom: 2px solid $color-main;
+        transform: rotate(45deg) translate(-2px, -2px);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &__answer {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition:
+        max-height 0.4s ease,
+        opacity 0.4s ease;
+      padding: 0 0 0 0;
+
+      &.is-open-content {
+        max-height: 400px;
+        opacity: 1;
+      }
+
+      @include max-screen($breakpoint-sm) {
+        gap: 12px;
+      }
+    }
+
+    &__a-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: $color-base;
+      color: $color-main;
+      font-family: $font-en;
+      font-size: 16px;
+      font-weight: 700;
+      border: 1px solid mix(#fff, $color-main, 35%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__a-text {
+      flex: 1;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.85;
+      margin: 6px 0 0;
+      padding-bottom: 24px;
+
+      @include max-screen($breakpoint-sm) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // ── SIM（料金シミュレーション）セクション ─────────────────────────────
+  .p-price-sim {
+    padding: 100px 0;
+    background-color: $color-bg-gray;
+
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    &__table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 16px;
+    }
+
+    &__table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 600px;
+      background: #fff;
+    }
+
+    &__th {
+      background: $color-sub;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 16px 20px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      border-right: 1px solid rgba(#fff, 0.15);
+
+      small {
+        display: block;
+        font-size: 11px;
+        font-weight: 400;
+        margin-top: 4px;
+        opacity: 0.8;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &__td {
+      padding: 16px 20px;
+      border-bottom: 1px solid $color-border;
+      border-right: 1px solid $color-border;
+      text-align: center;
+      font-size: 14px;
+      color: $color-text;
+      vertical-align: middle;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &--label {
+        font-weight: 700;
+        color: $color-sub;
+        background: $color-base;
+        text-align: left;
+        padding-left: 24px;
+      }
+
+      &--total {
+        font-weight: 700;
+        color: $color-main;
+        background: rgba($color-main, 0.04);
+        font-size: 15px;
+      }
+    }
+
+    tbody tr:hover td {
+      background-color: mix(#fff, $color-main, 52%);
+
+      &.p-price-sim__td--label {
+        background-color: mix(#000, $color-base, 3%);
+      }
+    }
+
+    &__note {
+      font-size: 13px;
+      color: #888;
+      text-align: right;
+      margin: 0;
+    }
+  }
 }

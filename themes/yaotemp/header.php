@@ -62,7 +62,7 @@
                     <nav class="p-global-nav u-hidden-pc">
                         <ul class="p-global-nav__list">
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/beginner/' ) ); ?>">はじめての方へ</a>
+                                    href="<?php echo esc_url( home_url( '/first/' ) ); ?>">はじめての方へ</a>
                             </li>
                             <li class="p-global-nav__item"><a
                                     href="<?php echo esc_url( home_url( '/reason/' ) ); ?>">選ばれる理由</a>
@@ -122,7 +122,7 @@
                             <li class="p-drawer-nav__item p-drawer-nav__item--current"><a
                                     href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページ</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/beginner/' ) ); ?>">はじめての方へ</a></li>
+                                    href="<?php echo esc_url( home_url( '/first/' ) ); ?>">はじめての方へ</a></li>
                             <li class="p-drawer-nav__item"><a
                                     href="<?php echo esc_url( home_url( '/reason/' ) ); ?>">選ばれる理由</a></li>
                             <li class="p-drawer-nav__item"><a

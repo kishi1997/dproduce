@@ -62,7 +62,7 @@
                             <a href="<?php bloginfo('url'); ?>/">トップページ</a>
                         </li>
                         <li class="p-footer-nav__item">
-                            <a href="<?php bloginfo('url'); ?>/beginner/">はじめての方へ</a>
+                            <a href="<?php bloginfo('url'); ?>/first/">はじめての方へ</a>
                         </li>
                         <li class="p-footer-nav__item">
                             <a href="<?php bloginfo('url'); ?>/reason/">選ばれる理由</a>

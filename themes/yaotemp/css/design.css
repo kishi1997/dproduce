@@ -103,8 +103,7 @@ img {
   border: 2px solid;
   position: relative;
   font-weight: bold;
-  -o-border-image: linear-gradient(#1d88f3, #0059b4) 1;
-     border-image: linear-gradient(#1d88f3, #0059b4) 1;
+  border-image: linear-gradient(#1d88f3, #0059b4) 1;
   min-width: 220px;
   font-size: 18px;
 }
@@ -2956,8 +2955,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-voices .p-top-voices__card-body {
   display: flex;
@@ -3771,8 +3769,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-blogs .p-top-blogs__item-body {
   flex-grow: 1;
@@ -4476,7 +4473,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
@@ -4492,7 +4488,6 @@ img {
   }
 }
 .p-trouble .p-trouble__header {
-  width: -moz-fit-content;
   width: fit-content;
   color: #016edc;
 }
@@ -4655,7 +4650,6 @@ img {
 @media screen and (max-width: 768px) {
   .p-about-reason .p-about-reason__item {
     flex-direction: column;
-    width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
   }
@@ -5644,8 +5638,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-voices .p-voices__card-body {
   display: flex;
@@ -6117,8 +6110,7 @@ img {
 }
 .p-reason .p-reason-feature__sub-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-reason .p-reason-feature__sub-title {
   margin-bottom: 1.6rem;
@@ -6263,8 +6255,7 @@ img {
 }
 .p-flow .p-flow-step__item-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-flow .p-flow-step__item-number {
   position: relative;
@@ -6579,8 +6570,7 @@ p-point（下層ページ共通）
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-point__content {
@@ -7253,8 +7243,7 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(auto-fit, min(100%, 240px));
   justify-content: center;
   row-gap: 40px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 @media screen and (max-width: 480px) {
   .p-service-list {
@@ -7276,8 +7265,7 @@ p-point（下層ページ共通）
 .p-service-list__item-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-service-list__item-title {
@@ -7313,8 +7301,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
 }
 @media screen and (max-width: 768px) {
   .p-personnel-affairs__step-list {
@@ -7453,8 +7440,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 480px) {
   .p-establishment-support__service-list {
@@ -7494,7 +7480,6 @@ p-point（下層ページ共通）
 }
 
 .p-establishment-support__service-note {
-  width: -moz-fit-content;
   width: fit-content;
   margin-top: 32px;
   margin-right: 0;
@@ -7615,4 +7600,249 @@ p-point（下層ページ共通）
   .p-price-table__data-strong-text {
     font-size: 1.6rem;
   }
-}/*# sourceMappingURL=design.css.map */
+}
+
+/*--------------------------------------
+  featureリスト（3カラム汎用リスト）
+--------------------------------------*/
+.p-feature {
+  padding: 100px 0;
+  background-color: #ebf0f8;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .p-feature {
+    padding: 60px 0;
+  }
+}
+.p-feature .c-section-heading {
+  margin-bottom: 40px;
+}
+
+.p-feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media screen and (max-width: 480px) {
+  .p-feature__list {
+    gap: 40px;
+  }
+}
+
+.p-feature__item {
+  display: grid;
+  gap: 0;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-feature__list-header {
+  position: relative;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid #eaeaea;
+  overflow: hidden;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-header {
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+    padding: 24px 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.p-feature__list-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(1, 110, 220, 0.07);
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-number {
+    position: static;
+    font-size: 64px;
+    color: rgba(1, 110, 220, 0.15);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__list-number {
+    font-size: 52px;
+  }
+}
+
+.p-feature__list-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #004e87;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+  position: relative;
+  z-index: 1;
+}
+.p-feature__list-title::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #016edc;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-title::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__list-title {
+    font-size: 20px;
+  }
+}
+
+.p-feature__sub-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-list {
+    grid-template-columns: min(100%, 500px);
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.p-feature__sub-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 0;
+  border-left: 1px solid #eaeaea;
+  box-shadow: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+.p-feature__sub-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #016edc;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.p-feature__sub-item:first-child {
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-item:first-child {
+    border-left: 1px solid #eaeaea;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-item {
+    border-left: 1px solid #eaeaea;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-item {
+    align-items: center;
+    gap: 20px;
+    padding: 28px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-feature__sub-item {
+    padding: 24px 20px;
+  }
+}
+
+.p-feature__sub-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border: 3px solid #ebf0f8;
+  box-shadow: 0 2px 12px rgba(1, 110, 220, 0.15);
+  background: #eee;
+}
+.p-feature__sub-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-img {
+    margin-bottom: 0;
+    width: min(100%, 200px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+.p-feature__sub-body {
+  flex: 1;
+}
+
+.p-feature__sub-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 10px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-feature__sub-title {
+    text-align: left;
+  }
+}
+
+.p-feature__sub-text {
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin: 0;
+}

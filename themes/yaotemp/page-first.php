@@ -3,7 +3,7 @@
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">About</span>
+            <span class="p-page-header__subtitle">First</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -85,7 +85,7 @@
                 <!-- 01 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img1.jpg" alt="チェック体制">
+                        <img src="<?php bloginfo('template_url'); ?>/img/about-why-img1.jpg" alt="チーム担当制">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -96,7 +96,7 @@
                             <h3 class="p-strength__item-title">【属人化の解消】<br />1社5名のチーム担当制</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number1.svg" alt=""
+                                <img src="<?php bloginfo('template_url'); ?>/img/top-strength-number1.svg" alt=""
                                     aria-hidden="true">
                             </figure>
                         </div>
@@ -109,7 +109,7 @@
                 <!-- 02 -->
                 <div class="p-strength__item p-strength__item--reverse">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img2.jpg" alt="サポート実績">
+                        <img src="<?php bloginfo('template_url'); ?>/img/about-why-img2.jpg" alt="大規模対応の知見">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -120,7 +120,7 @@
                             <h3 class="p-strength__item-title">【大規模対応の知見】<br />100名〜数千名規模企業サポートの実績</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number2.svg" alt=""
+                                <img src="<?php bloginfo('template_url'); ?>/img/top-strength-number2.svg" alt=""
                                     aria-hidden="true">
                             </figure>
                         </div>
@@ -133,7 +133,7 @@
                 <!-- 03 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-why-img3.jpg" alt="法改正への対応">
+                        <img src="<?php bloginfo('template_url'); ?>/img/about-why-img3.jpg" alt="法改正への対応">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -144,7 +144,7 @@
                             <h3 class="p-strength__item-title">【攻めの改善提案】<br />法改正を「リスク」ではなく「機会」に</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/top-strength-number3.svg" alt=""
+                                <img src="<?php bloginfo('template_url'); ?>/img/top-strength-number3.svg" alt=""
                                     aria-hidden="true">
                             </figure>
                         </div>

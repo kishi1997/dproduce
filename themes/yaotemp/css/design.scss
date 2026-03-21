@@ -6391,7 +6391,7 @@ img {
     top: 50%;
     left: 0;
     transform: translate(-50%, -55%);
-    font-size: clamp(10rem, 2.941rem + 23.53vw, 18rem);
+    font-size: clamp(10rem, 8vw, 18rem);
     font-weight: bold;
     line-height: 1;
     color: rgba($color-main, 0.2);
@@ -7586,7 +7586,7 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Personal Affairs Page（人事評価制度構築）
+  Personnel Affairs Page（人事評価制度構築）
 --------------------------------------*/
 .p-personnel-affairs {
   .p-page-header {
@@ -7595,8 +7595,6 @@ p-point（下層ページ共通）
 }
 .p-personnel-affairs__step {
   padding: 80px 0;
-}
-.p-personnel-affairs__step-content {
 }
 .p-personnel-affairs__step-list {
   display: grid;
@@ -7763,8 +7761,6 @@ p-point（下層ページ共通）
 }
 .p-establishment-support__business {
   padding: 60px 0;
-}
-.p-establishment-support__business-content {
 }
 .p-establishment-support__business-img {
   max-width: 765px;

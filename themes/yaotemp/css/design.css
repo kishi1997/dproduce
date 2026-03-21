@@ -6044,7 +6044,7 @@ img {
   top: 50%;
   left: 0;
   transform: translate(-50%, -55%);
-  font-size: clamp(10rem, 2.941rem + 23.53vw, 18rem);
+  font-size: clamp(10rem, 8vw, 18rem);
   font-weight: bold;
   line-height: 1;
   color: rgba(1, 110, 220, 0.2);
@@ -7287,7 +7287,7 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Personal Affairs Page（人事評価制度構築）
+  Personnel Affairs Page（人事評価制度構築）
 --------------------------------------*/
 .p-personnel-affairs .p-page-header {
   background-image: url(../img/personal-evaluation-mv-bg.jpg);

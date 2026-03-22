@@ -283,7 +283,7 @@
         </div>
     </section>
 
-    <!-- 企業拠出年金の流れ -->
+    <!-- 社員研修までの流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -293,7 +293,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FLOW</span>
-                <h2 class="c-section-heading__title-ja">/ 企業拠出年金の流れ</h2>
+                <h2 class="c-section-heading__title-ja">/ 社員研修までの流れ</h2>
             </div>
 
             <ol class="p-process__list">

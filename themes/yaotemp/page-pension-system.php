@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="p-insurance">
+<div class="p-pension-system">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">Insurance</span>
+            <span class="p-page-header__subtitle">Pension System</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -16,10 +16,10 @@
         <div class="l-container">
             <div class="p-intro__inner">
                 <h2 class="p-intro__title">
-                    煩雑な手続きを、正確・迅速に。
+                    “将来の安心”を、会社の制度で支える。
                 </h2>
                 <p class="p-intro__lead">
-                    従業員数が増えるほど、入退社の手続きや社会保険の算定基礎、労働保険の年度更新といった事務作業は膨大なボリュームとなり、担当者のリソースを圧迫します。 これらの業務は「できて当たり前」と思われがちですが、万が一ミスや遅延が発生すれば、従業員の信頼を損なうだけでなく、行政指導のリスクにも繋がりかねません。D・プロデュースは、貴社の事務負担を最小限に抑え、確実なコンプライアンスを実現します。
+                    優秀な人材の確保と定着が経営課題となる中、退職金制度の充実は欠かせない要素です。しかし、会社側の負担増を懸念し、導入をためらっているケースも少なくありません。 D・プロデュースが提案する「企業型確定拠出年金（DC）」は、会社が社会保険料などのコストを適正化しながら、従業員の資産形成を強力に支援できる「次世代の福利厚生」です。専門家チームが制度設計から運用の定着まで、貴社と従業員の双方にメリットをもたらす仕組みをプロデュースします。
                 </p>
             </div>
         </div>
@@ -36,26 +36,26 @@
                 <ul class="p-trouble__list">
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">従業員を雇うのが初めてで手続きが分からない</p>
+                        <p class="p-trouble__text">退職金制度を見直したい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">社会保険・労働保険の加入が不安</p>
+                        <p class="p-trouble__text">採用力を高める福利厚生を導入したい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">助成金を活用したいが調べる時間がない</p>
+                        <p class="p-trouble__text">企業型DCやiDeCoの違いが分からない</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">本業に集中したいのに事務手続きに追われている</p>
+                        <p class="p-trouble__text">制度導入の手続きや運用が難しそう</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- D・プロデュースの労働・社会保険事務代行３つの特長 -->
+    <!-- D・プロデュースの企業拠出年金３つの特長 -->
     <section class="p-strength">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -65,7 +65,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FEATURE</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの労働・社会保険事務代行<br />３つの特長</h2>
+                <h2 class="c-section-heading__title-ja">/ D・プロデュースの企業拠出年金<br />３つの特長</h2>
             </div>
 
             <div class="p-strength__list">
@@ -73,7 +73,7 @@
                 <!-- 01 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/insurance-feature-img1.jpg" alt="労災保険のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img3.jpg" alt="選択的DCのイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -81,7 +81,7 @@
                                 <span class="p-strength__label">FEATURE.01</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">事業主・役員の「労災保険」への特別加入</h3>
+                            <h3 class="p-strength__item-title">「選択制DC」による社会保険料の適正化</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
@@ -89,7 +89,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            本来、経営者や役員は労働者ではないため、業務中のケガで労災保険を受けることはできません。しかし、厚労大臣認可の事務組合を運営する当法人なら、事業主や家族従事者の方々も「特別加入」が可能です。現場作業や移動中の事故など、経営者の「もしも」の際にも労働者と同様の補償が受けられる安心を提供します。
+                            給与の一部を積み立てに回す「選択制」の仕組みを活用することで、従業員の所得税・住民税が軽減されるだけでなく、会社負担の社会保険料を適正に削減することが可能です。会社のコスト負担を抑えながら（あるいは削減しながら）、退職金制度の構築や福利厚生の拡充を実現します。
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 <!-- 02 -->
                 <div class="p-strength__item p-strength__item--reverse">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/insurance-feature-img2.jpg" alt="労働保険料のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/training.jpg" alt="投資教育のイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -105,7 +105,7 @@
                                 <span class="p-strength__label">FEATURE.02</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">労働保険料の「3回分割納付」が可能</h3>
+                            <h3 class="p-strength__item-title">「投資教育」までプロが伴走</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
@@ -113,7 +113,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            通常、労働保険料はある程度の金額（概ね40万円以上）に達しない限り分割納付は認められませんが、当法人の事務組合に委託いただくことで、金額の多寡に関わらず保険料を年3回に分けて納付することが可能になります。一括納付によるキャッシュフローへの負担を軽減し、資金運用の安定化に寄与します。
+                            制度を導入して終わりではありません。制度の意義や資産運用の基本を従業員の方々に正しく理解していただくための「投資教育」を重視しています。専門家による分かりやすい説明会を定期的に開催し、従業員の満足度と「将来への安心感」を高めるためのフォローを徹底します。
                         </p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                 <!-- 03 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/about-why-img1.jpg" alt="一括対応のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img5.jpg" alt="サポートチームのイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -129,7 +129,7 @@
                                 <span class="p-strength__label">FEATURE.03</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">専門知と事務組合機能の<br />「ワンストップ一元化」</h3>
+                            <h3 class="p-strength__item-title">継続的なメンテナンスとフォローアップ</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number3.svg" alt=""
@@ -137,7 +137,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            一般的な事務組合では行えない「社会保険（健保・厚年）の手続き」や「助成金の申請」「労災給付の請求」も、社労士法人である私たちが窓口となることで全て一括対応可能です。事務組合の制度的メリットを享受しつつ、社労士の高度なコンサルティングを一つの窓口で完結。情報の二重伝達を防ぎ、管理コストを大幅に削減します。
+                            導入後の事務手続きや、法改正に伴う規程の変更、新入社員への個別説明など、運用における煩雑な業務をD・プロデュースが継続的にサポートします。社内の担当者の手を煩わせることなく、常に健全で効果的な制度運用を維持できる体制を整えます。
                         </p>
                     </div>
                 </div>
@@ -147,8 +147,8 @@
         </div>
     </section>
 
-    <!-- D・プロデュースのバックアップ体制（独自セクション） -->
-    <section class="p-insurance__system">
+    <!-- サービス詳細（独自コンテンツ） -->
+    <section class="p-pension-system__service">
         <div class="l-container">
             <!-- セクション見出し -->
             <div class="c-section-heading">
@@ -156,64 +156,66 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">SYSTEM</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースのバックアップ体制</h2>
+                <span class="c-section-heading__title-en">DETAILS</span>
+                <h2 class="c-section-heading__title-ja">/ サービス詳細</h2>
             </div>
-            <div class="p-insurance__system-content">
-                <div class="p-insurance__system-cards">
+            <div class="p-pension-system__service-content">
+                <!-- リスト -->
+                <ul class="p-pension-system__service-list">
                     <!-- 01 -->
-                    <div class="p-insurance__system-card p-insurance__system-card--dproduce">
-                        <div class="p-insurance__system-card-head">
-                            <h3 class="p-insurance__system-card-logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="社会保険労務士法人D・プロデュース"></h3>
-                        </div>
-                        <div class="p-insurance__system-card-body">
-                            <!-- リスト -->
-                            <ul class="p-insurance__system-card-list">
-                                <li class="p-insurance__system-card-item">社会保険、労働保険手続きを<span class="p-insurance__system-card-item-strong">迅速かつ正確</span>に対応</li>
-                                <li class="p-insurance__system-card-item">法改正等の頻繁かつタイムリーな各種情報提供</li>
-                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">問題箇所がはっきりわかる</span>官公庁の立ち入り検査対応</li>
-                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働紛争解決へのアドバイス及びあっせん代理</span></li>
-                                <li class="p-insurance__system-card-item">法人組織による、<span class="p-insurance__system-card-item-strong">安心・安全</span>なご契約</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-insurance__system-row">
-                        <!-- 02 -->
-                        <div class="p-insurance__system-card p-insurance__system-card--sr">
-                            <div class="p-insurance__system-card-head">
-                                <h3 class="p-insurance__system-card-title">神奈川県SR経営労務センター</h3>
-                            </div>
-                            <div class="p-insurance__system-card-body">
-                                <!-- リスト -->
-                                <ul class="p-insurance__system-card-list">
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">会社に事務負担の少ない</span>労働保険手続き</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働保険楼の</span>確定申告<span class="p-insurance__system-card-item-small">(年度更新)</span></li>
-                                    <li class="p-insurance__system-card-item">事業主も労働加入できる安心の特別加入制度</li>
+                    <li class="p-pension-system__service-item">
+                        <div class="p-pension-system__service-item-inner">
+                            <div class="p-pension-system__service-item-body">
+                                <h3 class="p-pension-system__service-item-title">企業年金サポート</h3>
+                                <p class="p-pension-system__service-item-lead">会社経営に必要な新たな退職年金制度・年金制度の導入を支援します。</p>
+                                <ul class="p-pension-system__service-sub-list">
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">退職年金制度の現状診断・<br />御社の対応策の検討</p>
+                                    </li>
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">確定拠出年金（企業型DC・IDeCo）制度の導入及び改革支援</p>
+                                    </li>
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">確定給付企業年金（DB）制度の導入及び改革支援</p>
+                                    </li>
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">DC継続投資教育</p>
+                                    </li>
                                 </ul>
                             </div>
+                            <figure class="p-pension-system__service-img"><img src="<?php bloginfo('template_url'); ?>/img/support-img1.jpg" alt="サポートのイメージ"></figure>
                         </div>
-                        <!-- 03 -->
-                        <div class="p-insurance__system-card p-insurance__system-card--consultant">
-                            <div class="p-insurance__system-card-head">
-                                <h3 class="p-insurance__system-card-title">人事労務コンサルタント</h3>
-                            </div>
-                            <div class="p-insurance__system-card-body">
-                                <!-- リスト -->
-                                <ul class="p-insurance__system-card-list">
-                                    <li class="p-insurance__system-card-item">就業規則を<span class="p-insurance__system-card-item-strong">オーダーメイド作成</span></li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">判断に迷う</span>人づかいのアドバイス</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">時代とニーズにマッチした</span>諸規定の準備</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">経営労働監査による「人材」の効果的活用と成長発展の視点での経営分析評価</span></li>
-                                    <li class="p-insurance__system-card-item">IPO<span class="p-insurance__system-card-item-small">(株式公開)</span>へ向けた<span class="p-insurance__system-card-item-strong">内部統制支援<span class="p-insurance__system-card-item-small">(コンサルティング)</span></span>他</li>
+                        <p class="p-pension-system__service-text">確定給付企業年金（DB）とは、事業主が従業員と給付の内容をあらかじめ約束し、高齢期において従業員がその内容に基づいた給付を受けることができる企業年金制度。 給付内容があらかじめ定められることから、DB（Defined Benefit Plan）、「給付建て年金」とも呼ばれる。</p>
+                    </li>
+                    <!-- 02 -->
+                    <li class="p-pension-system__service-item">
+                        <div class="p-pension-system__service-item-inner">
+                            <div class="p-pension-system__service-item-body">
+                                <h3 class="p-pension-system__service-item-title">年金相談コンサルタント</h3>
+                                <p class="p-pension-system__service-item-lead">会社と個人のどんな年金相談にもお答えいたします。</p>
+                                <ul class="p-pension-system__service-sub-list">
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">老齢年金・遺族年金（事実婚・別居婚）・障害年金・未支給年金・死亡一時金・寡婦年金等の年金相談</p>
+                                    </li>
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">年金請求の手続き代理</p>
+                                    </li>
+                                    <li class="p-pension-system__service-sub-item">
+                                        <span class="p-pension-system__service-sub-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-check-white.svg" alt="" aria-hidden="true"></span>
+                                        <p class="p-pension-system__service-sub-text">審査請求・再審査請求手続代理</p>
+                                    </li>
                                 </ul>
                             </div>
+                            <figure class="p-pension-system__service-img"><img src="<?php bloginfo('template_url'); ?>/img/consultant-img1.jpg" alt="コンサルタントのイメージ"></figure>
                         </div>
-                    </div>
-                </div>
-                <p class="p-insurance__system-text">
-                    当社の「労働・社会保険事務アウトソーシング」サービスでは、このような実務手続きの代行を適正に行い、事業継続する上で必要な知識・ノウハウをご提供しながら、しっかりと御社をサポートさせていただきます。<br />
-                    このサービスをご利用いただくことで、これまでの労働・社会保険事務を合理化(スリム化)し、コア業務へ集中することができ、事業拡大や企業発展のために使える時間を確保することができます。
-                </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -236,7 +238,7 @@
                 <!-- 01 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/personal-evaluation-img4.jpg" alt="安心のサポート">
+                        <img src="<?php bloginfo('template_url');?>/img/regulation-img4.jpg" alt="サポートのイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -244,7 +246,7 @@
                                 <span class="p-point__label">MERIT.01</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">煩雑な手続きをまとめてサポート</h3>
+                            <h3 class="p-point__item-title">会社も個人もどちらもサポート</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
@@ -252,7 +254,7 @@
                             </figure>
                         </div>
                         <p class="p-point__desc">
-                            雇用保険・社会保険の取得、喪失、扶養変更から、労災事故の対応まで、人事労務に関するあらゆる手続きを一括して代行します。専門家チームが窓口となることで、役所ごとに異なる複雑なルールを調べる手間をなくし、正確かつ最短ルートで手続きを完結させます。
+                            経営側の視点に立った「コスト削減・財務強化」のシミュレーションと、従業員側の視点に立った「手取り額の最適化・資産形成」の双方をプロの視点で両立させます。どちらか一方が我慢するのではなく、双方がメリットを実感できる制度構築を支援します。
                         </p>
                     </div>
                 </div>
@@ -260,7 +262,7 @@
                 <!-- 02 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/reason-feature-img4.jpg" alt="相談のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/business-person-img1.jpg" alt="会社改善のイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -268,7 +270,7 @@
                                 <span class="p-point__label">MERIT.02</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">労務相談もできる環境</h3>
+                            <h3 class="p-point__item-title">福利厚生以外の面からも会社を改善</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
@@ -276,7 +278,7 @@
                             </figure>
                         </div>
                         <p class="p-point__desc">
-                            単なる事務作業の代行にとどまらず、手続きの背景にある「雇用契約の適正さ」や「法改正に伴う実務の変更点」についても、その場で専門家へ相談が可能です。事務代行と労務アドバイザリーを一体化させることで、リスクを未然に防ぐ一歩先のバックオフィス体制を構築できます。
+                            企業型DCの導入をきっかけに、現在の給与体系や就業規則、役員報酬のあり方までトータルで見直すことが可能です。社労士法人としての専門性を活かし、年金制度を入り口として、組織全体のコンプライアンス強化と経営効率化を同時に実現します。
                         </p>
                     </div>
                 </div>
@@ -285,7 +287,7 @@
         </div>
     </section>
 
-    <!-- 労働・社会保険事務代行の流れ -->
+    <!-- 企業拠出年金の流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -295,7 +297,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FLOW</span>
-                <h2 class="c-section-heading__title-ja">/ 労働・社会保険事務代行の流れ</h2>
+                <h2 class="c-section-heading__title-ja">/ 企業拠出年金の流れ</h2>
             </div>
 
             <ol class="p-process__list">
@@ -306,7 +308,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">ヒアリング</h3>
                         <p class="p-process__item-text">
-                            現在の従業員数、拠点数、現在の手続きの運用フローや使用されている人事ソフトなどを詳しく伺います。現状の課題を洗い出し、二重入力などの無駄を省いた、貴社に最適なアウトソーシングプランを設計します。
+                            現在の退職金制度の有無や、給与体系、従業員構成、そして導入によって解決したい課題（採用強化、コスト削減など）を詳しく伺います。まずは制度導入の可否と、期待できる効果の概算を把握します。
                         </p>
                     </div>
                 </li>
@@ -317,7 +319,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">現状調査とプランのご提案</h3>
                         <p class="p-process__item-text">
-                            ヒアリングに基づき、代行範囲（スポットからフルアウトソーシングまで）とお見積りをご提示します。また、電子申請への移行やチャットツールでの情報共有など、業務スピードを劇的に向上させるための具体的な改善案を提案いたします。
+                            詳細なデータに基づき、会社と従業員のそれぞれにどの程度のメリット（節税・保険料削減額）が出るかをシミュレーションします。複数の運営管理機関（SBI・楽天等）との比較検討を行い、貴社に最適なプランをご提示します。
                         </p>
                     </div>
                 </li>
@@ -328,7 +330,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">ご契約・キックオフ</h3>
                         <p class="p-process__item-text">
-                            プラン内容にご納得いただけましたら、正式にサポートを開始します。専任の5名チームを編成し、キックオフミーティングを実施。貴社固有のルールや連絡系統を確認し、スムーズな実務移行のための準備を整えます。
+                            プラン決定後、正式にサポートを開始。厚生局への規程届出、運営管理機関との連携、社内規定の改定などのスケジュールを確定させます。専任チームがプロジェクトのリーダーとなり、最短ルートでの導入を主導します。
                         </p>
                     </div>
                 </li>
@@ -339,7 +341,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">サポート開始</h3>
                         <p class="p-process__item-text">
-                            決定したフローに沿って、実際の手続き代行をスタートします。入退社情報などをチャットや共有ストレージで受け取り、電子申請にて迅速に処理。完了報告までチーム一貫で対応し、貴社が本業に専念できる環境を強力にバックアップします。
+                            従業員向けの全体説明会を実施し、加入手続きをサポートします。制度開始後も、継続的な投資教育や事務的なメンテナンスを行い、会社と従業員の双方が制度を最大限に活用できる環境を末永く支え続けます。
                         </p>
                     </div>
                 </li>
@@ -367,12 +369,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">どこまで対応してもらえますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">企業型DCは中小企業でも導入できますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                入退社手続き、社会保険・労働保険の各種届出まで幅広く対応可能です。<br />電子申請にも対応し、迅速に手続きを行います。
+                                はい、従業員数に関わらず導入可能です。<br />規模に応じた最適な制度設計をご提案します。
                             </p>
                         </dd>
                     </div>
@@ -381,13 +383,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">スポットでの依頼も可能ですか？</p>
+                            <p class="p-faq__text p-faq__text--bold">導入までどれくらい期間がかかりますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、必要な手続きのみのご依頼も可能です。<br />
-                                顧問契約がなくても対応いたします。
+                                通常は2～4ヶ月程度です。<br />制度設計から申請手続きまで一貫してサポートします。
                             </p>
                         </dd>
                     </div>
@@ -396,12 +397,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">手続きの進捗は確認できますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">導入後の運用サポートもありますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、状況は随時ご報告いたします。<br />安心してお任せいただける体制を整えています。
+                                はい、従業員説明や制度運営のフォローも対応します。<br />“導入して終わり”ではなく、定着まで支援します。
                             </p>
                         </dd>
                     </div>

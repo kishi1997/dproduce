@@ -9,11 +9,7 @@
     </section>
 
     <!-- パンくずリスト -->
-    <div class="c-breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-        <div class="l-container">
-            <?php if(function_exists('bcn_display')) { bcn_display(); } ?>
-        </div>
-    </div>
+    <?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
     <!-- イントロダクション 1 -->
     <section class="p-intro">

@@ -6298,7 +6298,7 @@ p-strength（下層ページ共通）
 }
 @media screen and (max-width: 768px) {
   .p-strength {
-    overflow: 60px 0;
+    padding: 60px 0;
   }
 }
 
@@ -8025,4 +8025,290 @@ p-point（下層ページ共通）
   .p-insurance__system-text {
     margin-top: 40px;
   }
+}
+
+/*--------------------------------------
+  Pension System (企業拠出年金ページ)
+--------------------------------------*/
+.p-pension-system .p-page-header {
+  background-image: url(../img/pension-system-mv-bg.jpg);
+}
+
+.p-pension-system__service {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-pension-system__service-list {
+  display: grid;
+  gap: 80px;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-list {
+    gap: 60px;
+  }
+}
+
+.p-pension-system__service-item-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-pension-system__service-item-body {
+  padding: 40px 36px 60px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1080px) {
+  .p-pension-system__service-item-body {
+    padding: 32px 24px 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-body {
+    padding: 28px 20px 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-item-body {
+    padding: 20px 16px 24px;
+  }
+}
+
+.p-pension-system__service-item-title {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-title {
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+  }
+}
+.p-pension-system__service-item-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-pension-system__service-item-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-item-lead {
+    font-size: 1.5rem;
+  }
+}
+
+.p-pension-system__service-sub-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 16px;
+  margin-top: 40px;
+  width: 120%;
+}
+@media screen and (max-width: 1080px) {
+  .p-pension-system__service-sub-list {
+    width: 200%;
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-sub-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-sub-list {
+    gap: 12px;
+  }
+}
+
+.p-pension-system__service-sub-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 16px;
+  background-color: #0e6ed0;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.p-pension-system__service-sub-icon {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #0e6ed0;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.p-pension-system__service-sub-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-pension-system__service-img {
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-img {
+    order: -1;
+  }
+}
+.p-pension-system__service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-pension-system__service-text {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-text {
+    font-size: 1.5rem;
+  }
+}
+
+/*--------------------------------------
+  Employee Orientation (社員研修ページ)
+--------------------------------------*/
+.p-employee-orientation .p-page-header {
+  background-image: url(../img/employee-orientation-mv-bg.jpg);
+}
+
+.p-employee-orientation__summary {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-employee-orientation__summary-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-lead {
+    font-size: 1.5rem;
+  }
+}
+
+.p-employee-orientation__summary-list {
+  display: grid;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-list {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-list {
+    gap: 16px;
+  }
+}
+
+.p-employee-orientation__summary-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 32px 48px 32px 36px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-item {
+    padding: 24px 28px 24px 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item {
+    grid-template-columns: 32px 1fr;
+    align-items: start;
+    gap: 12px;
+    padding: 24px 16px 24px 12px;
+  }
+}
+
+.p-employee-orientation__summary-item-title {
+  position: relative;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-item-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+  }
+}
+.p-employee-orientation__summary-item-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-employee-orientation__summary-item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item-text {
+    font-size: 1.5rem;
+  }
+}
+
+.p-employee-orientation__summary-sub-list {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-employee-orientation__summary-sub-title {
+  margin-top: 0.5em;
+  font-weight: bold;
 }

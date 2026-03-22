@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="p-insurance">
+<div class="p-employee-orientation">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">Insurance</span>
+            <span class="p-page-header__subtitle">Employee Orientation</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -16,10 +16,10 @@
         <div class="l-container">
             <div class="p-intro__inner">
                 <h2 class="p-intro__title">
-                    煩雑な手続きを、正確・迅速に。
+                    トラブルを防ぎ、強い組織をつくる。
                 </h2>
                 <p class="p-intro__lead">
-                    従業員数が増えるほど、入退社の手続きや社会保険の算定基礎、労働保険の年度更新といった事務作業は膨大なボリュームとなり、担当者のリソースを圧迫します。 これらの業務は「できて当たり前」と思われがちですが、万が一ミスや遅延が発生すれば、従業員の信頼を損なうだけでなく、行政指導のリスクにも繋がりかねません。D・プロデュースは、貴社の事務負担を最小限に抑え、確実なコンプライアンスを実現します。
+                    組織の成長には、制度（ハード）だけでなく、そこで働く人の意識やスキル（ソフト）のアップデートが不可欠です。D・プロデュースの社員研修は、数多くの労務現場を見てきた社労士の知見をベースに、受講者が「自分事」として捉え、明日から実践できるプログラムを提供します。法的根拠に裏打ちされた深い学びで、トラブルを未然に防ぐ強い組織へと導きます。
                 </p>
             </div>
         </div>
@@ -36,26 +36,26 @@
                 <ul class="p-trouble__list">
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">従業員を雇うのが初めてで手続きが分からない</p>
+                        <p class="p-trouble__text">ハラスメント対策をきちんと行いたい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">社会保険・労働保険の加入が不安</p>
+                        <p class="p-trouble__text">管理職のマネジメント力を高めたい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">助成金を活用したいが調べる時間がない</p>
+                        <p class="p-trouble__text">労務トラブルを未然に防ぎたい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">本業に集中したいのに事務手続きに追われている</p>
+                        <p class="p-trouble__text">形式的な研修ではなく、実務に活きる内容にしたい</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- D・プロデュースの労働・社会保険事務代行３つの特長 -->
+    <!-- D・プロデュースの社員研修３つの特長 -->
     <section class="p-strength">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -65,7 +65,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FEATURE</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの労働・社会保険事務代行<br />３つの特長</h2>
+                <h2 class="c-section-heading__title-ja">/ D・プロデュースの社員研修<br />３つの特長</h2>
             </div>
 
             <div class="p-strength__list">
@@ -73,7 +73,7 @@
                 <!-- 01 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/insurance-feature-img1.jpg" alt="労災保険のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/flow-step-img3.jpg" alt="カリキュラムのイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -81,7 +81,7 @@
                                 <span class="p-strength__label">FEATURE.01</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">事業主・役員の「労災保険」への特別加入</h3>
+                            <h3 class="p-strength__item-title">カスタマイズ型のカリキュラム</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
@@ -89,7 +89,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            本来、経営者や役員は労働者ではないため、業務中のケガで労災保険を受けることはできません。しかし、厚労大臣認可の事務組合を運営する当法人なら、事業主や家族従事者の方々も「特別加入」が可能です。現場作業や移動中の事故など、経営者の「もしも」の際にも労働者と同様の補償が受けられる安心を提供します。
+                            既存のパッケージをそのまま提供することはありません。貴社の業種、組織規模、現在直面している課題をヒアリングし、独自のケーススタディを組み込んだオリジナルのカリキュラムを設計します。貴社独自の就業規則の内容にまで踏み込んだ、極めて具体的で実践的な学びを実現します。
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 <!-- 02 -->
                 <div class="p-strength__item p-strength__item--reverse">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/insurance-feature-img2.jpg" alt="労働保険料のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/trend.jpg" alt="最新トレンドへの対応のイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -105,7 +105,7 @@
                                 <span class="p-strength__label">FEATURE.02</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">労働保険料の「3回分割納付」が可能</h3>
+                            <h3 class="p-strength__item-title">「インシビリティ研修」など<br />最新トレンドへの対応</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
@@ -113,7 +113,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            通常、労働保険料はある程度の金額（概ね40万円以上）に達しない限り分割納付は認められませんが、当法人の事務組合に委託いただくことで、金額の多寡に関わらず保険料を年3回に分けて納付することが可能になります。一括納付によるキャッシュフローへの負担を軽減し、資金運用の安定化に寄与します。
+                            ハラスメントの温床となる「無礼な振る舞い（インシビリティ）」への対策など、従来の研修ではカバーしきれなかった最新の組織課題にフォーカス。離職防止や生産性向上に直結する現代的なテーマを取り入れることで、組織全体のコミュニケーションの質を劇的に向上させます。
                         </p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                 <!-- 03 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/about-why-img1.jpg" alt="一括対応のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/reason-feature-img6.jpg" alt="ハイブリッド対応のイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
@@ -129,7 +129,7 @@
                                 <span class="p-strength__label">FEATURE.03</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">専門知と事務組合機能の<br />「ワンストップ一元化」</h3>
+                            <h3 class="p-strength__item-title">オンライン・対面のハイブリッド対応</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number3.svg" alt=""
@@ -137,7 +137,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            一般的な事務組合では行えない「社会保険（健保・厚年）の手続き」や「助成金の申請」「労災給付の請求」も、社労士法人である私たちが窓口となることで全て一括対応可能です。事務組合の制度的メリットを享受しつつ、社労士の高度なコンサルティングを一つの窓口で完結。情報の二重伝達を防ぎ、管理コストを大幅に削減します。
+                            全国に拠点を持つ企業様や、テレワークを導入している組織にも柔軟に対応可能です。ライブ感のある対面形式のワークショップはもちろん、場所を選ばず参加できるオンライン形式、またはその両方を組み合わせたハイブリッド形式など、受講率と学習効果を最大化する最適な形式を提案します。
                         </p>
                     </div>
                 </div>
@@ -147,8 +147,8 @@
         </div>
     </section>
 
-    <!-- D・プロデュースのバックアップ体制（独自セクション） -->
-    <section class="p-insurance__system">
+    <!-- 研修の概要（独自コンテンツ） -->
+    <section class="p-employee-orientation__summary">
         <div class="l-container">
             <!-- セクション見出し -->
             <div class="c-section-heading">
@@ -156,67 +156,65 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">SYSTEM</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースのバックアップ体制</h2>
+                <span class="c-section-heading__title-en">SUMMARY</span>
+                <h2 class="c-section-heading__title-ja">/ 研修の概要</h2>
             </div>
-            <div class="p-insurance__system-content">
-                <div class="p-insurance__system-cards">
-                    <!-- 01 -->
-                    <div class="p-insurance__system-card p-insurance__system-card--dproduce">
-                        <div class="p-insurance__system-card-head">
-                            <h3 class="p-insurance__system-card-logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="社会保険労務士法人D・プロデュース"></h3>
-                        </div>
-                        <div class="p-insurance__system-card-body">
-                            <!-- リスト -->
-                            <ul class="p-insurance__system-card-list">
-                                <li class="p-insurance__system-card-item">社会保険、労働保険手続きを<span class="p-insurance__system-card-item-strong">迅速かつ正確</span>に対応</li>
-                                <li class="p-insurance__system-card-item">法改正等の頻繁かつタイムリーな各種情報提供</li>
-                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">問題箇所がはっきりわかる</span>官公庁の立ち入り検査対応</li>
-                                <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働紛争解決へのアドバイス及びあっせん代理</span></li>
-                                <li class="p-insurance__system-card-item">法人組織による、<span class="p-insurance__system-card-item-strong">安心・安全</span>なご契約</li>
-                            </ul>
-                        </div>
+            <p class="p-employee-orientation__summary-lead">企業の用途に応じた様々な研修をプロデュースいたします。</p>
+            <ul class="p-employee-orientation__summary-list">
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-beginner.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">新入社員研修・社会人マナー研修</h3>
+                        <p class="p-employee-orientation__summary-item-text">新入社員には、社会人としての常識を含め、働き方のルールをきちんと説明することが重要です。当社では、労使トラブル予防の視点から研修を実施します。</p>
                     </div>
-                    <div class="p-insurance__system-row">
-                        <!-- 02 -->
-                        <div class="p-insurance__system-card p-insurance__system-card--sr">
-                            <div class="p-insurance__system-card-head">
-                                <h3 class="p-insurance__system-card-title">神奈川県SR経営労務センター</h3>
-                            </div>
-                            <div class="p-insurance__system-card-body">
-                                <!-- リスト -->
-                                <ul class="p-insurance__system-card-list">
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">会社に事務負担の少ない</span>労働保険手続き</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">労働保険楼の</span>確定申告<span class="p-insurance__system-card-item-small">(年度更新)</span></li>
-                                    <li class="p-insurance__system-card-item">事業主も労働加入できる安心の特別加入制度</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 03 -->
-                        <div class="p-insurance__system-card p-insurance__system-card--consultant">
-                            <div class="p-insurance__system-card-head">
-                                <h3 class="p-insurance__system-card-title">人事労務コンサルタント</h3>
-                            </div>
-                            <div class="p-insurance__system-card-body">
-                                <!-- リスト -->
-                                <ul class="p-insurance__system-card-list">
-                                    <li class="p-insurance__system-card-item">就業規則を<span class="p-insurance__system-card-item-strong">オーダーメイド作成</span></li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">判断に迷う</span>人づかいのアドバイス</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">時代とニーズにマッチした</span>諸規定の準備</li>
-                                    <li class="p-insurance__system-card-item"><span class="p-insurance__system-card-item-strong">経営労働監査による「人材」の効果的活用と成長発展の視点での経営分析評価</span></li>
-                                    <li class="p-insurance__system-card-item">IPO<span class="p-insurance__system-card-item-small">(株式公開)</span>へ向けた<span class="p-insurance__system-card-item-strong">内部統制支援<span class="p-insurance__system-card-item-small">(コンサルティング)</span></span>他</li>
-                                </ul>
-                            </div>
-                        </div>
+                </li>
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-evaluation.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">人事総務担当者向け研修</h3>
+                        <p class="p-employee-orientation__summary-item-text">人事労務に関する手続き、労使トラブル防止を前提とした施策についての研修を実施します。</p>
                     </div>
-                </div>
-                <p class="p-insurance__system-text">
-                    当社の「労働・社会保険事務アウトソーシング」サービスでは、このような実務手続きの代行を適正に行い、事業継続する上で必要な知識・ノウハウをご提供しながら、しっかりと御社をサポートさせていただきます。<br />
-                    このサービスをご利用いただくことで、これまでの労働・社会保険事務を合理化(スリム化)し、コア業務へ集中することができ、事業拡大や企業発展のために使える時間を確保することができます。
-                </p>
-            </div>
+                </li>
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-management.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">管理者向け研修</h3>
+                        <p class="p-employee-orientation__summary-item-text">管理者のコミュニケーションスキル向上が、組織の雰囲気を改善し業績向上に繋がります。弊社でご提案する実践型リーダーシップ研修プログラムでは、徹底したグループワーク、ロールプレイングにより研修翌日から社員のコミュニケーションスキルが期待できます。</p>
+                    </div>
+                </li>
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-synapse.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">人事労務管理研修</h3>
+                        <p class="p-employee-orientation__summary-item-text">働き方改革関連法を含め、頻繁に行われる法改正への対応や各種ハラスメント研修を実施します。コンプライアンスの観点から企業の労務管理体制の構築を支援します。</p>
+                    </div>
+                </li>
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-graph.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">人事評価者研修</h3>
+                        <p class="p-employee-orientation__summary-item-text">人事評価制度の評価面談は、人事制度運用の重要な要素です。評価者としての考え方や評価のポイントを押さえ、評価者による評価誤差の最小化を目指す研修を実施します。</p>
+                    </div>
+                </li>
+                <li class="p-employee-orientation__summary-item">
+                    <span class="p-employee-orientation__summary-item-icon"><img src="<?php bloginfo('template_url'); ?>/img/ico-plan.svg" alt="" aria-hidden="true"></span>
+                    <div class="p-employee-orientation__summary-item-body">
+                        <h3 class="p-employee-orientation__summary-item-title">ライフプランセミナー</h3>
+                        <p class="p-employee-orientation__summary-item-text">弊社は、幸せと思える人生を送るためにライフプランセミナーを開催しています。</p>
+                        <dl class="p-employee-orientation__summary-sub-list">
+                            <dt class="p-employee-orientation__summary-sub-title">１．年代別（ライフプラン）</dt>
+                            <dd class="p-employee-orientation__summary-sub-data">定年者向け・５５歳時・４０歳代、５０歳代向け・２０歳、３０歳代向け・新入社員向け・転職者向け</dd>
+                            <dt class="p-employee-orientation__summary-sub-title">２．テーマ別</dt>
+                            <dd class="p-employee-orientation__summary-sub-data">公的年金・生命保険・資産運用入門・家計の見直し・投資信託（一般ＮＩＳＡ・つみたてＮＩＳＡ）・ジュニアＮＩＳＡ・ＩＤｅＣＯの運用）</dd>
+                            <dt class="p-employee-orientation__summary-sub-title">３．セミナー時間別</dt>
+                            <dd class="p-employee-orientation__summary-sub-data">６０分・９０分・１２０分・半日・半日・コース</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
 
     <!-- ご利用のメリット -->
     <section class="p-point">
@@ -236,7 +234,7 @@
                 <!-- 01 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/personal-evaluation-img4.jpg" alt="安心のサポート">
+                        <img src="<?php bloginfo('template_url');?>/img/training.jpg" alt="研修のイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -244,7 +242,7 @@
                                 <span class="p-point__label">MERIT.01</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">煩雑な手続きをまとめてサポート</h3>
+                            <h3 class="p-point__item-title">様々な研修に対応</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
@@ -252,7 +250,7 @@
                             </figure>
                         </div>
                         <p class="p-point__desc">
-                            雇用保険・社会保険の取得、喪失、扶養変更から、労災事故の対応まで、人事労務に関するあらゆる手続きを一括して代行します。専門家チームが窓口となることで、役所ごとに異なる複雑なルールを調べる手間をなくし、正確かつ最短ルートで手続きを完結させます。
+                            管理職向けのハラスメント防止や評価者研修から、全社員向けのコンプライアンス、メンタルヘルス、コミュニケーション研修まで幅広く対応。階層別・課題別に一貫したメッセージを伝えることで、組織の価値観を浸透させ、統一感のある人材育成を強力にバックアップします。
                         </p>
                     </div>
                 </div>
@@ -260,7 +258,7 @@
                 <!-- 02 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/reason-feature-img4.jpg" alt="相談のイメージ">
+                        <img src="<?php bloginfo('template_url');?>/img/specialist.jpg" alt="専門家のイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -268,7 +266,7 @@
                                 <span class="p-point__label">MERIT.02</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">労務相談もできる環境</h3>
+                            <h3 class="p-point__item-title">専門家ならではの視点</h3>
 
                             <figure class="p-point__number  p-top-point__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
@@ -276,7 +274,7 @@
                             </figure>
                         </div>
                         <p class="p-point__desc">
-                            単なる事務作業の代行にとどまらず、手続きの背景にある「雇用契約の適正さ」や「法改正に伴う実務の変更点」についても、その場で専門家へ相談が可能です。事務代行と労務アドバイザリーを一体化させることで、リスクを未然に防ぐ一歩先のバックオフィス体制を構築できます。
+                            講師を務めるのは、日々リアルな労務トラブルを解決し続けているプロフェッショナルです。理論だけでなく「実際にどのような行動が法的リスクを招くのか」「現場でどう声をかけるべきか」という、社労士ならではの重みと説得力のある講義で、受講者の意識を根本から変革します。
                         </p>
                     </div>
                 </div>
@@ -285,7 +283,7 @@
         </div>
     </section>
 
-    <!-- 労働・社会保険事務代行の流れ -->
+    <!-- 企業拠出年金の流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -295,7 +293,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FLOW</span>
-                <h2 class="c-section-heading__title-ja">/ 労働・社会保険事務代行の流れ</h2>
+                <h2 class="c-section-heading__title-ja">/ 企業拠出年金の流れ</h2>
             </div>
 
             <ol class="p-process__list">
@@ -306,7 +304,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">ヒアリング</h3>
                         <p class="p-process__item-text">
-                            現在の従業員数、拠点数、現在の手続きの運用フローや使用されている人事ソフトなどを詳しく伺います。現状の課題を洗い出し、二重入力などの無駄を省いた、貴社に最適なアウトソーシングプランを設計します。
+                            まずは貴社が現在抱えている組織の課題、研修の対象者、ゴールとしたい受講後の変化を詳しく伺います。「なぜ今この研修が必要なのか」を深掘りし、目的を明確に定めます。
                         </p>
                     </div>
                 </li>
@@ -317,7 +315,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">現状調査とプランのご提案</h3>
                         <p class="p-process__item-text">
-                            ヒアリングに基づき、代行範囲（スポットからフルアウトソーシングまで）とお見積りをご提示します。また、電子申請への移行やチャットツールでの情報共有など、業務スピードを劇的に向上させるための具体的な改善案を提案いたします。
+                            ヒアリングに基づき、貴社に最適な研修テーマとカリキュラム構成をご提案します。事例（ケーススタディ）の選定から実施形式（対面・オンライン等）まで、最も効果的なプランとお見積りを提示します。
                         </p>
                     </div>
                 </li>
@@ -328,7 +326,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">ご契約・キックオフ</h3>
                         <p class="p-process__item-text">
-                            プラン内容にご納得いただけましたら、正式にサポートを開始します。専任の5名チームを編成し、キックオフミーティングを実施。貴社固有のルールや連絡系統を確認し、スムーズな実務移行のための準備を整えます。
+                            プラン決定後、実施に向けた詳細な打ち合わせを行います。研修資料の最終調整や、当日の進行スケジュールの確認、アンケート項目の設計などを進め、研修の効果を最大化するための準備を整えます。
                         </p>
                     </div>
                 </li>
@@ -339,7 +337,7 @@
                     <div class="p-process__item-body">
                         <h3 class="p-process__item-title">サポート開始</h3>
                         <p class="p-process__item-text">
-                            決定したフローに沿って、実際の手続き代行をスタートします。入退社情報などをチャットや共有ストレージで受け取り、電子申請にて迅速に処理。完了報告までチーム一貫で対応し、貴社が本業に専念できる環境を強力にバックアップします。
+                            決定したカリキュラムに沿って研修を実施します。受講者の主体性を引き出すワークを織り交ぜながら、プロの講師が熱意を持って指導。実施後はアンケート結果の集計・分析を行い、今後の組織改善に向けたフィードバックをご報告します。
                         </p>
                     </div>
                 </li>
@@ -367,12 +365,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">どこまで対応してもらえますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">どのようなテーマに対応していますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                入退社手続き、社会保険・労働保険の各種届出まで幅広く対応可能です。<br />電子申請にも対応し、迅速に手続きを行います。
+                                ハラスメント対策、管理職研修、労務基礎など幅広く対応可能です。<br />企業の課題に合わせてカスタマイズいたします。
                             </p>
                         </dd>
                     </div>
@@ -381,13 +379,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">スポットでの依頼も可能ですか？</p>
+                            <p class="p-faq__text p-faq__text--bold">オンライン研修にも対応していますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、必要な手続きのみのご依頼も可能です。<br />
-                                顧問契約がなくても対応いたします。
+                                はい、オンライン・対面どちらも可能です。<br />状況に応じて最適な形式をご提案します。
                             </p>
                         </dd>
                     </div>
@@ -396,12 +393,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">手続きの進捗は確認できますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">研修時間や回数は相談できますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、状況は随時ご報告いたします。<br />安心してお任せいただける体制を整えています。
+                                はい、ご要望に応じて柔軟に設計します。<br />単発研修から継続型まで対応可能です。
                             </p>
                         </dd>
                     </div>

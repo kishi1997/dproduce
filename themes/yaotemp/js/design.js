@@ -308,8 +308,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // 下層ページタブ タブ切り替え
   // ==========================================
-  const tabItems = document.querySelectorAll(".p-tab__item");
-  const tabPanels = document.querySelectorAll(".p-tab__panel");
+  const tabItems = document.querySelectorAll(".js-service-tab-item");
+  const tabPanels = document.querySelectorAll(".js-service-tab-panel");
 
   if (tabItems.length > 0 && tabPanels.length > 0) {
     tabItems.forEach((tab) => {
@@ -336,3 +336,71 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // ==========================================
+  // ご相談の流れページタブ タブ切り替え
+  // ==========================================
+  const tabItems = document.querySelectorAll(".js-flow-tab-item");
+  const tabPanels = document.querySelectorAll(".js-flow-tab-panel");
+
+  if (tabItems.length > 0 && tabPanels.length > 0) {
+    tabItems.forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        // ボタン自体のデフォルト動作を防ぐ
+        e.preventDefault();
+
+        // クリックされたタブが持つターゲットIDを取得（例: "tab-outsourcing"）
+        const targetId = tab.getAttribute("data-tab");
+
+        // 1. すべてのタブから is-active を外す
+        tabItems.forEach((t) => t.classList.remove("is-active"));
+        // 2. クリックされたタブに is-active を付ける
+        tab.classList.add("is-active");
+
+        // 3. すべてのパネルから is-active を外す
+        tabPanels.forEach((p) => p.classList.remove("is-active"));
+        // 4. 対応するIDのパネルに is-active を付ける
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add("is-active");
+        }
+      });
+    });
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // ==========================================
+  // SRS診断ページタブ タブ切り替え
+  // ==========================================
+  const tabItems = document.querySelectorAll(".js-srs-tab-item");
+  const tabPanels = document.querySelectorAll(".js-srs-tab-panel");
+
+  if (tabItems.length > 0 && tabPanels.length > 0) {
+    tabItems.forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        // ボタン自体のデフォルト動作を防ぐ
+        e.preventDefault();
+
+        // クリックされたタブが持つターゲットIDを取得（例: "tab-outsourcing"）
+        const targetId = tab.getAttribute("data-tab");
+
+        // 1. すべてのタブから is-active を外す
+        tabItems.forEach((t) => t.classList.remove("is-active"));
+        // 2. クリックされたタブに is-active を付ける
+        tab.classList.add("is-active");
+
+        // 3. すべてのパネルから is-active を外す
+        tabPanels.forEach((p) => p.classList.remove("is-active"));
+        // 4. 対応するIDのパネルに is-active を付ける
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add("is-active");
+        }
+      });
+    });
+  }
+});
+

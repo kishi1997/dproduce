@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="p-regulation">
+<div class="p-laboraudit">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">
-            <span class="p-page-header__subtitle">Regulation</span>
+            <span class="p-page-header__subtitle">Labor Audit</span>
             <h1 class="p-page-header__title"><?php the_title(); ?></h1>
         </div>
     </section>
@@ -16,10 +16,10 @@
         <div class="l-container">
             <div class="p-intro__inner">
                 <h2 class="p-intro__title">
-                    会社を守り、社員を活かす。<br />実務に強い就業規則サポート
+                    見えない労務リスクを、経営判断レベルで可視化。
                 </h2>
                 <p class="p-intro__lead">
-                    就業規則は、単に「法律を守るための書類」ではありません。会社を不当なリスクから守る「防波堤」であり、同時に社員が安心して力を発揮できる「組織の憲法」です。 10年以上更新されていない、あるいはネットのひな形を流用しただけの規則では、現代の複雑な労務トラブルや多様な働き方に対応できません。D・プロデュースは、数多くの紛争解決実績と最新の法務知見に基づき、貴社のビジョンを反映した「生きた就業規則」をプロデュースします。
+                    コンプライアンスの遵守が企業の存続を左右する現代において、潜在的な労務リスクの放置は、IPOの断念やM&Aの破談、莫大な損害賠償といった致命的な事態を招きかねません。 D・プロデュースの「労務監査・労務DD」は、単なる書類確認にとどまりません。現場の実態を緻密に分析し、経営を揺るがす「真のリスク」を特定。主観を排除した客観的なデータに基づき、企業の透明性と社会的信頼を盤石にするための戦略的な監査を実施します。
                 </p>
             </div>
         </div>
@@ -36,26 +36,26 @@
                 <ul class="p-trouble__list">
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">就業規則を何年も見直していない</p>
+                        <p class="p-trouble__text">M&A前に労務リスクを整理したい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">ネットのひな形をそのまま使っていて不安</p>
+                        <p class="p-trouble__text">未払い残業代などの潜在リスクが不安</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">問題社員への対応ルールが曖昧</p>
+                        <p class="p-trouble__text">IPOに向けて労務体制を整備したい</p>
                     </li>
                     <li class="p-trouble__item">
                         <div class="p-trouble__bullet"></div>
-                        <p class="p-trouble__text">助成金に対応した規程になっていない</p>
+                        <p class="p-trouble__text">買収後にトラブルが出ないか心配</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- D・プロデュースの就業規則サポート３つの特長 -->
+    <!-- D・プロデュースの労務検査・労務DD３つの特長 -->
     <section class="p-strength">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -64,8 +64,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">SUPPORT</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの就業規則サポート<br />３つの特長</h2>
+                <span class="c-section-heading__title-en">FEATURE</span>
+                <h2 class="c-section-heading__title-ja">/ D・プロデュースの労務検査・労務DD<br />３つの特長</h2>
             </div>
 
             <div class="p-strength__list">
@@ -73,15 +73,15 @@
                 <!-- 01 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/regulation-img1.jpg" alt="チェック体制">
+                        <img src="<?php bloginfo('template_url');?>/img/reason-feature-img9.jpg" alt="チェックのイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.01</span>
+                                <span class="p-strength__label">FEATURE.01</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">複数人のプロによるリーガルチェック</h3>
+                            <h3 class="p-strength__item-title">100項目以上の徹底チェック</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
@@ -89,7 +89,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            一人の担当者の主観に頼らず、チーム内の複数の専門家が異なる視点で条文を精査します。100名〜500名規模の企業で起こりがちな「多種多様な職種・雇用形態」が混在するケースでも、法的整合性と実務上の運用しやすさを両立させた、抜け漏れのない規定を構築します。
+                            労働基準法、労働安全衛生法、社会保険諸法令など、人事労務に関わるあらゆる法定要件を網羅した100項目以上の独自チェックリストを使用します。就業規則の整合性から、36協定の運用実態、未払い残業代の潜在リスクまで、専門家の目により徹底的に精査し、漏れのない監査を実現します。
                         </p>
                     </div>
                 </div>
@@ -97,15 +97,15 @@
                 <!-- 02 -->
                 <div class="p-strength__item p-strength__item--reverse">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/top-strength-img3.jpg" alt="運用支援">
+                        <img src="<?php bloginfo('template_url');?>/img/support-img2.jpg" alt="伴走対応のイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.02</span>
+                                <span class="p-strength__label">FEATURE.02</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">「作りっぱなし」にしない運用支援</h3>
+                            <h3 class="p-strength__item-title">「指摘」で終わらない「改善伴走型」</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
@@ -113,7 +113,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            規則を納品して終わりではありません。新しいルールが社内に浸透するよう、従業員向け説明会の実施や、管理職向けの運用マニュアル作成を徹底サポート。経営層の想いが正しく現場に伝わり、トラブルの火種を未然に防ぐ「運用できる体制」までをセットで提供します。
+                            問題点を見つけて報告するだけの「検査」で終わらせません。監査結果に基づき、指摘事項を「緊急性」と「重要性」で整理。どう修正すべきか、具体的な改善アクションプランを提示するとともに、その改定実務まで併走します。リスクを「価値」に変え、より健全な組織へと進化させることが私たちのゴールです。
                         </p>
                     </div>
                 </div>
@@ -121,15 +121,15 @@
                 <!-- 03 -->
                 <div class="p-strength__item">
                     <figure class="p-strength__img">
-                        <img src="<?php bloginfo('template_url');?>/img/regulation-img2.jpg" alt="法改正・トレンドの反映">
+                        <img src="<?php bloginfo('template_url');?>/img/flow-step-img5.jpg" alt="組織対応のイメージ">
                     </figure>
                     <div class="p-strength__content">
                         <div class="p-strength__head">
                             <div class="p-strength__label-wrap">
-                                <span class="p-strength__label">SUPPORT.03</span>
+                                <span class="p-strength__label">FEATURE.03</span>
                                 <span class="p-strength__line"></span>
                             </div>
-                            <h3 class="p-strength__item-title">最新の法改正・トレンドを即時反映</h3>
+                            <h3 class="p-strength__item-title">「組織対応」によるスピード監査</h3>
 
                             <figure class="p-strength__number  p-top-strength__number--small">
                                 <img src="<?php bloginfo('template_url');?>/img/top-strength-number3.svg" alt=""
@@ -137,7 +137,7 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            目まぐるしく変わる労働関連法規。私たちは常に最新の法改正情報をキャッチアップし、貴社の規則に即座に反映させる体制を整えています。また、昨今のトレンドであるテレワーク規定、副業解禁、メンタルヘルス対応など、時代に即した柔軟なルール作りを提言します。
+                            IPO準備やM&Aなど、時間的制約が厳しい案件においても、D・プロデュースの5名体制チームが迅速に対応します。膨大な資料の精査が必要な大規模監査であっても、役割分担による同時並行作業で、高い精度を維持したまま短期間で監査レポートを完成させます。
                         </p>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <!-- D・プロデュースの就業規則サポートの特徴 -->
+    <!-- ご利用のメリット -->
     <section class="p-point">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -156,8 +156,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">FEATURE</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの就業規則の特徴</h2>
+                <span class="c-section-heading__title-en">MERIT</span>
+                <h2 class="c-section-heading__title-ja">/ ご利用のメリット</h2>
             </div>
 
             <div class="p-point__list">
@@ -165,18 +165,23 @@
                 <!-- 01 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/regulation-img3.jpg" alt="会社第一">
+                        <img src="<?php bloginfo('template_url');?>/img/risk-img1.jpg" alt="リスク回避のイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.01</span>
+                                <span class="p-point__label">MERIT.01</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">会社を守ることを第一に</h3>
+                            <h3 class="p-point__item-title">経営上の「隠れた負債」を早期発見し、致命的なリスクを回避</h3>
+
+                            <figure class="p-point__number  p-top-point__number--small">
+                                <img src="<?php bloginfo('template_url');?>/img/top-strength-number1.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
                         </div>
                         <p class="p-point__desc">
-                            当社が作成する就業規則は、絶対的必要記載事項、相対的記載事項はもちろんのこと、特に「任意的記載事項」に着目して、会社の基本ルールの明確化、社員が安心して働ける環境作りを常に念頭に置き、万が一トラブルが発生しても、就業規則をベースに適切な処理することが可能になる（会社を守る！）ことを意識して作成致します。
+                            未払い残業代や名ばかり管理職問題、ハラスメントの予兆など、表面化していない労務リスクを事前に把握することで、法的紛争やSNSでの炎上、上場審査の否決といった最悪のシナリオを未然に防ぎます。
                         </p>
                     </div>
                 </div>
@@ -184,18 +189,23 @@
                 <!-- 02 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/regulation-img4.jpg" alt="良好な職場環境">
+                        <img src="<?php bloginfo('template_url');?>/img/specialist.jpg" alt="専門家のイメージ">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.02</span>
+                                <span class="p-point__label">MERIT.02</span>
                                 <span class="p-point__line"></span>
                             </div>
-                            <h3 class="p-point__item-title">働きやすい職場環境へ</h3>
+                            <h3 class="p-point__item-title">第三者の専門家によるお墨付きで、対外的な社会的信用を高められる</h3>
+
+                            <figure class="p-point__number  p-top-point__number--small">
+                                <img src="<?php bloginfo('template_url');?>/img/top-strength-number2.svg" alt=""
+                                    aria-hidden="true">
+                            </figure>
                         </div>
                         <p class="p-point__desc">
-                            会社内にて守らなければいけないルール(服務規律)や違反してはいけないルール(懲戒事由)の基準を具体的、かつ、明確に定めていきます。その結果として、労使双方の義務と権利を明確にすることにより、無用な労働トラブルの防止・働きやすい職場環境の実現を目指していきます。
+                            年間1,200件超の労務相談をこなすプロの視点でデータを読み解きます。「この数値の低下は、将来的な労働争議のリスクがある」「この不満は、実は給与体系の不備が原因である」といった、表面的なアンケート結果からは見えない「深層の経営リスク」を特定します。
                         </p>
                     </div>
                 </div>
@@ -204,6 +214,7 @@
         </div>
     </section>
 
+    <!-- 労務検査・労務DDの流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -213,7 +224,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FLOW</span>
-                <h2 class="c-section-heading__title-ja">/ 就業規則作成の流れ</h2>
+                <h2 class="c-section-heading__title-ja">/ 労務検査・労務DDの流れ</h2>
             </div>
 
             <ol class="p-process__list">
@@ -222,9 +233,9 @@
                         <span class="p-process__item-number">01</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">ヒアリング・現状調査</h3>
+                        <h3 class="p-process__item-title">ヒアリング・事前準備</h3>
                         <p class="p-process__item-text">
-                            現行の就業規則や諸規程を確認し、現在の運用実態や経営層が抱える課題、将来のビジョンを詳しく伺います。まずは「現状と理想のギャップ」を明確にすることから始まります。
+                            監査の目的（IPO準備、M&A、自社診断など）や対象範囲、スケジュールを詳しく伺います。必要書類のリストをご提示し、スムーズな書面精査のための準備を整えます。
                         </p>
                     </div>
                 </li>
@@ -233,9 +244,9 @@
                         <span class="p-process__item-number">02</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の診断</h3>
+                        <h3 class="p-process__item-title">現状調査（書面監査・インタビュー）</h3>
                         <p class="p-process__item-text">
-                            最新の法令や判例に照らし合わせ、現行の規則が抱える法的リスクを徹底的に洗い出します。未払い残業代対策やハラスメント防止規定など、現代の労務課題に対する「守りの強度」を専門家の視点で診断します。
+                            就業規則、賃金台帳、勤怠記録、雇用契約書などの重要書類を徹底的に精査します。また、必要に応じて担当者へのインタビューを行い、書面だけでは見えない運用の実態や現場の課題を深く掘り下げます。
                         </p>
                     </div>
                 </li>
@@ -244,9 +255,9 @@
                         <span class="p-process__item-number">03</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の整備</h3>
+                        <h3 class="p-process__item-title">監査結果報告（レポート提出）</h3>
                         <p class="p-process__item-text">
-                            診断結果に基づき、貴社の業種や組織規模に最適化した条文のドラフトを作成します。D・プロデュースのチームによる複数人チェックを経て、法適合性と現場での使いやすさを両立させた「生きたルール」へと整えていきます。
+                            精査したデータを基に、詳細な監査報告書を作成します。発見されたリスクの所在を明確にし、法的根拠と実務的なインパクトをまとめた上で、経営陣向けにフィードバックを実施します。
                         </p>
                     </div>
                 </li>
@@ -255,20 +266,9 @@
                         <span class="p-process__item-number">04</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">就業規則の変更・決定</h3>
+                        <h3 class="p-process__item-title">改善提案・フォローアップ</h3>
                         <p class="p-process__item-text">
-                            作成した原案を元に、経営層や実務担当者様とお打ち合わせを重ねます。内容が確定した後は、従業員代表への意見聴取や説明会の実施を通じて、組織内での合意形成と決定プロセスを丁寧にサポートいたします。
-                        </p>
-                    </div>
-                </li>
-                <li class="p-process__item">
-                    <div class="p-process__item-header">
-                        <span class="p-process__item-number">05</span>
-                    </div>
-                    <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">運用開始</h3>
-                        <p class="p-process__item-text">
-                            完成した規則を所轄の労働基準監督署へ届け出ます。受理後も「規則をどう運用し、社内に浸透させるか」についてアドバイスを行い、トラブルを未然に防ぎ、社員が安心して働ける環境づくりを伴走支援します。
+                            監査で見つかった課題に対し、具体的な改善案を提案します。就業規則の改定や運用フローの再構築など、コンプライアンスを完全に満たす状態になるまで、専門家チームが継続的にバックアップします。
                         </p>
                     </div>
                 </li>
@@ -286,7 +286,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FAQ</span>
-                <h2 class="c-section-heading__title-ja">/ お問い合わせの前によくある「切り替え」の<br />不安にお答えします</h2>
+                <h2 class="c-section-heading__title-ja">/ よくある質問</h2>
             </div>
 
             <!-- FAQリストエリア -->
@@ -296,12 +296,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">就業規則は本当に必要ですか？</p>
+                            <p class="p-faq__text p-faq__text--bold">労務監査と労務DDの違いは何ですか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                常時10人以上の従業員がいる場合は作成・届出が義務です。<br />それ未満でも、トラブル防止や会社を守るために整備をおすすめしています。
+                                労務監査は自社のリスクチェック、労務DDはM&A時の詳細調査を指します。<br />目的に応じて調査範囲を設計します。
                             </p>
                         </dd>
                     </div>
@@ -310,12 +310,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">今ある就業規則の見直しだけでも依頼できますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">どのような項目を確認しますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                はい、可能です。<br />法改正対応やリスクチェックのみのご相談も承っています。
+                                就業規則、労働時間管理、未払い残業代リスク、社会保険加入状況などを確認します。<br />企業規模や取引内容に応じてカスタマイズします。
                             </p>
                         </dd>
                     </div>
@@ -324,12 +324,12 @@
                     <div class="p-faq__item">
                         <dt class="p-faq__question">
                             <span class="p-faq__icon p-faq__icon--q">Q</span>
-                            <p class="p-faq__text p-faq__text--bold">作成にはどれくらい期間がかかりますか？</p>
+                            <p class="p-faq__text p-faq__text--bold">調査期間はどれくらいかかりますか？</p>
                         </dt>
                         <dd class="p-faq__answer">
                             <span class="p-faq__icon p-faq__icon--a">A</span>
                             <p class="p-faq__text">
-                                通常は1～2ヶ月程度です。<br />ヒアリングを行い、貴社の実態に合わせて作成いたします。
+                                規模にもよりますが、通常3～6週間程度です。<br />スケジュールに合わせた対応も可能です。
                             </p>
                         </dd>
                     </div>
@@ -338,7 +338,7 @@
         </div>
     </section>
 
-    <!-- サービス一覧 -->
+        <!-- サービス一覧 -->
     <?php get_template_part( 'template-parts/section', 'service' ); ?>
 
     <!-- モデルケース -->

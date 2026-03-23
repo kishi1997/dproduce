@@ -23,12 +23,12 @@
                 <!-- ロゴ部分（PC・SP共通ヘッダー） -->
                 <?php if (is_home() || is_front_page()) : ?>
                 <h1 class="p-header__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
+                    <img src="<?php bloginfo('template_url'); ?>/img/logo.png"
                         alt="<?php bloginfo('name'); ?>">
                 </h1>
                 <?php else : ?>
                 <div class="p-header__logo">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <a href="<?php bloginfo('url'); ?>/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
                             alt="<?php bloginfo('name'); ?>">
                     </a>
@@ -43,10 +43,10 @@
                                 <p class="p-header__tel-num"><span>TEL</span>045-226-5482</p>
                                 <p class="p-header__tel-time">受付時間 9:00〜18:00 (土日祝休)</p>
                             </div>
-                            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
+                            <a href="<?php bloginfo('url'); ?>/contact/"
                                 class="c-btn c-btn--orange p-header__btn-contact">
                                 <span class="c-icon-mail">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
+                                    <img src="<?php bloginfo('template_url'); ?>//img/ico-mail-shadow.svg"
                                         alt="メールアイコン">
                                 </span>
                                 <span>お問い合わせ</span>
@@ -62,19 +62,19 @@
                     <nav class="p-global-nav u-hidden-pc">
                         <ul class="p-global-nav__list">
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/first/' ) ); ?>">はじめての方へ</a>
+                                    href="<?php bloginfo('url'); ?>/first/">はじめての方へ</a>
                             </li>
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/reason/' ) ); ?>">選ばれる理由</a>
+                                    href="<?php bloginfo('url'); ?>/reason/">選ばれる理由</a>
                             </li>
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/service/' ) ); ?>">サービスメニュー</a>
+                                    href="<?php bloginfo('url'); ?>/service/">サービスメニュー</a>
                             </li>
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/seminar/' ) ); ?>">セミナー情報</a>
+                                    href="<?php bloginfo('url'); ?>/seminar/">セミナー情報</a>
                             </li>
                             <li class="p-global-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/company/' ) ); ?>">会社概要</a>
+                                    href="<?php bloginfo('url'); ?>/company/">会社概要</a>
                             </li>
                         </ul>
                     </nav>
@@ -90,8 +90,8 @@
                 <div class="p-drawer__head">
                     <!-- ドロワー用ロゴ -->
                     <div class="p-drawer__logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-blue.png"
+                        <a href="<?php bloginfo('url'); ?>/">
+                            <img src="<?php bloginfo('template_url'); ?>/img/logo-blue.png"
                                 alt="<?php bloginfo('name'); ?>">
                         </a>
                     </div>
@@ -101,13 +101,13 @@
                 <!-- SP用上部ボタン -->
                 <div class="p-drawer__sp-btns u-visible-sm">
                     <a href="tel:045-226-5482" class="c-btn c-btn--blue p-drawer__btn">
-                        <span class="c-icon-tel"><img src="<?php echo get_template_directory_uri(); ?>/img/ico-tel.svg"
+                        <span class="c-icon-tel"><img src="<?php bloginfo('template_url'); ?>/img/ico-tel.svg"
                                 alt="電話アイコン"></span>お電話
                     </a>
-                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
+                    <a href="<?php bloginfo('url'); ?>/contact/"
                         class="c-btn c-btn--orange p-drawer__btn">
                         <span class="c-icon-mail">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
+                            <img src="<?php bloginfo('template_url'); ?>/img/ico-mail-shadow.svg"
                                 alt="メールアイコン">
                         </span>
                         お問い合わせ
@@ -120,15 +120,15 @@
                     <div class="p-drawer-nav__col">
                         <ul class="p-drawer-nav__list">
                             <li class="p-drawer-nav__item p-drawer-nav__item--current"><a
-                                    href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページ</a></li>
+                                    href="<?php bloginfo('url'); ?>/">トップページ</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/first/' ) ); ?>">はじめての方へ</a></li>
+                                    href="<?php bloginfo('url'); ?>/first/">はじめての方へ</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/reason/' ) ); ?>">選ばれる理由</a></li>
+                                    href="<?php bloginfo('url'); ?>/reason/">選ばれる理由</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/flow/' ) ); ?>">ご相談の流れ</a></li>
+                                    href="<?php bloginfo('url'); ?>/flow/">ご相談の流れ</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/price/' ) ); ?>">料金案内</a></li>
+                                    href="<?php bloginfo('url'); ?>/price/">料金案内</a></li>
                         </ul>
                     </div>
 
@@ -140,36 +140,37 @@
                                 <div class="p-drawer-nav__accordion-inner">
                                     <ul class="p-drawer-nav__sub-list">
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/rules/' ) ); ?>">就業規則サポート</a>
+                                                href="<?php bloginfo('url'); ?>/service/regulation/">就業規則サポート</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/payroll/' ) ); ?>">給与計算代行</a>
+                                                href="<?php bloginfo('url'); ?>/calculation-2/">給与計算代行</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/trouble/' ) ); ?>">労務トラブル相談</a>
+                                                href="<?php bloginfo('url'); ?>/service/labor-2/">労務トラブル相談</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/evaluation/' ) ); ?>">人事評価制度構築</a>
+                                                href="<?php bloginfo('url'); ?>/service/personal_affairs/">人事評価制度構築</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/startup/' ) ); ?>">創業支援パック</a>
+                                                href="<?php bloginfo('url'); ?>/service/establishment_support/">創業支援パック</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/social-insurance/' ) ); ?>">労働・社会保険事務代行</a>
+                                                href="<?php bloginfo('url'); ?>/service/insurance/">労働・社会保険事務代行</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/pension/' ) ); ?>">企業拠出年金</a>
+                                                href="<?php bloginfo('url'); ?>/pension-system/">企業拠出年金</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/training/' ) ); ?>">社員研修</a>
-                                        </li>
-                                        <li><a href="<?php echo esc_url( home_url( '/service/srs/' ) ); ?>">SRS診断</a>
+                                                href="<?php bloginfo('url'); ?>/service/employee-orientation/">社員研修</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/audit/' ) ); ?>">労務監査・労務DD(デューデリジェンス)</a>
+                                                href="<?php bloginfo('url'); ?>/service/srs/">SRS診断</a>
                                         </li>
                                         <li><a
-                                                href="<?php echo esc_url( home_url( '/service/disability-pension/' ) ); ?>">障害年金サポート</a>
+                                                href="<?php bloginfo('url'); ?>/service/laboraudit/">労務監査・労務DD(デューデリジェンス)</a>
+                                        </li>
+                                        <li><a
+                                                href="<?php bloginfo('url'); ?>/service/disabilitypension/">障害年金サポート</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -181,13 +182,13 @@
                     <div class="p-drawer-nav__col">
                         <ul class="p-drawer-nav__list">
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/case/' ) ); ?>">モデルケース紹介</a></li>
+                                    href="<?php bloginfo('url'); ?>/case/">モデルケース紹介</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/voice/' ) ); ?>">お客様の声</a></li>
+                                    href="<?php bloginfo('url'); ?>/voice/">お客様の声</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/seminar/' ) ); ?>">セミナー情報</a></li>
+                                    href="<?php bloginfo('url'); ?>/seminar/">セミナー情報</a></li>
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/report/' ) ); ?>">セミナー開催レポート</a></li>
+                                    href="<?php bloginfo('url'); ?>/report/">セミナー開催レポート</a></li>
                         </ul>
 
                         <div class="p-drawer-nav__accordion js-accordion">
@@ -195,8 +196,8 @@
                             <div class="p-drawer-nav__accordion-content js-accordion-content">
                                 <div class="p-drawer-nav__accordion-inner">
                                     <ul class="p-drawer-nav__sub-list">
-                                        <li><a href="<?php echo esc_url( home_url( '/news/' ) ); ?>">お知らせ</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/column/' ) ); ?>">お役立ちコラム</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/news/">お知らせ</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/column/">お役立ちコラム</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -204,7 +205,7 @@
 
                         <ul class="p-drawer-nav__list">
                             <li class="p-drawer-nav__item"><a
-                                    href="<?php echo esc_url( home_url( '/company/' ) ); ?>">会社概要</a></li>
+                                    href="<?php bloginfo('url'); ?>/company/">会社概要</a></li>
                         </ul>
 
                         <!-- PC用下部ボタン -->
@@ -212,17 +213,17 @@
                             <div class="p-drawer__pc-btns-row">
                                 <a href="tel:045-226-5482" class="c-btn c-btn--blue p-drawer__btn">
                                     <span class="c-icon-tel"> <img
-                                            src="<?php echo get_template_directory_uri(); ?>/img/ico-tel.svg"
+                                            src="<?php bloginfo('template_url'); ?>/img/ico-tel.svg"
                                             alt="電話アイコン"></span>お電話
                                 </a>
-                                <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
+                                <a href="<?php bloginfo('url'); ?>/contact/"
                                     class="c-btn c-btn--orange p-drawer__btn">
                                     <span class="c-icon-mail"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/img/ico-mail-shadow.svg"
+                                            src="<?php bloginfo('template_url'); ?>/img/ico-mail-shadow.svg"
                                             alt="メールアイコン"></span>お問い合わせ
                                 </a>
                             </div>
-                            <a href="<?php echo esc_url( home_url( '/document/' ) ); ?>"
+                            <a href="<?php bloginfo('url'); ?>/document/"
                                 class="c-btn c-btn--outline p-drawer__btn-doc">
                                 資料請求はこちらから
                             </a>
@@ -232,7 +233,7 @@
 
                 <!-- SP用最下部ボタン -->
                 <div class="p-drawer__sp-bottom-btn u-visible-sm">
-                    <a href="<?php echo esc_url( home_url( '/document/' ) ); ?>"
+                    <a href="<?php bloginfo('url'); ?>/document/"
                         class="c-btn c-btn--outline p-drawer__btn-doc">
                         資料請求はこちらから
                     </a>

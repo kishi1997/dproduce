@@ -103,8 +103,7 @@ img {
   border: 2px solid;
   position: relative;
   font-weight: bold;
-  -o-border-image: linear-gradient(#1d88f3, #0059b4) 1;
-     border-image: linear-gradient(#1d88f3, #0059b4) 1;
+  border-image: linear-gradient(#1d88f3, #0059b4) 1;
   min-width: 220px;
   font-size: 18px;
 }
@@ -2956,8 +2955,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-voices .p-top-voices__card-body {
   display: flex;
@@ -3771,8 +3769,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-blogs .p-top-blogs__item-body {
   flex-grow: 1;
@@ -4476,7 +4473,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
@@ -4492,7 +4488,6 @@ img {
   }
 }
 .p-trouble .p-trouble__header {
-  width: -moz-fit-content;
   width: fit-content;
   color: #016edc;
 }
@@ -4655,7 +4650,6 @@ img {
 @media screen and (max-width: 768px) {
   .p-about-reason .p-about-reason__item {
     flex-direction: column;
-    width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
   }
@@ -5644,8 +5638,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-voices .p-voices__card-body {
   display: flex;
@@ -6051,7 +6044,7 @@ img {
   top: 50%;
   left: 0;
   transform: translate(-50%, -55%);
-  font-size: clamp(10rem, 2.941rem + 23.53vw, 18rem);
+  font-size: clamp(10rem, 8vw, 18rem);
   font-weight: bold;
   line-height: 1;
   color: rgba(1, 110, 220, 0.2);
@@ -6117,8 +6110,7 @@ img {
 }
 .p-reason .p-reason-feature__sub-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-reason .p-reason-feature__sub-title {
   margin-bottom: 1.6rem;
@@ -6263,8 +6255,7 @@ img {
 }
 .p-flow .p-flow-step__item-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-flow .p-flow-step__item-number {
   position: relative;
@@ -6307,7 +6298,7 @@ p-strength（下層ページ共通）
 }
 @media screen and (max-width: 768px) {
   .p-strength {
-    overflow: 60px 0;
+    padding: 60px 0;
   }
 }
 
@@ -6579,8 +6570,7 @@ p-point（下層ページ共通）
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-point__content {
@@ -7253,8 +7243,7 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(auto-fit, min(100%, 240px));
   justify-content: center;
   row-gap: 40px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 @media screen and (max-width: 480px) {
   .p-service-list {
@@ -7276,8 +7265,7 @@ p-point（下層ページ共通）
 .p-service-list__item-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-service-list__item-title {
@@ -7299,7 +7287,7 @@ p-point（下層ページ共通）
 }
 
 /*--------------------------------------
-  Personal Affairs Page（人事評価制度構築）
+  Personnel Affairs Page（人事評価制度構築）
 --------------------------------------*/
 .p-personnel-affairs .p-page-header {
   background-image: url(../img/personal-evaluation-mv-bg.jpg);
@@ -7313,8 +7301,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
 }
 @media screen and (max-width: 768px) {
   .p-personnel-affairs__step-list {
@@ -7453,8 +7440,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 480px) {
   .p-establishment-support__service-list {
@@ -7494,7 +7480,6 @@ p-point（下層ページ共通）
 }
 
 .p-establishment-support__service-note {
-  width: -moz-fit-content;
   width: fit-content;
   margin-top: 32px;
   margin-right: 0;
@@ -7615,4 +7600,1149 @@ p-point（下層ページ共通）
   .p-price-table__data-strong-text {
     font-size: 1.6rem;
   }
-}/*# sourceMappingURL=design.css.map */
+}
+
+/*--------------------------------------
+  featureリスト（3カラム汎用リスト）
+--------------------------------------*/
+.p-feature {
+  padding: 100px 0;
+  background-color: #ebf0f8;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .p-feature {
+    padding: 60px 0;
+  }
+}
+.p-feature .c-section-heading {
+  margin-bottom: 40px;
+}
+
+.p-feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media screen and (max-width: 480px) {
+  .p-feature__list {
+    gap: 40px;
+  }
+}
+
+.p-feature__item {
+  display: grid;
+  gap: 0;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-feature__list-header {
+  position: relative;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid #eaeaea;
+  overflow: hidden;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-header {
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+    padding: 24px 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.p-feature__list-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(1, 110, 220, 0.07);
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-number {
+    position: static;
+    font-size: 64px;
+    color: rgba(1, 110, 220, 0.15);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__list-number {
+    font-size: 52px;
+  }
+}
+
+.p-feature__list-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #004e87;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+  position: relative;
+  z-index: 1;
+}
+.p-feature__list-title::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #016edc;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__list-title::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__list-title {
+    font-size: 20px;
+  }
+}
+
+.p-feature__sub-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-list {
+    grid-template-columns: min(100%, 500px);
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.p-feature__sub-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 0;
+  border-left: 1px solid #eaeaea;
+  box-shadow: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+.p-feature__sub-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #016edc;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.p-feature__sub-item:first-child {
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-item:first-child {
+    border-left: 1px solid #eaeaea;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-item {
+    border-left: 1px solid #eaeaea;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-item {
+    align-items: center;
+    gap: 20px;
+    padding: 28px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-feature__sub-item {
+    padding: 24px 20px;
+  }
+}
+
+.p-feature__sub-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border: 3px solid #ebf0f8;
+  box-shadow: 0 2px 12px rgba(1, 110, 220, 0.15);
+  background: #eee;
+}
+.p-feature__sub-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+@media screen and (max-width: 768px) {
+  .p-feature__sub-img {
+    margin-bottom: 0;
+    width: min(100%, 200px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+.p-feature__sub-body {
+  flex: 1;
+}
+
+.p-feature__sub-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 10px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1080px) {
+  .p-feature__sub-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-feature__sub-title {
+    text-align: left;
+  }
+}
+
+.p-feature__sub-text {
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/*--------------------------------------
+  Insurance Page
+--------------------------------------*/
+.p-insurance .p-page-header {
+  background-image: url(../img/labor-mv-bg.jpg);
+}
+
+.p-insurance__system-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 60px;
+  column-gap: 80px;
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-cards {
+    row-gap: 40px;
+  }
+}
+
+.p-insurance__system-card {
+  position: relative;
+  width: min(100%, 432px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 16px 16px;
+}
+.p-insurance__system-card::before, .p-insurance__system-card::after {
+  opacity: 0;
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 1rem;
+  height: 100px;
+  background-color: #f5f7f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.p-insurance__system-card--dproduce {
+  --theme-color: #0e6ed0;
+}
+
+.p-insurance__system-card--sr {
+  --theme-color: #50acc8;
+}
+.p-insurance__system-card--sr::before {
+  opacity: 1;
+  visibility: visible;
+}
+.p-insurance__system-card--sr::before {
+  top: 0;
+  left: 60%;
+  transform: translate(0, -80%) rotate(25deg);
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-card--sr::before {
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+
+.p-insurance__system-card--consultant {
+  --theme-color: #45af65;
+}
+.p-insurance__system-card--consultant::before, .p-insurance__system-card--consultant::after {
+  opacity: 1;
+  visibility: visible;
+}
+.p-insurance__system-card--consultant::before {
+  top: 0;
+  right: 60%;
+  transform: translate(0, -80%) rotate(-25deg);
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-card--consultant::before {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+.p-insurance__system-card--consultant::after {
+  top: 50%;
+  left: 0;
+  transform: translate(-150%, -50%) rotate(90deg);
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-card--consultant::after {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.p-insurance__system-card-head {
+  padding: 16px;
+  background-color: var(--theme-color);
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.p-insurance__system-card-logo {
+  max-width: 128px;
+  margin: 0 auto;
+}
+
+.p-insurance__system-card-body {
+  padding: 32px 24px;
+  background-color: #fff;
+  border-radius: 0 0 16px 16px;
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-card-body {
+    padding: 24px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-insurance__system-card-body {
+    padding: 20px 16px;
+  }
+}
+
+.p-insurance__system-card-list {
+  display: grid;
+  gap: 12px;
+}
+
+.p-insurance__system-card-item {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.p-insurance__system-card-item::before {
+  content: "";
+  position: absolute;
+  top: 0.5lh;
+  left: 0.5em;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+}
+
+.p-insurance__system-card-item-strong {
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+.p-insurance__system-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.p-insurance__system-card-item-small {
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+.p-insurance__system-text {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-insurance__system-text {
+    margin-top: 40px;
+  }
+}
+
+/*--------------------------------------
+  Pension System (企業拠出年金ページ)
+--------------------------------------*/
+.p-pension-system .p-page-header {
+  background-image: url(../img/pension-system-mv-bg.jpg);
+}
+
+.p-pension-system__service {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-pension-system__service-list {
+  display: grid;
+  gap: 80px;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-list {
+    gap: 60px;
+  }
+}
+
+.p-pension-system__service-item-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-pension-system__service-item-body {
+  padding: 40px 36px 60px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1080px) {
+  .p-pension-system__service-item-body {
+    padding: 32px 24px 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-body {
+    padding: 28px 20px 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-item-body {
+    padding: 20px 16px 24px;
+  }
+}
+
+.p-pension-system__service-item-title {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-item-title {
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+  }
+}
+.p-pension-system__service-item-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-pension-system__service-item-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-item-lead {
+    font-size: 1.5rem;
+  }
+}
+
+.p-pension-system__service-sub-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 16px;
+  margin-top: 40px;
+  width: 120%;
+}
+@media screen and (max-width: 1080px) {
+  .p-pension-system__service-sub-list {
+    width: 200%;
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-sub-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-sub-list {
+    gap: 12px;
+  }
+}
+
+.p-pension-system__service-sub-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 16px;
+  background-color: #0e6ed0;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.p-pension-system__service-sub-icon {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #0e6ed0;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.p-pension-system__service-sub-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-pension-system__service-img {
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .p-pension-system__service-img {
+    order: -1;
+  }
+}
+.p-pension-system__service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-pension-system__service-text {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-pension-system__service-text {
+    font-size: 1.5rem;
+  }
+}
+
+/*--------------------------------------
+  Employee Orientation (社員研修ページ)
+--------------------------------------*/
+.p-employee-orientation .p-page-header {
+  background-image: url(../img/employee-orientation-mv-bg.jpg);
+}
+
+.p-employee-orientation__summary {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-employee-orientation__summary-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-lead {
+    font-size: 1.5rem;
+  }
+}
+
+.p-employee-orientation__summary-list {
+  display: grid;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-list {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-list {
+    gap: 16px;
+  }
+}
+
+.p-employee-orientation__summary-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 32px 48px 32px 36px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-item {
+    padding: 24px 28px 24px 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item {
+    grid-template-columns: 32px 1fr;
+    align-items: start;
+    gap: 12px;
+    padding: 24px 16px 24px 12px;
+  }
+}
+
+.p-employee-orientation__summary-item-title {
+  position: relative;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .p-employee-orientation__summary-item-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+  }
+}
+.p-employee-orientation__summary-item-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-employee-orientation__summary-item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-employee-orientation__summary-item-text {
+    font-size: 1.5rem;
+  }
+}
+
+.p-employee-orientation__summary-sub-list {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.p-employee-orientation__summary-sub-title {
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+/*--------------------------------------
+  SRS Page （SRS診断ページ）
+--------------------------------------*/
+.p-srs .p-page-header {
+  background-image: url(../img/srs-mv-bg.jpg);
+}
+
+.p-srs__diagnosis {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-srs_diagnosis-tab .p-tab {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.p-srs_diagnosis-tab .p-tab__item {
+  display: grid;
+  align-content: center;
+  align-items: center;
+}
+.p-srs_diagnosis-tab .p-tab__btn {
+  height: auto;
+}
+
+.p-srs__tab-btn-text-compressed {
+  line-height: 1.4;
+}
+
+.p-srs__tab-panel-title {
+  position: relative;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .p-srs__tab-panel-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-title {
+    font-size: 1.8rem;
+  }
+}
+.p-srs__tab-panel-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-srs__tab-panel-body {
+  display: grid;
+  gap: 24px;
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 36px 36px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+  .p-srs__tab-panel-body {
+    padding: 24px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-body {
+    margin: 24px auto 0;
+    padding: 20px 16px;
+  }
+}
+
+.p-srs__tab-panel-body--problem {
+  background-color: rgba(239, 46, 16, 0.15);
+}
+
+.p-srs__tab-panel-body--solution {
+  background-color: rgba(14, 110, 208, 0.15);
+}
+
+.p-srs__tab-panel-sub-title {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-sub-title {
+    padding: 4px 8px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-srs__tab-panel-sub-title--problem {
+  background-color: #ef2e10;
+}
+
+.p-srs__tab-panel-sub-title--solution {
+  background-color: #0e6ed0;
+}
+
+.p-srs__tab-panel-content--problem .p-srs__tab-panel-item::before {
+  background-color: #ef2e10;
+}
+
+.p-srs__tab-panel-content--solution .p-srs__tab-panel-item::before {
+  background-color: #0e6ed0;
+}
+
+.p-srs__tab-panel-list {
+  display: grid;
+  gap: 16px;
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-list {
+    gap: 12px;
+  }
+}
+
+.p-srs__tab-panel-item {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-item {
+    font-size: 1.5rem;
+  }
+}
+.p-srs__tab-panel-item::before {
+  content: "";
+  position: absolute;
+  top: 0.5lh;
+  left: 0.5em;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.p-srs__tab-panel-arrow {
+  position: relative;
+  width: fit-content;
+  margin: 40px auto;
+  padding: 12px 48px 12px;
+  border-radius: 8px;
+  background-color: #0e6ed0;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .p-srs__tab-panel-arrow {
+    padding: 8px 16px;
+  }
+}
+.p-srs__tab-panel-arrow::before, .p-srs__tab-panel-arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  aspect-ratio: 2/1;
+  clip-path: polygon(0 0, 100% 0, 100% 2%, 50% 100%, 0% 2%);
+  background-color: #0e6ed0;
+  overflow: hidden;
+}
+.p-srs__tab-panel-arrow::before {
+  top: -28px;
+}
+.p-srs__tab-panel-arrow::after {
+  bottom: -28px;
+}
+
+.p-srs__tab-panel-arrow-text {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p-srs_tab-panel-note {
+  margin-top: 12px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .p-srs_tab-panel-note {
+    font-size: 1.5rem;
+  }
+}
+
+/*--------------------------------------
+  Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
+--------------------------------------*/
+.p-laboraudit .p-page-header {
+  background-image: url(../img/labor-audit-mv-bg.jpg);
+}
+
+/*--------------------------------------
+  Disability Pension Page（障害年金サポートページ）
+--------------------------------------*/
+.p-disabilitypension .p-page-header {
+  background-image: url(../img/disability-pension-mv-bg.jpg);
+  background-position: center center;
+}
+
+/*--------------------------------------
+  Charge Page （料金情報ページ）
+--------------------------------------*/
+.p-charge .p-page-header {
+  background-image: url(../img/charge-mv-bg.jpg);
+}
+
+.p-charge__contract {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-charge__contract-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5.4545454545%;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__contract-list {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+
+.p-charge__contract-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.p-charge__contract-title {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0e6ed0;
+}
+
+.p-charge__contract-text {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.p-charge__contract-btn-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-charge__advisor {
+  padding: 60px 0;
+}
+
+.p-charge__advisor-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.p-charge__advisor-table {
+  width: 100%;
+  margin-top: 60px;
+  overflow-x: auto;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-table {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-table .p-charge-table {
+    width: 800px;
+  }
+}
+.p-charge__advisor-table .p-charge-table__col01 {
+  width: 15%;
+}
+.p-charge__advisor-table .p-charge-table__col02,
+.p-charge__advisor-table .p-charge-table__col03,
+.p-charge__advisor-table .p-charge-table__col04,
+.p-charge__advisor-table .p-charge-table__col05 {
+  width: 17%;
+}
+
+.p-charge__advisor-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-note {
+    font-size: 1.5rem;
+  }
+}
+
+.p-charge__spot {
+  padding: 60px 0;
+}
+
+.p-charge__spot-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.p-charge__spot-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-table {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-table .p-charge-table {
+    width: 600px;
+  }
+}
+.p-charge__spot-table .p-charge-table__col01 {
+  width: 30%;
+}
+.p-charge__spot-table .p-charge-table__col04 {
+  width: 30%;
+}
+
+.p-charge__spot-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-note {
+    font-size: 1.5rem;
+  }
+}
+
+/*----------------------------------------
+  Charge Table （料金情報ページテーブル）
+----------------------------------------*/
+.p-charge-table {
+  border: 1px solid #eaeaea;
+}
+
+.p-charge-table__thead .p-charge-table__row {
+  background-color: #0e6ed0;
+  color: #fff;
+}
+.p-charge-table__thead .p-charge-table__row--secondary {
+  background-color: #f5f7f9;
+  color: #333;
+}
+.p-charge-table__thead .p-charge-table__row--secondary .p-charge-table__column-title {
+  font-size: 1.6rem;
+  border-right: 1px solid #eaeaea;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__thead .p-charge-table__row--secondary .p-charge-table__column-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.p-charge-table__row {
+  border-top: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+
+.p-charge-table__column-title {
+  padding: 24px 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__column-title {
+    padding: 10px 4px;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+.p-charge-table__column-title:last-child {
+  border: none;
+}
+
+.p-charge-table__row-title {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-right: 1px solid #eaeaea;
+  background-color: #f5f7f9;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__row-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.p-charge-table__data {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  text-align: center;
+  border-right: 1px solid #eaeaea;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__data {
+    font-size: 1.5rem;
+  }
+}
+.p-charge-table__data:last-child {
+  border: none;
+}

@@ -111,7 +111,6 @@ img {
 // ==========================================================================
 .l-header {
   position: fixed;
-  z-index: 10;
   background-color: transparent;
 }
 
@@ -386,6 +385,7 @@ img {
     letter-spacing: 0.05em;
     margin: 0;
     color: white;
+    text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
     span {
       font-size: 18px;
       margin-right: 10px;
@@ -394,6 +394,7 @@ img {
 
   .p-header__tel-time {
     font-size: 12px;
+    text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
   }
 
   .p-header__btn-contact {
@@ -427,6 +428,13 @@ img {
   list-style: none;
 }
 
+.p-global-nav__item:hover {
+  .p-header-nav__sublist {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
 .p-global-nav__item {
   position: relative;
   padding: 8px 24px;
@@ -441,18 +449,64 @@ img {
   height: 14px;
   background-color: #e0e0e0;
 }
-.p-global-nav__item a {
+.p-global-nav__item a,
+.p-global-nav__item p {
   font-size: 15px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
-  text-shadow: 2px 2px 2.8px rgba(3, 66, 131, 0.21);
+  text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
 }
 .p-global-nav__item a:hover {
   color: $color-main;
 }
-
+.p-global-nav__item p {
+  position: relative;
+  padding-right: 20px;
+}
+.p-global-nav__item p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: translateY(-2px) rotate(135deg);
+  box-sizing: border-box;
+}
+.p-header-nav__sublist li {
+  font-size: 15px;
+  text-align: left;
+  a {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #004e87;
+    text-shadow: none;
+    padding: 4px 8px;
+    border-top: 1px solid #004e87;
+    width: 100%;
+    display: inline-block;
+  }
+}
+.p-header-nav__sublist {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 280px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+}
 // ==========================================================================
 // Object - Project (Drawer)
 // ==========================================================================
@@ -4541,7 +4595,8 @@ img {
   .p-footer-nav__item {
     margin-bottom: 12px;
 
-    a {
+    a,
+    p {
       display: flex;
       align-items: center;
       color: #fff;
@@ -4564,7 +4619,7 @@ img {
 
   // 下線付きの親メニュー
   .p-footer-nav__item--has-border {
-    > a {
+    > p {
       width: 100%;
       padding-bottom: 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -8095,7 +8150,6 @@ p-point（下層ページ共通）
   margin: 0;
 }
 
-
 /*--------------------------------------
   Insurance Page
 --------------------------------------*/
@@ -8105,10 +8159,8 @@ p-point（下層ページ共通）
   }
 }
 .p-insurance__system {
-
 }
 .p-insurance__system-content {
-
 }
 .p-insurance__system-cards {
   display: flex;
@@ -8135,7 +8187,7 @@ p-point（下層ページ共通）
     width: 1rem;
     height: 100px;
     background-color: $color-bg-gray;
-    box-shadow: 0 4px 12px rgb(0 0 0 / .2);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
   }
 }
 .p-insurance__system-card--dproduce {
@@ -8219,8 +8271,8 @@ p-point（下層ページ共通）
   &::before {
     content: "";
     position: absolute;
-    top: .5lh;
-    left: .5em;
+    top: 0.5lh;
+    left: 0.5em;
     transform: translate(-50%, -50%);
     width: 8px;
     aspect-ratio: 1;
@@ -8242,9 +8294,6 @@ p-point（下層ページ共通）
     align-items: center;
     gap: 40px;
   }
-}
-.p-insurance__system-card-title {
-
 }
 .p-insurance__system-card-item-small {
   font-size: 0.9em;
@@ -8282,7 +8331,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  box-shadow: 0 4px 12px rgb(0 0 0 / .15);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
   @include max-screen($breakpoint-sm) {
     grid-template-columns: 1fr;
   }
@@ -8306,7 +8355,7 @@ p-point（下層ページ共通）
   padding-bottom: 1.6rem;
   font-size: 2.4rem;
   font-weight: bold;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   @include max-screen($breakpoint-sm) {
     margin-bottom: 2.4rem;
     font-size: 2rem;
@@ -8361,9 +8410,9 @@ p-point（下層ページ共通）
   background-color: $color-main2;
   color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / .15);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
 }
-.p-pension-system__service-sub-icon{
+.p-pension-system__service-sub-icon {
   display: grid;
   place-items: center;
   width: 100%;
@@ -8439,7 +8488,7 @@ p-point（下層ページ共通）
   padding: 32px 48px 32px 36px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / .05);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
   @include max-screen($breakpoint-sm) {
     padding: 24px 28px 24px 24px;
   }
@@ -8504,7 +8553,7 @@ p-point（下層ページ共通）
 }
 .p-srs_diagnosis-tab {
   .p-tab {
-    box-shadow: 2px 4px 8px rgb(0 0 0 / .15);
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 0.15);
   }
   .p-tab__item {
     display: grid;
@@ -8523,7 +8572,7 @@ p-point（下層ページ共通）
   font-size: 2.4rem;
   margin-bottom: 2.4rem;
   padding-bottom: 1.6rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-align: center;
   @include max-screen($breakpoint-sm) {
     font-size: 2rem;
@@ -8549,7 +8598,7 @@ p-point（下層ページ共通）
   margin: 40px auto 0;
   padding: 36px 36px;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgb(0 0 0 / .1);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
   @include max-screen($breakpoint-sm) {
     padding: 24px 20px;
   }
@@ -8559,14 +8608,14 @@ p-point（下層ページ共通）
   }
 }
 .p-srs__tab-panel-body--problem {
-  background-color: rgb(239 46 16 / .15);
+  background-color: rgb(239 46 16 / 0.15);
 }
 .p-srs__tab-panel-body--solution {
   background-color: rgb(14 110 208 / 0.15);
 }
 .p-srs__tab-panel-sub-title {
   width: fit-content;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 6px 12px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -8618,7 +8667,7 @@ p-point（下層ページ共通）
   &::before {
     content: "";
     position: absolute;
-    top: .5lh;
+    top: 0.5lh;
     left: 0.5em;
     transform: translate(-50%, -50%);
     width: 12px;
@@ -8663,7 +8712,6 @@ p-point（下層ページ共通）
   text-align: center;
 }
 .p-srs__tab-panel-img {
-
 }
 .p-srs_tab-panel-note {
   margin-top: 12px;
@@ -8736,7 +8784,6 @@ p-point（下層ページ共通）
   text-align: center;
 }
 .p-charge__contract-btn {
-
 }
 .p-charge__advisor {
   padding: 60px 0;
@@ -8857,7 +8904,7 @@ p-point（下層ページ共通）
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  border-right: 1px solid rgb(255 255 255 / .2);
+  border-right: 1px solid rgb(255 255 255 / 0.2);
   @include max-screen($breakpoint-sm) {
     padding: 10px 4px;
     font-size: 1.5rem;
@@ -8868,9 +8915,6 @@ p-point（下層ページ共通）
   }
 }
 
-.p-charge-table__tbody {
-
-}
 // 行見出しセル
 .p-charge-table__row-title {
   padding: 20px 12px;

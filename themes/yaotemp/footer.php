@@ -78,19 +78,19 @@
                     <!-- 2列目 -->
                     <ul class="p-footer-nav__list">
                         <li class="p-footer-nav__item p-footer-nav__item--has-border">
-                            <a href="<?php bloginfo('url'); ?>/service/">サービスメニュー</a>
+                            <p>サービスメニュー</p>
                             <ul class="p-footer-nav__sublist">
-                                <li><a href="<?php bloginfo('url'); ?>/service/rules/">就業規則サポート</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/payroll/">給与計算代行</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/trouble/">労務トラブル相談</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/evaluation/">人事評価制度構築</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/startup/">創業支援パック</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/social-insurance/">労働・社会保険事務代行</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/pension/">企業拠出年金</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/training/">社員研修</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/srs/">SRS診断</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/audit/">労務監査・労務DD(デューデリジェンス)</a></li>
-                                <li><a href="<?php bloginfo('url'); ?>/service/disability-pension/">障害年金サポート</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/rules/">就業規則サポート</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/payroll/">給与計算代行</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/trouble/">労務トラブル相談</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/evaluation/">人事評価制度構築</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/startup/">創業支援パック</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/social-insurance/">労働・社会保険事務代行</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/pension/">企業拠出年金</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/training/">社員研修</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/srs/">SRS診断</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/audit/">労務監査・労務DD(デューデリジェンス)</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/disability-pension/">障害年金サポート</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -110,7 +110,7 @@
                             <a href="<?php bloginfo('url'); ?>/report/">セミナー開催レポート</a>
                         </li>
                         <li class="p-footer-nav__item p-footer-nav__item--has-border">
-                            <a href="<?php bloginfo('url'); ?>/blog/">ブログ</a>
+                            <p>ブログ</p>
                             <ul class="p-footer-nav__sublist">
                                 <li><a href="<?php bloginfo('url'); ?>/news/">お知らせ</a></li>
                                 <li><a href="<?php bloginfo('url'); ?>/column/">お役立ちコラム</a></li>

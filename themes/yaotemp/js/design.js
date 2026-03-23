@@ -55,7 +55,10 @@ $(function () {
 });
 // ヘッダー追従時に背景色追加
 $(window).on("scroll", function () {
-  const fvBottom = $(".top-fv").offset().top + $(".top-fv").outerHeight();
+  const $target = $(".top-fv").length ? $(".top-fv") : $(".p-page-header");
+  if ($target.length === 0) return;
+
+  const fvBottom = $target.offset().top + $target.outerHeight();
   const scroll = $(window).scrollTop();
 
   if (scroll > fvBottom) {
@@ -370,7 +373,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // SRS診断ページタブ タブ切り替え
@@ -403,4 +405,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-

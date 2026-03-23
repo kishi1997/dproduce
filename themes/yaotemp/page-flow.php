@@ -42,11 +42,11 @@
 
             <!-- タブ -->
             <div class="p-tab">
-                <ul class="p-tab__list js-tab-list">
-                    <li class="p-tab__item is-active" data-tab="tab-problem">
+                <ul class="p-tab__list">
+                    <li class="p-tab__item js-flow-tab-item is-active" data-tab="tab-problem">
                         <button class="p-tab__btn">具体的なお悩みがある方へ</button>
                     </li>
-                    <li class="p-tab__item" data-tab="tab-info">
+                    <li class="p-tab__item js-flow-tab-item" data-tab="tab-info">
                         <button class="p-tab__btn">まずは情報収集をしたい方へ</button>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
                 <div class="p-tab__panel-wrapper">
 
                     <!-- パネル1 -->
-                    <div class="p-tab__panel is-active" id="tab-problem">
+                    <div class="p-tab__panel js-flow-tab-panel is-active" id="tab-problem">
                             <!-- コンテンツ -->
                             <div class="p-tab__content">
                                 <p class="p-tab__text p-tab__text--center">
@@ -67,7 +67,7 @@
                     </div>
 
                     <!-- パネル2 -->
-                    <div class="p-tab__panel" id="tab-info">
+                    <div class="p-tab__panel js-flow-tab-panel" id="tab-info">
                         <!-- コンテンツ -->
                         <div class="p-tab__content">
                             <p class="p-tab__text p-tab__text--center">

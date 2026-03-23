@@ -12,21 +12,21 @@
             <div class="p-tab">
 
                 <ul class="p-tab__list js-tab-list">
-                    <li class="p-tab__item is-active" data-tab="tab-outsourcing">
+                    <li class="p-tab__item js-service-tab-item is-active" data-tab="tab-outsourcing">
                         <button class="p-tab__btn">基幹・アウトソーシング</button>
                     </li>
-                    <li class="p-tab__item" data-tab="tab-consulting">
+                    <li class="p-tab__item js-service-tab-item" data-tab="tab-consulting">
                         <button class="p-tab__btn">組織改善<span class="u-hidden-sm">・</span><br
                                 class="u-visible-sm" />コンサルティング</button>
                     </li>
-                    <li class="p-tab__item" data-tab="tab-education">
+                    <li class="p-tab__item js-service-tab-item" data-tab="tab-education">
                         <button class="p-tab__btn">戦略・教育</button>
                     </li>
                 </ul>
 
                 <div class="p-tab__panel-wrapper">
 
-                    <div class="p-tab__panel is-active" id="tab-outsourcing">
+                    <div class="p-tab__panel js-service-tab-panel is-active" id="tab-outsourcing">
                         <div class="p-tab__card-list">
 
                             <!-- カード1 -->
@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div class="p-tab__panel" id="tab-consulting">
+                    <div class="p-tab__panel js-service-tab-panel" id="tab-consulting">
                         <div class="p-tab__card-list">
 
                             <!-- カード1：就業規則サポート -->
@@ -132,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="p-tab__panel" id="tab-education">
+                    <div class="p-tab__panel js-service-tab-panel" id="tab-education">
                         <div class="p-tab__card-list">
                             <!-- カード5：労務監査・労務DD -->
                             <a href="<?php bloginfo('url'); ?>/service/laboraudit/" class="p-tab__card">

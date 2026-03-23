@@ -165,16 +165,16 @@
                 <div class="p-tab">
 
                     <ul class="p-tab__list js-tab-list">
-                        <li class="p-tab__item is-active" data-tab="tab-ability">
+                        <li class="p-tab__item is-active js-srs-tab-item" data-tab="tab-ability">
                             <button class="p-tab__btn">適正診断・基礎能力診断</button>
                         </li>
-                        <li class="p-tab__item" data-tab="tab-personality">
+                        <li class="p-tab__item js-srs-tab-item" data-tab="tab-personality">
                             <button class="p-tab__btn">パーソナリティ診断</button>
                         </li>
-                        <li class="p-tab__item" data-tab="tab-leadership-style">
+                        <li class="p-tab__item js-srs-tab-item" data-tab="tab-leadership-style">
                             <button class="p-tab__btn">リーダーシップスタイル<br />180度診断</button>
                         </li>
-                        <li class="p-tab__item" data-tab="tab-leadership-communication">
+                        <li class="p-tab__item js-srs-tab-item" data-tab="tab-leadership-communication">
                             <button class="p-tab__btn">リーダーシップ<br class="u-hidden-sm"/>コミュニケーション <br class="u-hidden-sm"/>180度・360度診断</button>
                         </li>
                     </ul>
@@ -182,7 +182,7 @@
                     <div class="p-tab__panel-wrapper">
 
                         <!-- パネル1 -->
-                        <div class="p-tab__panel is-active" id="tab-ability">
+                        <div class="p-tab__panel is-active js-srs-tab-panel" id="tab-ability">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">適正診断・基礎能力診断</h3>
                                 <div class="p-srs__tab-panel-body p-srs__tab-panel-body--problem">
@@ -218,7 +218,7 @@
                         </div>
 
                         <!-- パネル2 -->
-                        <div class="p-tab__panel" id="tab-personality">
+                        <div class="p-tab__panel js-srs-tab-panel" id="tab-personality">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">パーソナリティ診断</h3>
                                 <div class="p-srs__tab-panel-body p-srs__tab-panel-body--problem">
@@ -258,7 +258,7 @@
                         </div>
 
                         <!-- パネル3 -->
-                        <div class="p-tab__panel" id="tab-leadership-style">
+                        <div class="p-tab__panel js-srs-tab-panel" id="tab-leadership-style">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">リーダーシップスタイル180度診断</h3>
                                 <div class="p-srs__tab-panel-body p-srs__tab-panel-body--problem">
@@ -299,7 +299,7 @@
                         </div>
 
                         <!-- パネル4 -->
-                        <div class="p-tab__panel" id="tab-leadership-communication">
+                        <div class="p-tab__panel js-srs-tab-panel" id="tab-leadership-communication">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">リーダーシップコミュニケーション180度・360度診断</h3>
                                 <div class="p-srs__tab-panel-body p-srs__tab-panel-body--problem">

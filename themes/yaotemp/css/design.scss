@@ -8677,18 +8677,222 @@ p-point（下層ページ共通）
 /*--------------------------------------
   Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
 --------------------------------------*/
-.p-labor-audit {
+.p-laboraudit {
   .p-page-header {
     background-image: url(../img/labor-audit-mv-bg.jpg);
   }
 }
 
 /*--------------------------------------
-  Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
+  Disability Pension Page（障害年金サポートページ）
 --------------------------------------*/
-.p-disability-pension {
+.p-disabilitypension {
   .p-page-header {
     background-image: url(../img/disability-pension-mv-bg.jpg);
     background-position: center center;
+  }
+}
+
+/*--------------------------------------
+  Charge Page （料金情報ページ）
+--------------------------------------*/
+.p-charge {
+  .p-page-header {
+    background-image: url(../img/charge-mv-bg.jpg);
+  }
+}
+.p-charge__contract {
+  padding: 80px 0;
+  background-color: $color-bg-gray;
+}
+.p-charge__contract-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: calc(60px / 1100px * 100%);
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+.p-charge__contract-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.p-charge__contract-title {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: $color-main2;
+}
+.p-charge__contract-text {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.p-charge__contract-btn-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+.p-charge__contract-btn {
+
+}
+.p-charge__advisor {
+  padding: 60px 0;
+}
+.p-charge__advisor-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+// 顧問契約料金テーブルラッパー
+.p-charge__advisor-table {
+  width: 100%;
+  margin-top: 60px;
+  overflow-x: auto;
+  @include max-screen($breakpoint-sm) {
+    margin-top: 40px;
+  }
+  .p-charge-table {
+    @include max-screen($breakpoint-sm) {
+      width: 800px;
+    }
+  }
+  // 各列の幅指定
+  .p-charge-table__col01 {
+    width: 15%;
+  }
+  .p-charge-table__col02,
+  .p-charge-table__col03,
+  .p-charge-table__col04,
+  .p-charge-table__col05 {
+    width: 17%;
+  }
+}
+// 補足情報テキスト
+.p-charge__advisor-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  @include max-screen($breakpoint-sm) {
+    font-size: 1.5rem;
+  }
+}
+// スポット契約セクション
+.p-charge__spot {
+  padding: 60px 0;
+}
+// リードテキスト
+.p-charge__spot-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+// スポット契約テーブルラッパー
+.p-charge__spot-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 60px;
+  @include max-screen($breakpoint-sm) {
+    margin-top: 40px;
+  }
+  .p-charge-table {
+    @include max-screen($breakpoint-sm) {
+      width: 600px;
+    }
+  }
+  .p-charge-table__col01 {
+    width: 30%;
+  }
+  .p-charge-table__col04 {
+    width: 30%;
+  }
+}
+.p-charge__spot-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  @include max-screen($breakpoint-sm) {
+    font-size: 1.5rem;
+  }
+}
+
+/*----------------------------------------
+  Charge Table （料金情報ページテーブル）
+----------------------------------------*/
+.p-charge-table {
+  border: 1px solid $color-border;
+}
+// 見出し行
+.p-charge-table__thead {
+  .p-charge-table__row {
+    background-color: $color-main2;
+    color: #fff;
+  }
+  // 列見出し二行目
+  .p-charge-table__row--secondary {
+    background-color: $color-bg-gray;
+    color: $color-text;
+    .p-charge-table__column-title {
+      font-size: 1.6rem;
+      border-right: 1px solid $color-border;
+      @include max-screen($breakpoint-sm) {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+// 行
+.p-charge-table__row {
+  border-top: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-left: 1px solid $color-border;
+}
+// 列見出しセル
+.p-charge-table__column-title {
+  padding: 24px 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  border-right: 1px solid rgb(255 255 255 / .2);
+  @include max-screen($breakpoint-sm) {
+    padding: 10px 4px;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  &:last-child {
+    border: none;
+  }
+}
+
+.p-charge-table__tbody {
+
+}
+// 行見出しセル
+.p-charge-table__row-title {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-right: 1px solid $color-border;
+  background-color: $color-bg-gray;
+  @include max-screen($breakpoint-sm) {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+// データセル
+.p-charge-table__data {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  text-align: center;
+  border-right: 1px solid $color-border;
+  @include max-screen($breakpoint-sm) {
+    font-size: 1.5rem;
+  }
+  &:last-child {
+    border: none;
   }
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="p-labor-audit">
+<div class="p-laboraudit">
     <!-- 下層ページMV -->
     <section class="p-page-header">
         <div class="p-page-header__inner">

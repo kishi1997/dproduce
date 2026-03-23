@@ -8517,14 +8517,232 @@ p-point（下層ページ共通）
 /*--------------------------------------
   Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
 --------------------------------------*/
-.p-labor-audit .p-page-header {
+.p-laboraudit .p-page-header {
   background-image: url(../img/labor-audit-mv-bg.jpg);
 }
 
 /*--------------------------------------
-  Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
+  Disability Pension Page（障害年金サポートページ）
 --------------------------------------*/
-.p-disability-pension .p-page-header {
+.p-disabilitypension .p-page-header {
   background-image: url(../img/disability-pension-mv-bg.jpg);
   background-position: center center;
+}
+
+/*--------------------------------------
+  Charge Page （料金情報ページ）
+--------------------------------------*/
+.p-charge .p-page-header {
+  background-image: url(../img/charge-mv-bg.jpg);
+}
+
+.p-charge__contract {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+
+.p-charge__contract-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5.4545454545%;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__contract-list {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+
+.p-charge__contract-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.p-charge__contract-title {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0e6ed0;
+}
+
+.p-charge__contract-text {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.p-charge__contract-btn-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-charge__advisor {
+  padding: 60px 0;
+}
+
+.p-charge__advisor-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.p-charge__advisor-table {
+  width: 100%;
+  margin-top: 60px;
+  overflow-x: auto;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-table {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-table .p-charge-table {
+    width: 800px;
+  }
+}
+.p-charge__advisor-table .p-charge-table__col01 {
+  width: 15%;
+}
+.p-charge__advisor-table .p-charge-table__col02,
+.p-charge__advisor-table .p-charge-table__col03,
+.p-charge__advisor-table .p-charge-table__col04,
+.p-charge__advisor-table .p-charge-table__col05 {
+  width: 17%;
+}
+
+.p-charge__advisor-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__advisor-note {
+    font-size: 1.5rem;
+  }
+}
+
+.p-charge__spot {
+  padding: 60px 0;
+}
+
+.p-charge__spot-lead {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.p-charge__spot-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-table {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-table .p-charge-table {
+    width: 600px;
+  }
+}
+.p-charge__spot-table .p-charge-table__col01 {
+  width: 30%;
+}
+.p-charge__spot-table .p-charge-table__col04 {
+  width: 30%;
+}
+
+.p-charge__spot-note {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-charge__spot-note {
+    font-size: 1.5rem;
+  }
+}
+
+/*----------------------------------------
+  Charge Table （料金情報ページテーブル）
+----------------------------------------*/
+.p-charge-table {
+  border: 1px solid #eaeaea;
+}
+
+.p-charge-table__thead .p-charge-table__row {
+  background-color: #0e6ed0;
+  color: #fff;
+}
+.p-charge-table__thead .p-charge-table__row--secondary {
+  background-color: #f5f7f9;
+  color: #333;
+}
+.p-charge-table__thead .p-charge-table__row--secondary .p-charge-table__column-title {
+  font-size: 1.6rem;
+  border-right: 1px solid #eaeaea;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__thead .p-charge-table__row--secondary .p-charge-table__column-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.p-charge-table__row {
+  border-top: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+
+.p-charge-table__column-title {
+  padding: 24px 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__column-title {
+    padding: 10px 4px;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+.p-charge-table__column-title:last-child {
+  border: none;
+}
+
+.p-charge-table__row-title {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-right: 1px solid #eaeaea;
+  background-color: #f5f7f9;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__row-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.p-charge-table__data {
+  padding: 20px 12px;
+  font-size: 1.6rem;
+  text-align: center;
+  border-right: 1px solid #eaeaea;
+}
+@media screen and (max-width: 768px) {
+  .p-charge-table__data {
+    font-size: 1.5rem;
+  }
+}
+.p-charge-table__data:last-child {
+  border: none;
 }

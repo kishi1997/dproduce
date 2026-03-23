@@ -1,135 +1,146 @@
 <?php get_header(); ?>
-    <div class="pagehead-set">
-        <div class="pagehead-text">
-            <h1><?php the_title(); ?></h1>
-            <p><?php echo $slug = get_post(get_the_ID())->post_name; ?></p>
+<div class="p-company">
+
+    <!-- 下層ページMV -->
+    <section class="p-page-header">
+        <div class="p-page-header__inner">
+            <span class="p-page-header__subtitle">Company</span>
+            <h1 class="p-page-header__title"><?php the_title(); ?></h1>
+        </div>
+    </section>
+
+    <!-- パンくずリスト -->
+    <div class="c-breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+        <div class="l-container">
+            <?php if(function_exists('bcn_display')) { bcn_display(); } ?>
         </div>
     </div>
 
-    <div class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-        <div class="container">
-        <?php if(function_exists('bcn_display'))
-        {
-        bcn_display();
-        }?>
-        </div>
-    </div>
-
-    <!-- l-wrapper -->
-    <div class="l-wrapper">
-
-        <!-- l-main -->
-        <main class="l-main<?php if ( get_option('fit_theme_pageLayout') == 'value2' ):?> l-main-single
-        <?php if ( get_option('fit_theme_singleWidth') == 'value2' ):?> l-main-w740<?php endif; ?>
-        <?php if ( get_option('fit_theme_singleWidth') == 'value3' ):?> l-main-w900<?php endif; ?>
-        <?php if ( get_option('fit_theme_singleWidth') == 'value4' ):?> l-main-w100<?php endif; ?>
-        <?php endif; ?>">
-
-            <div class="sub-contents">
-
-                <article id="Company-table">
-                    <div class="heading-set">
-                        <h2>企業情報</h2>
-                        <p>Company info</p>
-                    </div>                   
-                    <dl>
-                        <dt>社名</dt>
-                        <dd>〇〇株式会社</dd>
-                    </dl>
-                    <dl>
-                        <dt>代表者</dt>
-                        <dd>名前　名前</dd>
-                    </dl>
-                    <dl>
-                        <dt>住所</dt>
-                        <dd>〒000-0000<br>住所がはいります</dd>
-                    </dl>
-                    <dl>
-                        <dt>事業内容</dt>
-                        <dd>事業内容が入ります</dd>
-                    </dl>
-                    <dl>
-                        <dt>資本金</dt>
-                        <dd>0000000円</dd>
-                    </dl>
-                    <dl>
-                        <dt>従業員数</dt>
-                        <dd>人</dd>
-                    </dl>
-                </article> 
-
-                <article id="Company-accses">
-                    <div class="heading-set">
-                        <h2>アクセス情報</h2>
-                        <p>Access info</p>
-                    </div>    
-                    <div class="company-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.192903179718!2d135.4925906752169!3d34.67508058458795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e704fb4fbad3%3A0x4325595a5c98505!2z44CSNTUwLTAwMTQg5aSn6Ziq5bqc5aSn6Ziq5biC6KW_5Yy65YyX5aCA5rGf77yR5LiB55uu77yR77yZ4oiS77yRIOWFq-WFieW_g-aWjuapiyBBaXIgQmxkZy4!5e0!3m2!1sja!2sjp!4v1718759883911!5m2!1sja!2sjp" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="company-accessinfo">
-                        <table>
-                            <tr>
-                                <th>本店住所</th>
-                                <td>〒000-0000<br>住所がはいります</td>
-                            </tr>
-                            <tr>
-                                <th>お問い合わせ</th>
-                                <td>TEL 000-0000-0000　FAX 000-0000-0000</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="company-mapinfo">
-                        <dl>
-                            <dt>電車でお越しの方</dt>
-                            <dd>〇〇メトロ〇〇線〇〇駅から徒歩◯分</dd>
-                        </dl>
-                        <dl>
-                            <dt>お車でお越しの方</dt>
-                            <dd>〇〇から〇〇へ向かって〇〇方向へ◯分 〇〇が目印です</dd>
-                        </dl>
-                    </div>
-                </article>
-
-                <article id="Company-history">
-                    <div class="heading-set">
-                        <h2>沿革</h2>
-                        <p>History</p>
-                    </div> 
-                    <div class="company-historylist">
-                        <dl>
-                            <dt>0000年</dt>
-                            <dd>
-                                <p>
-                                    <strong>00月</strong>
-                                    <span>沿革内容が入ります沿革内容が入ります沿革内容が入ります沿革内容が入ります</span>
-                                </p>
-                                <p>
-                                    <strong>00月</strong>
-                                    <span>沿革内容が入ります沿革内容が入ります沿革内容が入ります沿革内容が入ります</span>
-                                </p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>0000年</dt>
-                            <dd>
-                                <p>
-                                    <strong>00月</strong>
-                                    <span>沿革内容が入ります沿革内容が入ります沿革内容が入ります沿革内容が入ります</span>
-                                </p>
-                                <p>
-                                    <strong>00月</strong>
-                                    <span>沿革内容が入ります沿革内容が入ります沿革内容が入ります沿革内容が入ります</span>
-                                </p>
-                            </dd>
-                        </dl>
-                    </div>
-                </article>
+    <!-- 会社概要 -->
+    <section class="p-company-info">
+        <div class="l-container">
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <span class="c-section-heading__title-en">COMPANY</span>
+                <h2 class="c-section-heading__title-ja">/ 会社概要</h2>
             </div>
 
-        </main>
-        <!-- /l-main -->
+            <div class="p-company-info__table">
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">社名</dt>
+                    <dd class="p-company-info__data">社会保険労務士法人D・プロデュース</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">代表者</dt>
+                    <dd class="p-company-info__data">代表社員　氏名</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">住所</dt>
+                    <dd class="p-company-info__data">〒231-0013<br>神奈川県横浜市中区住吉町4-45-1　関内トーセイビルⅡ 10階</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">事業内容</dt>
+                    <dd class="p-company-info__data">SR法人として社会保険労務士業務を行う事業所の労働・社会保険の届出書類の作成並びに提出代行、賃金制度等の設計・コンサルティング、給与計算代行等</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">設立年月</dt>
+                    <dd class="p-company-info__data">○○○○年○月</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">Tel / Fax</dt>
+                    <dd class="p-company-info__data">TEL：045-226-5482　／　FAX：045-226-5483</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">Email</dt>
+                    <dd class="p-company-info__data">info@d-produce.com</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">主要業務<span>（社会保険・給付関係）</span></dt>
+                    <dd class="p-company-info__data">
+                        <ul class="p-company-info__list">
+                            <li>健康保険・厚生年金保険各種届出</li>
+                            <li>雇用保険各種届出</li>
+                            <li>労災保険給付請求</li>
+                            <li>健康保険給付申請</li>
+                            <li>社会保険算定・月額変更届</li>
+                            <li>年度更新手続</li>
+                            <li>社会保険設立・廃止手続</li>
+                            <li>労働保険設立・廃止手続</li>
+                            <li>マイナンバー管理</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">主要業務<span>（労働保険関係）</span></dt>
+                    <dd class="p-company-info__data">
+                        <ul class="p-company-info__list">
+                            <li>就業規則・各種規程の作成・改定</li>
+                            <li>賃金制度・人事制度設計コンサルティング</li>
+                            <li>労務トラブル対応</li>
+                            <li>助成金申請</li>
+                            <li>労使協定（36協定等）の作成・届出</li>
+                            <li>採用・退職手続</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">主要業務<span>（給与計算・その他）</span></dt>
+                    <dd class="p-company-info__data">
+                        <ul class="p-company-info__list">
+                            <li>給与計算代行</li>
+                            <li>人事評価制度構築支援</li>
+                            <li>DX推進支援</li>
+                            <li>社員研修</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">顧問先業種</dt>
+                    <dd class="p-company-info__data">建設業、製造業、IT・情報通信業、医療・福祉、小売・流通、サービス業、飲食業　他多数</dd>
+                </dl>
+                <dl class="p-company-info__row">
+                    <dt class="p-company-info__label">関係会社</dt>
+                    <dd class="p-company-info__data">株式会社D・プロデュース</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <!-- /l-wrapper -->
+    <!-- 所在地 -->
+    <section class="p-company-access">
+        <div class="l-container">
+            <div class="c-section-heading">
+                <div class="c-section-heading__deco">
+                    <span class="c-section-heading__deco-light"></span>
+                    <span class="c-section-heading__deco-dark"></span>
+                </div>
+                <span class="c-section-heading__title-en">ACCESS</span>
+                <h2 class="c-section-heading__title-ja">/ 所在地</h2>
+            </div>
 
+            <div class="p-company-access__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.9!2d139.63!3d35.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185d1c39bca903%3A0x0!2z5qCq5byP5Lya56S-ROODl-ODreODvOOCuQ!5e0!3m2!1sja!2sjp!4v1718759883911!5m2!1sja!2sjp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="p-company-access__info">
+                <dl class="p-company-access__row">
+                    <dt class="p-company-access__label">本社住所</dt>
+                    <dd class="p-company-access__data">〒231-0013　神奈川県横浜市中区住吉町4-45-1　関内トーセイビルⅡ 10階</dd>
+                </dl>
+                <dl class="p-company-access__row">
+                    <dt class="p-company-access__label">電車でお越しの方</dt>
+                    <dd class="p-company-access__data">JR根岸線・横浜市営地下鉄「関内駅」より徒歩○分</dd>
+                </dl>
+                <dl class="p-company-access__row">
+                    <dt class="p-company-access__label">お問い合わせ</dt>
+                    <dd class="p-company-access__data">TEL：045-226-5482　／　FAX：045-226-5483</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+</div>
 <?php get_footer(); ?>

@@ -2935,6 +2935,7 @@ img {
       transition:
         background-color 0.3s,
         border-color 0.3s;
+      z-index: 10;
       @include max-screen($breakpoint-sm) {
         width: 32px;
         height: 32px;

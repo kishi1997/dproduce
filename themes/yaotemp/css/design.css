@@ -2754,6 +2754,7 @@ img {
   font-size: 0;
   color: transparent;
   transition: background-color 0.3s, border-color 0.3s;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .top .p-top-case .slick-arrow {

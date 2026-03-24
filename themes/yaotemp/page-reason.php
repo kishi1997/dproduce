@@ -44,7 +44,7 @@
                 <!-- 01 -->
                 <div class="p-feature__item">
                     <div class="p-feature__list-header">
-                        <span class="p-feature__list-number">01</span>
+                        <figure class="p-feature__list-number"><img src="<?php bloginfo('template_url'); ?>/img/top-strength-number1.svg" alt="" aria-hidden="true"></figure>
                         <h2 class="p-feature__list-title">属人化を排除し、継続性を担保する<br />「5名体制のチームサポート」</h2>
                     </div>
                     <div class="p-feature__sub-list">
@@ -87,7 +87,7 @@
                 <!-- 02 -->
                 <div class="p-feature__item">
                     <div class="p-feature__list-header">
-                        <span class="p-feature__list-number">02</span>
+                        <figure class="p-feature__list-number"><img src="<?php bloginfo('template_url'); ?>/img/top-strength-number2.svg" alt="" aria-hidden="true"></figure>
                         <h2 class="p-feature__list-title">意思決定を妨げない、圧倒的な「クイックレスポンス」</h2>
                     </div>
                     <div class="p-feature__sub-list">
@@ -130,7 +130,7 @@
                 <!-- 03 -->
                 <div class="p-feature__item">
                     <div class="p-feature__list-header">
-                        <span class="p-feature__list-number">03</span>
+                        <figure class="p-feature__list-number"><img src="<?php bloginfo('template_url'); ?>/img/top-strength-number3.svg" alt="" aria-hidden="true"></figure>
                         <h2 class="p-feature__list-title">100名〜数千名規模を支える「DX×専門知」</h2>
                     </div>
                     <div class="p-feature__sub-list">
@@ -173,7 +173,7 @@
                 <!-- 04 -->
                 <div class="p-feature__item">
                     <div class="p-feature__list-header">
-                        <span class="p-feature__list-number">04</span>
+                        <figure class="p-feature__list-number"><img src="<?php bloginfo('template_url'); ?>/img/top-strength-number4.svg" alt="" aria-hidden="true"></figure>
                         <h2 class="p-feature__list-title">「知っている」を「使える」に変える実践支援</h2>
                     </div>
                     <div class="p-feature__sub-list">

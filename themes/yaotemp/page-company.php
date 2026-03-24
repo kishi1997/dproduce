@@ -6,14 +6,7 @@
         </div>
     </div>
 
-    <div class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-        <div class="container">
-        <?php if(function_exists('bcn_display'))
-        {
-        bcn_display();
-        }?>
-        </div>
-    </div>
+    <?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
     <!-- l-wrapper -->
     <div class="l-wrapper">

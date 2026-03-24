@@ -19,7 +19,9 @@
                     正確・安心・手間ゼロへ。プロに任せる給与計算。
                 </h2>
                 <p class="p-intro__lead">
-                    給与計算は、単なるルーチンワークではありません。従業員の生活を支え、会社への信頼を形にする極めて重要な業務です。 しかし、法改正への対応や社会保険料の改定など、その実務は年々複雑化しています。「担当者が一人しかおらずブラックボックス化している」「毎月のチェック作業に追われ、本来取り組むべき採用や教育に手が回らない」——そんな課題を、D・プロデュースが解決します。 私たちは最新のDXツールと5名体制の組織力を駆使し、ミスゼロ・遅延ゼロの安定した給与インフラを貴社に提供します。
+                    給与計算は、単なるルーチンワークではありません。従業員の生活を支え、会社への信頼を形にする極めて重要な業務です。
+                    しかし、法改正への対応や社会保険料の改定など、その実務は年々複雑化しています。「担当者が一人しかおらずブラックボックス化している」「毎月のチェック作業に追われ、本来取り組むべき採用や教育に手が回らない」——そんな課題を、D・プロデュースが解決します。
+                    私たちは最新のDXツールと5名体制の組織力を駆使し、ミスゼロ・遅延ゼロの安定した給与インフラを貴社に提供します。
                 </p>
             </div>
         </div>
@@ -113,7 +115,8 @@
                             </figure>
                         </div>
                         <p class="p-strength__desc">
-                            Money Forward、freee、ジョブカン、OBIC7など、主要なクラウド人事労務ソフトにフル対応しています。現在アナログなExcel管理や紙のタイムカード運用をされている場合でも、システム選定から初期設定、データ移行までプロが伴走。貴社のDX化を加速させ、ペーパーレスで効率的な給与運用を実現します。
+                            Money
+                            Forward、freee、ジョブカン、OBIC7など、主要なクラウド人事労務ソフトにフル対応しています。現在アナログなExcel管理や紙のタイムカード運用をされている場合でも、システム選定から初期設定、データ移行までプロが伴走。貴社のDX化を加速させ、ペーパーレスで効率的な給与運用を実現します。
                         </p>
                     </div>
                 </div>
@@ -203,7 +206,8 @@
                 <!-- 03 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img3.jpg" alt="チェックリストを確認するビジネスパーソン">
+                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img3.jpg"
+                            alt="チェックリストを確認するビジネスパーソン">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -222,7 +226,8 @@
                 <!-- 04 -->
                 <div class="p-point__item p-point__item--reverse">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img4.jpg" alt="確かな知識と経験を持ったアドバイザー">
+                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img4.jpg"
+                            alt="確かな知識と経験を持ったアドバイザー">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -241,7 +246,8 @@
                 <!-- 05 -->
                 <div class="p-point__item">
                     <figure class="p-point__img">
-                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img5.jpg" alt="確かな知識と経験を持ったアドバイザー">
+                        <img src="<?php bloginfo('template_url');?>/img/calculation-merit-img5.jpg"
+                            alt="確かな知識と経験を持ったアドバイザー">
                     </figure>
                     <div class="p-point__content">
                         <div class="p-point__head">
@@ -277,35 +283,51 @@
                     <h3 class="p-calculation__service-title">基本サービス</h3>
                     <div class="p-service-list">
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img1.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img1.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">マスター情報の管理</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img2.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img2.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">毎月の給与計算サービス</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img3.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img3.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">賞与計算サービス<br />(年3回まで)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img4.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img4.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">給与支給控除一覧表の<br />作成・提出</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img5.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img5.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">合計支給控除一覧表の<br />作成・提出</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img6.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img6.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">銀行振込依頼書の<br />作成・提出</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img7.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img7.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">金種表の作成・提出、<br />給与明細書の作成・提出</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img8.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img8.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">退職者に係る給与源泉徴収票の作成・提出<br />※退職所得に係るものを除く</p>
                         </div>
                     </div>
@@ -314,39 +336,57 @@
                     <h3 class="p-calculation__service-title">オプションサービス</h3>
                     <div class="p-service-list">
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img9.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img9.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">WEB明細</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img10.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img10.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">労働時間集計サービス<br />(タイムカード等の集計サービス)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img11.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img11.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">有給管理サービス<br />(年3回まで)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img12.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img12.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">給与袋の提出及び<br />袋詰めサービス</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img13.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img13.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">住民税異動届の<br />作成サービス</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img14.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img14.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">社会保険算定基礎届(毎年1回)の提出代行サービス(※)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img15.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img15.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">労働保険年度更新(毎年1回)業務の書類作成・提出代行サービス(※)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img16.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img16.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">社会保険月額変更届(随時)の提出代行サービス(※)</p>
                         </div>
                         <div class="p-service-list__item">
-                            <div class="p-service-list__item-img"><img src="<?php bloginfo('template_url');?>/img/calculation-service-img17.jpg" alt=""></div>
+                            <div class="p-service-list__item-img"><img
+                                    src="<?php bloginfo('template_url');?>/img/calculation-service-img17.jpg" alt="">
+                            </div>
                             <p class="p-service-list__item-title">社会保険賞与支払届の作成・提出代行サービス(※)</p>
                         </div>
                     </div>
@@ -439,7 +479,7 @@
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
                 <span class="c-section-heading__title-en">FAQ</span>
-                <h2 class="c-section-heading__title-ja">/ お問い合わせの前によくある「切り替え」の<br />不安にお答えします</h2>
+                <h2 class="c-section-heading__title-ja"> よくあるご質問</h2>
             </div>
 
             <!-- FAQリストエリア -->

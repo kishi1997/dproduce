@@ -385,7 +385,7 @@ img {
     letter-spacing: 0.05em;
     margin: 0;
     color: white;
-    text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
     span {
       font-size: 18px;
       margin-right: 10px;
@@ -394,7 +394,7 @@ img {
 
   .p-header__tel-time {
     font-size: 12px;
-    text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
   .p-header__btn-contact {
@@ -404,11 +404,11 @@ img {
     align-items: center;
     gap: 16px;
     text-shadow:
-      0px 0px 3px rgba(0, 0, 0, 0.4),
-      1px 0 rgba(115, 89, 31, 1),
-      -1px 0 rgba(115, 89, 31, 1),
-      0 1px rgba(115, 89, 31, 1),
-      0 -1px rgba(115, 89, 31, 1);
+      0px 0px 8px rgba(0, 0, 0, 0.9),
+      1px 0 rgb(115, 89, 31),
+      -1px 0 rgb(115, 89, 31),
+      0 1px rgb(115, 89, 31),
+      0 -1px rgb(115, 89, 31);
     .c-icon-mail {
       display: inline-block;
       width: 26px;
@@ -437,7 +437,7 @@ img {
 }
 .p-global-nav__item {
   position: relative;
-  padding: 8px 24px;
+  padding: 16px 24px 8px;
 }
 .p-global-nav__item:not(:last-child)::after {
   content: "";
@@ -456,7 +456,7 @@ img {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
-  text-shadow: 2px 2px 2.8px rgb(0 0 0 / 40%);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 .p-global-nav__item a:hover {
   color: $color-main;
@@ -495,13 +495,14 @@ img {
 }
 .p-header-nav__sublist {
   position: absolute;
-  top: 40px;
+  top: 44px;
   left: 0;
   width: 280px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
   transform: translateY(0);
+  border: 1px solid #004e87;
   transition:
     opacity 0.3s ease,
     transform 0.3s ease,
@@ -3692,6 +3693,59 @@ img {
 
     // ==================== Slick 矢印 (SP時のみ表示) ====================
     // PCはスライド1枚を魅せるため非表示。SPは下部に丸い矢印を配置
+    // 他スライダーの overflow: visible を上書き（次スライドのはみ出しを防ぐ）
+    .p-top-seminar__slider .slick-list {
+      overflow: hidden;
+    }
+
+    // ドット（インジケーター）
+    .p-top-seminar__slider .slick-dots {
+      list-style: none;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      bottom: -30px;
+      padding: 0;
+      @include max-screen($breakpoint-xs) {
+        bottom: 0px;
+        left: 0;
+      }
+
+      li {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+
+        // slickデフォルトの::before擬似要素を非表示
+        button::before {
+          display: none;
+        }
+
+        button {
+          display: block;
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          border-radius: 50%;
+          border: 2px solid #0275b4;
+          background-color: transparent;
+          font-size: 0;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        &.slick-active button {
+          background-color: #0275b4;
+          border-color: #0275b4;
+        }
+
+        &:not(.slick-active) button:hover {
+          background-color: rgba(#0275b4, 0.3);
+        }
+      }
+    }
+
     .p-top-seminar__slider-area .slick-arrow {
       position: absolute;
       bottom: 0;
@@ -4727,7 +4781,7 @@ img {
 --------------------------------------*/
 .p-page-header {
   position: relative;
-  height: 30vh;
+  height: 50vh;
   background-size: cover;
   background-position: top center;
 
@@ -4744,7 +4798,7 @@ img {
 
   .p-page-header__inner {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 20%;
     transform: translate(-20%, -50%);
     color: #fff;
@@ -6111,11 +6165,11 @@ img {
   }
 
   .p-voices__slider-wrap .slick-prev {
-    right: 41px;
-    left: unset;
-    transform: translate(0, -50%);
+    left: 0;
+    transform: translate(-100%, -50%);
     @include max-screen($breakpoint-md) {
       left: -10px;
+      transform: translate(0%, -50%);
     }
     &::before {
       transform: translate(-30%, -50%) rotate(-135deg);
@@ -6123,7 +6177,7 @@ img {
   }
 
   .p-voices__slider-wrap .slick-next {
-    right: -34px;
+    right: 0;
     left: unset;
     transform: translate(100%, -50%);
     @include max-screen($breakpoint-md) {
@@ -6134,7 +6188,6 @@ img {
       transform: translate(-70%, -50%) rotate(45deg);
     }
   }
-
   // ==================== プログレスバー (SPのみ) ====================
   .p-voices__progress-wrap {
     position: relative;
@@ -7964,30 +8017,24 @@ p-point（下層ページ共通）
   }
 }
 
-// ゴースト番号
+// SVG番号装飾
 .p-feature__list-number {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  font-family: $font-en;
-  font-size: 140px;
-  font-weight: 900;
-  line-height: 1;
-  color: rgba($color-main, 0.07);
-  letter-spacing: -0.04em;
+  transform: translateY(-50%);
+  width: 160px;
+  margin: 0;
   pointer-events: none;
   user-select: none;
-
-  @include max-screen($breakpoint-md) {
-    position: static;
-    font-size: 64px;
-    color: rgba($color-main, 0.15);
-    line-height: 1;
-    flex-shrink: 0;
+  opacity: 1;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
-
-  @include max-screen($breakpoint-sm) {
-    font-size: 52px;
+  @include max-screen($breakpoint-xs) {
+    width: 120px;
   }
 }
 

@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      dots: false,
+      dots: true,
       pauseOnHover: true,
       responsive: [
         {

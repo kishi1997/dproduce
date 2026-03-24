@@ -335,7 +335,7 @@ img {
   letter-spacing: 0.05em;
   margin: 0;
   color: white;
-  text-shadow: 2px 2px 2.8px rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 .p-header .p-header__tel-num span {
   font-size: 18px;
@@ -343,7 +343,7 @@ img {
 }
 .p-header .p-header__tel-time {
   font-size: 12px;
-  text-shadow: 2px 2px 2.8px rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 .p-header .p-header__btn-contact {
   font-size: 21px;
@@ -351,7 +351,7 @@ img {
   display: flex;
   align-items: center;
   gap: 16px;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 1px 0 rgb(115, 89, 31), -1px 0 rgb(115, 89, 31), 0 1px rgb(115, 89, 31), 0 -1px rgb(115, 89, 31);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9), 1px 0 rgb(115, 89, 31), -1px 0 rgb(115, 89, 31), 0 1px rgb(115, 89, 31), 0 -1px rgb(115, 89, 31);
 }
 .p-header .p-header__btn-contact .c-icon-mail {
   display: inline-block;
@@ -376,7 +376,7 @@ img {
 
 .p-global-nav__item {
   position: relative;
-  padding: 8px 24px;
+  padding: 16px 24px 8px;
 }
 
 .p-global-nav__item:not(:last-child)::after {
@@ -397,7 +397,7 @@ img {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
-  text-shadow: 2px 2px 2.8px rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 .p-global-nav__item a:hover {
@@ -441,13 +441,14 @@ img {
 
 .p-header-nav__sublist {
   position: absolute;
-  top: 40px;
+  top: 44px;
   left: 0;
   width: 280px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
   transform: translateY(0);
+  border: 1px solid #004e87;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
@@ -3471,6 +3472,51 @@ img {
   color: #000;
   margin: 0;
 }
+.top .p-top-seminar .p-top-seminar__slider .slick-list {
+  overflow: hidden;
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots {
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  bottom: -30px;
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .top .p-top-seminar .p-top-seminar__slider .slick-dots {
+    bottom: 0px;
+    left: 0;
+  }
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots li button::before {
+  display: none;
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #0275b4;
+  background-color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots li.slick-active button {
+  background-color: #0275b4;
+  border-color: #0275b4;
+}
+.top .p-top-seminar .p-top-seminar__slider .slick-dots li:not(.slick-active) button:hover {
+  background-color: rgba(2, 117, 180, 0.3);
+}
 .top .p-top-seminar .p-top-seminar__slider-area .slick-arrow {
   position: absolute;
   bottom: 0;
@@ -4419,7 +4465,7 @@ img {
 --------------------------------------*/
 .p-page-header {
   position: relative;
-  height: 30vh;
+  height: 50vh;
   background-size: cover;
   background-position: top center;
 }
@@ -4435,7 +4481,7 @@ img {
 }
 .p-page-header .p-page-header__inner {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 20%;
   transform: translate(-20%, -50%);
   color: #fff;
@@ -5791,20 +5837,20 @@ img {
   border-right: 2px solid #333;
 }
 .p-voices .p-voices__slider-wrap .slick-prev {
-  right: 41px;
-  left: unset;
-  transform: translate(0, -50%);
+  left: 0;
+  transform: translate(-100%, -50%);
 }
 @media screen and (max-width: 1080px) {
   .p-voices .p-voices__slider-wrap .slick-prev {
     left: -10px;
+    transform: translate(0%, -50%);
   }
 }
 .p-voices .p-voices__slider-wrap .slick-prev::before {
   transform: translate(-30%, -50%) rotate(-135deg);
 }
 .p-voices .p-voices__slider-wrap .slick-next {
-  right: -34px;
+  right: 0;
   left: unset;
   transform: translate(100%, -50%);
 }
@@ -7736,31 +7782,25 @@ p-point（下層ページ共通）
 
 .p-feature__list-number {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 140px;
-  font-weight: 900;
-  line-height: 1;
-  color: rgba(1, 110, 220, 0.07);
-  letter-spacing: -0.04em;
+  transform: translateY(-50%);
+  width: 160px;
+  margin: 0;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  opacity: 1;
 }
-@media screen and (max-width: 1080px) {
-  .p-feature__list-number {
-    position: static;
-    font-size: 64px;
-    color: rgba(1, 110, 220, 0.15);
-    line-height: 1;
-    flex-shrink: 0;
-  }
+.p-feature__list-number img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .p-feature__list-number {
-    font-size: 52px;
+    width: 120px;
   }
 }
 

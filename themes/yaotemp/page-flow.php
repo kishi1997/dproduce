@@ -61,7 +61,8 @@
                                     現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。
                                 </p>
                                 <div class="p-tab__btn-wrap">
-                                    <a href="<?php bloginfo('url'); ?>/contact/" class="c-btn c-btn--outline">無料相談・お問い合わせ</a>
+                                    <a href="<?php bloginfo('url'); ?>/contact/" class="c-btn c-btn--outline">就業規則簡易診断</a>
+                                    <a href="<?php bloginfo('url'); ?>/contact/" class="c-btn c-btn--outline">助成金受信診断</a>
                                 </div>
                             </div>
                     </div>
@@ -74,7 +75,7 @@
                                 現在の労務環境に関するご相談や、お見積もりのご依頼はこちらから。<br>2営業日以内に専任チームよりご連絡いたします。
                             </p>
                             <div class="p-tab__btn-wrap">
-                                <a href="<?php bloginfo('url'); ?>/contact/" class="c-btn c-btn--outline">無料相談・お問い合わせ</a>
+                                <a href="<?php bloginfo('url'); ?>/contact/" class="c-btn c-btn--outline">資料請求</a>
                             </div>
                         </div>
                     </div>

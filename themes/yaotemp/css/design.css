@@ -102,8 +102,7 @@ img {
   border: 2px solid;
   position: relative;
   font-weight: bold;
-  -o-border-image: linear-gradient(#1d88f3, #0059b4) 1;
-     border-image: linear-gradient(#1d88f3, #0059b4) 1;
+  border-image: linear-gradient(#1d88f3, #0059b4) 1;
   min-width: 220px;
   font-size: 18px;
 }
@@ -3013,8 +3012,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-voices .p-top-voices__card-body {
   display: flex;
@@ -3873,8 +3871,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top .p-top-blogs .p-top-blogs__item-body {
   flex-grow: 1;
@@ -4580,7 +4577,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
@@ -4596,7 +4592,6 @@ img {
   }
 }
 .p-trouble .p-trouble__header {
-  width: -moz-fit-content;
   width: fit-content;
   color: #016edc;
 }
@@ -4759,7 +4754,6 @@ img {
 @media screen and (max-width: 768px) {
   .p-about-reason .p-about-reason__item {
     flex-direction: column;
-    width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
   }
@@ -5292,6 +5286,11 @@ img {
 }
 
 .p-tab__btn-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(100%, 220px));
+  justify-content: center;
+  row-gap: 16px;
+  column-gap: 24px;
   margin-top: 40px;
   text-align: center;
 }
@@ -5748,8 +5747,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-voices .p-voices__card-body {
   display: flex;
@@ -6221,8 +6219,7 @@ img {
 }
 .p-reason .p-reason-feature__sub-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-reason .p-reason-feature__sub-title {
   margin-bottom: 1.6rem;
@@ -6367,8 +6364,7 @@ img {
 }
 .p-flow .p-flow-step__item-img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .p-flow .p-flow-step__item-number {
   position: relative;
@@ -6683,8 +6679,7 @@ p-point（下層ページ共通）
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-point__content {
@@ -7357,13 +7352,12 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(auto-fit, min(100%, 240px));
   justify-content: center;
   row-gap: 40px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 @media screen and (max-width: 480px) {
   .p-service-list {
     grid-template-columns: auto;
-    row-gap: 60px;
+    row-gap: 16px;
   }
 }
 
@@ -7372,22 +7366,40 @@ p-point（下層ページ共通）
   flex-direction: column;
   gap: 12px;
 }
+@media screen and (max-width: 480px) {
+  .p-service-list__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
 .p-service-list__item-img {
   width: 100%;
   aspect-ratio: 1;
 }
+@media screen and (max-width: 480px) {
+  .p-service-list__item-img {
+    flex-shrink: 0;
+    width: min(50%, 132px);
+  }
+}
 .p-service-list__item-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-service-list__item-title {
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-service-list__item-title {
+    flex-grow: 1;
+    padding: 8px;
+  }
 }
 
 .p-calculation__service-notice {
@@ -7415,10 +7427,10 @@ p-point（下層ページ共通）
 
 .p-personnel-affairs__step-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(9, auto);
   row-gap: 36px;
-  -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
 }
 @media screen and (max-width: 768px) {
   .p-personnel-affairs__step-list {
@@ -7557,8 +7569,7 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 36px;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 480px) {
   .p-establishment-support__service-list {
@@ -7598,11 +7609,7 @@ p-point（下層ページ共通）
 }
 
 .p-establishment-support__service-note {
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 32px;
-  margin-right: 0;
-  margin-left: auto;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -7788,9 +7795,7 @@ p-point（下層ページ共通）
   width: 160px;
   margin: 0;
   pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   opacity: 1;
 }
 .p-feature__list-number img {
@@ -7920,8 +7925,7 @@ p-point（下層ページ共通）
 .p-feature__sub-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -7975,8 +7979,7 @@ p-point（下層ページ共通）
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 60px;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
 }
 @media screen and (max-width: 768px) {
   .p-insurance__system-cards {
@@ -8168,7 +8171,7 @@ p-point（下層ページ共通）
 
 .p-pension-system__service-item-inner {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 62% 38%;
   align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -8239,14 +8242,12 @@ p-point（下層ページ共通）
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  margin-top: 40px;
+  column-gap: 16px;
+  margin-top: 132px;
   width: 120%;
 }
 @media screen and (max-width: 1080px) {
   .p-pension-system__service-sub-list {
-    width: 200%;
     margin-top: 120px;
   }
 }
@@ -8304,8 +8305,7 @@ p-point（下層ページ共通）
 .p-pension-system__service-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-pension-system__service-text {
@@ -8519,7 +8519,6 @@ p-point（下層ページ共通）
 }
 
 .p-srs__tab-panel-sub-title {
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 6px 12px;
@@ -8586,7 +8585,6 @@ p-point（下層ページ共通）
 
 .p-srs__tab-panel-arrow {
   position: relative;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 40px auto;
   padding: 12px 48px 12px;
@@ -8665,8 +8663,7 @@ p-point（下層ページ共通）
 .p-charge__contract-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 5.4545454545%;
-       column-gap: 5.4545454545%;
+  column-gap: 5.4545454545%;
 }
 @media screen and (max-width: 768px) {
   .p-charge__contract-list {
@@ -8867,4 +8864,4 @@ p-point（下層ページ共通）
 }
 .p-charge-table__data:last-child {
   border: none;
-}/*# sourceMappingURL=design.css.map */
+}

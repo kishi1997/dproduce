@@ -5626,6 +5626,11 @@ img {
 
 // ボタンラッパー
 .p-tab__btn-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(100%, 220px));
+  justify-content: center;
+  row-gap: 16px;
+  column-gap: 24px;
   margin-top: 40px;
   text-align: center;
 }
@@ -7642,6 +7647,7 @@ p-point（下層ページ共通）
   gap: 120px;
 }
 .p-calculation__service-item {
+
 }
 .p-calculation__service-title {
   margin-bottom: 4.8rem;
@@ -7658,17 +7664,26 @@ p-point（下層ページ共通）
   column-gap: 24px;
   @include max-screen($breakpoint-xs) {
     grid-template-columns: auto;
-    row-gap: 60px;
+    row-gap: 16px;
   }
 }
 .p-service-list__item {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  @include max-screen($breakpoint-xs) {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 }
 .p-service-list__item-img {
   width: 100%;
   aspect-ratio: 1;
+  @include max-screen($breakpoint-xs) {
+    flex-shrink: 0;
+    width: min(50%, 132px);
+  }
   img {
     width: 100%;
     height: 100%;
@@ -7679,6 +7694,10 @@ p-point（下層ページ共通）
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
+  @include max-screen($breakpoint-xs) {
+    flex-grow: 1;
+    padding: 8px;
+  }
 }
 .p-calculation__service-notice {
   margin-top: 60px;
@@ -7702,12 +7721,16 @@ p-point（下層ページ共通）
     background-image: url(../img/personal-evaluation-mv-bg.jpg);
   }
 }
+// 人事評価制度構築のステップ - セクション
 .p-personnel-affairs__step {
   padding: 80px 0;
 }
+// リスト
 .p-personnel-affairs__step-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  // リストの行数を９行で固定し強制的に改行させる
+  grid-template-rows: repeat(9, auto);
   row-gap: 36px;
   column-gap: 36px;
   @include max-screen($breakpoint-sm) {
@@ -7730,6 +7753,7 @@ p-point（下層ページ共通）
     gap: 16px;
     padding: 16px 16px;
   }
+  // 左の青い線の装飾
   &::before {
     content: "";
     position: absolute;
@@ -7739,6 +7763,7 @@ p-point（下層ページ共通）
     background-color: $color-main2;
   }
 }
+// リスト番号のボックス
 .p-personnel-affairs__step-item-head {
   display: grid;
   place-items: center;
@@ -7748,6 +7773,7 @@ p-point（下層ページ共通）
   color: #fff;
   border-radius: 12px;
 }
+// リスト番号
 .p-personnel-affairs__step-number {
   font-size: 2.4rem;
   font-weight: bold;
@@ -7755,6 +7781,7 @@ p-point（下層ページ共通）
     font-size: 2rem;
   }
 }
+// テキスト
 .p-personnel-affairs__step-item-text {
   font-size: 1.8rem;
   line-height: 1.6;
@@ -7858,10 +7885,7 @@ p-point（下層ページ共通）
   }
 }
 .p-establishment-support__service-note {
-  width: fit-content;
   margin-top: 32px;
-  margin-right: 0;
-  margin-left: auto;
   font-size: 1.6rem;
   line-height: 1.6;
   @include max-screen($breakpoint-xs) {
@@ -8375,15 +8399,17 @@ p-point（下層ページ共通）
     gap: 60px;
   }
 }
+// インナー
 .p-pension-system__service-item-inner {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 62% 38%;
   align-items: center;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
   @include max-screen($breakpoint-sm) {
     grid-template-columns: 1fr;
   }
 }
+// テキスト・リスト部分
 .p-pension-system__service-item-body {
   padding: 40px 36px 60px;
   background-color: #fff;
@@ -8397,6 +8423,7 @@ p-point（下層ページ共通）
     padding: 20px 16px 24px;
   }
 }
+// 見出し
 .p-pension-system__service-item-title {
   position: relative;
   margin-bottom: 4rem;
@@ -8420,6 +8447,7 @@ p-point（下層ページ共通）
     background-color: $color-main2;
   }
 }
+// リード文
 .p-pension-system__service-item-lead {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -8427,6 +8455,7 @@ p-point（下層ページ共通）
     font-size: 1.5rem;
   }
 }
+// サブリスト
 .p-pension-system__service-sub-list {
   position: relative;
   z-index: 1;
@@ -8434,10 +8463,10 @@ p-point（下層ページ共通）
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
   column-gap: 16px;
-  margin-top: 40px;
+  margin-top: 132px;
   width: 120%;
   @include max-screen($breakpoint-md) {
-    width: 200%;
+
     margin-top: 120px;
   }
   @include max-screen($breakpoint-sm) {

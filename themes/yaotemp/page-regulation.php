@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <!-- D・プロデュースの就業規則サポートの特徴 -->
+    <!-- ご利用のメリット -->
     <section class="p-point">
         <div class="l-container">
             <!-- セクション見出し -->
@@ -157,8 +157,8 @@
                     <span class="c-section-heading__deco-light"></span>
                     <span class="c-section-heading__deco-dark"></span>
                 </div>
-                <span class="c-section-heading__title-en">FEATURE</span>
-                <h2 class="c-section-heading__title-ja">/ D・プロデュースの就業規則の特徴</h2>
+                <span class="c-section-heading__title-en">MERIT</span>
+                <h2 class="c-section-heading__title-ja">/ ご利用のメリット</h2>
             </div>
 
             <div class="p-point__list">
@@ -171,7 +171,7 @@
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.01</span>
+                                <span class="p-point__label">MERIT.01</span>
                                 <span class="p-point__line"></span>
                             </div>
                             <h3 class="p-point__item-title">会社を守ることを第一に</h3>
@@ -190,7 +190,7 @@
                     <div class="p-point__content">
                         <div class="p-point__head">
                             <div class="p-point__label-wrap">
-                                <span class="p-point__label">FEATURE.02</span>
+                                <span class="p-point__label">MERIT.02</span>
                                 <span class="p-point__line"></span>
                             </div>
                             <h3 class="p-point__item-title">働きやすい職場環境へ</h3>
@@ -205,6 +205,7 @@
         </div>
     </section>
 
+    <!-- 就業規則作成の流れ -->
     <section class="p-process">
         <div class="l-container">
             <!-- セクション見出し -->

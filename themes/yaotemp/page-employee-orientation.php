@@ -335,7 +335,7 @@
                         <span class="p-process__item-number">04</span>
                     </div>
                     <div class="p-process__item-body">
-                        <h3 class="p-process__item-title">サポート開始</h3>
+                        <h3 class="p-process__item-title">研修の実施</h3>
                         <p class="p-process__item-text">
                             決定したカリキュラムに沿って研修を実施します。受講者の主体性を引き出すワークを織り交ぜながら、プロの講師が熱意を持って指導。実施後はアンケート結果の集計・分析を行い、今後の組織改善に向けたフィードバックをご報告します。
                         </p>

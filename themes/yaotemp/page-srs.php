@@ -181,7 +181,7 @@
 
                     <div class="p-tab__panel-wrapper">
 
-                        <!-- パネル1 -->
+                        <!-- パネル1 適正診断・基礎能力診断 -->
                         <div class="p-tab__panel is-active js-srs-tab-panel" id="tab-ability">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">適正診断・基礎能力診断</h3>
@@ -211,13 +211,93 @@
                                 <div class="p-srs__tab-panel-body">
                                     <h4 class="p-srs__tab-panel-sub-title p-srs__tab-panel-sub-title--solution">活用手順</h4>
                                     <div class="p-srs__tab-panel-content p-srs__tab-panel-content--solution">
-                                        <figure class="p-srs__tab-panel-img"><img src="<?php bloginfo('template_url'); ?>/img/srs-img1.jpg" alt="1. 適正診断問題・基礎能力診断問題とそれぞれの回答用紙をFAXしてください。 2. こちらでそれぞれの診断結果を作成します。 3. 「面接と育成のポイント」や「社員教育動画」などで診断後のサポートを行います。"></figure>
+                                        <!-- SRS診断のステップ（画像をテキスト化したもの） -->
+                                        <div class="p-srs-step">
+                                            <div class="p-srs-step__inner">
+                                                <div class="p-srs-step__list">
+                                                    <!-- 1-1 回答用紙をFAX -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.1</div>
+                                                        <h3 class="p-srs-step__title">回答用紙をFAX</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 1-1-1 適正診断問題と回答用紙 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img1.jpg" alt="適正診断問題と回答用紙">
+                                                                </div>
+                                                                <p class="p-srs-step__text">適正診断問題と回答用紙</p>
+                                                            </div>
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 1-1-2 適正診断問題と回答用紙 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img2.jpg" alt="基礎能力診断問題と回答用紙">
+                                                                </div>
+                                                                <p class="p-srs-step__text">基礎能力診断問題と回答用紙</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 02 診断結果作成 -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.2</div>
+                                                        <h3 class="p-srs-step__title">診断結果作成</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <!-- 02-2 適性診断診断結果 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img3.jpg" alt="適性診断診断結果">
+                                                                </div>
+                                                                <p class="p-srs-step__text">適性診断診断結果</p>
+                                                            </div>
+                                                            <!-- 02-3 基礎能力診断診断結果 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img4.jpg" alt="基礎能力診断診断結果">
+                                                                </div>
+                                                                <p class="p-srs-step__text">基礎能力診断診断結果</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 03 診断後のサポート -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.3</div>
+                                                        <h3 class="p-srs-step__title">診断後のサポート</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <!-- 03-1 面接と育成のポイント -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                <img src="<?php bloginfo('template_url'); ?>/img/srs-img5.jpg" alt="面接と育成のポイント">
+                                                                </div>
+                                                                <p class="p-srs-step__text">面接と育成のポイント</p>
+                                                            </div>
+                                                            <!-- 03-2 社員教育動画 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                <div class="p-srs-step__video-thumb">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img6.jpg" alt="社員教育動画">
+                                                                </div>
+                                                                </div>
+                                                                <p class="p-srs-step__text">社員教育動画</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- パネル2 -->
+                        <!-- パネル2 パーソナリティ診断 -->
                         <div class="p-tab__panel js-srs-tab-panel" id="tab-personality">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">パーソナリティ診断</h3>
@@ -247,7 +327,78 @@
                                 <div class="p-srs__tab-panel-body">
                                     <h4 class="p-srs__tab-panel-sub-title p-srs__tab-panel-sub-title--solution">活用手順</h4>
                                     <div class="p-srs__tab-panel-content p-srs__tab-panel-content--solution">
-                                        <figure class="p-srs__tab-panel-img"><img src="<?php bloginfo('template_url'); ?>/img/srs-img2.jpg" alt="1. パーソナリティ診断問題と回答用紙をFAXしてください。 2. こちらで診断結果を作成します。 3. 「面接と育成のポイント」や「社員教育動画」、「メンタルヘルスケア」などで診断後のサポートを行います。"></figure>
+                                        <!-- SRS診断のステップ（画像をテキスト化したもの） -->
+                                        <div class="p-srs-step">
+                                            <div class="p-srs-step__inner">
+                                                <div class="p-srs-step__list">
+                                                    <!-- 2-1 回答用紙をFAX -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.1</div>
+                                                        <h3 class="p-srs-step__title">回答用紙をFAX</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 2-1-1 パーソナリティ診断問題回答用紙 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img6.jpg" alt="パーソナリティ診断問題回答用紙">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断問題回答用紙</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 2-2 診断結果作成 -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.2</div>
+                                                        <h3 class="p-srs-step__title">診断結果作成</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 2-2-1 パーソナリティ診断結果 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img7.jpg" alt="パーソナリティ診断結果">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断結果</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 2-3 診断後のサポート -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.3</div>
+                                                        <h3 class="p-srs-step__title">診断後のサポート</h3>
+                                                        <div class="p-srs-step__body p-srs-step__body--items">
+                                                            <!-- 2-3-1 面接と育成のポイント -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                <img src="<?php bloginfo('template_url'); ?>/img/srs-img8.jpg" alt="面接と育成のポイント">
+                                                                </div>
+                                                                <p class="p-srs-step__text">面接と育成のポイント</p>
+                                                            </div>
+                                                            <!-- 2-3-2 社員教育動画 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img5.jpg" alt="社員教育動画">
+                                                                </div>
+                                                                <p class="p-srs-step__text">社員教育動画</p>
+                                                            </div>
+                                                            <!-- 2-3-3 メンタルヘルスケア -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img9.jpg" alt="メンタルヘルスケア">
+                                                                </div>
+                                                                <p class="p-srs-step__text">メンタルヘルスケア</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p class="p-srs_tab-panel-note">
                                         ※ 回答用紙を当事務所にFAX送信いただくだけで診断結果をお返しいたします。<br />
@@ -257,7 +408,7 @@
                             </div>
                         </div>
 
-                        <!-- パネル3 -->
+                        <!-- パネル3 リーダーシップスタイル180度診断 -->
                         <div class="p-tab__panel js-srs-tab-panel" id="tab-leadership-style">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">リーダーシップスタイル180度診断</h3>
@@ -287,7 +438,46 @@
                                 <div class="p-srs__tab-panel-body">
                                     <h4 class="p-srs__tab-panel-sub-title p-srs__tab-panel-sub-title--solution">活用手順</h4>
                                     <div class="p-srs__tab-panel-content p-srs__tab-panel-content--solution">
-                                        <figure class="p-srs__tab-panel-img"><img src="<?php bloginfo('template_url'); ?>/img/srs-img3.jpg" alt="1. パーソナリティ診断問題と回答用紙をFAXしてください。 2. こちらでそれぞれの診断結果を作成します。"></figure>
+                                        <!-- SRS診断のステップ（画像をテキスト化したもの） -->
+                                        <div class="p-srs-step">
+                                            <div class="p-srs-step__inner">
+                                                <div class="p-srs-step__list">
+                                                    <!-- 3-1 回答用紙をFAX -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.1</div>
+                                                        <h3 class="p-srs-step__title">回答用紙をFAX</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 3-1-1 パーソナリティ診断問題回答用紙 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img10.jpg" alt="パーソナリティ診断問題回答用紙">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断問題回答用紙</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 3-2 診断結果をお届け -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.2</div>
+                                                        <h3 class="p-srs-step__title">診断結果をお届け</h3>
+                                                        <div class="p-srs-step__body p-srs-step__body">
+                                                            <!-- 3-2-1 パーソナリティ診断結果 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                <img src="<?php bloginfo('template_url'); ?>/img/srs-img11.jpg" alt="パーソナリティ診断結果">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断結果</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p class="p-srs_tab-panel-note">
                                         ※ リーダー１人に対して部下４～５人程度の組み合わせが最適です。<br />
@@ -298,7 +488,7 @@
                             </div>
                         </div>
 
-                        <!-- パネル4 -->
+                        <!-- パネル4 リーダーシップコミュニケーション180度・360度診断 -->
                         <div class="p-tab__panel js-srs-tab-panel" id="tab-leadership-communication">
                             <div class="p-tab__content">
                                 <h3 class="p-srs__tab-panel-title">リーダーシップコミュニケーション180度・360度診断</h3>
@@ -328,7 +518,46 @@
                                 <div class="p-srs__tab-panel-body">
                                     <h4 class="p-srs__tab-panel-sub-title p-srs__tab-panel-sub-title--solution">活用手順</h4>
                                     <div class="p-srs__tab-panel-content p-srs__tab-panel-content--solution">
-                                        <figure class="p-srs__tab-panel-img"><img src="<?php bloginfo('template_url'); ?>/img/srs-img3.jpg" alt="1. パーソナリティ診断問題と回答用紙をFAXしてください。 2. こちらでそれぞれの診断結果を作成します。"></figure>
+                                        <!-- SRS診断のステップ（画像をテキスト化したもの） -->
+                                        <div class="p-srs-step">
+                                            <div class="p-srs-step__inner">
+                                                <div class="p-srs-step__list">
+                                                    <!-- 4-1 回答用紙をFAX -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.1</div>
+                                                        <h3 class="p-srs-step__title">回答用紙をFAX</h3>
+                                                        <div class="p-srs-step__body">
+                                                            <div class="p-srs-step__content">
+                                                                <!-- 4-1-1 パーソナリティ診断問題回答用紙 -->
+                                                                <div class="p-srs-step__img-unit">
+                                                                    <img src="<?php bloginfo('template_url'); ?>/img/srs-img10.jpg" alt="パーソナリティ診断問題回答用紙">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断問題回答用紙</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 矢印 -->
+                                                    <div class="p-srs-step__arrow"></div>
+
+                                                    <!-- 4-2 診断結果をお届け -->
+                                                    <div class="p-srs-step__item">
+                                                        <div class="p-srs-step__step">STEP.2</div>
+                                                        <h3 class="p-srs-step__title">診断結果をお届け</h3>
+                                                        <div class="p-srs-step__body p-srs-step__body">
+                                                            <!-- 4-2-1 パーソナリティ診断結果 -->
+                                                            <div class="p-srs-step__content">
+                                                                <div class="p-srs-step__img-unit">
+                                                                <img src="<?php bloginfo('template_url'); ?>/img/srs-img11.jpg" alt="パーソナリティ診断結果">
+                                                                </div>
+                                                                <p class="p-srs-step__text">パーソナリティ診断結果</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p class="p-srs_tab-panel-note">
                                         ※ リーダー１人に対して部下４～５人程度の組み合わせが最適です。<br />

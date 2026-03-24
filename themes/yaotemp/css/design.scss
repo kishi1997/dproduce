@@ -8700,7 +8700,7 @@ p-point（下層ページ共通）
   border-radius: 8px;
   color: #fff;
   @include max-screen($breakpoint-xs) {
-    padding: 4px 8px;
+    padding: 6px 10px;
     font-size: 1.6rem;
   }
 }
@@ -8799,6 +8799,159 @@ p-point（下層ページ共通）
   }
 }
 
+/*--------------------------------------
+  SRS Step （画像をテキスト化したもの）
+--------------------------------------*/
+.p-srs-step {
+  background-color: #fff;
+}
+.p-srs-step__inner {
+}
+
+.p-srs-step__list {
+  display: flex;
+  gap: 8px;
+  @include max-screen($breakpoint-sm) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.p-srs-step__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include max-screen($breakpoint-sm) {
+    width: 100%;
+  }
+}
+.p-srs-step__list:has(.p-srs-step__body--items) .p-srs-step__body:not(.p-srs-step__body--items) {
+  margin-top: 64px;
+  @include max-screen($breakpoint-sm) {
+    margin-top: 0;
+  }
+}
+// STEPの文字
+.p-srs-step__step {
+  display: inline-block;
+  background-color: #fff;
+  color: $color-main2;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 4px 20px;
+  border: 2px solid currentColor;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  @include max-screen($breakpoint-xs) {
+    padding: 3px 12px;
+  }
+}
+
+.p-srs-step__title {
+  flex-shrink: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.p-srs-step__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; // 上段と下段の間の余白
+  margin-top: 1px;
+  @include max-screen($breakpoint-sm) {
+    gap: 20px;
+  }
+}
+// 横並び
+.p-srs-step__body--items {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 0;
+  margin-top: 0;
+  @include max-screen($breakpoint-sm) {
+    row-gap: 16px;
+  }
+  @include max-screen($breakpoint-xs) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  > .p-srs-step__content {
+    width: calc((100% - 16px) / 2);
+    @include max-screen($breakpoint-xs) {
+      width: 100%;
+    }
+  }
+  > :first-child {
+    width: 100%;
+  }
+  .p-srs-step__text {
+    font-size: 1.4rem;
+  }
+}
+
+.p-srs-step__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 180px; // 高さを揃えるための目安
+  @include max-screen($breakpoint-sm) {
+    min-height: 0;
+  }
+}
+
+.p-srs-step__img-unit {
+  margin-bottom: 15px;
+  height: 120px; // 画像エリアの高さを固定して整列させる
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.p-srs-step__text {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #004da1;
+  line-height: 1.4;
+
+  @include max-screen($breakpoint-sm) {
+    font-size: 16px;
+  }
+}
+
+// 矢印のデザイン
+.p-srs-step__arrow {
+  align-self: center;
+  width: 2rem;
+  aspect-ratio: 1 / 3;
+  flex-shrink: 0;
+  margin-left: 8px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transform-origin: center center;
+  background-color: $color-main2;
+  @include max-screen($breakpoint-sm) {
+    width: 3.2rem;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    aspect-ratio: 2 / 1;
+  }
+}
 /*--------------------------------------
   Labor Audit Page（労務監査・労務DD（デューデリジェンス）ページ）
 --------------------------------------*/

@@ -57,6 +57,15 @@ img {
   }
 }
 
+.u-visible-xs {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .u-visible-xs {
+    display: block;
+  }
+}
+
 .l-header {
   position: fixed;
   background-color: transparent;
@@ -9036,4 +9045,378 @@ p-point（下層ページ共通）
 }
 .p-charge-table__data:last-child {
   border: none;
+}
+
+/*----------------------------------------
+  Recruit Page （採用情報ページ）
+----------------------------------------*/
+.p-recruit .p-page-header {
+  background-image: url(../img/recruit-mv-bg.jpg);
+}
+.p-recruit .p-strength .c-section-heading__title-en {
+  line-height: 1.2;
+}
+
+.p-recruit__roles {
+  padding: 60px 0;
+}
+
+.p-recruit__roles-list {
+  display: grid;
+  gap: 60px;
+}
+
+.p-recruit__roles-item {
+  padding: 64px 48px 80px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(90deg, transparent 70%, rgba(14, 110, 208, 0.1) 70%);
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__roles-item {
+    padding: 32px 24px 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-item {
+    padding: 24px 16px 32px;
+  }
+}
+
+.p-recruit__roles-item-head {
+  position: relative;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  width: fit-content;
+  gap: 16px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 1.6rem;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-item-head {
+    grid-template-columns: 32px 1fr;
+    gap: 8px;
+  }
+}
+.p-recruit__roles-item-head::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 8rem;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+
+.p-recruit__roles-item-num {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  font-size: 2.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #0e6ed0;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-item-num {
+    padding-bottom: 2px;
+    font-size: 1.8rem;
+  }
+}
+
+.p-recruit__roles-item-title {
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__roles-item-title {
+    font-size: 2rem;
+  }
+}
+
+.p-recruit__roles-sub-list {
+  display: grid;
+  gap: 48px;
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__roles-sub-list {
+    margin-top: 48px;
+  }
+}
+
+.p-recruit__roles-sub-item {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__roles-sub-item {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-sub-item {
+    gap: 24px;
+  }
+}
+
+.p-recruit__roles-sub-img {
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__roles-sub-img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+.p-recruit__roles-sub-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-recruit__roles-sub-title {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 2rem;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  color: #0e6ed0;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-sub-title {
+    padding: 3px 8px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-recruit__roles-sub-text {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-sub-text {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+  }
+}
+
+.p-recruit__roles-btn-wrap {
+  margin-top: 64px;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__roles-btn-wrap {
+    margin-top: 48px;
+  }
+}
+
+.p-recruit__environment {
+  padding: 80px 0;
+  background-color: #f5f7f9;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__environment {
+    padding: 60px 0;
+  }
+}
+
+/*----------------------------------------
+  採用情報ページ Environmentセクション テーブル
+----------------------------------------*/
+.p-recruit-table {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto max-content 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.p-recruit-table::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #0e6ed0;
+}
+
+.p-recruit-table__item {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 3;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-table__item {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit-table__item {
+    font-size: 1.5rem;
+  }
+}
+.p-recruit-table__item:nth-child(even) {
+  background-color: #f5f7f9;
+}
+
+.p-recruit-table__item-head {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 2;
+  align-items: center;
+  column-gap: 12px;
+  padding: 24px 64px;
+  border-right: 1px solid #eaeaea;
+}
+@media screen and (max-width: 1080px) {
+  .p-recruit-table__item-head {
+    padding: 24px 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-table__item-head {
+    padding: 16px 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit-table__item-head {
+    padding: 16px 18px;
+  }
+}
+
+.p-recruit-table__item-icon {
+  width: 36px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-table__item-icon {
+    width: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit-table__item-icon {
+    width: 20px;
+  }
+}
+.p-recruit-table__item-icon img {
+  display: block;
+}
+
+.p-recruit-table__item-title {
+  font-weight: 500;
+}
+
+.p-recruit-table__item-data {
+  padding: 24px 32px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-table__item-data {
+    padding: 16px;
+  }
+}
+
+.p-recruit__more {
+  padding: 60px 0 100px;
+}
+
+.p-recruit__more-btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50%, 300px), 0.5fr));
+  justify-content: center;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit__more-btns {
+    grid-template-columns: min(100%, 400px);
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__more-btns {
+    gap: 24px;
+  }
+}
+
+.p-recruit__more-btn-link {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  padding: 48px 16px;
+  border: 3px solid #eaeaea;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__more-btn-link {
+    padding: 36px 16px;
+    gap: 24px;
+  }
+}
+.p-recruit__more-btn-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(14, 110, 208, 0.08);
+}
+
+.p-recruit__more-btn-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__more-btn-text {
+    font-size: 1.5rem;
+  }
+}
+
+.p-recruit__more-btn-title {
+  position: relative;
+  padding-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__more-btn-title {
+    font-size: 1.8rem;
+  }
+}
+.p-recruit__more-btn-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 8rem;
+  height: 3px;
+  background-color: #0e6ed0;
+}
+@media screen and (max-width: 480px) {
+  .p-recruit__more-btn-title::before {
+    width: 6rem;
+  }
 }

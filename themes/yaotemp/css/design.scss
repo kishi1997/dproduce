@@ -9328,6 +9328,86 @@ p-point（下層ページ共通）
 .p-recruit__environment-table {
 
 }
+.p-recruit__more {
+  padding: 60px 0 100px;
+}
+.p-recruit__more-btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50%, 300px), .5fr));
+  justify-content: center;
+  gap: 60px;
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: min(100%, 400px);
+    justify-content: center;
+    gap: 40px;
+  }
+  @include max-screen($breakpoint-xs) {
+    gap: 24px;
+  }
+}
+.p-recruit__more-btn {
+
+}
+.p-recruit__more-btn-link {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  padding: 48px 16px;
+  border: 3px solid $color-border;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  @include max-screen($breakpoint-xs) {
+    padding: 36px 16px;
+    gap: 24px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(14 110 208 / .08);
+  }
+}
+.p-recruit__more-btn-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center;
+  @include max-screen($breakpoint-xs) {
+    font-size: 1.5rem;
+  }
+}
+.p-recruit__more-btn-title {
+  position: relative;
+  padding-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  @include max-screen($breakpoint-xs) {
+    font-size: 1.8rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 8rem;
+    height: 3px;
+    background-color: $color-main2;
+    @include max-screen($breakpoint-xs) {
+      width: 6rem;
+    }
+  }
+}
+
 /*----------------------------------------
   採用情報ページ Environmentセクション テーブル
 ----------------------------------------*/
@@ -9411,83 +9491,123 @@ p-point（下層ページ共通）
   }
 }
 
-
-.p-recruit__more {
-  padding: 60px 0 100px;
+/*----------------------------------------
+  Company Page （会社概要ページ）
+----------------------------------------*/
+.p-company {
+  .p-page-header {
+    background-image: url(../img/buildings.jpg);
+    background-position: center center;
+  }
 }
-.p-recruit__more-btns {
+.p-company__profile {
+  padding: 60px 0;
+}
+.p-company__profile-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(50%, 300px), .5fr));
-  justify-content: center;
+  grid-template-columns: 200px 1fr;
   gap: 60px;
   @include max-screen($breakpoint-sm) {
-    grid-template-columns: min(100%, 400px);
-    justify-content: center;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
-  @include max-screen($breakpoint-xs) {
-    gap: 24px;
+  .c-section-heading__title-en {
+    font-size: 4rem;
   }
 }
-.p-recruit__more-btn {
-
-}
-.p-recruit__more-btn-link {
+.p-company__profile-list {
   position: relative;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  height: 100%;
-  padding: 48px 16px;
-  border: 3px solid $color-border;
-  border-radius: 16px;
-  background-color: #fff;
+  grid-template-columns: max-content 1fr;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  font-size: 1.6rem;
+  line-height: 1.6;
   @include max-screen($breakpoint-xs) {
-    padding: 36px 16px;
-    gap: 24px;
+    font-size: 1.5rem;
   }
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    transform: translate(30%, -30%);
-    width: 10rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: rgb(14 110 208 / .08);
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $color-main2;
   }
 }
-.p-recruit__more-btn-text {
-  font-size: 1.8rem;
-  line-height: 1.6;
-  text-align: center;
+.p-company__profile-row {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 2;
+  &:nth-child(even) {
+    background-color: $color-bg-gray;
+  }
+}
+.p-company__profile-list-title {
+  padding: 24px;
+  border-right: 1px solid $color-border;
+  @include max-screen($breakpoint-xs) {
+    padding: 16px;
+  }
+}
+.p-company__profile-list-data {
+  padding: 24px;
+  @include max-screen($breakpoint-xs) {
+    padding: 16px;
+  }
+}
+.p-company__location {
+  padding: 60px 0;
+}
+.p-company__location-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 60px;
+  @include max-screen($breakpoint-sm) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .c-section-heading__title-en {
+    font-size: 4rem;
+  }
+}
+.p-company__content-main {
+
+}
+.p-company__location-map {
+  aspect-ratio: 880 / 568;
+}
+.p-company__location-map-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.p-company__location-map {
+
+}
+.p-company__location-list {
+  margin-top: 40px;
+  padding-bottom: 24px;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  border-bottom: 2px solid $color-main2;
   @include max-screen($breakpoint-xs) {
     font-size: 1.5rem;
   }
 }
-.p-recruit__more-btn-title {
-  position: relative;
-  padding-bottom: 1rem;
-  font-size: 2.4rem;
-  font-weight: bold;
-  text-align: center;
+.p-company__location-list-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
   @include max-screen($breakpoint-xs) {
-    font-size: 1.8rem;
+    gap: 24px;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 8rem;
-    height: 3px;
-    background-color: $color-main2;
-    @include max-screen($breakpoint-xs) {
-      width: 6rem;
-    }
-  }
+}
+.p-company__location-list-title {
+
+}
+.p-company__location-list-data {
+
 }

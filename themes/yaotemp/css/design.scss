@@ -6571,9 +6571,6 @@ img {
       object-fit: cover;
     }
   }
-  // テキスト部分
-  .p-reason-feature__sub-body {
-  }
   // タイトル
   .p-reason-feature__sub-title {
     margin-bottom: 1.6rem;
@@ -6707,8 +6704,6 @@ img {
       height: 100%;
       object-fit: cover;
     }
-  }
-  .p-flow-step__item-body {
   }
   .p-flow-step__item-number {
     position: relative;
@@ -7652,9 +7647,6 @@ p-point（下層ページ共通）
   display: grid;
   gap: 120px;
 }
-.p-calculation__service-item {
-
-}
 .p-calculation__service-title {
   margin-bottom: 4.8rem;
   font-size: 2.4rem;
@@ -7815,11 +7807,6 @@ p-point（下層ページ共通）
     // gap: 40px;
   }
 }
-// グラフ
-.p-establishment-support__product-graph {
-
-}
-
 .p-establishment-support__product-body {
   margin-top: 40px;
 }
@@ -7912,10 +7899,6 @@ p-point（下層ページ共通）
 // OUR BUSINESSセクション（事業紹介）
 .p-establishment-support__business {
   padding: 60px 0;
-}
-// 事業紹介の図解（画像をテキスト化）
-.p-establishment-support__business-biz-intro {
-
 }
 // 価格表エリア
 .p-establishment-support__business-price {
@@ -8198,10 +8181,6 @@ $color-flow-cyan: #12b4a3;
     margin-left: 10px;
     color: $color-border;
   }
-}
-// 行データ
-.p-biz-intro__profile-data {
-
 }
 // ご利用のサービス内容
 .p-biz-intro__service-title {
@@ -8707,10 +8686,6 @@ $color-flow-cyan: #12b4a3;
     background-image: url(../img/labor-mv-bg.jpg);
   }
 }
-.p-insurance__system {
-}
-.p-insurance__system-content {
-}
 .p-insurance__system-cards {
   display: flex;
   flex-wrap: wrap;
@@ -9187,8 +9162,6 @@ $color-flow-cyan: #12b4a3;
 .p-srs__tab-panel-sub-title--solution {
   background-color: $color-main2;
 }
-.p-srs__tab-panel-content {
-}
 .p-srs__tab-panel-content--problem {
   .p-srs__tab-panel-item {
     &::before {
@@ -9265,8 +9238,6 @@ $color-flow-cyan: #12b4a3;
   font-size: 2rem;
   text-align: center;
 }
-.p-srs__tab-panel-img {
-}
 .p-srs_tab-panel-note {
   margin-top: 12px;
   font-size: 1.6rem;
@@ -9282,9 +9253,6 @@ $color-flow-cyan: #12b4a3;
 .p-srs-step {
   background-color: #fff;
 }
-.p-srs-step__inner {
-}
-
 .p-srs-step__list {
   display: flex;
   gap: 8px;
@@ -9489,8 +9457,6 @@ $color-flow-cyan: #12b4a3;
 .p-charge__contract-btn-wrap {
   margin-top: 40px;
   text-align: center;
-}
-.p-charge__contract-btn {
 }
 .p-charge__advisor {
   padding: 60px 0;
@@ -9757,9 +9723,6 @@ $color-flow-cyan: #12b4a3;
     object-fit: cover;
   }
 }
-.p-recruit__roles-sub-body {
-
-}
 .p-recruit__roles-sub-title {
   display: inline-block;
   padding: 4px 12px;
@@ -9796,9 +9759,6 @@ $color-flow-cyan: #12b4a3;
     padding: 60px 0;
   }
 }
-.p-recruit__environment-table {
-
-}
 .p-recruit__more {
   padding: 60px 0 100px;
 }
@@ -9815,9 +9775,6 @@ $color-flow-cyan: #12b4a3;
   @include max-screen($breakpoint-xs) {
     gap: 24px;
   }
-}
-.p-recruit__more-btn {
-
 }
 .p-recruit__more-btn-link {
   position: relative;
@@ -10044,9 +10001,6 @@ $color-flow-cyan: #12b4a3;
     font-size: 4rem;
   }
 }
-.p-company__content-main {
-
-}
 .p-company__location-map {
   aspect-ratio: 880 / 568;
 }
@@ -10054,9 +10008,6 @@ $color-flow-cyan: #12b4a3;
   display: block;
   width: 100%;
   height: 100%;
-}
-.p-company__location-map {
-
 }
 .p-company__location-list {
   margin-top: 40px;
@@ -10075,10 +10026,4 @@ $color-flow-cyan: #12b4a3;
   @include max-screen($breakpoint-xs) {
     gap: 24px;
   }
-}
-.p-company__location-list-title {
-
-}
-.p-company__location-list-data {
-
 }

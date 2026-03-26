@@ -7734,14 +7734,12 @@ p-point（下層ページ共通）
 // リスト
 .p-personnel-affairs__step-list {
   display: grid;
-  grid-auto-flow: column;
-  // リストの行数を９行で固定し強制的に改行させる
-  grid-template-rows: repeat(9, auto);
-  row-gap: 36px;
-  column-gap: 36px;
+  row-gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
   @include max-screen($breakpoint-sm) {
     grid-template-columns: auto;
-    row-gap: 24px;
+    row-gap: 16px;
   }
 }
 .p-personnel-affairs__step-item {

@@ -277,7 +277,7 @@
     </section>
 
     <!-- 商品概要（独自セクション） -->
-    <section class="p-establishment-support__about">
+    <section class="p-establishment-support__product">
         <div class="l-container">
             <!-- セクション見出し -->
             <div class="c-section-heading">
@@ -288,12 +288,56 @@
                 <span class="c-section-heading__title-en">PRODUCT</span>
                 <h2 class="c-section-heading__title-ja">/ 商品概要</h2>
             </div>
-            <div class="p-establishment-support__about-content">
-                <div class="p-establishment-support__about-img"><img src="<?php bloginfo('template_url');?>/img/product-summary-img.jpg" alt="創業支援パックの対象となる企業の図解"></div>
-                <div class="p-establishment-support__about-body">
-                    <h3 class="p-establishment-support__about-title">適応条件</h3>
-                    <p class="p-establishment-support__about-requirements">法人設立1年未満かつ社員数5人以下</p>
-                    <p class="p-establishment-support__about-note">
+            <div class="p-establishment-support__product-content">
+                <!-- グラフ（画像をテキスト化） -->
+                <div class="p-establishment-support__product-graph">
+                    <div class="p-support-pack-graph" role="img" aria-label="従業員数と期間に基づく創業支援パックの対象範囲を表すグラフ">
+                    
+                        <div class="p-support-pack-graph__y-axis">
+                            <span class="p-support-pack-graph__y-label">6人</span>
+                            <span class="p-support-pack-graph__y-label">5人</span>
+                            <span class="p-support-pack-graph__y-label">4人</span>
+                            <span class="p-support-pack-graph__y-label">3人</span>
+                            <span class="p-support-pack-graph__y-label">2人</span>
+                            <span class="p-support-pack-graph__y-label p-support-pack-graph__y-label--base">1人</span>
+                        </div>
+                        <div class="p-support-pack-graph__area">
+                    
+                            <div class="p-support-pack-graph__ineligible-top">
+                                <span class="p-support-pack-graph__ineligible-text">6人以上は対象外</span>
+                            </div>
+                    
+                            <div class="p-support-pack-graph__ineligible-right">
+                                <span class="p-support-pack-graph__ineligible-text">2年目以降は対象外</span>
+                            </div>
+                    
+                            <div class="p-support-pack-graph__supported">
+                                <div class="p-support-pack-graph__logo-block">
+                                    <span class="p-support-pack-graph__corp-name">社会保険労務士法人</span>
+                                    <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="D・プロデュース" class="p-support-pack-graph__logo">
+                                </div>
+                    
+                                <h3 class="p-support-pack-graph__title">創業支援パック</h3>
+                    
+                                <span class="p-support-pack-graph__tag">対象企業</span>
+                    
+                                <div class="p-support-pack-graph__accent"></div>
+                            </div>
+                    
+                        </div>
+                        <div class="p-support-pack-graph__x-axis">
+                            <span class="p-support-pack-graph__x-label p-support-pack-graph__x-label--base">創業</span>
+                            <span class="p-support-pack-graph__x-label">1年</span>
+                            <span class="p-support-pack-graph__x-label">2年</span>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="p-establishment-support__product-body">
+                    <h3 class="p-establishment-support__product-title">適応条件</h3>
+                    <p class="p-establishment-support__product-requirements">法人設立1年未満かつ社員数5人以下</p>
+                    <p class="p-establishment-support__product-note">
                         ※役員、パートアルバイトを含みます。<br />
                         ※上記要件を満たさなくなった時点で、通常料金へ移行となります。
                     </p>
@@ -374,7 +418,86 @@
                 <h2 class="c-section-heading__title-ja">/ 事業紹介</h2>
             </div>
             <div class="p-establishment-support__business-content">
-                <figure class="p-establishment-support__business-img"><img src="<?php bloginfo('template_url');?>/img/business-introduction.jpg" alt=""></figure>
+
+            <!-- 事業紹介イメージ（画像テキスト化部分） -->
+            <div class="p-establishment-support__business-biz-intro">
+                <div class="p-biz-intro">
+                    <div class="p-biz-intro__inner">
+                        <div class="p-biz-intro__left">
+                        <div class="p-biz-intro__profile">
+                            <dl class="p-biz-intro__profile-row">
+                            <dt class="p-biz-intro__profile-label">設　立</dt>
+                            <dd class="p-biz-intro__profile-data">平成30年10月1日</dd>
+                            </dl>
+                            <dl class="p-biz-intro__profile-row">
+                            <dt class="p-biz-intro__profile-label">構成員</dt>
+                            <dd class="p-biz-intro__profile-data">法人役員2名</dd>
+                            </dl>
+                            <dl class="p-biz-intro__profile-row">
+                            <dt class="p-biz-intro__profile-label">事　業</dt>
+                            <dd class="p-biz-intro__profile-data">介護事業（デイ・サービス）</dd>
+                            </dl>
+                        </div>
+                        <div class="p-biz-intro__service">
+                            <h3 class="p-biz-intro__service-title">ご利用のサービス内容</h3>
+                            <ul class="p-biz-intro__service-list">
+                            <li class="p-biz-intro__service-item">創業無料相談</li>
+                            <li class="p-biz-intro__service-item">保険関係成立届</li>
+                            <li class="p-biz-intro__service-item">労働保険概算保険料申告書</li>
+                            <li class="p-biz-intro__service-item">雇用保険適用事業所設置届</li>
+                            <li class="p-biz-intro__service-item">社会保険新規適用</li>
+                            <li class="p-biz-intro__service-item">就業規則作成</li>
+                            <li class="p-biz-intro__service-item">賃金規定作成</li>
+                            <li class="p-biz-intro__service-item">顧問業務</li>
+                            <li class="p-biz-intro__service-item">給与計算業務</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="p-biz-intro__right">
+                        <div class="p-biz-intro__flow-group">
+                            <div class="p-biz-intro__flow-item">
+                            <div class="p-biz-intro__flow-date p-biz-intro__flow-date--orange">1月</div>
+                            <div class="p-biz-intro__flow-content p-biz-intro__flow-content--orange">
+                                <ul class="p-biz-intro__flow-list">
+                                <li>保険関係成立届け</li>
+                                <li>就業規則運用に必要な人事帳票</li>
+                                <li>従業員採用に必要な書類</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="p-biz-intro__flow-item">
+                            <div class="p-biz-intro__flow-date p-biz-intro__flow-date--yellow">2月1日</div>
+                            <div class="p-biz-intro__flow-content p-biz-intro__flow-content--yellow">
+                                <ul class="p-biz-intro__flow-list">
+                                <li>社会保険の新規適用</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="p-biz-intro__flow-item">
+                            <div class="p-biz-intro__flow-date p-biz-intro__flow-date--green">2月11日</div>
+                            <div class="p-biz-intro__flow-content p-biz-intro__flow-content--green">
+                                <ul class="p-biz-intro__flow-list">
+                                <li>従業員採用</li>
+                                <li>労働保険関係成立届（労災）</li>
+                                <li>労働保険概算保険料申告書</li>
+                                <li>雇用保険適用事業所設置届</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="p-biz-intro__flow-item">
+                            <div class="p-biz-intro__flow-date p-biz-intro__flow-date--cyan">2月25日</div>
+                            <div class="p-biz-intro__flow-content p-biz-intro__flow-content--cyan">
+                                <ul class="p-biz-intro__flow-list">
+                                <li>従業員給与計算業務開始</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
                 <!-- 料金改定事例紹介 -->
                 <div class="p-establishment-support__business-price">
                     <p class="p-establishment-support__business-price-note">※法人設立5年経過した場合又は社員数が10人を超えた場合の料金改定事例紹介</p>
